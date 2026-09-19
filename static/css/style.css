@@ -266,10 +266,18 @@ figcaption { margin-top: .6rem; font-size: .85rem; color: var(--text-dim); text-
 
 /* ---------- ads & affiliate ---------- */
 
-.ad { margin: 2rem 0; min-height: 90px; display: flex; align-items: center; justify-content: center; }
-.ad-label { font-size: .68rem; text-transform: uppercase; letter-spacing: .1em;
-            color: var(--text-faint); text-align: center; margin-bottom: .3rem; }
-.ad ins { display: block; width: 100%; }
+/* AdSense units.
+
+   Nothing is drawn until Google fills the slot. An <ins> that has not been
+   processed yet, or that Google declined to fill, contains nothing and has no
+   reserved height, so it collapses instead of leaving an empty placeholder box.
+   Google sets data-ad-status="unfilled" on declined units, which is hidden
+   outright; margin is applied only to a filled unit so collapsed slots leave no
+   gap between sections either. */
+
+ins.adsbygoogle { display: block; width: 100%; margin: 0; }
+ins.adsbygoogle[data-ad-status="unfilled"] { display: none !important; }
+ins.adsbygoogle[data-ad-status="filled"] { margin: 2rem 0; }
 
 .aff { background: var(--bg-raised); border: 1px solid var(--border); border-radius: var(--r); padding: 1rem 1.1rem; }
 .aff h3 { margin-top: 0; }
@@ -331,7 +339,7 @@ figcaption { margin-top: .6rem; font-size: .85rem; color: var(--text-dim); text-
 }
 
 @media print {
-  .site-header, .site-footer, .side, .ad, .search { display: none; }
+  .site-header, .site-footer, .side, ins.adsbygoogle, .search { display: none; }
   body { background: #fff; color: #000; }
   .layout { grid-template-columns: 1fr; }
 }

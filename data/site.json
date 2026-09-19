@@ -6,6 +6,7 @@
   "description": "A free reference database of welding electrodes, AWS A2.4 welding symbols and arc welding processes — specifications, amperage settings and side-by-side comparisons.",
   "contact_email": "info@weldsymbols.org",
   "adsense_client": "ca-pub-5861928596436289",
+  "adsense_enabled": false,
   "adsense_slots": {
     "header": "0000000001",
     "in_article": "0000000002",

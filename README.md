@@ -117,13 +117,30 @@ broken internal links.
 
 | What | Where | Status |
 |---|---|---|
-| Google AdSense | `data/site.json` → `adsense_client` | Client ID live, ad slot IDs are placeholders |
+| Google AdSense | `data/site.json` → `adsense_enabled` | **Off.** Loader is in the `<head>`; no ad units are rendered |
 | Google Analytics | `data/site.json` → `analytics_id` | Empty — the tag is omitted until an ID is set |
 | Ahrefs Analytics | `data/site.json` → `ahrefs_key` | Empty — the tag is omitted until a key is set |
 | Amazon Associates | `data/site.json` → `amazon_tag` | Empty — links fall back to untagged search URLs |
 
-Set the value in `data/site.json` and rebuild; nothing else needs editing. Real
-AdSense ad-unit IDs replace the placeholders in `adsense_slots`.
+Set the value in `data/site.json` and rebuild; nothing else needs editing.
+
+### Turning AdSense on
+
+`adsense_enabled` is `false`, so `partials/ad.html` emits nothing at all — no
+container, no label, no `<ins>`. The loader script stays in the `<head>` so the
+site is verifiable during AdSense review and Auto ads still work if enabled in
+the dashboard.
+
+To switch real ads on, replace the placeholder IDs in `adsense_slots` with ad
+units created in the AdSense dashboard, set `adsense_enabled` to `true`, and
+rebuild. The placements are already positioned in the templates.
+
+This is a build flag rather than a CSS rule deliberately. Hiding an unfilled
+unit with `display: none` gives it zero width, and AdSense will not fill a
+zero-width responsive unit — so a CSS-only approach looks fine on an empty site
+and then silently breaks real ads later. `style.css` still collapses units that
+Google explicitly marks `data-ad-status="unfilled"`, which is the case that
+matters once ads are live.
 
 ## Deploying
 

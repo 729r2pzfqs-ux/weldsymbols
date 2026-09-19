@@ -1,14 +1,22 @@
-{#- AdSense placement. Slot IDs in data/site.json are placeholders until real
-    ad units are created in the AdSense dashboard. -#}
-<div class="ad">
-  <div style="width:100%">
-    <p class="ad-label">Advertisement</p>
-    <ins class="adsbygoogle"
-         style="display:block"
-         data-ad-client="{{ site.adsense_client }}"
-         data-ad-slot="{{ site.adsense_slots[slot] }}"
-         data-ad-format="{{ format|default('auto') }}"
-         data-full-width-responsive="true"></ins>
-    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-  </div>
-</div>
+{#- AdSense unit.
+
+    Rendered only when site.adsense_enabled is true in data/site.json. While it
+    is false, nothing at all is emitted — no wrapper, no label, no <ins> — so
+    there is no blank reserved space anywhere on the page. The loader script
+    stays in the <head> regardless, so the site remains verifiable for AdSense
+    review and Auto ads still work if enabled in the dashboard.
+
+    This is a flag rather than a CSS rule on purpose. Hiding an unfilled unit
+    with display:none gives it zero width, and AdSense will not fill a
+    zero-width responsive unit — so a CSS-only approach would silently break
+    real ads later. Set adsense_enabled to true once the account is approved
+    and the placeholder IDs in adsense_slots are replaced with real ad units. -#}
+{%- if site.adsense_enabled %}
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="{{ site.adsense_client }}"
+     data-ad-slot="{{ site.adsense_slots[slot] }}"
+     data-ad-format="{{ format|default('auto') }}"
+     data-full-width-responsive="true"></ins>
+<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+{%- endif %}
