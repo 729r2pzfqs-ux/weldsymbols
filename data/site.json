@@ -59,5 +59,8 @@
       "name": "Manufacturer published data",
       "note": "Recommended operating ranges published by Lincoln Electric, Miller Electric and ESAB. Figures are presented as typical ranges; always confirm against the data sheet for the specific product you are using."
     }
-  ]
+  ],
+  "theme_color": "#0d1218",
+  "background_color": "#0d1218",
+  "short_name": "WeldSymbols"
 }

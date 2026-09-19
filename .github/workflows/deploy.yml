@@ -44,6 +44,9 @@ jobs:
           test -f dist/sitemap.xml
           test -f dist/robots.txt
           test -f dist/CNAME
+          test -f dist/favicon.ico
+          test -f dist/apple-touch-icon.png
+          test -f dist/site.webmanifest
           echo "Pages built: $(find dist -name index.html | wc -l)"
 
       - name: Configure Pages

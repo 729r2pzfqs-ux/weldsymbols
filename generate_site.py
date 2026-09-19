@@ -1032,6 +1032,8 @@ class Site:
 
     def copy_static(self):
         for name in os.listdir(STATIC):
+            if name == "favicons":
+                continue  # copied to the site root by copy_favicons()
             src = os.path.join(STATIC, name)
             dst = os.path.join(DIST, name)
             if os.path.isdir(src):
@@ -1039,18 +1041,33 @@ class Site:
             else:
                 shutil.copy2(src, dst)
 
-    def write_favicon(self):
-        svg = (
-            '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">'
-            '<rect width="32" height="32" rx="6" fill="#0d1218"/>'
-            '<path d="M8 13h18" stroke="#c8d2e2" stroke-width="2.2" stroke-linecap="round"/>'
-            '<path d="M8 13l-4 5" stroke="#c8d2e2" stroke-width="2.2" stroke-linecap="round"/>'
-            '<polygon points="3.4,19 8,17.4 5.2,14.4" fill="#c8d2e2"/>'
-            '<polygon points="14,13 14,22 23,13" fill="#ff8a3d"/>'
-            "</svg>"
-        )
-        with open(os.path.join(DIST, "favicon.svg"), "w", encoding="utf-8") as fh:
-            fh.write(svg)
+    def copy_favicons(self):
+        """The favicon pack lives at the site root, because browsers probe
+        /favicon.ico and /apple-touch-icon.png there without being told to.
+        Regenerate the files with scripts/make_favicons.py."""
+        src_dir = os.path.join(STATIC, "favicons")
+        for name in sorted(os.listdir(src_dir)):
+            shutil.copy2(os.path.join(src_dir, name), os.path.join(DIST, name))
+
+    def write_webmanifest(self):
+        manifest = {
+            "name": "%s \u2014 %s" % (self.site["name"], self.site["tagline"]),
+            "short_name": self.site["short_name"],
+            "description": self.site["description"],
+            "start_url": "/",
+            "scope": "/",
+            "display": "standalone",
+            "background_color": self.site["background_color"],
+            "theme_color": self.site["theme_color"],
+            "icons": [
+                {"src": "/android-chrome-192x192.png", "sizes": "192x192",
+                 "type": "image/png", "purpose": "any"},
+                {"src": "/android-chrome-512x512.png", "sizes": "512x512",
+                 "type": "image/png", "purpose": "any"},
+            ],
+        }
+        with open(os.path.join(DIST, "site.webmanifest"), "w", encoding="utf-8") as fh:
+            json.dump(manifest, fh, ensure_ascii=False, indent=2)
 
     def write_search_index(self):
         with open(os.path.join(DIST, "search-index.json"), "w", encoding="utf-8") as fh:
@@ -1111,7 +1128,8 @@ class Site:
         self.build_404()
 
         self.copy_static()
-        self.write_favicon()
+        self.copy_favicons()
+        self.write_webmanifest()
         self.write_search_index()
         self.write_sitemap()
         self.write_robots()
