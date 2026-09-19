@@ -118,7 +118,7 @@ broken internal links.
 | What | Where | Status |
 |---|---|---|
 | Google AdSense | `data/site.json` → `adsense_enabled` | **Off.** Loader is in the `<head>`; no ad units are rendered |
-| Google Analytics | `data/site.json` → `analytics_id` | Empty — the tag is omitted until an ID is set |
+| Google Analytics | `data/site.json` → `analytics_id` | **Live** — `G-GKET1DF7G1` |
 | Ahrefs Analytics | `data/site.json` → `ahrefs_key` | Empty — the tag is omitted until a key is set |
 | Amazon Associates | `data/site.json` → `amazon_tag` | Empty — links fall back to untagged search URLs |
 

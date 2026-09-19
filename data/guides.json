@@ -1350,7 +1350,7 @@
         },
         {
           "type": "p",
-          "text": "We may use analytics services to understand which pages are read and how visitors arrive. Analytics providers set their own cookies and receive standard request information. Analytics data is used in aggregate to decide what to write next; it is not used to identify individual visitors."
+          "text": "This site uses Google Analytics to understand which pages are read and how visitors arrive. Google Analytics sets its own cookies and receives standard request information including IP address, browser type and referring page. The data is used in aggregate to decide what to write next; it is not used to identify individual visitors. You can opt out across all sites using the Google Analytics opt-out browser add-on at tools.google.com/dlpage/gaoptout."
         },
         {
           "type": "h2",
