@@ -1073,6 +1073,12 @@ class Site:
         with open(os.path.join(DIST, "sitemap.xml"), "w", encoding="utf-8") as fh:
             fh.write("\n".join(lines) + "\n")
 
+    def write_cname(self):
+        """GitHub Pages reads dist/CNAME to serve the custom domain. dist/ is a
+        build artefact, so the file is generated rather than committed."""
+        with open(os.path.join(DIST, "CNAME"), "w", encoding="utf-8") as fh:
+            fh.write(self.site["domain"] + "\n")
+
     def write_robots(self):
         txt = (
             "User-agent: *\n"
@@ -1109,6 +1115,7 @@ class Site:
         self.write_search_index()
         self.write_sitemap()
         self.write_robots()
+        self.write_cname()
         return self.pages
 
 

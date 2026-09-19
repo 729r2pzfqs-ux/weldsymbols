@@ -97,14 +97,37 @@ AdSense ad-unit IDs replace the placeholders in `adsense_slots`.
 
 ## Deploying
 
-`dist/` is a plain static directory. Any static host works:
+Pushing to `main` builds and publishes automatically via
+`.github/workflows/deploy.yml` — it installs Jinja2, runs `generate_site.py`,
+checks the expected files exist, and uploads `dist/` to GitHub Pages. The
+workflow can also be re-run by hand from the Actions tab.
 
-```bash
-python3 generate_site.py
-# then upload dist/ — Netlify, Cloudflare Pages, S3, GitHub Pages, nginx
+The custom domain is `weldsymbols.org`. The generator writes `dist/CNAME` from
+the `domain` field in `data/site.json`, because `dist/` is a build artefact and
+is not committed — GitHub Pages needs that file present in the published output
+or it drops the custom domain on every deploy.
+
+### DNS
+
+The apex domain needs these records at the registrar:
+
+```
+A     @   185.199.108.153
+A     @   185.199.109.153
+A     @   185.199.110.153
+A     @   185.199.111.153
 ```
 
-Set `404.html` as the not-found page and serve directories with `index.html`.
+Add `CNAME www 729r2pzfqs-ux.github.io` if the `www` subdomain should redirect.
+Once DNS resolves, enable HTTPS:
+
+```bash
+gh api repos/729r2pzfqs-ux/weldsymbols/pages -X PUT -F https_enforced=true
+```
+
+`dist/` is also a plain static directory, so Netlify, Cloudflare Pages, S3 or
+nginx work just as well. Serve directories with `index.html` and set
+`404.html` as the not-found page.
 
 ## Sources
 
