@@ -1,0 +1,12 @@
+{#- Amazon Associates placeholder. Set "amazon_tag" in data/site.json and replace
+    the hrefs with real product links once the Associates account is approved. -#}
+<aside class="aff">
+  <h3>{{ aff_title|default('Gear for this job') }}</h3>
+  <ul>
+    {%- for item in items %}
+    <li><a href="{{ item.url|default('https://www.amazon.com/s?k=' ~ (item.q|urlencode) ~ ('&tag=' ~ site.amazon_tag if site.amazon_tag else '')) }}"
+           rel="nofollow sponsored noopener" target="_blank">{{ item.label }}</a></li>
+    {%- endfor %}
+  </ul>
+  <p class="disc">As an Amazon Associate this site may earn from qualifying purchases. Links do not influence the technical recommendations above.</p>
+</aside>

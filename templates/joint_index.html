@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% block content %}
+
+<header class="phead">
+  <p class="kicker">Joint design</p>
+  <h1>Types of Welding Joints</h1>
+</header>
+
+<div class="answer"><p>{{ summary }}</p></div>
+
+{% with id='q-idx', extra_class='search-home' %}{% include "partials/search.html" %}{% endwith %}
+
+<h2 id="types">The five joint types</h2>
+<div class="grid grid-2">
+  {%- for j in joints %}
+  <a class="card" href="/joints/{{ j.id }}/">
+    {{ j.svg_markup }}
+    <h3>{{ j.name }}</h3>
+    <p>{{ j.short }}</p>
+  </a>
+  {%- endfor %}
+</div>
+
+{% with slot='header' %}{% include "partials/ad.html" %}{% endwith %}
+
+<h2 id="choosing">Choosing a joint</h2>
+<div class="tw">
+  <table>
+    <thead><tr><th>Joint</th><th>Preparation</th><th>Load capacity</th><th>Typical welds</th></tr></thead>
+    <tbody>
+      {%- for j in joints %}
+      <tr>
+        <td><a href="/joints/{{ j.id }}/"><strong>{{ j.name }}</strong></a></td>
+        <td>{{ j.prep_short }}</td>
+        <td>{{ j.strength_short }}</td>
+        <td>{{ j.weld_names }}</td>
+      </tr>
+      {%- endfor %}
+    </tbody>
+  </table>
+</div>
+
+{% with faqs=faqs, faq_title='Joint design questions' %}{% include "partials/faq.html" %}{% endwith %}
+
+{% with slot='footer' %}{% include "partials/ad.html" %}{% endwith %}
+
+{% endblock %}

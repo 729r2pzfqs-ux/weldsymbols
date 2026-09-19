@@ -1,0 +1,14 @@
+{#- AdSense placement. Slot IDs in data/site.json are placeholders until real
+    ad units are created in the AdSense dashboard. -#}
+<div class="ad">
+  <div style="width:100%">
+    <p class="ad-label">Advertisement</p>
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="{{ site.adsense_client }}"
+         data-ad-slot="{{ site.adsense_slots[slot] }}"
+         data-ad-format="{{ format|default('auto') }}"
+         data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+</div>

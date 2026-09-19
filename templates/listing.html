@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block content %}
+
+<header class="phead">
+  {%- if kicker %}<p class="kicker">{{ kicker }}</p>{%- endif %}
+  <h1>{{ heading }}</h1>
+</header>
+
+<div class="answer"><p>{{ summary }}</p></div>
+
+{% with id='q-idx', extra_class='search-home' %}{% include "partials/search.html" %}{% endwith %}
+
+<h2 id="all">{{ list_heading }}</h2>
+<div class="grid grid-2">
+  {%- for i in items %}
+  <a class="card" href="{{ i.url }}">
+    <h3>{{ i.name }}{% if i.tag %} <span class="tag">({{ i.tag }})</span>{% endif %}</h3>
+    <p>{{ i.description }}</p>
+  </a>
+  {%- endfor %}
+</div>
+
+{%- if extra_links %}
+<h2 id="{{ extra_id|default('more') }}">{{ extra_title }}</h2>
+{%- if extra_intro %}<p>{{ extra_intro }}</p>{%- endif %}
+<ul class="pill-list">
+  {%- for l in extra_links %}<li><a href="{{ l.url }}">{{ l.name }}</a></li>{%- endfor %}
+</ul>
+{%- endif %}
+
+{% with slot='footer' %}{% include "partials/ad.html" %}{% endwith %}
+
+{% endblock %}

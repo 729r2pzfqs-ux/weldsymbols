@@ -1,0 +1,189 @@
+{% extends "base.html" %}
+{% set e = electrode %}
+{% block content %}
+
+<div class="layout">
+<article>
+
+  <header class="phead">
+    <p class="kicker">{{ e.spec }} &middot; {{ e.category_name }}</p>
+    <h1>{{ e.name }} Welding Electrode</h1>
+  </header>
+
+  <div class="answer"><p>{{ e.summary }}</p></div>
+
+  <ul class="chips">
+    <li class="chip chip-accent"><strong>{{ e.mechanical.tensile_ksi }} ksi</strong> tensile</li>
+    <li class="chip">Polarity <strong>{{ e.polarity|join(', ') }}</strong></li>
+    <li class="chip">{{ e.positions|length }} positions</li>
+    <li class="chip">{{ e.penetration }} penetration</li>
+    <li class="chip">{{ e.process_name }}</li>
+  </ul>
+
+  <h2 id="what-the-number-means">What {{ e.name }} means</h2>
+  <div class="tw">
+    <table>
+      <thead><tr><th>Part</th><th>Meaning</th></tr></thead>
+      <tbody>
+        {%- for c in e.classification_breakdown %}
+        <tr><td class="num"><strong>{{ c.part }}</strong></td><td>{{ c.meaning }}</td></tr>
+        {%- endfor %}
+      </tbody>
+    </table>
+  </div>
+
+  <h2 id="specs">{{ e.name }} specifications</h2>
+  <div class="tw">
+    <table class="specs">
+      <tbody>
+        <tr><th scope="row">AWS specification</th><td>{{ e.spec }}</td></tr>
+        <tr><th scope="row">Process</th><td>{{ e.process_name }}</td></tr>
+        <tr><th scope="row">Form</th><td>{{ e.form }}</td></tr>
+        <tr><th scope="row">Polarity</th><td>{{ e.polarity|join(', ') }}</td></tr>
+        <tr><th scope="row">Welding positions</th><td>{{ e.positions|join(', ') }}</td></tr>
+        <tr><th scope="row">Tensile strength (min)</th><td class="num">{{ e.mechanical.tensile_ksi }} ksi ({{ e.mechanical.tensile_mpa }} MPa)</td></tr>
+        {%- if e.mechanical.yield_ksi %}
+        <tr><th scope="row">Yield strength (min)</th><td class="num">{{ e.mechanical.yield_ksi }} ksi ({{ e.mechanical.yield_mpa }} MPa)</td></tr>
+        {%- endif %}
+        {%- if e.mechanical.elongation_pct %}
+        <tr><th scope="row">Elongation (min)</th><td class="num">{{ e.mechanical.elongation_pct }}%</td></tr>
+        {%- endif %}
+        <tr><th scope="row">Impact toughness</th><td>{{ e.mechanical.impact }}</td></tr>
+        <tr><th scope="row">Coating / core</th><td>{{ e.coating }}</td></tr>
+        <tr><th scope="row">Penetration</th><td>{{ e.penetration }}</td></tr>
+        <tr><th scope="row">Deposition rate</th><td>{{ e.deposition }}</td></tr>
+        <tr><th scope="row">Slag</th><td>{{ e.slag }}</td></tr>
+        <tr><th scope="row">Arc character</th><td>{{ e.arc }}</td></tr>
+        <tr><th scope="row">Shielding gas</th><td>{% if e.shielding_gas %}{{ e.shielding_gas.primary }}{% else %}None &mdash; self-shielding{% endif %}</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2 id="amperage">{{ e.name }} amperage by diameter</h2>
+  <p>Typical operating ranges. Start near the middle of the range, then adjust by sound and bead
+     profile. Reduce 10&ndash;15% for vertical and overhead work.</p>
+  <div class="tw">
+    <table>
+      <thead><tr><th>Diameter</th><th class="num">Amperage range</th><th class="num">Typical start</th></tr></thead>
+      <tbody>
+        {%- for a in e.amperage %}
+        <tr>
+          <td class="num">{{ a.diameter }}</td>
+          <td class="num">{{ a.min }}&ndash;{{ a.max }} A</td>
+          <td class="num">{{ ((a.min + a.max) / 2)|round|int }} A</td>
+        </tr>
+        {%- endfor %}
+      </tbody>
+    </table>
+  </div>
+  <p class="small muted">Polarity: {{ e.polarity_note }}</p>
+
+  {% with slot='in_article' %}{% include "partials/ad.html" %}{% endwith %}
+
+  {%- if e.shielding_gas %}
+  <h2 id="gas">Shielding gas for {{ e.name }}</h2>
+  <div class="tw">
+    <table>
+      <thead><tr><th>Gas</th><th>Notes</th></tr></thead>
+      <tbody>
+        {%- for g in e.shielding_gas.options %}
+        <tr><td class="num">{{ g.gas }}</td><td>{{ g.note }}</td></tr>
+        {%- endfor %}
+      </tbody>
+    </table>
+  </div>
+  <p><strong>Flow rate:</strong> {{ e.shielding_gas.flow }}</p>
+  {%- endif %}
+
+  <h2 id="applications">What {{ e.name }} is used for</h2>
+  <ul>
+    {%- for a in e.applications %}<li>{{ a }}</li>{%- endfor %}
+  </ul>
+
+  <h3>Base metals</h3>
+  <ul class="chips">
+    {%- for b in e.base_metals %}<li class="chip">{{ b }}</li>{%- endfor %}
+  </ul>
+
+  <h2 id="characteristics">Characteristics</h2>
+  <ul>
+    {%- for c in e.characteristics %}<li>{{ c }}</li>{%- endfor %}
+  </ul>
+
+  <h2 id="storage">Storage and handling</h2>
+  <div class="note"><p><strong>{{ e.storage.summary }}</strong></p></div>
+  <ul>
+    {%- for d in e.storage.details %}<li>{{ d }}</li>{%- endfor %}
+  </ul>
+
+  <h2 id="tips">Welding tips</h2>
+  <ul>
+    {%- for t in e.tips %}<li>{{ t }}</li>{%- endfor %}
+  </ul>
+
+  {% with faqs=e.faqs, faq_title=e.name ~ ' frequently asked questions' %}{% include "partials/faq.html" %}{% endwith %}
+
+  {%- if comparisons %}
+  <h2 id="compare">Compare {{ e.name }} with</h2>
+  <ul class="pill-list">
+    {%- for c in comparisons %}
+    <li><a href="/electrodes/{{ c.id }}/">{{ c.a_name }} vs {{ c.b_name }}</a></li>
+    {%- endfor %}
+  </ul>
+  {%- endif %}
+
+  {%- if related %}
+  <h2 id="related">Related electrodes</h2>
+  <div class="grid grid-2">
+    {%- for r in related %}
+    <a class="card" href="/electrodes/{{ r.id }}/">
+      <h3>{{ r.name }}</h3>
+      <p class="tag">{{ r.spec }}</p>
+      <p>{{ r.short }}</p>
+    </a>
+    {%- endfor %}
+  </div>
+  {%- endif %}
+
+  {% with slot='footer' %}{% include "partials/ad.html" %}{% endwith %}
+
+</article>
+
+<aside class="side">
+  {% with id='q-side' %}{% include "partials/search.html" %}{% endwith %}
+
+  <nav class="panel toc" aria-label="On this page">
+    <h2>On this page</h2>
+    <ul>
+      <li><a href="#what-the-number-means">What {{ e.name }} means</a></li>
+      <li><a href="#specs">Specifications</a></li>
+      <li><a href="#amperage">Amperage by diameter</a></li>
+      {%- if e.shielding_gas %}<li><a href="#gas">Shielding gas</a></li>{%- endif %}
+      <li><a href="#applications">Applications</a></li>
+      <li><a href="#characteristics">Characteristics</a></li>
+      <li><a href="#storage">Storage</a></li>
+      <li><a href="#tips">Tips</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+  </nav>
+
+  <div class="panel">
+    <h2>Process</h2>
+    <ul><li><a href="/processes/{{ e.process_id }}/">{{ e.process_name }} overview</a></li></ul>
+    {%- if e.related_symbols %}
+    <h2 style="margin-top:1rem">Common joints</h2>
+    <ul>
+      {%- for s in symbol_links %}
+      <li><a href="/symbols/{{ s.id }}/">{{ s.name }} symbol</a></li>
+      {%- endfor %}
+    </ul>
+    {%- endif %}
+  </div>
+
+  {% with items=affiliate_items %}{% include "partials/affiliate.html" %}{% endwith %}
+
+  {% with slot='sidebar', format='vertical' %}{% include "partials/ad.html" %}{% endwith %}
+</aside>
+</div>
+
+{% endblock %}

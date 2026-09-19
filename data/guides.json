@@ -1,0 +1,1466 @@
+{
+  "guides": [
+    {
+      "id": "how-to-read-welding-symbols",
+      "title": "How to Read Welding Symbols",
+      "summary": "A welding symbol is read from the reference line outward: the arrow says which joint, the side of the reference line says which face, the shape says which weld, and the numbers around it say how big and how many.",
+      "meta_description": "Learn to read AWS A2.4 welding symbols: reference line, arrow side vs other side, weld symbol shapes, dimensions, tail references and supplementary symbols.",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Every welding symbol on a drawing is built from the same small set of parts. Once you can name them, any symbol becomes readable — including the ones you have never seen before, because the rules for placement are the same for all of them."
+        },
+        {
+          "type": "h2",
+          "text": "Start with the reference line"
+        },
+        {
+          "type": "p",
+          "text": "The reference line is the horizontal line that everything attaches to. It is always drawn horizontal, regardless of how the joint sits in space. The arrow leads from one end of it down to the joint; the optional tail forks off the other end."
+        },
+        {
+          "type": "p",
+          "text": "The single most important rule in the whole system is which side of the reference line a symbol sits on. A weld symbol below the reference line calls for a weld on the arrow side — the side of the joint the arrow actually touches. A weld symbol above the reference line calls for a weld on the other side. Symbols above and below mean weld both sides."
+        },
+        {
+          "type": "note",
+          "text": "Below the line means arrow side. This is backwards from what most people guess on their first day, and it is the error that shows up most often on shop floors."
+        },
+        {
+          "type": "h2",
+          "text": "Read the shape to find the weld type"
+        },
+        {
+          "type": "p",
+          "text": "The shape drawn on the reference line says which kind of weld is required. A right triangle is a fillet. A V is a V-groove. Half a V, with one vertical leg, is a bevel-groove. A U and a half-U are the U-groove and J-groove. A rectangle is a plug or slot weld, a circle is a spot weld, a circle with a line through it is a seam weld, a semicircle is a back or backing weld, and two arcs side by side are a surfacing weld."
+        },
+        {
+          "type": "h2",
+          "text": "Look for a broken leader"
+        },
+        {
+          "type": "p",
+          "text": "Bevel-groove and J-groove welds prepare only one of the two members. When it is not obvious which one, the leader line is drawn with a deliberate kink or break, and it points at the member that gets cut. If you see a bent leader, that is what it is telling you."
+        },
+        {
+          "type": "h2",
+          "text": "Read the numbers"
+        },
+        {
+          "type": "p",
+          "text": "Dimensions always appear in the same places relative to the weld symbol, which is what makes them readable without a legend."
+        },
+        {
+          "type": "table",
+          "head": [
+            "Position",
+            "What it means"
+          ],
+          "rows": [
+            [
+              "Left of the symbol",
+              "Size — fillet leg length, groove depth, hole diameter, nugget size"
+            ],
+            [
+              "Right of the symbol",
+              "Length, and pitch if the weld is intermittent"
+            ],
+            [
+              "Inside a groove symbol",
+              "Root opening"
+            ],
+            [
+              "Outside a groove symbol",
+              "Included groove angle"
+            ],
+            [
+              "In parentheses",
+              "Number of welds, or the groove weld size"
+            ],
+            [
+              "In the tail",
+              "Process, specification or procedure reference"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Two numbers to the right separated by a dash, such as 3-8, describe an intermittent weld: 3 inch long segments on 8 inch centres, measured start of one weld to start of the next — not the gap between them."
+        },
+        {
+          "type": "h2",
+          "text": "Check the supplementary symbols"
+        },
+        {
+          "type": "p",
+          "text": "Small symbols at the junction of the arrow and the reference line modify the instruction rather than describing the weld itself."
+        },
+        {
+          "type": "ul",
+          "items": [
+            "A circle at the junction means weld all around the joint.",
+            "A flag at the junction means the weld is made in the field rather than in the shop.",
+            "A straight line, convex arc or concave arc across the face of the weld symbol specifies the finished contour.",
+            "A letter with the contour symbol — C, G, M, R or H — says how that contour is produced: chipping, grinding, machining, rolling or hammering.",
+            "A filled semicircle opposite the groove symbol calls for melt-through with visible root reinforcement."
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "Work through one symbol"
+        },
+        {
+          "type": "p",
+          "text": "Take a fillet weld symbol below the reference line, with 1/4 to its left, 2-6 to its right, a circle at the arrow junction and GMAW in the tail. Read it in order: a fillet weld, on the arrow side of the joint, with 1/4 inch legs, in 2 inch segments on 6 inch centres, continued all the way around the joint, made by gas metal arc welding."
+        },
+        {
+          "type": "h2",
+          "text": "What the symbol does not tell you"
+        },
+        {
+          "type": "p",
+          "text": "Welding symbols specify the weld, not the procedure. Electrode classification, amperage, preheat, interpass temperature and inspection requirements come from the welding procedure specification, not from the drawing. The tail can reference that procedure, but it cannot contain it."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Does above or below the reference line mean the arrow side?",
+          "a": "Below. A weld symbol drawn below the reference line calls for a weld on the side of the joint the arrow touches. Above the line means the far side."
+        },
+        {
+          "q": "What does the tail of a welding symbol mean?",
+          "a": "It carries a reference the symbol itself cannot express — the welding process, a specification number, or a procedure. If there is nothing to reference, the tail is omitted."
+        },
+        {
+          "q": "What does a circle at the bend of the arrow mean?",
+          "a": "Weld all around: the weld continues completely around the joint rather than stopping at the point the arrow indicates."
+        },
+        {
+          "q": "What does a flag on a welding symbol mean?",
+          "a": "A field weld — the weld is made on site during erection rather than in the fabrication shop."
+        },
+        {
+          "q": "What is the difference between a weld symbol and a welding symbol?",
+          "a": "The weld symbol is just the shape that names the weld type, such as the triangle for a fillet. The welding symbol is the whole assembly: reference line, arrow, weld symbol, dimensions, supplementary symbols and tail."
+        }
+      ],
+      "related_symbols": [
+        "fillet-weld",
+        "v-groove-weld",
+        "bevel-groove-weld",
+        "back-weld"
+      ]
+    },
+    {
+      "id": "welding-electrode-numbers-explained",
+      "title": "What Welding Electrode Numbers Mean",
+      "summary": "In a stick electrode number like E7018, E means electrode, 70 means 70,000 psi tensile strength, 1 means all positions, and 8 means a low-hydrogen coating usable on AC or DCEP.",
+      "meta_description": "Decode AWS electrode numbers: E6010, E7018, E308L, ER70S-6 and E71T-1 explained digit by digit, including the coating and polarity codes.",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "AWS filler metal classifications look cryptic but they are systematic. Each position in the number carries one piece of information, and once you know the pattern you can read the properties of a rod you have never used from the box alone."
+        },
+        {
+          "type": "h2",
+          "text": "Carbon steel stick electrodes: AWS A5.1"
+        },
+        {
+          "type": "p",
+          "text": "A four or five digit number after the E, as in E7018."
+        },
+        {
+          "type": "table",
+          "head": [
+            "Digit",
+            "Meaning",
+            "Example"
+          ],
+          "rows": [
+            [
+              "E",
+              "Electrode for shielded metal arc welding",
+              "E7018"
+            ],
+            [
+              "First two (or three) digits",
+              "Minimum tensile strength in thousands of psi",
+              "70 = 70,000 psi"
+            ],
+            [
+              "Third digit",
+              "Welding positions",
+              "1 = all positions, 2 = flat and horizontal fillets, 4 = all positions including vertical-down"
+            ],
+            [
+              "Fourth digit",
+              "Coating type and usable current",
+              "8 = low-hydrogen potassium with iron powder, AC or DCEP"
+            ]
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "The last digit in full"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Digit",
+            "Coating",
+            "Current"
+          ],
+          "rows": [
+            [
+              "0",
+              "High-cellulose sodium",
+              "DCEP only"
+            ],
+            [
+              "1",
+              "High-cellulose potassium",
+              "AC or DCEP"
+            ],
+            [
+              "2",
+              "High-titania sodium",
+              "AC or DCEN"
+            ],
+            [
+              "3",
+              "High-titania potassium",
+              "AC, DCEP or DCEN"
+            ],
+            [
+              "4",
+              "Iron-powder titania",
+              "AC, DCEP or DCEN"
+            ],
+            [
+              "5",
+              "Low-hydrogen sodium",
+              "DCEP only"
+            ],
+            [
+              "6",
+              "Low-hydrogen potassium",
+              "AC or DCEP"
+            ],
+            [
+              "7",
+              "High iron oxide, iron powder",
+              "AC, DCEP or DCEN"
+            ],
+            [
+              "8",
+              "Low-hydrogen potassium, iron powder",
+              "AC or DCEP"
+            ]
+          ]
+        },
+        {
+          "type": "note",
+          "text": "The last two digits work together. In E6010 the 1 means all positions and the 0 means cellulosic sodium on DCEP. In E7024 the 2 means flat and horizontal fillets only, which is why that rod cannot be run vertical no matter how good you are."
+        },
+        {
+          "type": "h2",
+          "text": "Optional suffixes"
+        },
+        {
+          "type": "p",
+          "text": "A suffix after the main number adds a requirement. E7018-1 meets a lower impact test temperature, 20 ft·lb at -50 °F instead of -20 °F. An H4 or H8 designator caps diffusible hydrogen at 4 or 8 millilitres per 100 grams of deposited metal. An R indicates a moisture-resistant coating with a longer permitted atmospheric exposure."
+        },
+        {
+          "type": "h2",
+          "text": "Stainless covered electrodes: AWS A5.4"
+        },
+        {
+          "type": "p",
+          "text": "Stainless classifications use the alloy designation rather than a strength code, as in E308L-16."
+        },
+        {
+          "type": "ul",
+          "items": [
+            "E — covered electrode.",
+            "308, 309, 316, 347, 410 — the nominal alloy, matching the AISI base metal grade of the same number.",
+            "L — low carbon, 0.04% maximum, to resist carbide precipitation. An H suffix means higher carbon for elevated-temperature strength.",
+            "-15 — lime coating, DCEP only. -16 — lime-titania coating, AC or DCEP. -17 — silica-bearing coating with a more fluid puddle."
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "Solid wire: AWS A5.18 and A5.9"
+        },
+        {
+          "type": "p",
+          "text": "Carbon steel solid wire follows the pattern ER70S-6."
+        },
+        {
+          "type": "ul",
+          "items": [
+            "ER — usable as both a continuously fed electrode and a hand-fed rod, so it covers MIG and TIG.",
+            "70 — 70,000 psi minimum tensile strength of the deposited weld metal.",
+            "S — solid wire.",
+            "6 — a chemistry designation. In the ER70S family, higher numbers generally carry more deoxidisers; ER70S-6 has the highest silicon and manganese and therefore the best tolerance for mill scale."
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Stainless bare wire drops the strength code and uses the alloy directly: ER308L, ER316L, ER309L. Aluminium bare wire uses the Aluminum Association alloy number: ER4043, ER5356."
+        },
+        {
+          "type": "h2",
+          "text": "Flux-cored wire: AWS A5.20"
+        },
+        {
+          "type": "p",
+          "text": "Flux-cored classifications follow the pattern E71T-1."
+        },
+        {
+          "type": "table",
+          "head": [
+            "Part",
+            "Meaning"
+          ],
+          "rows": [
+            [
+              "E",
+              "Electrode"
+            ],
+            [
+              "7",
+              "70,000 psi minimum tensile strength"
+            ],
+            [
+              "1",
+              "All positions (0 means flat and horizontal only)"
+            ],
+            [
+              "T",
+              "Tubular — flux-cored wire"
+            ],
+            [
+              "-1",
+              "Usability designator: rutile slag, gas shielded, DCEP, 20 ft·lb at 0 °F"
+            ],
+            [
+              "-11",
+              "Usability designator: self-shielded, DCEN, no impact requirement"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "The usability designator after the T is the part that matters most in practice. It sets the shielding requirement and the polarity, which is why E71T-1 and E71T-11 need opposite polarity settings despite looking almost identical on the label."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "What does the 18 in E7018 mean?",
+          "a": "The 1 means the electrode can be used in all welding positions. The 8 means a low-hydrogen potassium coating with iron powder, usable on AC or DCEP."
+        },
+        {
+          "q": "What does the 60 in E6010 mean?",
+          "a": "60,000 psi minimum tensile strength of the deposited weld metal. E7018's 70 means 70,000 psi."
+        },
+        {
+          "q": "What does the L mean in E308L?",
+          "a": "Low carbon, 0.04% maximum for covered electrodes and 0.03% for bare wire. Less carbon means less chromium carbide forms at the grain boundaries, which preserves corrosion resistance."
+        },
+        {
+          "q": "What does ER stand for in ER70S-6?",
+          "a": "Electrode or Rod — the filler qualifies both as a continuously fed electrode for MIG and as a hand-fed rod for TIG."
+        },
+        {
+          "q": "Why do E71T-1 and E71T-11 use different polarity?",
+          "a": "The usability designator after the T defines the shielding and polarity. The -1 wire is gas shielded and runs DCEP; the -11 wire is self-shielded and runs DCEN."
+        }
+      ],
+      "related_electrodes": [
+        "e7018",
+        "e6010",
+        "e308l",
+        "er70s-6",
+        "e71t-1"
+      ]
+    },
+    {
+      "id": "welding-polarity-dcep-dcen-ac",
+      "title": "Welding Polarity: DCEP, DCEN and AC",
+      "summary": "DCEP puts the electrode positive and drives roughly two-thirds of the heat into the work for deep penetration; DCEN reverses that for shallower penetration and higher deposition; AC alternates and is required for aluminium TIG.",
+      "meta_description": "DCEP vs DCEN vs AC welding polarity explained: where the heat goes, which electrodes need which, and how to set polarity for stick, MIG, TIG and flux core.",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Polarity decides where the arc's heat goes, which in turn decides penetration depth and deposition rate. Getting it wrong is one of the few setup errors that makes a weld unmistakably bad rather than merely mediocre."
+        },
+        {
+          "type": "h2",
+          "text": "DCEP — direct current, electrode positive"
+        },
+        {
+          "type": "p",
+          "text": "Also called reverse polarity. Electrons flow from the work to the electrode, and roughly two-thirds of the arc heat ends up in the base metal. The result is deep penetration and a stable arc. DCEP is the default for most stick electrodes, all solid-wire MIG, and gas-shielded flux-cored wire."
+        },
+        {
+          "type": "h2",
+          "text": "DCEN — direct current, electrode negative"
+        },
+        {
+          "type": "p",
+          "text": "Also called straight polarity. Electrons flow from the electrode to the work, putting more heat into the electrode itself. Penetration is shallower and deposition rate is higher. DCEN is used for TIG on steel and stainless, for self-shielded flux-cored wire, and for some rutile stick electrodes on thin material."
+        },
+        {
+          "type": "h2",
+          "text": "AC — alternating current"
+        },
+        {
+          "type": "p",
+          "text": "The current reverses direction 60 times a second in North America, 50 in most of the rest of the world. Every reversal passes through zero, which is why an arc can go out unless the electrode coating or the machine keeps it alive. AC is required for aluminium and magnesium TIG, is used by E6011 and permitted by E6013, E7014, E7018 and E7024, and is useful on heavy plate because it reduces magnetic arc blow."
+        },
+        {
+          "type": "h2",
+          "text": "Quick reference"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Process or electrode",
+            "Polarity"
+          ],
+          "rows": [
+            [
+              "E6010",
+              "DCEP only"
+            ],
+            [
+              "E6011",
+              "AC or DCEP"
+            ],
+            [
+              "E6013, E7014, E7024",
+              "AC, DCEP or DCEN"
+            ],
+            [
+              "E7018",
+              "DCEP or AC"
+            ],
+            [
+              "Stainless covered electrodes (-16)",
+              "DCEP or AC"
+            ],
+            [
+              "Stainless covered electrodes (-15)",
+              "DCEP only"
+            ],
+            [
+              "Solid MIG wire (GMAW)",
+              "DCEP"
+            ],
+            [
+              "Gas-shielded flux core (E71T-1)",
+              "DCEP"
+            ],
+            [
+              "Self-shielded flux core (E71T-11)",
+              "DCEN"
+            ],
+            [
+              "TIG on steel, stainless, titanium",
+              "DCEN"
+            ],
+            [
+              "TIG on aluminium and magnesium",
+              "AC"
+            ]
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "Why aluminium TIG needs AC"
+        },
+        {
+          "type": "p",
+          "text": "Aluminium carries a tenacious oxide skin that melts around 3700 °F while the metal beneath it melts around 1200 °F. Welding through that skin requires removing it. The electrode-positive half of the AC cycle bombards the surface and strips the oxide away; the electrode-negative half puts heat into the joint. The balance control on a modern AC TIG machine sets how the cycle is split — more negative time for penetration, more positive time for cleaning."
+        },
+        {
+          "type": "h2",
+          "text": "Symptoms of wrong polarity"
+        },
+        {
+          "type": "ul",
+          "items": [
+            "E6010 on AC: the arc stutters, pops and goes out.",
+            "Self-shielded flux core on DCEP: a wandering arc, heavy spatter and an ugly, porous bead.",
+            "Solid MIG wire on DCEN: an erratic arc with poor fusion and excessive spatter.",
+            "TIG on steel with DCEP: the tungsten overheats, balls up and may melt away within seconds."
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "Arc blow"
+        },
+        {
+          "type": "p",
+          "text": "Direct current creates a magnetic field around the arc, and on heavy plate or near a joint corner that field can push the arc sideways. Symptoms are a wandering arc, excessive spatter and undercut on one side of the bead. Switching to AC is the most effective cure, because the field reverses too fast to deflect the arc. Repositioning the work clamp, welding away from the ground connection, or using shorter arcs also help."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "What is the difference between DCEP and DCEN?",
+          "a": "DCEP puts the electrode positive and drives roughly two-thirds of the arc heat into the work, giving deeper penetration. DCEN puts the electrode negative, putting more heat into the electrode itself for shallower penetration and higher deposition."
+        },
+        {
+          "q": "Is DCEP the same as reverse polarity?",
+          "a": "Yes. DCEP is direct current electrode positive, also called reverse polarity. DCEN is direct current electrode negative, also called straight polarity."
+        },
+        {
+          "q": "What polarity is MIG welding?",
+          "a": "DCEP for all solid-wire GMAW, and for gas-shielded flux-cored wire. Self-shielded flux-cored wire is the exception and runs DCEN."
+        },
+        {
+          "q": "Why does my flux core weld look terrible?",
+          "a": "Check polarity first. Self-shielded wire such as E71T-11 needs DCEN, and most small machines ship wired for DCEP solid wire. The gun and work leads must be swapped at the terminals."
+        },
+        {
+          "q": "Can you weld aluminium with DC TIG?",
+          "a": "DCEN TIG on aluminium is possible with helium shielding on thick sections, but it provides no oxide cleaning. For virtually all aluminium work, AC is the correct setting."
+        }
+      ],
+      "related_electrodes": [
+        "e6010",
+        "e6011",
+        "e7018",
+        "e71t-11",
+        "er4043"
+      ]
+    },
+    {
+      "id": "welding-rod-storage",
+      "title": "Welding Rod Storage and Rod Ovens",
+      "summary": "Low-hydrogen electrodes such as E7018 must be held in a rod oven at 250–300 °F once opened, while cellulosic rods like E6010 must never be baked because they need the moisture in their coating.",
+      "meta_description": "How to store welding electrodes: rod oven temperatures, exposure limits, redrying rules, and which rods must never be baked. Practical storage guide.",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Electrode storage is one of the few shop practices where the rules differ completely between electrode types, and where getting it wrong produces defects that do not show up until the weld is in service."
+        },
+        {
+          "type": "h2",
+          "text": "Why moisture matters"
+        },
+        {
+          "type": "p",
+          "text": "Water in an electrode coating dissociates in the arc and the hydrogen dissolves into the molten weld metal. As the weld cools, that hydrogen diffuses into the heat-affected zone and collects at defects. Under residual stress it causes delayed cracking — sometimes hours or days after welding, which is why it is called cold cracking or hydrogen-induced cracking. Thick sections, high-strength steels and restrained joints are the most vulnerable."
+        },
+        {
+          "type": "h2",
+          "text": "Low-hydrogen electrodes"
+        },
+        {
+          "type": "p",
+          "text": "E7018, E7016, E7028 and the stainless covered electrodes all depend on a dry coating for the low-hydrogen deposit they are sold for."
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Store unopened containers above 65 °F with relative humidity below 50%.",
+            "Once the hermetic seal is broken, hold the electrodes in a rod oven at 250–300 °F (120–150 °C).",
+            "Atmospheric exposure limits on code work are typically 4 hours for standard E7018 and up to 9 hours for H4R moisture-resistant grades — the governing code and the product data sheet set the real figure.",
+            "Electrodes exposed beyond the limit can usually be reconditioned once by baking at 500–800 °F (260–430 °C) for one to two hours.",
+            "Never recondition an electrode twice, and discard any rod with a cracked, swollen or flaking coating."
+          ]
+        },
+        {
+          "type": "note",
+          "text": "Stainless covered electrodes are redried at lower temperatures than carbon steel low-hydrogen rods, typically 500–600 °F. Always check the manufacturer's data sheet rather than assuming the carbon steel figure applies."
+        },
+        {
+          "type": "h2",
+          "text": "Cellulosic electrodes — do not bake"
+        },
+        {
+          "type": "p",
+          "text": "E6010 and E6011 work the opposite way. Their high-cellulose coatings are designed to hold roughly 3 to 7% moisture, and that water is the source of the shielding gas that protects the arc. Baking them in a rod oven drives the cellulose off and ruins the arc characteristics permanently. Store them sealed at room temperature and leave them alone."
+        },
+        {
+          "type": "h2",
+          "text": "Rutile electrodes"
+        },
+        {
+          "type": "p",
+          "text": "E6013, E7014 and E7024 sit between the two extremes. They are not low-hydrogen, so they need no oven, but a damp coating still causes a hissing arc and worm-track porosity. Keep them sealed and dry; if they have got damp, an hour at 250–300 °F will usually recover them."
+        },
+        {
+          "type": "h2",
+          "text": "Wire and flux-cored spools"
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Solid MIG wire rusts if left exposed, and rusty wire feeds badly and causes porosity. Bag opened spools with desiccant or leave them in a closed machine cabinet.",
+            "Flux-cored wire absorbs moisture through the seam of the tube. Treat an opened spool like an opened rod container: bag it, or hold it in a heated cabinet.",
+            "A spool left on the machine over a humid weekend will often show porosity in the first several feet. Run that off before starting critical work.",
+            "Aluminium filler is the most sensitive of all. Handle it with clean gloves — skin oils are a hydrogen source — and discard rod showing a white oxide bloom."
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "Storage quick reference"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Electrode",
+            "Storage",
+            "Redry"
+          ],
+          "rows": [
+            [
+              "E6010, E6011",
+              "Sealed, room temperature",
+              "Never bake"
+            ],
+            [
+              "E6013, E7014, E7024",
+              "Sealed and dry",
+              "250–300 °F, 1 hour"
+            ],
+            [
+              "E7018 and low-hydrogen",
+              "Rod oven, 250–300 °F after opening",
+              "500–800 °F, 1–2 hours, once only"
+            ],
+            [
+              "Stainless covered electrodes",
+              "Rod oven, 250–300 °F after opening",
+              "500–600 °F, 1 hour, per data sheet"
+            ],
+            [
+              "E4043 aluminium covered",
+              "Heated cabinet, hermetic seal until use",
+              "Per data sheet; usually discard"
+            ],
+            [
+              "Solid and flux-cored wire",
+              "Sealed with desiccant or heated cabinet",
+              "Not applicable — discard if rusted"
+            ]
+          ]
+        }
+      ],
+      "faqs": [
+        {
+          "q": "What temperature should a rod oven be set to?",
+          "a": "250 to 300 °F (120 to 150 °C) for holding opened low-hydrogen electrodes. Reconditioning damp rods takes a higher temperature, typically 500 to 800 °F for one to two hours."
+        },
+        {
+          "q": "Can you put E6010 in a rod oven?",
+          "a": "No. E6010 relies on moisture in its cellulose coating to generate shielding gas. Baking it destroys the arc characteristics and the rod cannot be recovered."
+        },
+        {
+          "q": "How long can E7018 stay out of the oven?",
+          "a": "Typically 4 hours for standard E7018, and up to 9 hours for H4R moisture-resistant grades. The governing code and the manufacturer's data sheet set the actual limit for your job."
+        },
+        {
+          "q": "Can you redry welding rods in a kitchen oven?",
+          "a": "For non-critical work on rutile rods, a well-calibrated oven at 250–300 °F will dry them. For code work it is not acceptable: reconditioning low-hydrogen electrodes requires controlled temperature and documented time, and a household oven provides neither."
+        },
+        {
+          "q": "What happens if you weld with damp E7018?",
+          "a": "The moisture becomes diffusible hydrogen in the weld. You may see surface porosity and worm tracks immediately, but the serious risk is delayed cold cracking in the heat-affected zone hours or days later."
+        }
+      ],
+      "related_electrodes": [
+        "e7018",
+        "e6010",
+        "e308l",
+        "e71t-1"
+      ]
+    },
+    {
+      "id": "welding-positions",
+      "title": "Welding Positions Explained: 1G to 6G and 1F to 4F",
+      "summary": "Welding positions are coded by a number for the orientation and a letter for the weld type — G for groove, F for fillet — so 3G is a vertical groove weld and 2F is a horizontal fillet.",
+      "meta_description": "Welding positions explained: 1G, 2G, 3G, 4G, 5G and 6G groove positions and 1F to 4F fillet positions, plus what each certification test covers.",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Position codes appear on welder qualification papers, on procedure specifications and in electrode classifications. The system is simple once you separate the number from the letter: the number gives the orientation of the joint, the letter gives the type of weld."
+        },
+        {
+          "type": "h2",
+          "text": "Groove weld positions"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Code",
+            "Position",
+            "Description"
+          ],
+          "rows": [
+            [
+              "1G",
+              "Flat",
+              "Plate horizontal, welded from above. The easiest position — gravity holds the puddle in the joint."
+            ],
+            [
+              "2G",
+              "Horizontal",
+              "Plate vertical, weld axis horizontal. The puddle wants to sag downward, so stringer beads and reduced amperage are needed."
+            ],
+            [
+              "3G",
+              "Vertical",
+              "Plate vertical, weld axis vertical. Run uphill on most code work; vertical-down is faster but risks lack of fusion."
+            ],
+            [
+              "4G",
+              "Overhead",
+              "Plate horizontal, welded from below. Gravity works entirely against you, so amperage comes down and the puddle must be kept small."
+            ],
+            [
+              "5G",
+              "Pipe horizontal, fixed",
+              "Pipe axis horizontal and the pipe does not rotate. The welder works through flat, vertical and overhead in a single pass around."
+            ],
+            [
+              "6G",
+              "Pipe at 45°, fixed",
+              "Pipe fixed at 45 degrees. Combines every orientation at once and is the standard benchmark for pipe welder qualification."
+            ]
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "Fillet weld positions"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Code",
+            "Position",
+            "Description"
+          ],
+          "rows": [
+            [
+              "1F",
+              "Flat fillet",
+              "Joint rotated so the weld sits in a 45 degree groove — the easiest fillet to run."
+            ],
+            [
+              "2F",
+              "Horizontal fillet",
+              "Vertical member with the weld axis horizontal. The most common fillet position in real fabrication."
+            ],
+            [
+              "3F",
+              "Vertical fillet",
+              "Weld axis vertical, run uphill on most code work."
+            ],
+            [
+              "4F",
+              "Overhead fillet",
+              "Welded from below."
+            ]
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "What the codes mean for qualification"
+        },
+        {
+          "type": "p",
+          "text": "A welder qualified in a harder position is generally qualified for the easier ones, though the exact rules come from the governing code rather than from convention. A 3G and 4G plate test together typically qualifies a welder for all plate positions. A 6G pipe test is the broadest common qualification because the fixed 45 degree pipe forces the welder through every orientation in a single joint."
+        },
+        {
+          "type": "h2",
+          "text": "How position affects your settings"
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Drop amperage 10 to 15% from flat when welding vertical or overhead — a hot puddle will simply fall out of the joint.",
+            "Use stringer beads rather than wide weaves out of position; a wide weave carries too much molten metal.",
+            "Choose a fast-freezing electrode for out-of-position work. E6010, E6011 and E7018 all hold position; E7024 does not and is classified flat and horizontal only.",
+            "In short-circuit MIG, keep heat input low and travel steady. Axial spray transfer cannot be used out of position at all, though pulsed spray can.",
+            "On vertical groove welds, uphill gives better penetration and downhill gives higher travel speed. Most codes require uphill on thicker material."
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "Position in the electrode classification"
+        },
+        {
+          "type": "p",
+          "text": "The third digit of a carbon steel stick electrode number gives its position capability. A 1, as in E6010 or E7018, means all positions. A 2, as in E7024, restricts the rod to the flat position and horizontal fillets. A 4 means all positions including vertical-down. That digit is a hard limit set by how fast the slag freezes, not a suggestion about difficulty."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "What is 6G welding?",
+          "a": "A groove weld on pipe fixed at a 45 degree angle, with the pipe unable to rotate. It forces the welder through flat, vertical and overhead orientations in one joint, which is why it is the broadest common pipe qualification test."
+        },
+        {
+          "q": "What is the difference between 3G and 3F?",
+          "a": "The letter gives the weld type. 3G is a vertical groove weld, 3F is a vertical fillet weld. The number, 3, means vertical in both cases."
+        },
+        {
+          "q": "Which welding position is hardest?",
+          "a": "Overhead (4G and 4F) is the hardest single orientation because gravity works entirely against the puddle. 6G is the hardest test because it combines every orientation in one weld."
+        },
+        {
+          "q": "Should you weld vertical up or down?",
+          "a": "Uphill gives deeper penetration and is required by most codes on thicker material. Downhill is faster and suits thin material and pipeline stringer beads with E6010, but it risks slag inclusions and lack of fusion with heavy-slag electrodes like E7018."
+        },
+        {
+          "q": "Why can't E7024 be used vertical?",
+          "a": "The 2 in the classification restricts it to the flat position and horizontal fillets. Its large, fluid, iron-powder-loaded puddle sags out of position and cannot be held in the joint."
+        }
+      ],
+      "related_electrodes": [
+        "e7018",
+        "e7024",
+        "e6010",
+        "e6011"
+      ]
+    },
+    {
+      "id": "welding-defects-and-causes",
+      "title": "Welding Defects: Causes and Fixes",
+      "summary": "Most weld defects trace back to four things — wrong heat, a contaminated joint, lost shielding, or bad technique — and each defect points at a specific one of them.",
+      "meta_description": "Welding defects explained: porosity, undercut, lack of fusion, cracking, slag inclusions and burn-through, with the cause and the fix for each.",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "A weld defect is a symptom, and each one points at a fairly short list of causes. Learning to read them backwards — from what the bead looks like to what the machine or the joint was doing wrong — is faster than adjusting settings at random."
+        },
+        {
+          "type": "h2",
+          "text": "Porosity"
+        },
+        {
+          "type": "p",
+          "text": "Gas trapped in the solidifying weld, showing as round holes on the surface or scattered voids inside. It is the most common defect and almost always a shielding or cleanliness problem."
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Shielding gas lost to wind, a blocked nozzle, a leaking hose, or flow set too low.",
+            "Contamination on the joint: oil, paint, rust, galvanising, cutting fluid or moisture.",
+            "Damp electrode coating or damp flux-cored wire.",
+            "Arc length too long, which lets air into the puddle.",
+            "Gas flow set too high, which creates turbulence and pulls air in — a counterintuitive but real cause."
+          ]
+        },
+        {
+          "type": "note",
+          "text": "Worm tracks — long narrow surface channels rather than round holes — nearly always mean moisture. On stick welding that points at electrodes that have been out of the oven too long."
+        },
+        {
+          "type": "h2",
+          "text": "Undercut"
+        },
+        {
+          "type": "p",
+          "text": "A groove melted into the base metal along the toe of the weld and left unfilled. It creates a sharp stress concentration and is a common rejection point on inspected work."
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Amperage too high — the usual cause.",
+            "Travel speed too fast to fill the melted edge.",
+            "Excessive weave width, or not pausing at the toes on a vertical-up weave.",
+            "Wrong electrode angle, throwing the arc at one member.",
+            "Arc length too long."
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "Lack of fusion and lack of penetration"
+        },
+        {
+          "type": "p",
+          "text": "Lack of fusion means the weld metal did not bond to the base metal or to the previous pass. Lack of penetration means the weld did not reach the root. Both are serious — they are planar defects that behave like cracks under load, and neither is always visible from the surface."
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Amperage or heat input too low for the thickness.",
+            "Travel speed too fast, so the arc rides on the puddle instead of the base metal.",
+            "Short-circuit MIG on thick plate — the classic cold lap scenario, and why many codes restrict it.",
+            "Root opening too small or the land too thick on a groove joint.",
+            "Slag or previous-pass contamination not cleaned out.",
+            "Wrong electrode for the job: shallow-penetration rods like E6013 and E7024 cannot make up for a joint that needs a digging arc."
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "Slag inclusions"
+        },
+        {
+          "type": "p",
+          "text": "Non-metallic slag trapped in the weld, usually between passes. Only affects processes that produce slag — stick, flux-cored and submerged arc."
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Slag not fully removed between passes.",
+            "Travel speed too slow, letting the slag run ahead of the puddle.",
+            "Welding vertical-down with a heavy-slag electrode such as E7018 — gravity puts the slag in front of the arc.",
+            "Poor bead profile leaving deep valleys the next pass cannot clean out.",
+            "Wrong gun or electrode angle, pushing rather than dragging a flux-cored wire."
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "Cracking"
+        },
+        {
+          "type": "p",
+          "text": "Cracks fall into two families that have entirely different causes and fixes."
+        },
+        {
+          "type": "h3",
+          "text": "Hot cracking"
+        },
+        {
+          "type": "p",
+          "text": "Occurs while the weld is still solidifying, often as a centreline crack down the middle of the bead. Caused by low-melting-point films at the grain boundaries, deep narrow bead profiles, high restraint and, in stainless, insufficient delta ferrite. The fixes are a wider, shallower bead profile, lower heat input, and the correct filler — which is why E309L exists for dissimilar joints and why ER4043 is chosen over ER5356 on crack-sensitive aluminium."
+        },
+        {
+          "type": "h3",
+          "text": "Cold cracking"
+        },
+        {
+          "type": "p",
+          "text": "Also called hydrogen-induced or delayed cracking. It appears hours or even days after welding, usually in the heat-affected zone. It requires three things at once: diffusible hydrogen, a susceptible hardened microstructure, and tensile stress. Remove any one and it does not happen."
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Use low-hydrogen consumables and keep them dry — this is the whole reason rod ovens exist.",
+            "Preheat to slow the cooling rate and give hydrogen time to escape.",
+            "Maintain interpass temperature; do not let the joint go cold between passes.",
+            "Reduce restraint where the design allows it.",
+            "On thick or high-strength steel, post-weld hydrogen bake-out may be specified."
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "Burn-through"
+        },
+        {
+          "type": "p",
+          "text": "The arc melts a hole straight through. Almost always too much heat for the thickness, but joint geometry contributes."
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Reduce amperage, or step down an electrode or wire size.",
+            "Increase travel speed, or use stitch and skip welding to let the plate cool.",
+            "Use a smaller root opening, or add a backing bar.",
+            "Weld away from the edge on thin material, and watch corner joints — there is little metal there to absorb heat."
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "Spatter"
+        },
+        {
+          "type": "p",
+          "text": "Not a structural defect, but a cost: cleanup time and wasted filler. Usually too much voltage or too little, wrong gas, contaminated base metal, or too long a stickout on wire processes. CO2 shielding spatters more than an argon mix by nature."
+        },
+        {
+          "type": "h2",
+          "text": "Distortion"
+        },
+        {
+          "type": "p",
+          "text": "Weld metal shrinks as it cools, and that shrinkage pulls the joint. Angular distortion closes a single-V butt joint; longitudinal shrinkage bows a long fillet. Control it with balanced double-sided preparations, backstep and skip sequences, presetting the parts open, clamping and fixturing, and above all by not depositing more weld metal than the joint actually needs."
+        },
+        {
+          "type": "h2",
+          "text": "Reading a defect backwards"
+        },
+        {
+          "type": "table",
+          "head": [
+            "What you see",
+            "Look first at"
+          ],
+          "rows": [
+            [
+              "Round holes in the bead",
+              "Shielding gas, joint cleanliness, arc length"
+            ],
+            [
+              "Long surface channels (worm tracks)",
+              "Moisture in the electrode or flux"
+            ],
+            [
+              "Groove along the weld toe",
+              "Amperage too high, travel too fast"
+            ],
+            [
+              "Weld sitting on top without wetting in",
+              "Heat input too low, travel too fast"
+            ],
+            [
+              "Crack down the bead centreline",
+              "Hot cracking: bead profile, filler chemistry, restraint"
+            ],
+            [
+              "Crack appearing a day later",
+              "Cold cracking: hydrogen, preheat, consumable storage"
+            ],
+            [
+              "Grey non-metallic material in the weld",
+              "Slag not cleaned between passes"
+            ],
+            [
+              "Hole through the plate",
+              "Too much heat for the thickness"
+            ]
+          ]
+        }
+      ],
+      "faqs": [
+        {
+          "q": "What causes porosity in welding?",
+          "a": "Gas trapped in the solidifying weld. The usual sources are lost shielding gas (wind, blocked nozzle, low flow, leaking hose), a contaminated joint, damp electrodes or flux-cored wire, and too long an arc."
+        },
+        {
+          "q": "What is the difference between lack of fusion and lack of penetration?",
+          "a": "Lack of fusion means the weld metal did not bond to the base metal or the previous pass. Lack of penetration means the weld never reached the joint root. Both behave like cracks under load and both are frequently invisible from the surface."
+        },
+        {
+          "q": "Why did my weld crack a day after welding?",
+          "a": "That is classic hydrogen-induced cold cracking. Hydrogen from moisture or contamination diffused into the heat-affected zone and, under residual stress in a hardened microstructure, initiated a crack hours later. Low-hydrogen consumables kept dry, plus preheat, are the prevention."
+        },
+        {
+          "q": "What causes undercut?",
+          "a": "Most often amperage set too high, compounded by travel speed that is too fast to refill the melted edge. Excessive weaving and a poor electrode angle also contribute."
+        },
+        {
+          "q": "How do you stop burn-through on thin metal?",
+          "a": "Reduce amperage, step down to a smaller electrode or wire, speed up travel, use stitch or skip welding to let the plate cool, and add a backing bar if the joint allows it."
+        }
+      ],
+      "related_electrodes": [
+        "e7018",
+        "e6010",
+        "er70s-6",
+        "e71t-11"
+      ]
+    },
+    {
+      "id": "shielding-gas-selection",
+      "title": "Shielding Gas Selection Guide",
+      "summary": "For carbon steel MIG the default is 75% argon / 25% CO2; for stainless and aluminium TIG it is pure argon; and the rest of the choices trade penetration, spatter and cost against each other.",
+      "meta_description": "Welding shielding gas guide: argon, CO2, helium and oxygen mixes for MIG, TIG and flux core, with flow rates and the trade-offs behind each choice.",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Shielding gas keeps atmospheric oxygen and nitrogen out of the molten weld. Which gas you choose also changes arc shape, penetration profile, spatter, travel speed and how the bead wets out — so the decision is not purely about protection."
+        },
+        {
+          "type": "h2",
+          "text": "What each gas does"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Gas",
+            "Behaviour",
+            "Notes"
+          ],
+          "rows": [
+            [
+              "Argon",
+              "Inert, heavy, low ionisation potential",
+              "Stable arc, easy starts, narrow finger-shaped penetration. Heavier than air so it blankets the puddle well."
+            ],
+            [
+              "Carbon dioxide",
+              "Reactive, breaks down in the arc",
+              "Deep broad penetration and low cost, but a harsher arc and considerably more spatter. Cannot support spray transfer."
+            ],
+            [
+              "Helium",
+              "Inert, light, high ionisation potential",
+              "Raises arc voltage and heat input for better penetration on thick aluminium and copper. Light, so it needs higher flow."
+            ],
+            [
+              "Oxygen",
+              "Reactive, added in small amounts",
+              "1–5% stabilises the arc and improves wetting on steel. Too much oxidises the weld."
+            ],
+            [
+              "Hydrogen",
+              "Reactive, added in small amounts",
+              "2–5% raises travel speed and improves bead wetting on austenitic stainless only. Never on carbon steel or any hydrogen-sensitive material."
+            ]
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "Carbon steel MIG"
+        },
+        {
+          "type": "ul",
+          "items": [
+            "75% argon / 25% CO2 — the shop standard. Smooth arc, minimal spatter, good appearance, works in short circuit and spray.",
+            "100% CO2 — cheapest, deepest penetration, most spatter. Short-circuit transfer only. Common where cost and penetration beat appearance.",
+            "90% argon / 10% CO2 — for spray and pulsed transfer on heavier plate.",
+            "98% argon / 2% oxygen — spray transfer with excellent wetting on plate."
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "Stainless steel"
+        },
+        {
+          "type": "ul",
+          "items": [
+            "TIG: 100% argon, always. Add an argon back purge on pipe and tube roots to prevent sugaring.",
+            "MIG short circuit: 90% helium / 7.5% argon / 2.5% CO2 — the classic tri-mix, good wetting with minimal carbon pickup.",
+            "MIG spray: 98% argon / 2% CO2, or argon with 2% oxygen. Keep CO2 low so the weld does not gain carbon and lose corrosion resistance.",
+            "Argon with 2–5% hydrogen raises travel speed on austenitic grades, but never use it on ferritic or duplex stainless."
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "Aluminium"
+        },
+        {
+          "type": "ul",
+          "items": [
+            "100% argon for both TIG and MIG up to about 1/2 in.",
+            "75% argon / 25% helium for thicker plate and castings, where argon alone runs out of heat.",
+            "50/50 argon-helium for heavy sections.",
+            "Never use any CO2-bearing mix on aluminium — it will oxidise the weld badly."
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "Flux-cored welding"
+        },
+        {
+          "type": "p",
+          "text": "Gas-shielded flux-cored wire runs on 100% CO2 or 75/25. CO2 penetrates deeper and costs less; the argon mix gives a smoother arc, less spatter and better out-of-position control. Self-shielded flux-cored wire takes no gas at all, and adding gas does nothing useful — it is formulated to shield itself."
+        },
+        {
+          "type": "h2",
+          "text": "Flow rates"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Process",
+            "Typical flow",
+            "Notes"
+          ],
+          "rows": [
+            [
+              "MIG, solid wire",
+              "20–25 CFH (9–12 L/min)",
+              "Raise for larger nozzles and draughty shops"
+            ],
+            [
+              "MIG, aluminium",
+              "20–30 CFH (9–14 L/min)",
+              "Aluminium needs more coverage than steel"
+            ],
+            [
+              "TIG",
+              "15–20 CFH (7–9 L/min)",
+              "A gas lens lets you run lower flow with better coverage"
+            ],
+            [
+              "Flux core, gas shielded",
+              "35–45 CFH (16–21 L/min)",
+              "Needs noticeably more than solid wire"
+            ],
+            [
+              "Back purge",
+              "Enough to displace air, then reduce",
+              "Purge until residual oxygen is under about 0.1%"
+            ]
+          ]
+        },
+        {
+          "type": "note",
+          "text": "More gas is not better. Excessive flow creates turbulence at the nozzle that draws air into the shielding envelope, producing exactly the porosity you were trying to prevent."
+        },
+        {
+          "type": "h2",
+          "text": "Common gas problems"
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Porosity in a shop that used to weld fine: check for a leaking hose or fitting before changing settings.",
+            "Porosity outdoors: any breeze over about 5 mph will strip the shield. Put up a screen or switch to a self-shielded process.",
+            "Spatter building up in the nozzle restricts flow and causes intermittent porosity — clean it and use anti-spatter.",
+            "Sugaring on the inside of a stainless pipe root: the back purge was inadequate or was released too early.",
+            "Black sooty aluminium welds: usually a CO2-bearing gas rather than pure argon, or a contaminated joint."
+          ]
+        }
+      ],
+      "faqs": [
+        {
+          "q": "What is the best shielding gas for MIG welding steel?",
+          "a": "75% argon / 25% CO2 for most work — smooth arc, low spatter, good bead appearance, and it supports both short circuit and spray transfer. Straight CO2 costs less and penetrates deeper but spatters considerably more."
+        },
+        {
+          "q": "Can you use CO2 for TIG welding?",
+          "a": "No. CO2 breaks down in the arc and releases oxygen, which would destroy the tungsten electrode almost immediately. TIG requires an inert gas — argon, or an argon-helium mix."
+        },
+        {
+          "q": "What gas do you use for aluminium?",
+          "a": "100% argon for TIG and MIG up to about 1/2 in. Argon-helium mixes add heat for thicker sections and castings. Never a CO2-bearing mix."
+        },
+        {
+          "q": "Why does higher gas flow cause porosity?",
+          "a": "Too much flow turns the gas stream turbulent at the nozzle, and turbulence entrains surrounding air into the shielding envelope. The result is the same porosity you get with too little gas."
+        },
+        {
+          "q": "Do you need gas with flux core welding?",
+          "a": "Only with gas-shielded wire such as E71T-1. Self-shielded wire like E71T-11 generates everything it needs from the flux, which is what lets it work outdoors."
+        }
+      ],
+      "related_electrodes": [
+        "er70s-6",
+        "er308l",
+        "er4043",
+        "e71t-1"
+      ]
+    }
+  ],
+  "legal": [
+    {
+      "id": "about",
+      "title": "About WeldSymbols",
+      "summary": "WeldSymbols is a free reference database of welding electrodes, AWS A2.4 welding symbols and arc welding processes, built to answer specification questions quickly and without a login.",
+      "meta_description": "About WeldSymbols.org: what this welding reference database covers, where the data comes from, and how to get in touch about corrections.",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "What this site is"
+        },
+        {
+          "type": "p",
+          "text": "WeldSymbols is a reference database for people who need a specific answer quickly: what amperage a 1/8 inch E7018 wants, whether E6010 will run on AC, which filler joins stainless to carbon steel, or which side of the reference line means the arrow side. Every page is built to answer its question in the first paragraph and then give you the supporting detail underneath."
+        },
+        {
+          "type": "h2",
+          "text": "What it covers"
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Electrode and filler metal pages with classification breakdowns, mechanical properties, amperage by diameter, shielding gas, storage requirements and application notes.",
+            "Side-by-side comparisons of the electrode pairings people actually have to choose between.",
+            "Welding symbol pages for the AWS A2.4 weld symbols, each with original technical drawings of both the symbol and the joint it produces.",
+            "Process overviews for stick, MIG, TIG, flux-cored and submerged arc welding, with transfer modes, gas selection and settings tables.",
+            "Reference guides on reading welding symbols, decoding electrode numbers, polarity, storage and welding positions."
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "Where the information comes from"
+        },
+        {
+          "type": "p",
+          "text": "The classification systems and minimum property requirements are factual data from the AWS filler metal specifications — A5.1, A5.3, A5.4, A5.9, A5.10, A5.18 and A5.20 — and the welding symbol conventions follow AWS A2.4. Background on processes and joint design draws on US Army TC 9-237, a public-domain military welding manual. Operating ranges are typical figures consistent with data published by manufacturers including Lincoln Electric, Miller Electric and ESAB. All text on this site is written from scratch."
+        },
+        {
+          "type": "h2",
+          "text": "How to use the numbers"
+        },
+        {
+          "type": "p",
+          "text": "Amperage ranges, voltages and wire feed speeds on this site are starting points, not specifications. Real settings depend on your machine, the joint, the position, the thickness and the material. For any coded or safety-critical work, the governing welding procedure specification and the manufacturer's data sheet are the authority — not a reference website."
+        },
+        {
+          "type": "h2",
+          "text": "Corrections"
+        },
+        {
+          "type": "p",
+          "text": "If you find an error, a figure that does not match a current data sheet, or a page that is missing something obvious, send it to info@weldsymbols.org. Corrections with a source attached get fixed fastest."
+        }
+      ]
+    },
+    {
+      "id": "privacy",
+      "title": "Privacy Policy",
+      "summary": "WeldSymbols does not require an account and does not collect personal information directly. Third-party advertising and analytics services may set cookies; this page explains what they do and how to opt out.",
+      "meta_description": "Privacy policy for WeldSymbols.org: what data is collected, how advertising and analytics cookies are used, and how to control them.",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "This policy explains what happens to information when you visit weldsymbols.org. It was last updated on 19 September 2026."
+        },
+        {
+          "type": "h2",
+          "text": "Information we collect directly"
+        },
+        {
+          "type": "p",
+          "text": "None. This site has no accounts, no login, no newsletter signup and no contact form. We do not ask for your name, email address or any other personal information. If you choose to email us, we receive whatever you put in that email and use it only to reply."
+        },
+        {
+          "type": "h2",
+          "text": "Server logs"
+        },
+        {
+          "type": "p",
+          "text": "Like most websites, the hosting provider records standard request information such as IP address, browser type, referring page and the time of the request. These logs are used for security and to diagnose technical problems, and they are not used to build profiles of individual visitors."
+        },
+        {
+          "type": "h2",
+          "text": "Advertising"
+        },
+        {
+          "type": "p",
+          "text": "This site displays advertising through Google AdSense. Google and its partners use cookies to serve ads based on your prior visits to this and other websites. Google's use of advertising cookies enables it and its partners to serve ads to you based on your visit to this site and other sites on the internet."
+        },
+        {
+          "type": "ul",
+          "items": [
+            "You can opt out of personalised advertising by visiting Google's Ads Settings at adssettings.google.com.",
+            "You can opt out of third-party vendor cookies for personalised advertising at aboutads.info/choices.",
+            "Third-party vendors, including Google, use cookies to serve ads based on a user's prior visits to this website."
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "Affiliate links"
+        },
+        {
+          "type": "p",
+          "text": "Some pages may contain affiliate links, including links to Amazon through the Amazon Associates programme. If you follow such a link and make a purchase, this site may earn a commission at no additional cost to you. Affiliate links do not influence which electrodes, processes or products are described or recommended; the technical content is written independently of any commercial relationship."
+        },
+        {
+          "type": "h2",
+          "text": "Analytics"
+        },
+        {
+          "type": "p",
+          "text": "We may use analytics services to understand which pages are read and how visitors arrive. Analytics providers set their own cookies and receive standard request information. Analytics data is used in aggregate to decide what to write next; it is not used to identify individual visitors."
+        },
+        {
+          "type": "h2",
+          "text": "Cookies you can control"
+        },
+        {
+          "type": "p",
+          "text": "Every modern browser lets you block or delete cookies, and most offer a setting to block third-party cookies specifically. Blocking cookies will not prevent you from reading anything on this site — there is no content behind a login or a paywall."
+        },
+        {
+          "type": "h2",
+          "text": "Children"
+        },
+        {
+          "type": "p",
+          "text": "This site is a technical reference aimed at welders, fabricators, students and engineers. It is not directed at children under 13 and we do not knowingly collect information from them."
+        },
+        {
+          "type": "h2",
+          "text": "Changes to this policy"
+        },
+        {
+          "type": "p",
+          "text": "If this policy changes, the updated version will be posted on this page with a new date at the top."
+        },
+        {
+          "type": "h2",
+          "text": "Contact"
+        },
+        {
+          "type": "p",
+          "text": "Questions about this policy can be sent to info@weldsymbols.org."
+        }
+      ]
+    },
+    {
+      "id": "terms",
+      "title": "Terms of Use",
+      "summary": "WeldSymbols is a free technical reference provided as-is. The information here is a starting point for your own judgement, not a substitute for a qualified welding procedure or a manufacturer's data sheet.",
+      "meta_description": "Terms of use for WeldSymbols.org: acceptable use, accuracy disclaimer, safety notice, intellectual property and limitation of liability.",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "By using weldsymbols.org you accept these terms. They were last updated on 19 September 2026."
+        },
+        {
+          "type": "h2",
+          "text": "Use of the site"
+        },
+        {
+          "type": "p",
+          "text": "You may read, print and share the content here for personal, educational and professional reference. You may not republish substantial portions of it as your own work, or scrape it systematically for redistribution. Linking to pages is welcome and needs no permission."
+        },
+        {
+          "type": "h2",
+          "text": "Accuracy"
+        },
+        {
+          "type": "p",
+          "text": "We work to keep the technical information here correct, but no reference site is a substitute for the governing standard. AWS specifications are revised, manufacturers change their published operating ranges, and codes differ between jurisdictions and industries. Figures on this site are typical values and starting points."
+        },
+        {
+          "type": "h2",
+          "text": "Safety notice"
+        },
+        {
+          "type": "p",
+          "text": "Welding involves electric shock, intense ultraviolet and infrared radiation, hot metal, fumes that are hazardous to breathe, compressed gases and fire risk. Nothing on this site is a substitute for proper training, correct personal protective equipment, adequate ventilation, and the safety data sheets for the consumables and base metals you are working with. Some materials — galvanized steel, cadmium-plated parts, chromium-bearing alloys, thoriated tungsten dust — present specific health hazards that require specific controls."
+        },
+        {
+          "type": "h2",
+          "text": "Not a welding procedure specification"
+        },
+        {
+          "type": "p",
+          "text": "Amperage ranges, voltages, gas flows, preheat temperatures and storage limits published here are general guidance. For any work performed to a code or standard — AWS D1.1, ASME Section IX, API 1104 or any other — the qualified welding procedure specification governs, and it takes precedence over anything written on this site. Welder qualification, procedure qualification and inspection requirements are outside the scope of a reference website."
+        },
+        {
+          "type": "h2",
+          "text": "Intellectual property"
+        },
+        {
+          "type": "p",
+          "text": "The text, tables, page structure and the original SVG technical drawings on this site are our own work. AWS classification designations, specification numbers and standard weld symbol shapes are factual and conventional information; the standards themselves are published by the American Welding Society, which is not affiliated with this site. Manufacturer names are used descriptively and their trademarks remain the property of their owners."
+        },
+        {
+          "type": "h2",
+          "text": "Third-party links"
+        },
+        {
+          "type": "p",
+          "text": "This site links to and may advertise third-party websites and products. We have no control over their content, terms or privacy practices, and a link is not an endorsement of everything a third party publishes or sells."
+        },
+        {
+          "type": "h2",
+          "text": "Limitation of liability"
+        },
+        {
+          "type": "p",
+          "text": "The content here is provided as-is, without warranty of any kind, express or implied. To the fullest extent permitted by law, we accept no liability for any loss, damage or injury arising from the use of, or reliance on, information published on this site. Decisions about consumable selection, welding parameters, joint design and fitness for service remain the responsibility of the person making them."
+        },
+        {
+          "type": "h2",
+          "text": "Contact"
+        },
+        {
+          "type": "p",
+          "text": "Questions about these terms can be sent to info@weldsymbols.org."
+        }
+      ]
+    }
+  ]
+}

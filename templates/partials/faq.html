@@ -1,0 +1,11 @@
+{%- if faqs %}
+<h2 id="faq">{{ faq_title|default('Frequently asked questions') }}</h2>
+<div class="faq">
+  {%- for f in faqs %}
+  <details{% if loop.first %} open{% endif %}>
+    <summary>{{ f.q }}</summary>
+    <div class="a"><p>{{ f.a }}</p></div>
+  </details>
+  {%- endfor %}
+</div>
+{%- endif %}

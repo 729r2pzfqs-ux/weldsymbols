@@ -1,0 +1,413 @@
+{
+  "notes": "Weld symbol shapes and placement conventions follow AWS A2.4, Standard Symbols for Welding, Brazing, and Nondestructive Examination. Descriptions are written from the standard's conventions; the standard itself is the governing document.",
+  "anatomy": [
+    {"part": "Reference line", "description": "The horizontal backbone of every welding symbol. Everything else attaches to it, and it is always drawn horizontal on the drawing."},
+    {"part": "Arrow", "description": "The leader and arrowhead that connect the reference line to the joint. The side of the joint the arrow touches is the arrow side."},
+    {"part": "Weld symbol", "description": "The shape that says which kind of weld is required — triangle for a fillet, V for a V-groove, circle for a spot, and so on."},
+    {"part": "Arrow side (below the line)", "description": "A weld symbol drawn below the reference line calls for a weld on the side of the joint the arrow points to. This is the convention that catches people out most often."},
+    {"part": "Other side (above the line)", "description": "A weld symbol drawn above the reference line calls for a weld on the far side of the joint."},
+    {"part": "Both sides", "description": "Symbols drawn above and below the reference line call for welds on both sides of the joint."},
+    {"part": "Tail", "description": "An optional fork at the far end of the reference line, used to reference a specification, process or procedure such as GMAW or a WPS number."},
+    {"part": "Dimensions", "description": "Size is placed to the left of the weld symbol; length and pitch are placed to the right."}
+  ],
+  "supplementary": [
+    {"name": "Weld-all-around", "shape": "A circle drawn at the junction of the arrow and the reference line.", "meaning": "The weld continues completely around the joint."},
+    {"name": "Field weld", "shape": "A flag on a staff at the junction of the arrow and reference line.", "meaning": "The weld is made in the field or on site rather than in the shop."},
+    {"name": "Melt-through", "shape": "A filled semicircle on the side of the reference line opposite the weld symbol.", "meaning": "Complete joint penetration with visible root reinforcement on the far side, welded from one side only."},
+    {"name": "Consumable insert", "shape": "A square placed on the opposite side of the reference line from the groove symbol.", "meaning": "A consumable insert ring is used in the root of the joint."},
+    {"name": "Backing or spacer", "shape": "A rectangle on the opposite side of the reference line from the groove symbol.", "meaning": "Backing material or a spacer is used in the joint."},
+    {"name": "Flush or flat contour", "shape": "A straight line across the face of the weld symbol.", "meaning": "The finished weld face is to be flush with the base metal."},
+    {"name": "Convex contour", "shape": "An arc bulging away from the weld symbol.", "meaning": "The finished weld face is to be convex."},
+    {"name": "Concave contour", "shape": "An arc curving into the weld symbol.", "meaning": "The finished weld face is to be concave."},
+    {"name": "Finish method", "shape": "A letter placed with the contour symbol — C chipping, G grinding, M machining, R rolling, H hammering.", "meaning": "How the specified contour is to be produced."}
+  ],
+  "symbols": [
+    {
+      "id": "fillet-weld",
+      "name": "Fillet Weld",
+      "svg": "fillet-weld",
+      "joint_svg": "fillet-weld-joint",
+      "shape": "A right triangle with the perpendicular leg always drawn on the left",
+      "summary": "A fillet weld symbol is a right triangle on the reference line, and it calls for a triangular weld in the corner of a lap or T-joint — the most common weld symbol on any drawing.",
+      "meta_description": "The fillet weld symbol is a right triangle with the vertical leg on the left. Read arrow side vs other side, leg size, length and pitch. With diagrams.",
+      "joint_types": ["T-joint", "Lap joint", "Corner joint"],
+      "how_to_read": [
+        "The perpendicular leg of the triangle is always drawn on the left, regardless of which side of the reference line the symbol sits on.",
+        "A triangle below the reference line means weld the arrow side; above means the other side; both means fillets on both sides of the joint.",
+        "The leg size goes to the left of the triangle. A single number means both legs are equal; two numbers in parentheses give unequal legs.",
+        "The weld length goes to the right of the triangle.",
+        "Length and pitch separated by a dash, such as 2-5, means 2 in long welds on 5 in centres — an intermittent fillet."
+      ],
+      "dimensions": [
+        {"position": "Left of the symbol", "meaning": "Leg size, for example 1/4"},
+        {"position": "Right of the symbol", "meaning": "Length of weld, and pitch if intermittent, for example 3-6"},
+        {"position": "In the tail", "meaning": "Process or specification reference, for example GMAW"}
+      ],
+      "notes": [
+        "Fillet welds need no joint preparation, which is why they are the cheapest weld to specify.",
+        "The theoretical throat of an equal-leg fillet is the leg size multiplied by 0.707 — that is the dimension the joint's strength actually depends on.",
+        "Staggered intermittent fillets are shown by offsetting the symbols above and below the reference line."
+      ],
+      "faqs": [
+        {"q": "What does the fillet weld symbol look like?", "a": "A right triangle sitting on the reference line, with the perpendicular leg drawn on the left side. Below the reference line means weld the arrow side; above means the other side."},
+        {"q": "Which side of the reference line means arrow side?", "a": "Below. A weld symbol drawn below the reference line calls for a weld on the side of the joint the arrow touches. Above the line means the opposite side."},
+        {"q": "What does 1/4 to the left of a fillet symbol mean?", "a": "A 1/4 inch leg size on both legs of the fillet. Two numbers in parentheses indicate unequal legs, with the drawing showing which leg is which."},
+        {"q": "What does 2-5 next to a fillet symbol mean?", "a": "An intermittent fillet: each weld segment is 2 inches long, and the segments are spaced on 5 inch centres measured start to start."}
+      ],
+      "related_symbols": ["plug-weld", "spot-weld", "bevel-groove-weld"],
+      "related_electrodes": ["e7018", "e7024", "er70s-6", "e71t-1"]
+    },
+    {
+      "id": "v-groove-weld",
+      "name": "V-Groove Weld",
+      "svg": "v-groove-weld",
+      "joint_svg": "v-groove-weld-joint",
+      "shape": "A V opening away from the reference line",
+      "summary": "A V-groove weld symbol is a V on the reference line, calling for both members to be bevelled so the joint forms a V that can be filled for full penetration.",
+      "meta_description": "The V-groove weld symbol is a V on the reference line. Read groove angle, root opening, depth of bevel and groove weld size. Diagrams included.",
+      "joint_types": ["Butt joint", "Corner joint", "Edge joint"],
+      "how_to_read": [
+        "Both members are prepared — that is what distinguishes a V-groove from a bevel-groove, where only one member is cut.",
+        "The included groove angle is written outside the V.",
+        "The root opening, the gap between the members at the bottom, is written inside the V.",
+        "Depth of bevel goes to the left of the symbol; the groove weld size follows in parentheses.",
+        "A V above and below the reference line calls for a double-V joint, prepared and welded from both sides."
+      ],
+      "dimensions": [
+        {"position": "Inside the V", "meaning": "Root opening, for example 1/8"},
+        {"position": "Outside the V", "meaning": "Included groove angle, for example 60°"},
+        {"position": "Left of the symbol", "meaning": "Depth of bevel, with the groove weld size in parentheses"}
+      ],
+      "notes": [
+        "60° included angle with a 1/8 in root opening and a 1/8 in land is the classic prequalified single-V configuration for plate.",
+        "A double-V uses less filler and distorts less than a single-V on thick sections, but needs access to both sides.",
+        "If no depth is shown, complete joint penetration is implied by the joint detail rather than by the symbol."
+      ],
+      "faqs": [
+        {"q": "What is the difference between a V-groove and a bevel-groove symbol?", "a": "The V-groove symbol is a full V, meaning both members are bevelled. The bevel-groove symbol has one vertical leg and one angled leg, meaning only one member is cut — and the leader line is broken to point at the member to be prepared."},
+        {"q": "What does the number inside the V mean?", "a": "The root opening — the gap between the two members at the bottom of the groove, before welding."},
+        {"q": "What does 60 degrees outside the V mean?", "a": "The included groove angle, measured between the two prepared faces. On a symmetric single-V that means each member is bevelled 30 degrees from vertical."},
+        {"q": "What is a double-V groove symbol?", "a": "A V drawn both above and below the reference line. The joint is prepared on both faces and welded from both sides, which uses less filler and balances distortion on thick material."}
+      ],
+      "related_symbols": ["bevel-groove-weld", "u-groove-weld", "back-weld"],
+      "related_electrodes": ["e6010", "e7018", "er308l", "e71t-1"]
+    },
+    {
+      "id": "bevel-groove-weld",
+      "name": "Bevel-Groove Weld",
+      "svg": "bevel-groove-weld",
+      "joint_svg": "bevel-groove-weld-joint",
+      "shape": "A half-V: one vertical leg on the left, one angled leg on the right",
+      "summary": "A bevel-groove weld symbol is half a V, and it calls for only one member to be cut — the broken leader line points at the member that gets the bevel.",
+      "meta_description": "The bevel-groove weld symbol is a half-V with a broken leader pointing at the member to bevel. Read the angle, root opening and depth. With diagrams.",
+      "joint_types": ["Butt joint", "T-joint", "Corner joint"],
+      "how_to_read": [
+        "Only one member is prepared. The other is left square, which is why the symbol has one vertical leg.",
+        "The leader line is drawn with a distinct break or kink, and it points at the member that receives the bevel. This is mandatory when there is any ambiguity.",
+        "The perpendicular leg of the symbol is always drawn on the left.",
+        "The groove angle is written outside the symbol, the root opening inside.",
+        "A bevel on both sides of the reference line calls for a double-bevel joint."
+      ],
+      "dimensions": [
+        {"position": "Inside the symbol", "meaning": "Root opening"},
+        {"position": "Outside the symbol", "meaning": "Bevel angle, for example 45°"},
+        {"position": "Left of the symbol", "meaning": "Depth of bevel, with groove weld size in parentheses"}
+      ],
+      "notes": [
+        "Bevel-groove joints are common where one member is a web or flange that cannot practically be cut.",
+        "Because only one face is angled, the electrode angle is awkward and lack of fusion on the square face is the usual defect.",
+        "A bevel-groove combined with a fillet weld symbol is standard on full-penetration T-joints in structural work."
+      ],
+      "faqs": [
+        {"q": "Why is the leader line broken on a bevel-groove symbol?", "a": "The break points at the member that gets the bevel. Only one of the two members is prepared, so the drawing has to say which — the kinked leader is how AWS A2.4 does that."},
+        {"q": "What is the difference between a bevel-groove and a V-groove weld?", "a": "A V-groove bevels both members; a bevel-groove bevels only one and leaves the other square. The V-groove symbol is a full V, the bevel-groove symbol is half a V."},
+        {"q": "Where are bevel-groove welds used?", "a": "T-joints and butt joints where one member cannot be conveniently prepared, such as a web welded to a flange, and anywhere a full-penetration T-joint is required in structural steel."},
+        {"q": "What angle is a typical bevel groove?", "a": "45 degrees is the most common single-bevel preparation on plate, though the governing code and the joint detail set the actual figure."}
+      ],
+      "related_symbols": ["v-groove-weld", "j-groove-weld", "fillet-weld"],
+      "related_electrodes": ["e7018", "e6010", "e71t-1"]
+    },
+    {
+      "id": "u-groove-weld",
+      "name": "U-Groove Weld",
+      "svg": "u-groove-weld",
+      "joint_svg": "u-groove-weld-joint",
+      "shape": "A U opening away from the reference line",
+      "summary": "A U-groove weld symbol is a U on the reference line, calling for a curved preparation on both members that needs far less filler metal than a V on thick plate.",
+      "meta_description": "The U-groove weld symbol is a U on the reference line: both members machined to a curved prep. Saves filler on thick plate. Dimensions and diagrams.",
+      "joint_types": ["Butt joint", "Corner joint"],
+      "how_to_read": [
+        "Both members are machined or gouged to a curved profile.",
+        "The groove angle, typically a narrow 15 to 20 degrees, is written outside the symbol.",
+        "The root opening is written inside the symbol.",
+        "Depth of bevel goes to the left, with the groove weld size in parentheses.",
+        "A U above and below the reference line calls for a double-U joint."
+      ],
+      "dimensions": [
+        {"position": "Inside the U", "meaning": "Root opening"},
+        {"position": "Outside the U", "meaning": "Groove angle, typically 15–20°"},
+        {"position": "Left of the symbol", "meaning": "Depth of bevel, with groove weld size in parentheses"}
+      ],
+      "notes": [
+        "U-grooves are reserved for thick sections where the filler metal saved pays for the machining.",
+        "The narrow included angle means much less weld metal, less shrinkage and less distortion than a V on the same thickness.",
+        "Preparation requires machining or careful gouging, which is why the symbol is uncommon on light fabrication drawings."
+      ],
+      "faqs": [
+        {"q": "When is a U-groove used instead of a V-groove?", "a": "On thick sections, typically above about 3/4 inch, where the volume of weld metal a V-groove would need becomes expensive. The U prep is narrower at the top, so it takes far less filler."},
+        {"q": "What is the difference between a U-groove and a J-groove?", "a": "A U-groove curves both members; a J-groove curves only one and leaves the other square. The J-groove symbol is half a U and carries a broken leader line."},
+        {"q": "What angle is a U-groove?", "a": "Typically 15 to 20 degrees included, far narrower than the 60 degrees of a standard V, because the curved root provides the access instead of the angle."},
+        {"q": "How is a U-groove prepared?", "a": "By machining or by air carbon-arc gouging followed by grinding. That extra preparation cost is why U-grooves appear only where the filler metal savings justify it."}
+      ],
+      "related_symbols": ["v-groove-weld", "j-groove-weld", "back-weld"],
+      "related_electrodes": ["e7018", "er70s-6", "e71t-1"]
+    },
+    {
+      "id": "j-groove-weld",
+      "name": "J-Groove Weld",
+      "svg": "j-groove-weld",
+      "joint_svg": "j-groove-weld-joint",
+      "shape": "A half-U: one vertical leg and one curved leg",
+      "summary": "A J-groove weld symbol is half a U, calling for a curved preparation on only one member — the broken leader line points at the member to be prepared.",
+      "meta_description": "The J-groove weld symbol is a half-U with a broken leader identifying the member to prepare. Used on thick T-joints. Dimensions and diagrams.",
+      "joint_types": ["Butt joint", "T-joint", "Corner joint"],
+      "how_to_read": [
+        "Only one member is prepared, with a curved J-shaped groove.",
+        "The leader line is broken and points at the member that gets the preparation.",
+        "The vertical leg of the symbol is always drawn on the left.",
+        "Groove angle outside the symbol, root opening inside.",
+        "A J above and below the reference line calls for a double-J joint."
+      ],
+      "dimensions": [
+        {"position": "Inside the symbol", "meaning": "Root opening"},
+        {"position": "Outside the symbol", "meaning": "Groove angle"},
+        {"position": "Left of the symbol", "meaning": "Depth of bevel, with groove weld size in parentheses"}
+      ],
+      "notes": [
+        "J-grooves are used on thick T-joints and corner joints where only one member can be prepared.",
+        "Like the U-groove, the payoff is a large reduction in filler metal on heavy sections.",
+        "The curved root gives better electrode access than a straight bevel of the same narrow angle."
+      ],
+      "faqs": [
+        {"q": "What does a J-groove weld symbol look like?", "a": "Half of a U: a straight vertical leg on the left and a curved leg on the right, drawn on the reference line with a broken leader pointing at the member to be prepared."},
+        {"q": "Why is the leader broken on a J-groove symbol?", "a": "Because only one member is prepared. The break in the leader line identifies which one, exactly as it does on a bevel-groove symbol."},
+        {"q": "When would you use a J-groove instead of a bevel-groove?", "a": "On thick material. The J prep uses considerably less filler metal than a straight bevel of equivalent access, which matters once the section gets heavy enough to justify the machining."},
+        {"q": "Can a J-groove be welded from both sides?", "a": "Yes — a J drawn above and below the reference line specifies a double-J preparation, welded from both sides to balance distortion."}
+      ],
+      "related_symbols": ["u-groove-weld", "bevel-groove-weld", "back-weld"],
+      "related_electrodes": ["e7018", "e71t-1", "er70s-6"]
+    },
+    {
+      "id": "plug-weld",
+      "name": "Plug Weld",
+      "svg": "plug-weld",
+      "joint_svg": "plug-weld-joint",
+      "shape": "A rectangle on the reference line",
+      "summary": "A plug weld symbol is a rectangle on the reference line, calling for a round hole in one member to be filled with weld metal so it fuses to the member beneath.",
+      "meta_description": "The plug weld symbol is a rectangle on the reference line. Read hole diameter, depth of filling, angle of countersink, number and pitch. With diagrams.",
+      "joint_types": ["Lap joint", "T-joint"],
+      "how_to_read": [
+        "The rectangle is drawn on the arrow side or other side to say which member is drilled — the hole goes in the member the arrow touches when the symbol is below the line.",
+        "The hole diameter is written to the left of the symbol.",
+        "Depth of filling is written inside the rectangle. If it is omitted, the hole is filled flush.",
+        "The angle of countersink, if any, is written above or below the symbol.",
+        "The number of plug welds in parentheses and the pitch to the right of the symbol."
+      ],
+      "dimensions": [
+        {"position": "Left of the symbol", "meaning": "Hole diameter"},
+        {"position": "Inside the symbol", "meaning": "Depth of filling; omitted means filled flush"},
+        {"position": "Above or below the symbol", "meaning": "Angle of countersink"},
+        {"position": "Right of the symbol", "meaning": "Pitch, with the number of welds in parentheses"}
+      ],
+      "notes": [
+        "Plug welds replace rivets and mechanical fasteners on lap joints, and are common in automotive body work.",
+        "A plug weld symbol may not be used on both sides of the reference line for the same joint.",
+        "The hole must be prepared in advance — burning through with the arc is not a plug weld and will not be accepted on code work."
+      ],
+      "faqs": [
+        {"q": "What is the difference between a plug weld and a slot weld?", "a": "The hole shape. A plug weld fills a round hole; a slot weld fills an elongated one. Both use the same rectangular symbol — the dimensions and the drawing detail tell them apart."},
+        {"q": "What does the number inside the plug weld rectangle mean?", "a": "The depth of filling. If nothing is shown, the hole is to be filled flush with the surface of the upper member."},
+        {"q": "Which member gets the hole?", "a": "The one the arrow touches, when the symbol is drawn below the reference line. A symbol above the line puts the hole in the far member."},
+        {"q": "Are plug welds the same as spot welds?", "a": "No. A plug weld fills a pre-drilled hole with deposited filler metal by arc welding. A spot weld fuses two sheets at their interface with resistance heating and needs no hole."}
+      ],
+      "related_symbols": ["slot-weld", "spot-weld", "fillet-weld"],
+      "related_electrodes": ["er70s-6", "e6013", "e71t-11"]
+    },
+    {
+      "id": "slot-weld",
+      "name": "Slot Weld",
+      "svg": "slot-weld",
+      "joint_svg": "slot-weld-joint",
+      "shape": "A rectangle on the reference line, dimensioned as a slot",
+      "summary": "A slot weld symbol is the same rectangle as a plug weld, but it calls for an elongated slot rather than a round hole, giving more weld area per opening.",
+      "meta_description": "The slot weld symbol is a rectangle on the reference line specifying an elongated slot filled with weld metal. Length, width, pitch and orientation rules.",
+      "joint_types": ["Lap joint", "T-joint"],
+      "how_to_read": [
+        "The slot weld uses the same rectangular symbol as the plug weld; the dimensions and a detail view distinguish them.",
+        "The slot width is given to the left of the symbol and the length to the right.",
+        "Depth of filling goes inside the rectangle; omitted means filled flush.",
+        "The number of slot welds appears in parentheses.",
+        "Slot orientation cannot be shown on the symbol alone — it must be given on a detail on the drawing."
+      ],
+      "dimensions": [
+        {"position": "Left of the symbol", "meaning": "Width of the slot"},
+        {"position": "Right of the symbol", "meaning": "Length and pitch"},
+        {"position": "Inside the symbol", "meaning": "Depth of filling; omitted means flush"},
+        {"position": "In parentheses", "meaning": "Number of slot welds"}
+      ],
+      "notes": [
+        "A slot gives more fusion area than a plug of the same width, so fewer openings are needed for the same joint strength.",
+        "Slot orientation and location always require a detail view; the welding symbol cannot convey them.",
+        "As with plug welds, the slot must be cut before welding."
+      ],
+      "faqs": [
+        {"q": "What does a slot weld symbol look like?", "a": "A rectangle on the reference line — identical in shape to the plug weld symbol. The width, length and the drawing's detail view are what identify it as a slot."},
+        {"q": "How is slot orientation specified?", "a": "Not on the symbol. AWS A2.4 requires the orientation to be shown on a detail on the drawing, because the welding symbol has no way to express it."},
+        {"q": "Why use a slot weld instead of a plug weld?", "a": "A slot provides more fused area per opening, so a joint can reach the required strength with fewer openings and less drilling."},
+        {"q": "Does the slot need to be filled completely?", "a": "Unless a depth of filling is written inside the rectangle, yes — the slot is filled flush with the surface of the upper member."}
+      ],
+      "related_symbols": ["plug-weld", "fillet-weld", "seam-weld"],
+      "related_electrodes": ["er70s-6", "e7018", "e71t-11"]
+    },
+    {
+      "id": "spot-weld",
+      "name": "Spot Weld",
+      "svg": "spot-weld",
+      "joint_svg": "spot-weld-joint",
+      "shape": "A circle on the reference line",
+      "summary": "A spot weld symbol is a circle, calling for a discrete fused nugget between two overlapping sheets — usually made by resistance welding with no filler metal.",
+      "meta_description": "The spot weld symbol is a circle on the reference line. Read nugget size or strength, number of spots and pitch, and the centred-symbol convention.",
+      "joint_types": ["Lap joint", "T-joint"],
+      "how_to_read": [
+        "For resistance spot welding the circle is centred on the reference line, because the process has no arrow-side or other-side significance.",
+        "For arc spot welding the circle is placed on the arrow side or other side, because the process is applied from one side.",
+        "The nugget diameter or the required shear strength per spot is written to the left of the symbol.",
+        "The number of spot welds appears in parentheses.",
+        "The pitch, the centre-to-centre spacing, is written to the right."
+      ],
+      "dimensions": [
+        {"position": "Left of the symbol", "meaning": "Nugget diameter, or minimum shear strength per spot"},
+        {"position": "Right of the symbol", "meaning": "Pitch — centre-to-centre spacing"},
+        {"position": "In parentheses", "meaning": "Number of spot welds"},
+        {"position": "In the tail", "meaning": "Process reference, for example RSW or GMAW"}
+      ],
+      "notes": [
+        "Resistance spot welding is the dominant joining process in automotive body construction.",
+        "Because a centred symbol has no side significance, the process reference in the tail matters more here than on most symbols.",
+        "Spot welds carry shear well and peel poorly, which is why the strength is usually specified in shear."
+      ],
+      "faqs": [
+        {"q": "Why is the spot weld symbol sometimes centred on the reference line?", "a": "Resistance spot welding fuses the sheets from both sides at once, so there is no arrow side or other side. When the symbol is centred, it means the process itself has no side significance. Arc spot welding, which works from one side, does place the symbol on a side."},
+        {"q": "What does the number to the left of a spot weld symbol mean?", "a": "Either the nugget diameter or the minimum acceptable shear strength per spot, depending on the drawing's conventions."},
+        {"q": "What is the difference between a spot weld and a plug weld?", "a": "A spot weld fuses two overlapping sheets at their interface, normally by resistance heating and with no filler or hole. A plug weld fills a pre-cut hole with deposited weld metal."},
+        {"q": "What does the tail on a spot weld symbol usually say?", "a": "The process — RSW for resistance spot welding, GMAW or GTAW for arc spot welding. Since the symbol itself does not distinguish them, the tail is how the drawing does."}
+      ],
+      "related_symbols": ["seam-weld", "plug-weld", "fillet-weld"],
+      "related_electrodes": ["er70s-6", "er308l"]
+    },
+    {
+      "id": "seam-weld",
+      "name": "Seam Weld",
+      "svg": "seam-weld",
+      "joint_svg": "seam-weld-joint",
+      "shape": "A circle with a horizontal line through it",
+      "summary": "A seam weld symbol is a circle with a line through it, calling for a continuous fused seam between overlapping sheets — effectively a row of overlapping spot welds.",
+      "meta_description": "The seam weld symbol is a circle with a horizontal line through it: a continuous weld between overlapping sheets. Width, length, pitch and diagrams.",
+      "joint_types": ["Lap joint", "Butt joint"],
+      "how_to_read": [
+        "For resistance seam welding the symbol is centred on the reference line, because the process has no side significance.",
+        "For arc seam welding the symbol is placed on the arrow side or other side.",
+        "The seam width, or the required strength per linear inch, is written to the left.",
+        "The length of the seam is written to the right.",
+        "Length and pitch together, such as 2-5, specify an intermittent seam."
+      ],
+      "dimensions": [
+        {"position": "Left of the symbol", "meaning": "Width of the seam, or strength per linear inch"},
+        {"position": "Right of the symbol", "meaning": "Length, and pitch if the seam is intermittent"},
+        {"position": "In the tail", "meaning": "Process reference, for example RSEW"}
+      ],
+      "notes": [
+        "Resistance seam welding uses wheel electrodes that roll along the joint, firing overlapping nuggets to form a continuous, leak-tight seam.",
+        "It is the standard process for fuel tanks, drums, radiators and other pressure-tight sheet assemblies.",
+        "An intermittent seam is faster and distorts less, but it is not leak-tight."
+      ],
+      "faqs": [
+        {"q": "What is the difference between a spot weld and a seam weld symbol?", "a": "The spot weld symbol is a plain circle for a discrete nugget. The seam weld symbol is a circle with a horizontal line through it, calling for a continuous weld — in effect a row of overlapping spots."},
+        {"q": "Is a seam weld leak-tight?", "a": "A continuous seam weld is, which is why it is used on fuel tanks and pressure-tight containers. An intermittent seam, specified with a length and pitch, is not."},
+        {"q": "What does the number to the left of a seam weld symbol mean?", "a": "The width of the seam, or the required strength per linear inch of weld."},
+        {"q": "How is a resistance seam weld made?", "a": "Two wheel electrodes roll along the overlapping sheets while the machine fires a rapid series of resistance welds. Each nugget overlaps the last, producing one continuous fused seam."}
+      ],
+      "related_symbols": ["spot-weld", "slot-weld", "fillet-weld"],
+      "related_electrodes": ["er308l", "er316l", "er70s-6"]
+    },
+    {
+      "id": "back-weld",
+      "name": "Back or Backing Weld",
+      "svg": "back-weld",
+      "joint_svg": "back-weld-joint",
+      "shape": "A semicircle on the opposite side of the reference line from the groove symbol",
+      "summary": "A back or backing weld symbol is a semicircle drawn opposite a groove weld symbol, calling for a bead on the far side of the joint — the sequence decides which name applies.",
+      "meta_description": "The back weld symbol is a semicircle opposite the groove symbol. Back weld vs backing weld comes down to welding sequence. Diagrams and notes.",
+      "joint_types": ["Butt joint", "Corner joint"],
+      "how_to_read": [
+        "The semicircle is always drawn on the opposite side of the reference line from the groove weld symbol.",
+        "The shape is identical for a back weld and a backing weld — only the sequence differs, and the drawing states it in a note or in the tail.",
+        "A back weld is deposited after the groove weld, usually onto a back-gouged root.",
+        "A backing weld is deposited before the groove weld, giving the root pass something to fuse into.",
+        "The semicircle is not dimensioned for size; a contour and finish symbol may be added to it."
+      ],
+      "dimensions": [
+        {"position": "On the symbol", "meaning": "Contour and finish symbols only — the back weld symbol carries no size dimension"},
+        {"position": "In the tail or a note", "meaning": "Whether the weld is a back weld or a backing weld, and the sequence"}
+      ],
+      "notes": [
+        "Do not confuse a backing weld with a backing bar: a backing bar is shown by a rectangle, not a semicircle.",
+        "Back welding after back-gouging is the standard way to achieve complete joint penetration on a single-V joint welded from both sides.",
+        "The melt-through symbol, a filled semicircle, is different again — it calls for visible root reinforcement from a weld made entirely from one side."
+      ],
+      "faqs": [
+        {"q": "What is the difference between a back weld and a backing weld?", "a": "Only the sequence. A backing weld is deposited first, before the groove weld, so the root pass has sound metal to fuse into. A back weld is deposited last, after the groove weld and usually after back-gouging the root. The symbol is the same semicircle for both, so the drawing has to state which."},
+        {"q": "What is the difference between a backing weld and a backing bar?", "a": "A backing weld is deposited metal, shown by a semicircle. A backing bar is a separate piece of material left in or removed after welding, shown by a rectangle on the opposite side of the reference line."},
+        {"q": "Where is the back weld symbol drawn?", "a": "Always on the opposite side of the reference line from the groove weld symbol, because it describes a weld on the far side of the joint."},
+        {"q": "Is the back weld symbol the same as melt-through?", "a": "No. The back weld symbol is an open semicircle. The melt-through symbol is a filled semicircle and calls for visible root reinforcement on a joint welded entirely from one side."}
+      ],
+      "related_symbols": ["v-groove-weld", "u-groove-weld", "bevel-groove-weld"],
+      "related_electrodes": ["e6010", "e7018", "er70s-6"]
+    },
+    {
+      "id": "surfacing-weld",
+      "name": "Surfacing Weld",
+      "svg": "surfacing-weld",
+      "joint_svg": "surfacing-weld-joint",
+      "shape": "Two semicircular arcs side by side on the arrow side of the reference line",
+      "summary": "A surfacing weld symbol is two back-to-back arcs, calling for weld metal built up on a surface rather than in a joint — hardfacing, corrosion cladding or restoring a worn part.",
+      "meta_description": "The surfacing weld symbol is two arcs on the arrow side, specifying build-up thickness on a surface rather than a joint. Hardfacing and cladding rules.",
+      "joint_types": ["Not a joint — applied to a surface"],
+      "how_to_read": [
+        "The symbol is always drawn on the arrow side of the reference line only. It may not be placed on the other side, because the arrow identifies the surface.",
+        "The minimum thickness of the deposit is written to the left of the symbol.",
+        "If the whole surface is not to be covered, the extent and location are shown on the drawing, not on the symbol.",
+        "No size, length or pitch dimensions apply — only the build-up thickness.",
+        "The tail commonly carries the surfacing alloy or process specification."
+      ],
+      "dimensions": [
+        {"position": "Left of the symbol", "meaning": "Minimum height of the weld deposit"},
+        {"position": "In the tail", "meaning": "Surfacing alloy, process or specification"},
+        {"position": "On the drawing", "meaning": "Extent and location of the surfaced area"}
+      ],
+      "notes": [
+        "Surfacing covers three distinct jobs: hardfacing for wear, cladding for corrosion, and build-up to restore worn dimensions.",
+        "Because the symbol applies to a surface and not a joint, it never appears above the reference line.",
+        "Dilution control matters: the first layer of a clad overlay picks up base metal, which is why a buffer layer of E309L or ER309L is often specified before the final alloy."
+      ],
+      "faqs": [
+        {"q": "What does the surfacing weld symbol look like?", "a": "Two semicircular arcs drawn side by side below the reference line, on the arrow side only. It never appears above the reference line."},
+        {"q": "Why can the surfacing symbol only be on the arrow side?", "a": "Because the arrow identifies the surface to be built up. There is no far side of a surface, so the other-side placement has no meaning."},
+        {"q": "What does the number to the left of a surfacing symbol mean?", "a": "The minimum height of the build-up — how thick the deposited layer must be."},
+        {"q": "What is the difference between hardfacing and cladding?", "a": "Both use the surfacing symbol. Hardfacing deposits a wear-resistant alloy to fight abrasion or impact. Cladding deposits a corrosion-resistant alloy, commonly stainless or nickel, over a cheaper base metal."}
+      ],
+      "related_symbols": ["fillet-weld", "plug-weld"],
+      "related_electrodes": ["e309l", "e410", "er309l"]
+    }
+  ]
+}

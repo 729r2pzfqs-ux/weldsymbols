@@ -1,0 +1,3109 @@
+{
+  "electrodes": [
+    {
+      "id": "e6010",
+      "name": "E6010",
+      "full_name": "E6010 Cellulosic Stick Electrode",
+      "spec": "AWS A5.1/A5.1M",
+      "process": "SMAW",
+      "process_id": "stick-welding",
+      "process_name": "Stick (SMAW)",
+      "category": "mild-steel",
+      "category_name": "Carbon & Mild Steel",
+      "form": "Covered electrode",
+      "summary": "E6010 is a DC-only cellulosic stick electrode with the deepest penetration of any common rod, used for open-root pipe passes and dirty or rusty steel.",
+      "meta_description": "E6010 runs DCEP only, digs deep, and freezes fast — the standard root-pass rod for pipe. Full specs, amperage by diameter, polarity and storage.",
+      "classification_breakdown": [
+        {
+          "part": "E",
+          "meaning": "Electrode for shielded metal arc welding"
+        },
+        {
+          "part": "60",
+          "meaning": "60,000 psi minimum tensile strength of the deposited weld metal"
+        },
+        {
+          "part": "1",
+          "meaning": "Suitable for all welding positions"
+        },
+        {
+          "part": "0",
+          "meaning": "High-cellulose sodium coating, DCEP (reverse polarity) only"
+        }
+      ],
+      "polarity": [
+        "DCEP"
+      ],
+      "polarity_note": "DCEP (electrode positive) only. E6010 will not run on AC or DCEN — the arc stutters and goes out. If you only have an AC buzzbox, use E6011 instead.",
+      "positions": [
+        "Flat",
+        "Horizontal",
+        "Vertical",
+        "Overhead"
+      ],
+      "positions_note": "All positions, including vertical-down, which is why pipeline crews use it for stringer beads.",
+      "mechanical": {
+        "tensile_ksi": 60,
+        "tensile_mpa": 414,
+        "yield_ksi": 48,
+        "yield_mpa": 331,
+        "elongation_pct": 22,
+        "impact": "20 ft·lb at -20 °F (27 J at -29 °C)"
+      },
+      "coating": "High-cellulose sodium",
+      "penetration": "Deep",
+      "deposition": "Low",
+      "slag": "Thin, light, easy to remove",
+      "arc": "Forceful, digging, crisp",
+      "amperage": [
+        {
+          "diameter": "3/32 in (2.4 mm)",
+          "min": 40,
+          "max": 80
+        },
+        {
+          "diameter": "1/8 in (3.2 mm)",
+          "min": 70,
+          "max": 130
+        },
+        {
+          "diameter": "5/32 in (4.0 mm)",
+          "min": 110,
+          "max": 165
+        },
+        {
+          "diameter": "3/16 in (4.8 mm)",
+          "min": 140,
+          "max": 215
+        },
+        {
+          "diameter": "7/32 in (5.6 mm)",
+          "min": 170,
+          "max": 250
+        }
+      ],
+      "shielding_gas": null,
+      "base_metals": [
+        "A36 structural steel",
+        "API 5L pipe grades",
+        "A53 / A106 pipe",
+        "Mild steel plate"
+      ],
+      "applications": [
+        "Open-root passes on pipe, both shop and field",
+        "Pipeline welding with the vertical-down stringer technique",
+        "Repair work on rusty, painted, oily or galvanized steel",
+        "Tank and pressure vessel root passes",
+        "Farm and structural repairs where joint fit-up is poor"
+      ],
+      "characteristics": [
+        "Deepest penetration of any common mild-steel electrode",
+        "Fast-freeze puddle that holds position out of position",
+        "Tolerates surface contamination better than low-hydrogen rods",
+        "Thin friable slag that mostly peels itself",
+        "Noisy, spattery arc compared with E7018"
+      ],
+      "storage": {
+        "summary": "Store at room temperature. Do not bake E6010 — the cellulose coating needs its moisture to work.",
+        "details": [
+          "Keep in the original sealed container at ambient shop temperature.",
+          "Coating moisture of roughly 3–7% is by design; that water is the source of the shielding gas.",
+          "Baking E6010 in a rod oven drives off the cellulose and ruins the arc characteristics.",
+          "If rods have been soaked, discard them — they cannot be reconditioned."
+        ]
+      },
+      "tips": [
+        "Set the machine 5–10 A higher than you would for E7018 of the same diameter; E6010 likes to be run hot.",
+        "Use a tight arc and a whipping motion on the root pass to control the keyhole.",
+        "For vertical-down pipe stringers, keep travel speed high enough that the slag never gets ahead of the puddle.",
+        "A 1/8 in rod at about 85–95 A is the everyday starting point for open-root work on schedule 40 pipe."
+      ],
+      "faqs": [
+        {
+          "q": "Can E6010 run on AC?",
+          "a": "No. E6010 requires DCEP (direct current, electrode positive). The sodium-based cellulosic coating will not sustain an arc on alternating current. E6011 is the AC-capable equivalent."
+        },
+        {
+          "q": "What is the difference between E6010 and E6011?",
+          "a": "They deposit nearly identical weld metal. E6010 uses a sodium coating and runs on DCEP only; E6011 uses a potassium coating and runs on AC or DC. E6010 has a slightly crisper arc and cleaner slag; E6011 is more forgiving on cheap AC machines."
+        },
+        {
+          "q": "Do you need to bake E6010 rods?",
+          "a": "No — never bake them. Unlike low-hydrogen rods such as E7018, E6010 relies on moisture in its cellulose coating to generate shielding gas. Drying them out destroys the arc."
+        },
+        {
+          "q": "What amperage for 1/8 in E6010?",
+          "a": "70–130 A DCEP, with most root-pass work landing between 80 and 95 A. Go higher for flat fill passes, lower for overhead."
+        },
+        {
+          "q": "Why is E6010 used for root passes?",
+          "a": "Its deep, digging arc reaches through the root opening and fuses the land on both sides, and its fast-freezing puddle stays put in vertical and overhead positions."
+        }
+      ],
+      "related": [
+        "e6011",
+        "e7018",
+        "e6013",
+        "e7014"
+      ],
+      "related_symbols": [
+        "v-groove-weld",
+        "bevel-groove-weld"
+      ]
+    },
+    {
+      "id": "e6011",
+      "name": "E6011",
+      "full_name": "E6011 Cellulosic AC Stick Electrode",
+      "spec": "AWS A5.1/A5.1M",
+      "process": "SMAW",
+      "process_id": "stick-welding",
+      "process_name": "Stick (SMAW)",
+      "category": "mild-steel",
+      "category_name": "Carbon & Mild Steel",
+      "form": "Covered electrode",
+      "summary": "E6011 is the AC-capable version of E6010 — deep penetration and a fast-freeze puddle that works on small transformer welders and dirty steel.",
+      "meta_description": "E6011 runs on AC or DCEP, digs through rust and paint, and welds all positions. Amperage by diameter, polarity, specs and how it compares to E6010.",
+      "classification_breakdown": [
+        {
+          "part": "E",
+          "meaning": "Electrode for shielded metal arc welding"
+        },
+        {
+          "part": "60",
+          "meaning": "60,000 psi minimum tensile strength"
+        },
+        {
+          "part": "1",
+          "meaning": "All welding positions"
+        },
+        {
+          "part": "1",
+          "meaning": "High-cellulose potassium coating, AC or DCEP"
+        }
+      ],
+      "polarity": [
+        "AC",
+        "DCEP"
+      ],
+      "polarity_note": "Runs on AC or DCEP. The potassium in the coating keeps the arc alive through the zero-crossing of alternating current, which is what E6010 cannot do.",
+      "positions": [
+        "Flat",
+        "Horizontal",
+        "Vertical",
+        "Overhead"
+      ],
+      "positions_note": "All positions including vertical-down.",
+      "mechanical": {
+        "tensile_ksi": 60,
+        "tensile_mpa": 414,
+        "yield_ksi": 48,
+        "yield_mpa": 331,
+        "elongation_pct": 22,
+        "impact": "20 ft·lb at -20 °F (27 J at -29 °C)"
+      },
+      "coating": "High-cellulose potassium",
+      "penetration": "Deep",
+      "deposition": "Low",
+      "slag": "Thin, light, easy to remove",
+      "arc": "Forceful and digging, slightly softer than E6010",
+      "amperage": [
+        {
+          "diameter": "1/16 in (1.6 mm)",
+          "min": 20,
+          "max": 40
+        },
+        {
+          "diameter": "3/32 in (2.4 mm)",
+          "min": 40,
+          "max": 85
+        },
+        {
+          "diameter": "1/8 in (3.2 mm)",
+          "min": 75,
+          "max": 125
+        },
+        {
+          "diameter": "5/32 in (4.0 mm)",
+          "min": 110,
+          "max": 160
+        },
+        {
+          "diameter": "3/16 in (4.8 mm)",
+          "min": 140,
+          "max": 190
+        }
+      ],
+      "shielding_gas": null,
+      "base_metals": [
+        "A36 structural steel",
+        "Mild steel plate and pipe",
+        "Galvanized and painted steel",
+        "Cast-steel repairs"
+      ],
+      "applications": [
+        "Farm and ranch repair on small AC transformer welders",
+        "Maintenance welding on rusty, painted or galvanized steel",
+        "Root passes when no DC machine is available",
+        "Temporary tacks and general fabrication with poor fit-up",
+        "Sheet metal and light plate where a digging arc is needed"
+      ],
+      "characteristics": [
+        "The default rod for inexpensive AC-only buzzbox welders",
+        "Burns through rust, mill scale and paint that would porosity-out a low-hydrogen rod",
+        "Fast-freeze puddle for vertical and overhead work",
+        "More spatter and a rougher bead face than E6013 or E7018",
+        "Deposit is not low-hydrogen, so it is not used on code work requiring low-hydrogen consumables"
+      ],
+      "storage": {
+        "summary": "Room-temperature storage in a dry place. Never bake E6011.",
+        "details": [
+          "Keep sealed until use; a plastic rod tube in a dry shop is sufficient.",
+          "The cellulose coating is meant to hold moisture — drying it out kills the shielding action.",
+          "Rods with cracked, chipped or swollen coatings should be scrapped."
+        ]
+      },
+      "tips": [
+        "On a 1/8 in rod, 90–110 A on AC is the everyday starting point for 1/4 in plate.",
+        "Whip and pause on vertical-up fillets; drag with a tight arc on flat work.",
+        "If the arc sounds like it is popping and hunting, raise the amperage before shortening the arc.",
+        "On galvanized steel, weld in ventilated air — zinc fume is a real hazard regardless of the rod."
+      ],
+      "faqs": [
+        {
+          "q": "Is E6011 better than E6010?",
+          "a": "Neither is better — they trade places depending on your machine. E6011 runs on AC and DC, which makes it the practical choice on small transformer welders. E6010 runs on DCEP only but gives a slightly crisper arc and cleaner slag, which is why pipeline crews prefer it."
+        },
+        {
+          "q": "What amperage for 1/8 in E6011?",
+          "a": "75–125 A, with 90–110 A the common working range on 1/4 in mild steel. Drop toward the low end for vertical and overhead passes."
+        },
+        {
+          "q": "Can E6011 weld through rust and paint?",
+          "a": "Yes — that is its main strength. The digging cellulosic arc blows contamination out of the joint. It is still better practice to clean the joint when you can."
+        },
+        {
+          "q": "Is E6011 low hydrogen?",
+          "a": "No. Cellulosic electrodes deposit relatively high diffusible hydrogen by design. For code work on thick or high-strength steel, use a low-hydrogen electrode such as E7018."
+        },
+        {
+          "q": "What is the tensile strength of E6011?",
+          "a": "60,000 psi minimum tensile strength, with a 48,000 psi minimum yield and 22% minimum elongation in the as-welded condition."
+        }
+      ],
+      "related": [
+        "e6010",
+        "e6013",
+        "e7018",
+        "e7014"
+      ],
+      "related_symbols": [
+        "fillet-weld",
+        "v-groove-weld"
+      ]
+    },
+    {
+      "id": "e6013",
+      "name": "E6013",
+      "full_name": "E6013 Rutile Stick Electrode",
+      "spec": "AWS A5.1/A5.1M",
+      "process": "SMAW",
+      "process_id": "stick-welding",
+      "process_name": "Stick (SMAW)",
+      "category": "mild-steel",
+      "category_name": "Carbon & Mild Steel",
+      "form": "Covered electrode",
+      "summary": "E6013 is the easy-starting rutile rod for thin steel and light fabrication — soft arc, shallow penetration and the best bead appearance of the 60-series.",
+      "meta_description": "E6013 runs on AC, DCEP or DCEN with a soft arc and shallow penetration — the beginner and sheet-metal rod. Amperage chart, specs and comparisons.",
+      "classification_breakdown": [
+        {
+          "part": "E",
+          "meaning": "Electrode for shielded metal arc welding"
+        },
+        {
+          "part": "60",
+          "meaning": "60,000 psi minimum tensile strength"
+        },
+        {
+          "part": "1",
+          "meaning": "All welding positions"
+        },
+        {
+          "part": "3",
+          "meaning": "High-titania (rutile) potassium coating, AC, DCEP or DCEN"
+        }
+      ],
+      "polarity": [
+        "AC",
+        "DCEP",
+        "DCEN"
+      ],
+      "polarity_note": "Runs on anything. DCEN gives the shallowest penetration and least burn-through on sheet metal; AC is the most common setting on hobby machines.",
+      "positions": [
+        "Flat",
+        "Horizontal",
+        "Vertical",
+        "Overhead"
+      ],
+      "positions_note": "All positions, though it is at its best flat and horizontal.",
+      "mechanical": {
+        "tensile_ksi": 60,
+        "tensile_mpa": 414,
+        "yield_ksi": 48,
+        "yield_mpa": 331,
+        "elongation_pct": 17,
+        "impact": "Not required by AWS A5.1 for this classification"
+      },
+      "coating": "High-titania (rutile) potassium",
+      "penetration": "Shallow to medium",
+      "deposition": "Medium",
+      "slag": "Heavy, self-lifting, leaves a smooth bead face",
+      "arc": "Soft, quiet, easy to strike and restart",
+      "amperage": [
+        {
+          "diameter": "1/16 in (1.6 mm)",
+          "min": 20,
+          "max": 45
+        },
+        {
+          "diameter": "5/64 in (2.0 mm)",
+          "min": 25,
+          "max": 60
+        },
+        {
+          "diameter": "3/32 in (2.4 mm)",
+          "min": 45,
+          "max": 90
+        },
+        {
+          "diameter": "1/8 in (3.2 mm)",
+          "min": 80,
+          "max": 130
+        },
+        {
+          "diameter": "5/32 in (4.0 mm)",
+          "min": 105,
+          "max": 180
+        },
+        {
+          "diameter": "3/16 in (4.8 mm)",
+          "min": 150,
+          "max": 230
+        }
+      ],
+      "shielding_gas": null,
+      "base_metals": [
+        "Mild steel sheet and light plate",
+        "A36 structural steel",
+        "Square and round tube",
+        "Light gauge fabrications"
+      ],
+      "applications": [
+        "Sheet metal and thin-wall tubing where burn-through is the risk",
+        "Ornamental ironwork, gates, railings and furniture",
+        "General light fabrication and shop repairs",
+        "Teaching and practice welding — the easiest mild-steel rod to strike",
+        "Cosmetic passes where bead appearance matters"
+      ],
+      "characteristics": [
+        "Very easy arc starting and restarting, even on a cold machine",
+        "Shallow penetration — the reason it works on thin material and the reason it is wrong for thick joints",
+        "Smooth, finely rippled bead with a flat-to-slightly-convex face",
+        "Heavy slag that usually lifts in one piece",
+        "Lower elongation requirement than the cellulosic rods, so it is less ductile"
+      ],
+      "storage": {
+        "summary": "Keep dry at room temperature. A sealed container or a warm cabinet is enough — no rod oven required.",
+        "details": [
+          "Rutile coatings absorb moisture slowly and are far less sensitive than low-hydrogen rods.",
+          "Damp E6013 causes a hissing arc and worm-track porosity; dry at 250–300 °F (120–150 °C) for an hour if needed.",
+          "Store in an unheated shop only if the container is sealed against condensation."
+        ]
+      },
+      "tips": [
+        "On 16 gauge sheet, a 1/16 in rod at 25–35 A on DCEN keeps you from blowing holes.",
+        "Drag the rod with a short arc — E6013 does not need or want whipping.",
+        "If the bead is piling up and not wetting the toes, add 10 A rather than slowing down.",
+        "Not a substitute for E7018 on structural work; the deposit is not low-hydrogen and the penetration is shallow."
+      ],
+      "faqs": [
+        {
+          "q": "What is E6013 used for?",
+          "a": "Thin mild steel and light fabrication — sheet metal, tubing, gates, railings, and general repair. Its soft arc and shallow penetration make it the standard beginner and sheet-metal rod."
+        },
+        {
+          "q": "What amperage for 1/8 in E6013?",
+          "a": "80–130 A, with 100–115 A typical for 1/8 to 3/16 in plate. On thinner material drop to a 3/32 in rod at 60–80 A."
+        },
+        {
+          "q": "Is E6013 or E7018 better?",
+          "a": "Different jobs. E6013 is easier to run, better on thin material and produces a prettier bead. E7018 is low-hydrogen, stronger, tougher and required on most structural and code work."
+        },
+        {
+          "q": "Can E6013 weld in all positions?",
+          "a": "Yes, the 1 in the classification means all positions. It performs best flat and horizontal; vertical-up work needs the amperage backed off about 10–15%."
+        },
+        {
+          "q": "Does E6013 need to be kept in a rod oven?",
+          "a": "No. Rutile coatings are not low-hydrogen and do not require oven storage. Just keep them dry — a sealed tube in a dry shop is fine."
+        }
+      ],
+      "related": [
+        "e6011",
+        "e7014",
+        "e7018",
+        "e6010"
+      ],
+      "related_symbols": [
+        "fillet-weld",
+        "plug-weld"
+      ]
+    },
+    {
+      "id": "e7014",
+      "name": "E7014",
+      "full_name": "E7014 Iron-Powder Rutile Stick Electrode",
+      "spec": "AWS A5.1/A5.1M",
+      "process": "SMAW",
+      "process_id": "stick-welding",
+      "process_name": "Stick (SMAW)",
+      "category": "mild-steel",
+      "category_name": "Carbon & Mild Steel",
+      "form": "Covered electrode",
+      "summary": "E7014 is an iron-powder rutile rod that runs like E6013 but deposits faster and stronger — a fast-fill, all-position drag rod for production fillets.",
+      "meta_description": "E7014 adds iron powder to a rutile coating for higher deposition at 70 ksi. Runs AC or DC, all positions. Amperage chart, specs and E7018 comparison.",
+      "classification_breakdown": [
+        {
+          "part": "E",
+          "meaning": "Electrode for shielded metal arc welding"
+        },
+        {
+          "part": "70",
+          "meaning": "70,000 psi minimum tensile strength"
+        },
+        {
+          "part": "1",
+          "meaning": "All welding positions"
+        },
+        {
+          "part": "4",
+          "meaning": "Iron-powder titania coating, AC, DCEP or DCEN"
+        }
+      ],
+      "polarity": [
+        "AC",
+        "DCEP",
+        "DCEN"
+      ],
+      "polarity_note": "Runs on AC or either DC polarity. DCEN is common for sheet and light plate; AC works well on transformer machines.",
+      "positions": [
+        "Flat",
+        "Horizontal",
+        "Vertical",
+        "Overhead"
+      ],
+      "positions_note": "All positions. Vertical-up is workable but the heavier slag makes it less pleasant than E7018.",
+      "mechanical": {
+        "tensile_ksi": 70,
+        "tensile_mpa": 483,
+        "yield_ksi": 58,
+        "yield_mpa": 400,
+        "elongation_pct": 17,
+        "impact": "Not required by AWS A5.1 for this classification"
+      },
+      "coating": "Iron-powder titania",
+      "penetration": "Medium",
+      "deposition": "High — roughly 30% iron powder in the coating",
+      "slag": "Heavy, friable, usually self-releasing",
+      "arc": "Smooth and quiet, well suited to a drag technique",
+      "amperage": [
+        {
+          "diameter": "3/32 in (2.4 mm)",
+          "min": 80,
+          "max": 125
+        },
+        {
+          "diameter": "1/8 in (3.2 mm)",
+          "min": 110,
+          "max": 160
+        },
+        {
+          "diameter": "5/32 in (4.0 mm)",
+          "min": 150,
+          "max": 210
+        },
+        {
+          "diameter": "3/16 in (4.8 mm)",
+          "min": 200,
+          "max": 275
+        },
+        {
+          "diameter": "7/32 in (5.6 mm)",
+          "min": 260,
+          "max": 340
+        }
+      ],
+      "shielding_gas": null,
+      "base_metals": [
+        "A36 structural steel",
+        "Mild and medium-carbon steel",
+        "Plate and structural shapes",
+        "Machinery frames"
+      ],
+      "applications": [
+        "Production fillet welds where travel speed matters",
+        "Sheet metal and light plate that needs 70 ksi strength",
+        "General fabrication where fit-up is good and speed is the priority",
+        "Cover passes over E6010 roots on non-code work",
+        "Equipment and machinery repair"
+      ],
+      "characteristics": [
+        "Higher deposition rate than E6013 at the same amperage thanks to iron powder",
+        "70 ksi deposit instead of the 60 ksi of E6013",
+        "Medium penetration — more than E6013, less than E6010",
+        "Drag technique: rest the coating on the work and pull",
+        "Not a low-hydrogen electrode, so it is not interchangeable with E7018 on code work"
+      ],
+      "storage": {
+        "summary": "Dry room-temperature storage. No oven required, but keep it sealed.",
+        "details": [
+          "Rutile iron-powder coatings tolerate normal shop humidity.",
+          "Reconditioning, if needed, is 250–300 °F (120–150 °C) for one hour.",
+          "Discard rods whose coating has absorbed enough moisture to flake or swell."
+        ]
+      },
+      "tips": [
+        "Drag it — a light touch with the coating riding the plate gives the cleanest bead.",
+        "For 1/4 in plate fillets, a 1/8 in rod at 130–145 A is a good starting point.",
+        "If slag is hard to chip, you are probably running too cold or too slow.",
+        "Use E7014 where you would reach for E6013 but need the extra 10 ksi and more fill per rod."
+      ],
+      "faqs": [
+        {
+          "q": "What is the difference between E7014 and E6013?",
+          "a": "E7014 has iron powder in the coating, giving a higher deposition rate, medium rather than shallow penetration, and a 70 ksi deposit versus 60 ksi. They run similarly; E7014 simply fills faster and stronger."
+        },
+        {
+          "q": "Is E7014 low hydrogen?",
+          "a": "No. It is a rutile iron-powder electrode. For low-hydrogen requirements use E7018, E7016 or E7028."
+        },
+        {
+          "q": "What amperage for 1/8 in E7014?",
+          "a": "110–160 A, with 130–145 A typical for 1/4 in plate fillets. Back off 10–15% for vertical and overhead."
+        },
+        {
+          "q": "Can E7014 be used on structural steel?",
+          "a": "It deposits 70 ksi weld metal and is widely used in general fabrication, but most structural codes call for low-hydrogen electrodes on prequalified joints. Check the WPS before substituting it for E7018."
+        },
+        {
+          "q": "Do you drag or whip E7014?",
+          "a": "Drag. The heavy iron-powder coating is designed to be rested against the work and pulled along, which controls arc length automatically."
+        }
+      ],
+      "related": [
+        "e6013",
+        "e7018",
+        "e7024",
+        "e6011"
+      ],
+      "related_symbols": [
+        "fillet-weld",
+        "v-groove-weld"
+      ]
+    },
+    {
+      "id": "e7018",
+      "name": "E7018",
+      "full_name": "E7018 Low-Hydrogen Stick Electrode",
+      "spec": "AWS A5.1/A5.1M",
+      "process": "SMAW",
+      "process_id": "stick-welding",
+      "process_name": "Stick (SMAW)",
+      "category": "mild-steel",
+      "category_name": "Carbon & Mild Steel",
+      "form": "Covered electrode",
+      "summary": "E7018 is the low-hydrogen structural rod — 70 ksi tensile, tough at -20 °F, all positions, and the default electrode on most structural and code work.",
+      "meta_description": "E7018 is the low-hydrogen 70 ksi structural stick electrode. Amperage by diameter, DCEP and AC polarity, rod oven storage rules and full specs.",
+      "classification_breakdown": [
+        {
+          "part": "E",
+          "meaning": "Electrode for shielded metal arc welding"
+        },
+        {
+          "part": "70",
+          "meaning": "70,000 psi minimum tensile strength"
+        },
+        {
+          "part": "1",
+          "meaning": "All welding positions"
+        },
+        {
+          "part": "8",
+          "meaning": "Low-hydrogen potassium coating with iron powder, AC or DCEP"
+        }
+      ],
+      "polarity": [
+        "DCEP",
+        "AC"
+      ],
+      "polarity_note": "DCEP is standard and gives the best arc stability. AC is permitted by the classification and is used on transformer machines, though the arc is softer and starts are harder.",
+      "positions": [
+        "Flat",
+        "Horizontal",
+        "Vertical",
+        "Overhead"
+      ],
+      "positions_note": "All positions. Vertical progression is uphill — E7018 is not run vertical-down on code work because of slag entrapment and lack of fusion.",
+      "mechanical": {
+        "tensile_ksi": 70,
+        "tensile_mpa": 483,
+        "yield_ksi": 58,
+        "yield_mpa": 400,
+        "elongation_pct": 22,
+        "impact": "20 ft·lb at -20 °F (27 J at -29 °C)"
+      },
+      "coating": "Low-hydrogen potassium with iron powder",
+      "penetration": "Medium",
+      "deposition": "High",
+      "slag": "Heavy, brown-glassy, releases cleanly when run correctly",
+      "arc": "Smooth and quiet with a fluid puddle",
+      "amperage": [
+        {
+          "diameter": "3/32 in (2.4 mm)",
+          "min": 70,
+          "max": 120
+        },
+        {
+          "diameter": "1/8 in (3.2 mm)",
+          "min": 110,
+          "max": 165
+        },
+        {
+          "diameter": "5/32 in (4.0 mm)",
+          "min": 150,
+          "max": 220
+        },
+        {
+          "diameter": "3/16 in (4.8 mm)",
+          "min": 200,
+          "max": 275
+        },
+        {
+          "diameter": "7/32 in (5.6 mm)",
+          "min": 260,
+          "max": 340
+        }
+      ],
+      "shielding_gas": null,
+      "base_metals": [
+        "A36 and A572 structural steel",
+        "A516 pressure vessel plate",
+        "Medium-carbon steel",
+        "Heavy plate and structural shapes"
+      ],
+      "applications": [
+        "Structural steel erection, bridges and buildings",
+        "Pressure vessel and piping fill and cap passes",
+        "Heavy equipment and machinery fabrication",
+        "Any joint where low diffusible hydrogen is required to avoid cold cracking",
+        "Welding on thick sections or restrained joints"
+      ],
+      "characteristics": [
+        "Low diffusible hydrogen deposit — the reason it resists underbead and cold cracking",
+        "Excellent notch toughness down to -20 °F (-29 °C)",
+        "Smooth, flat-faced beads with good wetting at the toes",
+        "Iron powder in the coating raises deposition above E7016",
+        "Coating absorbs atmospheric moisture quickly, which is why storage discipline matters"
+      ],
+      "storage": {
+        "summary": "Low-hydrogen rods must be kept dry. Hermetically sealed until opened, then held in a rod oven at 250–300 °F (120–150 °C).",
+        "details": [
+          "Store unopened containers at 65 °F (18 °C) or above with relative humidity under 50%.",
+          "After opening, hold electrodes in a heated rod oven at 250–300 °F (120–150 °C).",
+          "Exposure limits on code work are typically 4 hours for standard E7018 and 9 hours for the H4R moisture-resistant grades — always follow the governing code and the manufacturer's data sheet.",
+          "Rods exposed beyond the limit can usually be reconditioned once by baking at 500–800 °F (260–430 °C) for one to two hours.",
+          "Never recondition an electrode twice, and never use a rod with a cracked or swollen coating."
+        ]
+      },
+      "tips": [
+        "Strike ahead of the joint and drag back into the puddle — E7018 tips are prone to sticking on a cold start.",
+        "Keep a tight arc, about one electrode diameter, and let the slag trail the puddle.",
+        "On 1/4 in plate fillets, a 1/8 in rod at 125–140 A DCEP is the everyday setting.",
+        "Vertical-up: reduce amperage 10–15% from flat and use a slight side-to-side motion with a pause at each toe.",
+        "If you see wagon-track porosity along the toes, the rod has picked up moisture."
+      ],
+      "faqs": [
+        {
+          "q": "What amperage for 1/8 in E7018?",
+          "a": "110–165 A DCEP. Most shop work on 1/4 in plate runs 125–140 A flat, dropping to about 115–125 A for vertical-up."
+        },
+        {
+          "q": "Why does E7018 need a rod oven?",
+          "a": "Its low-hydrogen coating absorbs moisture from the air. That moisture becomes diffusible hydrogen in the weld, which causes delayed cold cracking in the heat-affected zone. Holding the rods at 250–300 °F keeps the coating dry."
+        },
+        {
+          "q": "Can E7018 run on AC?",
+          "a": "Yes. The 8 in the classification covers AC and DCEP. DCEP gives a more stable arc and easier starts, but E7018 is routinely run on AC transformer machines."
+        },
+        {
+          "q": "Can you weld vertical-down with E7018?",
+          "a": "Not on code work. The heavy slag runs ahead of the puddle going downhill and causes slag inclusions and lack of fusion. E7018 is run vertical-up."
+        },
+        {
+          "q": "How long can E7018 stay out of the oven?",
+          "a": "Typically 4 hours for standard E7018 and up to 9 hours for H4R moisture-resistant grades, but the governing code and the manufacturer's data sheet set the actual limit."
+        },
+        {
+          "q": "What is the difference between E7018 and E7018-1?",
+          "a": "E7018-1 meets a lower-temperature impact requirement, 20 ft·lb at -50 °F instead of -20 °F, and has a slightly higher minimum elongation. Chemistry and handling are otherwise the same."
+        }
+      ],
+      "related": [
+        "e6010",
+        "e7014",
+        "e7024",
+        "e6013"
+      ],
+      "related_symbols": [
+        "fillet-weld",
+        "v-groove-weld",
+        "bevel-groove-weld"
+      ]
+    },
+    {
+      "id": "e7024",
+      "name": "E7024",
+      "full_name": "E7024 High-Deposition Iron-Powder Electrode",
+      "spec": "AWS A5.1/A5.1M",
+      "process": "SMAW",
+      "process_id": "stick-welding",
+      "process_name": "Stick (SMAW)",
+      "category": "mild-steel",
+      "category_name": "Carbon & Mild Steel",
+      "form": "Covered electrode",
+      "summary": "E7024 is a heavy iron-powder drag rod for flat and horizontal fillets only — the fastest-depositing common stick electrode, sometimes called a jet rod.",
+      "meta_description": "E7024 packs about 50% iron powder for the highest deposition of any common stick rod, but welds flat and horizontal fillets only. Amps, specs, uses.",
+      "classification_breakdown": [
+        {
+          "part": "E",
+          "meaning": "Electrode for shielded metal arc welding"
+        },
+        {
+          "part": "70",
+          "meaning": "70,000 psi minimum tensile strength"
+        },
+        {
+          "part": "2",
+          "meaning": "Flat position and horizontal fillets only"
+        },
+        {
+          "part": "4",
+          "meaning": "Iron-powder titania coating, AC, DCEP or DCEN"
+        }
+      ],
+      "polarity": [
+        "AC",
+        "DCEP",
+        "DCEN"
+      ],
+      "polarity_note": "Runs on AC or either DC polarity. AC is often preferred at high amperage because it reduces arc blow.",
+      "positions": [
+        "Flat",
+        "Horizontal fillet"
+      ],
+      "positions_note": "The 2 in the classification restricts it to the flat position and horizontal fillet welds. It will not hold a puddle vertical or overhead.",
+      "mechanical": {
+        "tensile_ksi": 70,
+        "tensile_mpa": 483,
+        "yield_ksi": 58,
+        "yield_mpa": 400,
+        "elongation_pct": 17,
+        "impact": "Not required by AWS A5.1 for this classification"
+      },
+      "coating": "Iron-powder titania, roughly 50% iron powder",
+      "penetration": "Shallow",
+      "deposition": "Very high",
+      "slag": "Very heavy, usually peels off in one strip",
+      "arc": "Extremely smooth and quiet",
+      "amperage": [
+        {
+          "diameter": "3/32 in (2.4 mm)",
+          "min": 100,
+          "max": 145
+        },
+        {
+          "diameter": "1/8 in (3.2 mm)",
+          "min": 140,
+          "max": 190
+        },
+        {
+          "diameter": "5/32 in (4.0 mm)",
+          "min": 180,
+          "max": 250
+        },
+        {
+          "diameter": "3/16 in (4.8 mm)",
+          "min": 230,
+          "max": 305
+        },
+        {
+          "diameter": "7/32 in (5.6 mm)",
+          "min": 285,
+          "max": 375
+        }
+      ],
+      "shielding_gas": null,
+      "base_metals": [
+        "A36 structural steel",
+        "Mild steel plate",
+        "Heavy structural shapes"
+      ],
+      "applications": [
+        "Long horizontal fillet welds on heavy plate",
+        "Shipyard and structural shop work in the flat position",
+        "Beam and girder fabrication where the work can be positioned",
+        "Filling large flat-position groove welds quickly",
+        "Any production joint where deposition rate drives cost"
+      ],
+      "characteristics": [
+        "The highest deposition rate of any common mild-steel stick electrode",
+        "Shallow penetration — relies on good fit-up and prior root passes",
+        "Beautiful, near-flat bead with finely rippled face",
+        "Position-limited, which is the main trade-off for the speed",
+        "Not low-hydrogen"
+      ],
+      "storage": {
+        "summary": "Dry room-temperature storage; no oven required.",
+        "details": [
+          "Keep sealed against shop humidity.",
+          "Reconditioning is 250–300 °F (120–150 °C) for one hour if the rods get damp.",
+          "The thick coating is fragile — dropped rods often crack and should be discarded."
+        ]
+      },
+      "tips": [
+        "Drag it with the coating touching the work; the deep crucible keeps arc length constant for you.",
+        "A 5/32 in rod at about 210 A will lay a large horizontal fillet in one pass.",
+        "Do not use it for a root pass — the shallow penetration will leave lack of fusion.",
+        "If you need the speed but also need out-of-position capability, look at E7028, which is a low-hydrogen high-deposition rod rated for horizontal fillets and flat."
+      ],
+      "faqs": [
+        {
+          "q": "Why is E7024 sometimes called a jet rod?",
+          "a": "It is a trade nickname for the heavy iron-powder drag electrodes. The thick coating forms a deep crucible at the tip, so the rod can be dragged at high speed with a very smooth arc."
+        },
+        {
+          "q": "Can you weld vertical with E7024?",
+          "a": "No. The 2 in the classification limits it to the flat position and horizontal fillets. The large fluid puddle will sag out of position."
+        },
+        {
+          "q": "What amperage for 1/8 in E7024?",
+          "a": "140–190 A, with roughly 160–175 A typical on 3/8 in plate fillets."
+        },
+        {
+          "q": "Is E7024 stronger than E7018?",
+          "a": "Both are 70 ksi minimum tensile. E7018 is tougher and low-hydrogen; E7024 deposits faster but has shallow penetration, lower ductility and no low-temperature impact requirement."
+        },
+        {
+          "q": "What is E7024 used for?",
+          "a": "Long flat and horizontal fillet welds on heavy plate where deposition rate is the priority — shipbuilding, structural shops and beam fabrication."
+        }
+      ],
+      "related": [
+        "e7018",
+        "e7014",
+        "e6013"
+      ],
+      "related_symbols": [
+        "fillet-weld"
+      ]
+    },
+    {
+      "id": "e308l",
+      "name": "E308L",
+      "full_name": "E308L-16 Stainless Stick Electrode",
+      "spec": "AWS A5.4/A5.4M",
+      "process": "SMAW",
+      "process_id": "stick-welding",
+      "process_name": "Stick (SMAW)",
+      "category": "stainless",
+      "category_name": "Stainless Steel",
+      "form": "Covered electrode",
+      "summary": "E308L is the standard stick electrode for welding 304 and 304L stainless, with a low 0.04% maximum carbon that protects against intergranular corrosion.",
+      "meta_description": "E308L-16 welds 304 and 304L stainless steel. Low carbon prevents carbide precipitation. Amperage by diameter, polarity, ferrite and storage specs.",
+      "classification_breakdown": [
+        {
+          "part": "E",
+          "meaning": "Covered electrode for shielded metal arc welding"
+        },
+        {
+          "part": "308",
+          "meaning": "Nominal 19% chromium, 10% nickel composition matching Type 304 base metal"
+        },
+        {
+          "part": "L",
+          "meaning": "Low carbon, 0.04% maximum, to resist carbide precipitation"
+        },
+        {
+          "part": "-16",
+          "meaning": "Lime-titania coating usable on AC or DCEP (a -17 suffix indicates a silica-bearing coating with a more fluid puddle)"
+        }
+      ],
+      "polarity": [
+        "DCEP",
+        "AC"
+      ],
+      "polarity_note": "DCEP is standard. The -16 coating also runs on AC, which is useful on transformer machines; -15 coatings are DCEP only.",
+      "positions": [
+        "Flat",
+        "Horizontal",
+        "Vertical",
+        "Overhead"
+      ],
+      "positions_note": "All positions, vertical-up. Stainless puddles are sluggish, so out-of-position work needs a noticeably lower amperage than carbon steel.",
+      "mechanical": {
+        "tensile_ksi": 75,
+        "tensile_mpa": 520,
+        "yield_ksi": 45,
+        "yield_mpa": 310,
+        "elongation_pct": 35,
+        "impact": "Not required; austenitic deposits stay tough to cryogenic temperatures"
+      },
+      "coating": "Lime-titania (-16)",
+      "penetration": "Shallow to medium",
+      "deposition": "Medium",
+      "slag": "Self-lifting, brittle, must be removed completely between passes",
+      "arc": "Smooth with a fluid, slow-freezing puddle",
+      "amperage": [
+        {
+          "diameter": "3/32 in (2.4 mm)",
+          "min": 40,
+          "max": 80
+        },
+        {
+          "diameter": "1/8 in (3.2 mm)",
+          "min": 65,
+          "max": 110
+        },
+        {
+          "diameter": "5/32 in (4.0 mm)",
+          "min": 95,
+          "max": 150
+        },
+        {
+          "diameter": "3/16 in (4.8 mm)",
+          "min": 130,
+          "max": 190
+        }
+      ],
+      "shielding_gas": null,
+      "base_metals": [
+        "Type 304 and 304L",
+        "Type 302 and 305",
+        "Type 308",
+        "Stabilized grades where 347 filler is not required"
+      ],
+      "applications": [
+        "Food, dairy and beverage equipment",
+        "Chemical process piping and tanks in 304/304L",
+        "Architectural stainless fabrication",
+        "Sanitary and pharmaceutical vessels",
+        "General 300-series stainless repair"
+      ],
+      "characteristics": [
+        "0.04% maximum carbon prevents chromium carbide precipitation in the 800–1500 °F sensitization range",
+        "Deposit retains a small amount of delta ferrite, typically FN 4–10, which resists hot cracking",
+        "Slower-freezing puddle than carbon steel electrodes",
+        "Roughly half the thermal conductivity and 50% more thermal expansion than carbon steel, so distortion control matters",
+        "Higher electrical resistance means the rod heats up along its length — run it cooler and shorter"
+      ],
+      "storage": {
+        "summary": "Keep dry. Stainless coatings pick up moisture and cause porosity and worm tracks.",
+        "details": [
+          "Store unopened in a dry area; after opening, hold at 250–300 °F (120–150 °C) in a rod oven.",
+          "Redry damp electrodes at 500–600 °F (260–315 °C) for one hour — check the manufacturer's data sheet, as stainless redry temperatures are lower than carbon steel low-hydrogen rods.",
+          "Never store stainless rods loose in a toolbox with carbon steel rods; iron contamination causes rust spotting on the finished weld."
+        ]
+      },
+      "tips": [
+        "Run 10–15% lower amperage than you would use on carbon steel of the same thickness.",
+        "Keep interpass temperature below about 350 °F (175 °C) to limit sensitization and distortion.",
+        "Use stainless-only brushes and grinding media; carbon steel contamination will rust and initiate pitting.",
+        "Chip all slag completely — stainless slag left between passes is a classic source of inclusions.",
+        "For 304 to carbon steel joints, use E309L instead; E308L will dilute to a crack-sensitive composition."
+      ],
+      "faqs": [
+        {
+          "q": "What is E308L used for?",
+          "a": "Welding Type 304 and 304L austenitic stainless steel — food and dairy equipment, chemical piping, tanks and architectural work."
+        },
+        {
+          "q": "What does the L in E308L mean?",
+          "a": "Low carbon, 0.04% maximum. Less carbon means less chromium carbide forms at the grain boundaries when the weld is held in the 800–1500 °F range, which preserves corrosion resistance."
+        },
+        {
+          "q": "Can E308L weld 316 stainless?",
+          "a": "It will make a sound weld mechanically, but it has no molybdenum, so the joint loses the pitting and chloride resistance that 316 is chosen for. Use E316L on 316 base metal."
+        },
+        {
+          "q": "What amperage for 1/8 in E308L?",
+          "a": "65–110 A DCEP, typically around 80–95 A. That is noticeably lower than a 1/8 in carbon steel rod because stainless conducts heat poorly and the electrode overheats."
+        },
+        {
+          "q": "Can you weld stainless to carbon steel with E308L?",
+          "a": "No — use E309L. Dilution from the carbon steel side drops the alloy content of an E308L deposit into a martensitic, crack-sensitive range."
+        }
+      ],
+      "related": [
+        "e309l",
+        "e316l",
+        "e347",
+        "er308l"
+      ],
+      "related_symbols": [
+        "fillet-weld",
+        "v-groove-weld"
+      ]
+    },
+    {
+      "id": "e309l",
+      "name": "E309L",
+      "full_name": "E309L-16 Dissimilar-Metal Stainless Electrode",
+      "spec": "AWS A5.4/A5.4M",
+      "process": "SMAW",
+      "process_id": "stick-welding",
+      "process_name": "Stick (SMAW)",
+      "category": "stainless",
+      "category_name": "Stainless Steel",
+      "form": "Covered electrode",
+      "summary": "E309L is the dissimilar-metal electrode — its extra chromium and nickel survive dilution when joining stainless to carbon steel or laying a stainless overlay.",
+      "meta_description": "E309L joins stainless to carbon steel and buffers overlays. Over-alloyed 23Cr-12Ni chemistry survives dilution. Amperage chart, polarity and specs.",
+      "classification_breakdown": [
+        {
+          "part": "E",
+          "meaning": "Covered electrode for shielded metal arc welding"
+        },
+        {
+          "part": "309",
+          "meaning": "Nominal 23% chromium, 12% nickel — deliberately over-alloyed relative to 304"
+        },
+        {
+          "part": "L",
+          "meaning": "Low carbon, 0.04% maximum"
+        },
+        {
+          "part": "-16",
+          "meaning": "Lime-titania coating usable on AC or DCEP"
+        }
+      ],
+      "polarity": [
+        "DCEP",
+        "AC"
+      ],
+      "polarity_note": "DCEP standard; the -16 coating also runs on AC.",
+      "positions": [
+        "Flat",
+        "Horizontal",
+        "Vertical",
+        "Overhead"
+      ],
+      "positions_note": "All positions, vertical-up.",
+      "mechanical": {
+        "tensile_ksi": 75,
+        "tensile_mpa": 520,
+        "yield_ksi": 45,
+        "yield_mpa": 310,
+        "elongation_pct": 30,
+        "impact": "Not required by the specification"
+      },
+      "coating": "Lime-titania (-16)",
+      "penetration": "Shallow to medium",
+      "deposition": "Medium",
+      "slag": "Self-lifting, must be fully removed between passes",
+      "arc": "Smooth, fluid puddle",
+      "amperage": [
+        {
+          "diameter": "3/32 in (2.4 mm)",
+          "min": 40,
+          "max": 80
+        },
+        {
+          "diameter": "1/8 in (3.2 mm)",
+          "min": 65,
+          "max": 110
+        },
+        {
+          "diameter": "5/32 in (4.0 mm)",
+          "min": 95,
+          "max": 150
+        },
+        {
+          "diameter": "3/16 in (4.8 mm)",
+          "min": 130,
+          "max": 190
+        }
+      ],
+      "shielding_gas": null,
+      "base_metals": [
+        "304/304L to carbon steel",
+        "Type 309 and 309S",
+        "Buffer layers on carbon steel before 308L or 316L overlay",
+        "Hard-to-weld and unknown steels"
+      ],
+      "applications": [
+        "Joining austenitic stainless to carbon or low-alloy steel",
+        "First-layer buffer on carbon steel before a stainless overlay",
+        "Cladding and weld overlay on pressure vessels",
+        "Welding 309 and 309S heat-resistant base metals",
+        "Repair welds on unknown or difficult-to-weld steels"
+      ],
+      "characteristics": [
+        "Over-alloyed on purpose: after roughly 30% dilution from carbon steel, the deposit still lands in a safe austenitic-ferritic range",
+        "Retains delta ferrite after dilution, which is what prevents hot cracking",
+        "Serves as a general-purpose repair filler for unknown steels because of its tolerance for dilution",
+        "Higher chromium also gives good oxidation resistance to about 1900 °F (1040 °C)",
+        "More expensive than E308L, so it is used where the dilution or service demands it"
+      ],
+      "storage": {
+        "summary": "Dry storage, rod oven after opening — same discipline as E308L.",
+        "details": [
+          "Hold at 250–300 °F (120–150 °C) once the container is opened.",
+          "Redry damp rods per the manufacturer's data sheet, typically 500–600 °F (260–315 °C) for one hour.",
+          "Keep away from carbon steel consumables to avoid iron contamination."
+        ]
+      },
+      "tips": [
+        "On a stainless-to-carbon joint, aim the arc slightly toward the carbon steel side only if the WPS calls for it; otherwise center it and keep dilution low.",
+        "For overlay work, one buffer layer of E309L then subsequent layers of E308L or E316L is the standard sequence.",
+        "Keep amperage at the low end and use stringer beads to minimize dilution.",
+        "Interpass temperature below 350 °F (175 °C) as with all austenitic deposits."
+      ],
+      "faqs": [
+        {
+          "q": "What is E309L used for?",
+          "a": "Welding stainless steel to carbon steel, laying the first buffer layer of a stainless overlay, welding 309 base metal, and repairing unknown or hard-to-weld steels."
+        },
+        {
+          "q": "Why use E309L instead of E308L for dissimilar joints?",
+          "a": "Melting carbon steel into the puddle dilutes the alloy content. E309L starts with about 23% chromium and 12% nickel, so after dilution it still contains enough ferrite to resist hot cracking. An E308L deposit diluted the same way turns martensitic and cracks."
+        },
+        {
+          "q": "What amperage for 1/8 in E309L?",
+          "a": "65–110 A DCEP, commonly 80–95 A. Use the low end and stringer beads to keep dilution down."
+        },
+        {
+          "q": "Can E309L weld 304 to 304?",
+          "a": "Yes, it will make a sound and corrosion-resistant weld, but it costs more than E308L and offers no advantage on a matching joint."
+        },
+        {
+          "q": "Is E309L magnetic?",
+          "a": "Slightly. The deposit contains delta ferrite, which is ferromagnetic, so a magnet will show weak attraction. That is expected and is what keeps the weld from hot cracking."
+        }
+      ],
+      "related": [
+        "e308l",
+        "e316l",
+        "e410",
+        "er309l"
+      ],
+      "related_symbols": [
+        "fillet-weld",
+        "surfacing-weld"
+      ]
+    },
+    {
+      "id": "e316l",
+      "name": "E316L",
+      "full_name": "E316L-16 Molybdenum Stainless Electrode",
+      "spec": "AWS A5.4/A5.4M",
+      "process": "SMAW",
+      "process_id": "stick-welding",
+      "process_name": "Stick (SMAW)",
+      "category": "stainless",
+      "category_name": "Stainless Steel",
+      "form": "Covered electrode",
+      "summary": "E316L adds 2–3% molybdenum for pitting and chloride resistance, making it the electrode for 316/316L marine, chemical and pharmaceutical work.",
+      "meta_description": "E316L-16 welds 316 and 316L stainless. Molybdenum resists chlorides and pitting. Amperage by diameter, polarity, storage and 308L comparison.",
+      "classification_breakdown": [
+        {
+          "part": "E",
+          "meaning": "Covered electrode for shielded metal arc welding"
+        },
+        {
+          "part": "316",
+          "meaning": "Nominal 18% chromium, 12% nickel, 2–3% molybdenum"
+        },
+        {
+          "part": "L",
+          "meaning": "Low carbon, 0.04% maximum"
+        },
+        {
+          "part": "-16",
+          "meaning": "Lime-titania coating usable on AC or DCEP"
+        }
+      ],
+      "polarity": [
+        "DCEP",
+        "AC"
+      ],
+      "polarity_note": "DCEP standard; -16 coatings also run on AC.",
+      "positions": [
+        "Flat",
+        "Horizontal",
+        "Vertical",
+        "Overhead"
+      ],
+      "positions_note": "All positions, vertical-up.",
+      "mechanical": {
+        "tensile_ksi": 70,
+        "tensile_mpa": 485,
+        "yield_ksi": 40,
+        "yield_mpa": 275,
+        "elongation_pct": 30,
+        "impact": "Not required; austenitic deposits remain tough at low temperature"
+      },
+      "coating": "Lime-titania (-16)",
+      "penetration": "Shallow to medium",
+      "deposition": "Medium",
+      "slag": "Self-lifting, remove completely between passes",
+      "arc": "Smooth with a fluid puddle",
+      "amperage": [
+        {
+          "diameter": "3/32 in (2.4 mm)",
+          "min": 40,
+          "max": 80
+        },
+        {
+          "diameter": "1/8 in (3.2 mm)",
+          "min": 65,
+          "max": 110
+        },
+        {
+          "diameter": "5/32 in (4.0 mm)",
+          "min": 95,
+          "max": 150
+        },
+        {
+          "diameter": "3/16 in (4.8 mm)",
+          "min": 130,
+          "max": 190
+        }
+      ],
+      "shielding_gas": null,
+      "base_metals": [
+        "Type 316 and 316L",
+        "Type 317 where matching is not required",
+        "Molybdenum-bearing austenitic grades",
+        "Marine-grade stainless fabrications"
+      ],
+      "applications": [
+        "Marine and offshore stainless fabrication",
+        "Chemical and pulp-and-paper process equipment",
+        "Pharmaceutical and biotech vessels and piping",
+        "Anywhere chlorides attack 304, including coastal and de-icing exposure",
+        "Higher-temperature service where creep strength matters"
+      ],
+      "characteristics": [
+        "2–3% molybdenum substantially improves pitting and crevice corrosion resistance in chloride environments",
+        "Low carbon protects the heat-affected zone from sensitization",
+        "Slightly lower minimum tensile than E308L but better elevated-temperature strength",
+        "Small delta ferrite content, typically FN 3–8, resists hot cracking",
+        "More expensive than E308L, so it is specified where the chemistry is actually needed"
+      ],
+      "storage": {
+        "summary": "Dry storage; rod oven at 250–300 °F (120–150 °C) after opening.",
+        "details": [
+          "Moisture in the coating causes porosity and worm tracking in the bead.",
+          "Redry damp electrodes per the manufacturer's data sheet, typically 500–600 °F (260–315 °C) for one hour.",
+          "Store separately from carbon steel consumables to prevent iron contamination."
+        ]
+      },
+      "tips": [
+        "Run 10–15% below carbon steel amperage for the same rod diameter.",
+        "Hold interpass temperature under about 350 °F (175 °C).",
+        "Use dedicated stainless brushes, flap discs and grinding wheels.",
+        "For root passes on pipe, back-purge with argon to prevent sugaring on the inside surface.",
+        "If the service is only mildly corrosive, E308L is cheaper and adequate — pay for the molybdenum only when chlorides are present."
+      ],
+      "faqs": [
+        {
+          "q": "What is the difference between E316L and E308L?",
+          "a": "E316L contains 2–3% molybdenum, which greatly improves resistance to pitting and crevice corrosion in chloride environments. E308L has none. Use E316L on 316/316L base metal and in marine or chemical service; use E308L on 304/304L."
+        },
+        {
+          "q": "What amperage for 1/8 in E316L?",
+          "a": "65–110 A DCEP, typically 80–95 A. Stainless rods run cooler than carbon steel because of their low thermal conductivity and high electrical resistance."
+        },
+        {
+          "q": "Can E316L weld 304 stainless?",
+          "a": "Yes. It is over-alloyed for 304 and will make a sound, corrosion-resistant weld — it just costs more than E308L with no benefit unless chlorides are present."
+        },
+        {
+          "q": "Why does 316L stainless need a back purge?",
+          "a": "Without an inert purge on the back side of a root pass, the hot chromium-rich surface oxidizes into a rough gray scale called sugaring, which destroys corrosion resistance and cannot be fixed by brushing."
+        },
+        {
+          "q": "Is E316L food grade?",
+          "a": "316L weld metal is widely used in food, dairy and pharmaceutical equipment. Suitability for a specific installation depends on the finish, cleaning and the governing sanitary standard, not on the filler alone."
+        }
+      ],
+      "related": [
+        "e308l",
+        "e309l",
+        "e347",
+        "er316l"
+      ],
+      "related_symbols": [
+        "fillet-weld",
+        "v-groove-weld"
+      ]
+    },
+    {
+      "id": "e347",
+      "name": "E347",
+      "full_name": "E347-16 Stabilized Stainless Electrode",
+      "spec": "AWS A5.4/A5.4M",
+      "process": "SMAW",
+      "process_id": "stick-welding",
+      "process_name": "Stick (SMAW)",
+      "category": "stainless",
+      "category_name": "Stainless Steel",
+      "form": "Covered electrode",
+      "summary": "E347 is niobium-stabilized stainless — the niobium ties up carbon so the weld resists intergranular attack even after long exposure at elevated temperature.",
+      "meta_description": "E347-16 is columbium/niobium-stabilized filler for 321 and 347 stainless. Resists sensitization in high-temperature service. Amps, specs, comparisons.",
+      "classification_breakdown": [
+        {
+          "part": "E",
+          "meaning": "Covered electrode for shielded metal arc welding"
+        },
+        {
+          "part": "347",
+          "meaning": "19Cr-10Ni stabilized with niobium (columbium), typically 8x the carbon content minimum"
+        },
+        {
+          "part": "-16",
+          "meaning": "Lime-titania coating usable on AC or DCEP"
+        }
+      ],
+      "polarity": [
+        "DCEP",
+        "AC"
+      ],
+      "polarity_note": "DCEP standard; -16 coating also runs on AC.",
+      "positions": [
+        "Flat",
+        "Horizontal",
+        "Vertical",
+        "Overhead"
+      ],
+      "positions_note": "All positions, vertical-up.",
+      "mechanical": {
+        "tensile_ksi": 75,
+        "tensile_mpa": 520,
+        "yield_ksi": 45,
+        "yield_mpa": 310,
+        "elongation_pct": 30,
+        "impact": "Not required by the specification"
+      },
+      "coating": "Lime-titania (-16)",
+      "penetration": "Shallow to medium",
+      "deposition": "Medium",
+      "slag": "Self-lifting, remove fully between passes",
+      "arc": "Smooth, slightly stiffer than E308L",
+      "amperage": [
+        {
+          "diameter": "3/32 in (2.4 mm)",
+          "min": 40,
+          "max": 80
+        },
+        {
+          "diameter": "1/8 in (3.2 mm)",
+          "min": 65,
+          "max": 110
+        },
+        {
+          "diameter": "5/32 in (4.0 mm)",
+          "min": 95,
+          "max": 150
+        },
+        {
+          "diameter": "3/16 in (4.8 mm)",
+          "min": 130,
+          "max": 190
+        }
+      ],
+      "shielding_gas": null,
+      "base_metals": [
+        "Type 347 and 321",
+        "Type 304 in elevated-temperature service",
+        "Stabilized austenitic grades"
+      ],
+      "applications": [
+        "High-temperature piping and exhaust systems",
+        "Refinery and petrochemical process equipment",
+        "Aircraft and turbine exhaust components",
+        "Joints that will be stress relieved or see long service between 800 and 1500 °F",
+        "Welding Type 321 base metal, which cannot be matched with a titanium-stabilized electrode"
+      ],
+      "characteristics": [
+        "Niobium (columbium) preferentially forms carbides, leaving chromium in solution to resist corrosion",
+        "Stabilization works over long exposures where even a low-carbon L grade would eventually sensitize",
+        "Type 321 is titanium-stabilized, but titanium does not transfer across the arc — so 321 base metal is welded with 347 filler",
+        "Somewhat more prone to hot cracking than E308L if ferrite runs low; keep heat input modest",
+        "Retains strength at elevated temperature better than the plain 308 chemistry"
+      ],
+      "storage": {
+        "summary": "Dry storage; rod oven at 250–300 °F (120–150 °C) after opening.",
+        "details": [
+          "Same moisture discipline as other stainless covered electrodes.",
+          "Redry damp rods per the manufacturer's data sheet, typically 500–600 °F (260–315 °C) for one hour.",
+          "Keep isolated from carbon steel consumables."
+        ]
+      },
+      "tips": [
+        "Use stringer beads and keep heat input low; weaving raises the hot-cracking risk on stabilized chemistries.",
+        "Interpass temperature below 350 °F (175 °C).",
+        "For Type 321 base metal, E347 is the correct choice — there is no commercially useful 321 covered electrode.",
+        "If the service is below about 800 °F and short-term, E308L is usually cheaper and sufficient."
+      ],
+      "faqs": [
+        {
+          "q": "What is the difference between E347 and E308L?",
+          "a": "E347 is stabilized with niobium, which locks up carbon permanently. E308L simply keeps carbon low. For long service in the 800–1500 °F sensitization range, stabilization holds up better; for ordinary ambient-temperature corrosion service, E308L is adequate and cheaper."
+        },
+        {
+          "q": "Why is 321 stainless welded with 347 filler?",
+          "a": "Type 321 is stabilized with titanium, but titanium oxidizes and does not survive transfer across the welding arc. Niobium does, so 347 filler delivers the same stabilizing effect in the weld metal."
+        },
+        {
+          "q": "What amperage for 1/8 in E347?",
+          "a": "65–110 A DCEP, typically around 80–95 A."
+        },
+        {
+          "q": "Is E347 more crack sensitive?",
+          "a": "Slightly. Stabilized chemistries are a little more prone to hot cracking than plain 308. Keep heat input modest, use stringer beads, and do not let interpass temperature climb."
+        },
+        {
+          "q": "Can E347 be used on 304 stainless?",
+          "a": "Yes, and it is a good choice when 304 will see extended elevated-temperature service. For ordinary room-temperature corrosion resistance, E308L is the standard filler."
+        }
+      ],
+      "related": [
+        "e308l",
+        "e316l",
+        "e309l"
+      ],
+      "related_symbols": [
+        "v-groove-weld",
+        "fillet-weld"
+      ]
+    },
+    {
+      "id": "e410",
+      "name": "E410",
+      "full_name": "E410-15/16 Martensitic Stainless Electrode",
+      "spec": "AWS A5.4/A5.4M",
+      "process": "SMAW",
+      "process_id": "stick-welding",
+      "process_name": "Stick (SMAW)",
+      "category": "stainless",
+      "category_name": "Stainless Steel",
+      "form": "Covered electrode",
+      "summary": "E410 is a 12% chromium martensitic stainless electrode for matching 410 base metal and hardfacing — it air-hardens, so preheat and post-weld heat treatment are mandatory.",
+      "meta_description": "E410 welds 410 martensitic stainless and builds wear-resistant overlays. Requires 350-450 F preheat and PWHT. Amperage chart, specs and handling.",
+      "classification_breakdown": [
+        {
+          "part": "E",
+          "meaning": "Covered electrode for shielded metal arc welding"
+        },
+        {
+          "part": "410",
+          "meaning": "Nominal 12% chromium martensitic stainless, matching Type 410 base metal"
+        },
+        {
+          "part": "-15 / -16",
+          "meaning": "Lime coating (DCEP only) or lime-titania coating (AC or DCEP)"
+        }
+      ],
+      "polarity": [
+        "DCEP",
+        "AC"
+      ],
+      "polarity_note": "The -15 lime coating is DCEP only; the -16 lime-titania coating runs on AC or DCEP. Check the specific product.",
+      "positions": [
+        "Flat",
+        "Horizontal",
+        "Vertical",
+        "Overhead"
+      ],
+      "positions_note": "All positions, though most 410 work is done flat or horizontal on positioned parts.",
+      "mechanical": {
+        "tensile_ksi": 75,
+        "tensile_mpa": 520,
+        "yield_ksi": 55,
+        "yield_mpa": 380,
+        "elongation_pct": 20,
+        "impact": "Not required; properties depend heavily on post-weld heat treatment"
+      },
+      "coating": "Lime or lime-titania",
+      "penetration": "Medium",
+      "deposition": "Medium",
+      "slag": "Moderate, releases readily",
+      "arc": "Stable with a slightly stiff puddle",
+      "amperage": [
+        {
+          "diameter": "3/32 in (2.4 mm)",
+          "min": 40,
+          "max": 80
+        },
+        {
+          "diameter": "1/8 in (3.2 mm)",
+          "min": 70,
+          "max": 110
+        },
+        {
+          "diameter": "5/32 in (4.0 mm)",
+          "min": 100,
+          "max": 150
+        },
+        {
+          "diameter": "3/16 in (4.8 mm)",
+          "min": 130,
+          "max": 190
+        }
+      ],
+      "shielding_gas": null,
+      "base_metals": [
+        "Type 410, 410S and 416",
+        "Type 403 and 405",
+        "13% chromium castings",
+        "Carbon steel requiring a corrosion or wear-resistant overlay"
+      ],
+      "applications": [
+        "Repair and joining of 410 martensitic stainless components",
+        "Overlay on valve seats, pump sleeves and shafts",
+        "Steam turbine and compressor blade repair",
+        "Wear-resistant surfacing on carbon steel",
+        "Oil-field and refinery components in mildly corrosive service"
+      ],
+      "characteristics": [
+        "Hardens on cooling in still air — the deposit transforms to martensite without any quench",
+        "Preheat of 350–450 °F (175–230 °C) and a maintained interpass temperature are required to avoid cracking",
+        "Post-weld heat treatment, typically tempering at 1200–1400 °F (650–760 °C), restores ductility",
+        "As-welded hardness can exceed 40 HRC, which is useful for wear but brittle for structural service",
+        "Magnetic, unlike the austenitic 300-series deposits"
+      ],
+      "storage": {
+        "summary": "Dry storage and a rod oven at 250–300 °F (120–150 °C) after opening — hydrogen cracking is a real risk with martensitic deposits.",
+        "details": [
+          "Moisture matters more here than with austenitic stainless because the martensitic deposit is hydrogen-sensitive.",
+          "Redry damp rods per the manufacturer's data sheet, typically 500–600 °F (260–315 °C) for one hour.",
+          "Keep isolated from carbon steel consumables."
+        ]
+      },
+      "tips": [
+        "Do not skip preheat. A 410 deposit that cools fast from welding temperature will crack, often hours later.",
+        "Keep the part above the preheat temperature continuously until post-weld heat treatment begins.",
+        "Cool slowly — wrap in insulating blanket or cool in a furnace rather than in open shop air.",
+        "If the joint cannot be heat treated, consider an austenitic filler such as E309L instead, accepting the change in properties.",
+        "Machining is done after tempering, not in the as-welded condition."
+      ],
+      "faqs": [
+        {
+          "q": "Does E410 require preheat?",
+          "a": "Yes. Preheat of 350–450 °F (175–230 °C) is required and must be maintained as interpass temperature. The deposit air-hardens to martensite and will crack without it."
+        },
+        {
+          "q": "Does E410 need post-weld heat treatment?",
+          "a": "For almost all structural and pressure applications, yes — typically tempering at 1200–1400 °F (650–760 °C) followed by controlled cooling. Hardfacing overlays are sometimes left as-welded where the hardness is the point."
+        },
+        {
+          "q": "Is E410 magnetic?",
+          "a": "Yes. Martensitic stainless is strongly magnetic, unlike the austenitic 300-series deposits from E308L, E309L or E316L."
+        },
+        {
+          "q": "What amperage for 1/8 in E410?",
+          "a": "70–110 A, typically around 90 A. Keep heat input controlled and maintain the preheat temperature throughout."
+        },
+        {
+          "q": "Can E410 be used without heat treatment?",
+          "a": "Only for hardfacing overlays on thin sections where hardness is wanted and the joint is not load-bearing in tension. On any structural joint, skipping PWHT leaves brittle, crack-prone weld metal."
+        }
+      ],
+      "related": [
+        "e309l",
+        "e308l",
+        "e316l"
+      ],
+      "related_symbols": [
+        "surfacing-weld",
+        "fillet-weld"
+      ]
+    },
+    {
+      "id": "e4043",
+      "name": "E4043",
+      "full_name": "E4043 Covered Aluminum Electrode",
+      "spec": "AWS A5.3/A5.3M",
+      "process": "SMAW",
+      "process_id": "stick-welding",
+      "process_name": "Stick (SMAW)",
+      "category": "aluminum",
+      "category_name": "Aluminum",
+      "form": "Covered electrode",
+      "summary": "E4043 is the covered aluminum stick electrode — a legacy repair consumable for field work where no TIG or MIG machine is available, largely superseded by ER4043 wire.",
+      "meta_description": "E4043 covered aluminum stick electrode per AWS A5.3: DCEP, flat position, extremely moisture sensitive. Specs, amperage and why ER4043 replaced it.",
+      "classification_breakdown": [
+        {
+          "part": "E",
+          "meaning": "Covered electrode for shielded metal arc welding"
+        },
+        {
+          "part": "4043",
+          "meaning": "Aluminum Association alloy 4043, nominally 5% silicon"
+        }
+      ],
+      "polarity": [
+        "DCEP"
+      ],
+      "polarity_note": "DCEP only. The reverse-polarity arc provides the cathodic cleaning that breaks up the aluminum oxide film.",
+      "positions": [
+        "Flat",
+        "Horizontal fillet"
+      ],
+      "positions_note": "Practically limited to flat position and horizontal fillets. The aluminum puddle is too fluid to control vertically or overhead.",
+      "mechanical": {
+        "tensile_ksi": 14,
+        "tensile_mpa": 95,
+        "yield_ksi": null,
+        "yield_mpa": null,
+        "elongation_pct": null,
+        "impact": "Not applicable"
+      },
+      "coating": "Salt-based flux, extremely hygroscopic",
+      "penetration": "Medium",
+      "deposition": "Medium",
+      "slag": "Corrosive salt flux — must be removed completely with hot water after welding",
+      "arc": "Fast, fluid, unforgiving",
+      "amperage": [
+        {
+          "diameter": "3/32 in (2.4 mm)",
+          "min": 40,
+          "max": 70
+        },
+        {
+          "diameter": "1/8 in (3.2 mm)",
+          "min": 60,
+          "max": 95
+        },
+        {
+          "diameter": "5/32 in (4.0 mm)",
+          "min": 90,
+          "max": 130
+        },
+        {
+          "diameter": "3/16 in (4.8 mm)",
+          "min": 120,
+          "max": 170
+        }
+      ],
+      "shielding_gas": null,
+      "base_metals": [
+        "Aluminum castings",
+        "1xxx, 3xxx and 6xxx wrought alloys",
+        "Repair of thick aluminum sections in the field"
+      ],
+      "applications": [
+        "Field repair of aluminum castings where no TIG or MIG is available",
+        "Emergency repair on heavy aluminum sections",
+        "Legacy maintenance work specified with covered aluminum electrodes",
+        "Filling and building up worn aluminum parts"
+      ],
+      "characteristics": [
+        "Largely obsolete — GTAW and GMAW with ER4043 produce far better welds",
+        "Flux residue is corrosive and must be washed off with hot water and scrubbed",
+        "Requires preheat of 300–400 °F (150–200 °C) on sections over about 1/4 in because aluminum conducts heat away so fast",
+        "Coating absorbs moisture very quickly — porosity is the usual failure mode",
+        "Needs a fast, steady travel speed; the puddle gives little warning before it drops out"
+      ],
+      "storage": {
+        "summary": "Extremely moisture sensitive. Keep hermetically sealed and store in a heated cabinet; open only what you will use immediately.",
+        "details": [
+          "The flux coating picks up water from humid shop air within hours.",
+          "Store in a heated cabinet at roughly 250 °F (120 °C) once opened.",
+          "Damp electrodes produce gross porosity that cannot be welded out — discard them.",
+          "Because of this sensitivity, most shops buy ER4043 wire instead and keep no covered aluminum rod on the shelf."
+        ]
+      },
+      "tips": [
+        "Preheat anything thicker than 1/4 in and hold the temperature while you weld.",
+        "Wash the joint with hot water and a stainless brush immediately after welding to remove corrosive flux residue.",
+        "Travel fast and keep a short arc — hesitation drops the puddle through the joint.",
+        "If a TIG or spool-gun MIG setup is available at all, use ER4043 instead; the weld quality is not close."
+      ],
+      "faqs": [
+        {
+          "q": "Can you stick weld aluminum?",
+          "a": "Yes, with covered aluminum electrodes such as E4043 under AWS A5.3, but the results are markedly worse than TIG or MIG. The process is limited to flat position, the flux is corrosive, and porosity is common. It is a field-repair method, not a production one."
+        },
+        {
+          "q": "What is the difference between E4043 and ER4043?",
+          "a": "E4043 is a flux-covered stick electrode for SMAW; ER4043 is bare wire or rod for MIG and TIG. Both deposit the same 5% silicon aluminum chemistry, but ER4043 gives cleaner, stronger, more controllable welds."
+        },
+        {
+          "q": "Why does aluminum stick welding need preheat?",
+          "a": "Aluminum conducts heat roughly four times faster than steel, so heat runs out of the joint before fusion is established. Preheat of 300–400 °F on thick sections keeps enough heat in the weld zone."
+        },
+        {
+          "q": "Does the flux need to be removed after welding?",
+          "a": "Yes, completely. The salt-based flux residue is corrosive and will attack the aluminum. Wash with hot water and scrub with a dedicated stainless brush."
+        },
+        {
+          "q": "What is the tensile strength of E4043 weld metal?",
+          "a": "AWS A5.3 sets a minimum of 14,000 psi as-welded for E4043 covered electrodes. Bare ER4043 filler deposited by TIG or MIG typically reaches a higher value under cleaner conditions."
+        }
+      ],
+      "related": [
+        "er4043",
+        "er5356"
+      ],
+      "related_symbols": [
+        "fillet-weld",
+        "v-groove-weld"
+      ]
+    },
+    {
+      "id": "er70s-6",
+      "name": "ER70S-6",
+      "full_name": "ER70S-6 Solid Carbon Steel MIG Wire",
+      "spec": "AWS A5.18/A5.18M",
+      "process": "GMAW / GTAW",
+      "process_id": "mig-welding",
+      "process_name": "MIG (GMAW)",
+      "category": "mild-steel",
+      "category_name": "Carbon & Mild Steel",
+      "form": "Solid wire",
+      "summary": "ER70S-6 is the default solid MIG wire for carbon steel — high silicon and manganese let it weld over mill scale and light rust with good wetting.",
+      "meta_description": "ER70S-6 is the standard 70 ksi solid MIG wire for mild steel. Shielding gas choices, amperage and wire speed by diameter, and full AWS A5.18 specs.",
+      "classification_breakdown": [
+        {
+          "part": "ER",
+          "meaning": "Electrode or rod — usable as a continuously fed electrode (MIG) or a hand-fed rod (TIG)"
+        },
+        {
+          "part": "70",
+          "meaning": "70,000 psi minimum tensile strength of the deposited weld metal"
+        },
+        {
+          "part": "S",
+          "meaning": "Solid wire"
+        },
+        {
+          "part": "6",
+          "meaning": "Chemistry classification with the highest silicon and manganese levels in the S-series"
+        }
+      ],
+      "polarity": [
+        "DCEP"
+      ],
+      "polarity_note": "DCEP for GMAW — this is standard for all solid MIG wire and is usually not adjustable on small machines. Used as a TIG rod it is hand-fed and the polarity is set by the tungsten (DCEN).",
+      "positions": [
+        "Flat",
+        "Horizontal",
+        "Vertical",
+        "Overhead"
+      ],
+      "positions_note": "All positions in short-circuit transfer. Spray transfer is limited to flat and horizontal; pulsed spray restores out-of-position capability.",
+      "mechanical": {
+        "tensile_ksi": 70,
+        "tensile_mpa": 480,
+        "yield_ksi": 58,
+        "yield_mpa": 400,
+        "elongation_pct": 22,
+        "impact": "20 ft·lb at -20 °F (27 J at -29 °C)"
+      },
+      "coating": "None — bare solid wire, often copper coated for feedability and contact",
+      "penetration": "Medium, varies strongly with gas and transfer mode",
+      "deposition": "High, continuous feed with no stub loss",
+      "slag": "None; silicon islands float to the surface and are brushed off",
+      "arc": "Smooth and stable; crackling bacon in short circuit, hissing in spray",
+      "amperage": [
+        {
+          "diameter": "0.023 in (0.6 mm)",
+          "min": 30,
+          "max": 90
+        },
+        {
+          "diameter": "0.030 in (0.8 mm)",
+          "min": 50,
+          "max": 180
+        },
+        {
+          "diameter": "0.035 in (0.9 mm)",
+          "min": 70,
+          "max": 220
+        },
+        {
+          "diameter": "0.045 in (1.2 mm)",
+          "min": 120,
+          "max": 320
+        }
+      ],
+      "shielding_gas": {
+        "primary": "75% argon / 25% CO2 (C25)",
+        "options": [
+          {
+            "gas": "75% Ar / 25% CO2",
+            "note": "The shop standard. Least spatter, good bead appearance, works in short circuit and spray."
+          },
+          {
+            "gas": "100% CO2",
+            "note": "Deeper penetration and lower cost, but more spatter and a harsher arc. Short-circuit transfer only."
+          },
+          {
+            "gas": "90% Ar / 10% CO2",
+            "note": "Used for spray and pulsed transfer on thicker material."
+          },
+          {
+            "gas": "98% Ar / 2% O2",
+            "note": "Spray transfer with excellent wetting on plate."
+          }
+        ],
+        "flow": "20–25 CFH (9–12 L/min); increase outdoors or raise a windscreen"
+      },
+      "base_metals": [
+        "A36 structural steel",
+        "1018 and other low-carbon steels",
+        "HSLA steels up to 70 ksi",
+        "Automotive sheet and tubing"
+      ],
+      "applications": [
+        "General fabrication and shop welding on carbon steel",
+        "Automotive body and chassis work",
+        "Structural and miscellaneous metal fabrication",
+        "Robotic and semi-automatic production welding",
+        "Repair welding over mill scale or lightly rusted steel"
+      ],
+      "characteristics": [
+        "Highest silicon and manganese content in the ER70S family, which is what lets it handle surface oxides",
+        "Silicon deoxidizers leave glassy islands on the bead that brush off easily",
+        "Excellent wetting and a flat-to-slightly-convex bead profile",
+        "Interchangeable with ER70S-3 for clean steel; ER70S-6 is the safer default on real-world material",
+        "Also sold as a TIG rod under the same classification"
+      ],
+      "storage": {
+        "summary": "Keep spools dry and covered. Bare wire rusts, and rusty wire means porosity and feed problems.",
+        "details": [
+          "Leave the spool in the machine only if the cabinet is closed; otherwise bag it with a desiccant.",
+          "Do not touch the wire with bare hands — skin oils and salts contaminate the surface.",
+          "A spool with visible surface rust should be discarded; it will feed poorly and leave porosity.",
+          "Store in a heated area to avoid condensation when the shop warms up in the morning."
+        ]
+      },
+      "tips": [
+        "For short-circuit on 1/8 in plate, start around 19–20 V and 250–280 ipm wire speed with 0.035 in wire.",
+        "Stickout of about 3/8 in is the sweet spot for short circuit; too long and the arc gets cold and ropey.",
+        "Listen for a steady crackle in short circuit — popping means the voltage is too low, hissing and spatter means too high.",
+        "Spray transfer needs at least 80% argon and roughly 24–28 V; it will not work on CO2.",
+        "Push the gun for a flatter bead on thin material, drag for more penetration on plate."
+      ],
+      "faqs": [
+        {
+          "q": "What gas do you use with ER70S-6?",
+          "a": "75% argon / 25% CO2 is the shop standard — a smooth arc with minimal spatter. Straight CO2 costs less and penetrates deeper but spatters more and is limited to short-circuit transfer."
+        },
+        {
+          "q": "What is the difference between ER70S-6 and ER70S-3?",
+          "a": "ER70S-6 has more silicon and manganese, so it tolerates mill scale, rust and surface oxides better and wets out flatter. ER70S-3 is fine on clean steel and costs slightly less. Most shops stock only ER70S-6."
+        },
+        {
+          "q": "Can ER70S-6 be used as a TIG rod?",
+          "a": "Yes. The ER prefix means it qualifies as both a continuously fed electrode and a hand-fed rod, and it is commonly sold in 36 in TIG lengths."
+        },
+        {
+          "q": "What settings for 0.035 in ER70S-6 on 1/8 in steel?",
+          "a": "Roughly 19–20 V with 250–280 ipm wire feed in short-circuit transfer on C25 gas, which works out near 140–160 A. Fine-tune by sound and bead profile."
+        },
+        {
+          "q": "Can you weld rusty metal with ER70S-6?",
+          "a": "Light mill scale and surface rust, yes — that is what the extra silicon and manganese are for. Heavy rust, paint or oil will still cause porosity; grind the joint clean when you can."
+        }
+      ],
+      "related": [
+        "e71t-1",
+        "e71t-11",
+        "e7018",
+        "e6013"
+      ],
+      "related_symbols": [
+        "fillet-weld",
+        "plug-weld",
+        "spot-weld"
+      ]
+    },
+    {
+      "id": "er308l",
+      "name": "ER308L",
+      "full_name": "ER308L Stainless MIG and TIG Wire",
+      "spec": "AWS A5.9/A5.9M",
+      "process": "GMAW / GTAW",
+      "process_id": "tig-welding",
+      "process_name": "TIG (GTAW) / MIG (GMAW)",
+      "category": "stainless",
+      "category_name": "Stainless Steel",
+      "form": "Solid wire / rod",
+      "summary": "ER308L is the bare wire and TIG rod for 304 and 304L stainless — the same low-carbon 19Cr-10Ni chemistry as E308L, without a flux coating.",
+      "meta_description": "ER308L TIG rod and MIG wire for 304/304L stainless. Shielding gas, amperage by diameter, back purging and full AWS A5.9 specifications.",
+      "classification_breakdown": [
+        {
+          "part": "ER",
+          "meaning": "Electrode or rod — usable for MIG or TIG"
+        },
+        {
+          "part": "308",
+          "meaning": "Nominal 19–21% chromium, 9–11% nickel, matching Type 304"
+        },
+        {
+          "part": "L",
+          "meaning": "Low carbon, 0.03% maximum, to resist carbide precipitation"
+        }
+      ],
+      "polarity": [
+        "DCEP (GMAW)",
+        "DCEN (GTAW)"
+      ],
+      "polarity_note": "MIG runs DCEP. TIG runs DCEN with the current set by the tungsten; the filler is hand-fed and carries no polarity of its own.",
+      "positions": [
+        "Flat",
+        "Horizontal",
+        "Vertical",
+        "Overhead"
+      ],
+      "positions_note": "All positions with TIG or short-circuit / pulsed MIG. Axial spray transfer is limited to flat and horizontal.",
+      "mechanical": {
+        "tensile_ksi": 75,
+        "tensile_mpa": 515,
+        "yield_ksi": 45,
+        "yield_mpa": 310,
+        "elongation_pct": 35,
+        "impact": "Not required; austenitic deposits stay tough to cryogenic temperatures"
+      },
+      "coating": "None — bare wire or rod",
+      "penetration": "Medium",
+      "deposition": "Medium to high depending on process",
+      "slag": "None; a light oxide film should be brushed or pickled off",
+      "arc": "Stable with a fluid, slow-freezing puddle",
+      "amperage": [
+        {
+          "diameter": "0.030 in (0.8 mm) MIG",
+          "min": 50,
+          "max": 150
+        },
+        {
+          "diameter": "0.035 in (0.9 mm) MIG",
+          "min": 70,
+          "max": 180
+        },
+        {
+          "diameter": "0.045 in (1.2 mm) MIG",
+          "min": 100,
+          "max": 250
+        },
+        {
+          "diameter": "1/16 in (1.6 mm) TIG",
+          "min": 40,
+          "max": 90
+        },
+        {
+          "diameter": "3/32 in (2.4 mm) TIG",
+          "min": 70,
+          "max": 130
+        },
+        {
+          "diameter": "1/8 in (3.2 mm) TIG",
+          "min": 100,
+          "max": 180
+        }
+      ],
+      "shielding_gas": {
+        "primary": "100% argon for TIG; tri-mix 90% He / 7.5% Ar / 2.5% CO2 for spray MIG",
+        "options": [
+          {
+            "gas": "100% argon",
+            "note": "Standard for all TIG work on stainless. Also used for pulsed MIG."
+          },
+          {
+            "gas": "90% He / 7.5% Ar / 2.5% CO2",
+            "note": "The classic stainless tri-mix for short-circuit MIG — good wetting with minimal carbon pickup."
+          },
+          {
+            "gas": "98% Ar / 2% CO2",
+            "note": "Spray transfer on stainless plate. Keep CO2 low to avoid raising weld carbon."
+          },
+          {
+            "gas": "Ar / 2% O2",
+            "note": "Spray transfer with improved arc stability and wetting."
+          }
+        ],
+        "flow": "15–20 CFH (7–9 L/min) for TIG; 25–35 CFH for MIG. Back purge the root side with argon."
+      },
+      "base_metals": [
+        "Type 304 and 304L",
+        "Type 302, 305 and 308",
+        "Austenitic grades not requiring molybdenum"
+      ],
+      "applications": [
+        "Sanitary tube and pipe welding for food, dairy and pharma",
+        "Orbital and manual TIG on 304/304L process piping",
+        "Stainless sheet and architectural fabrication",
+        "Pressure vessel and tank work in 304L",
+        "Any 304 joint where a flux-free, clean weld is needed"
+      ],
+      "characteristics": [
+        "Low carbon at 0.03% maximum, slightly tighter than the 0.04% of covered E308L",
+        "Deposit carries delta ferrite around FN 4–10, which resists hot cracking",
+        "Needs a root-side purge on pipe to prevent sugaring",
+        "Wets more slowly than carbon steel — expect a narrower, more crowned bead at equal settings",
+        "Same chemistry family as E308L but with no slag to trap between passes"
+      ],
+      "storage": {
+        "summary": "Keep clean and dry. Contamination, not moisture, is the main enemy for bare stainless filler.",
+        "details": [
+          "Store TIG rods in a sealed tube; handle with clean gloves.",
+          "Never let stainless filler touch carbon steel surfaces, benches or brushes — embedded iron rusts and initiates pitting.",
+          "Bag MIG spools with desiccant when not in the machine.",
+          "Wipe rods with acetone before use if they have been handled bare-handed."
+        ]
+      },
+      "tips": [
+        "Back purge pipe roots with argon until oxygen is under about 0.1% or the inside will sugar.",
+        "Use a 2% lanthanated or ceriated tungsten on DCEN; ground to a sharp point for thin material.",
+        "Keep interpass temperature below 350 °F (175 °C) and use stringer beads.",
+        "Dedicate a stainless-only wire brush; a carbon steel brush leaves iron that rusts within days.",
+        "Match the rod to the base metal: ER308L for 304, ER316L for 316, ER309L for dissimilar joints."
+      ],
+      "faqs": [
+        {
+          "q": "What gas do you use with ER308L?",
+          "a": "100% argon for TIG. For MIG, a helium-rich tri-mix (90/7.5/2.5) is the traditional short-circuit choice, while 98% argon / 2% CO2 or argon / 2% oxygen is used for spray transfer."
+        },
+        {
+          "q": "What is the difference between ER308L and E308L?",
+          "a": "Same alloy family, different form. ER308L is bare wire or rod for MIG and TIG; E308L is a flux-covered stick electrode for SMAW. The bare filler makes cleaner welds with no slag to remove."
+        },
+        {
+          "q": "Do you need to back purge when welding 304 with ER308L?",
+          "a": "On pipe and tube, yes. Without an argon purge the root side oxidizes into a rough gray scale called sugaring, which destroys corrosion resistance and cannot be brushed off."
+        },
+        {
+          "q": "What amperage for 1/16 in ER308L TIG rod?",
+          "a": "Roughly 40–90 A DCEN depending on thickness — about 40–55 A on 16 gauge sheet and 70–90 A on 1/8 in material."
+        },
+        {
+          "q": "Can ER308L weld 316 stainless?",
+          "a": "Mechanically yes, but it contains no molybdenum, so the joint gives up the chloride and pitting resistance that 316 was chosen for. Use ER316L."
+        }
+      ],
+      "related": [
+        "er316l",
+        "er309l",
+        "e308l",
+        "er70s-6"
+      ],
+      "related_symbols": [
+        "v-groove-weld",
+        "fillet-weld",
+        "seam-weld"
+      ]
+    },
+    {
+      "id": "er309l",
+      "name": "ER309L",
+      "full_name": "ER309L Dissimilar-Metal Stainless Wire",
+      "spec": "AWS A5.9/A5.9M",
+      "process": "GMAW / GTAW",
+      "process_id": "tig-welding",
+      "process_name": "TIG (GTAW) / MIG (GMAW)",
+      "category": "stainless",
+      "category_name": "Stainless Steel",
+      "form": "Solid wire / rod",
+      "summary": "ER309L is the bare filler for welding stainless to carbon steel — over-alloyed at 23Cr-12Ni so the joint stays crack-free after dilution.",
+      "meta_description": "ER309L MIG wire and TIG rod joins stainless to carbon steel and buffers overlays. Gas selection, amperage by diameter and AWS A5.9 specs.",
+      "classification_breakdown": [
+        {
+          "part": "ER",
+          "meaning": "Electrode or rod — usable for MIG or TIG"
+        },
+        {
+          "part": "309",
+          "meaning": "Nominal 23–25% chromium, 12–14% nickel — over-alloyed to survive dilution"
+        },
+        {
+          "part": "L",
+          "meaning": "Low carbon, 0.03% maximum"
+        }
+      ],
+      "polarity": [
+        "DCEP (GMAW)",
+        "DCEN (GTAW)"
+      ],
+      "polarity_note": "MIG DCEP, TIG DCEN.",
+      "positions": [
+        "Flat",
+        "Horizontal",
+        "Vertical",
+        "Overhead"
+      ],
+      "positions_note": "All positions with TIG or short-circuit / pulsed MIG.",
+      "mechanical": {
+        "tensile_ksi": 75,
+        "tensile_mpa": 515,
+        "yield_ksi": 45,
+        "yield_mpa": 310,
+        "elongation_pct": 30,
+        "impact": "Not required by the specification"
+      },
+      "coating": "None — bare wire or rod",
+      "penetration": "Medium",
+      "deposition": "Medium to high depending on process",
+      "slag": "None; light oxide film to be cleaned",
+      "arc": "Stable with a fluid puddle",
+      "amperage": [
+        {
+          "diameter": "0.030 in (0.8 mm) MIG",
+          "min": 50,
+          "max": 150
+        },
+        {
+          "diameter": "0.035 in (0.9 mm) MIG",
+          "min": 70,
+          "max": 180
+        },
+        {
+          "diameter": "0.045 in (1.2 mm) MIG",
+          "min": 100,
+          "max": 250
+        },
+        {
+          "diameter": "1/16 in (1.6 mm) TIG",
+          "min": 40,
+          "max": 90
+        },
+        {
+          "diameter": "3/32 in (2.4 mm) TIG",
+          "min": 70,
+          "max": 130
+        },
+        {
+          "diameter": "1/8 in (3.2 mm) TIG",
+          "min": 100,
+          "max": 180
+        }
+      ],
+      "shielding_gas": {
+        "primary": "100% argon for TIG; tri-mix or 98/2 for MIG",
+        "options": [
+          {
+            "gas": "100% argon",
+            "note": "Standard for TIG and pulsed MIG."
+          },
+          {
+            "gas": "90% He / 7.5% Ar / 2.5% CO2",
+            "note": "Short-circuit MIG tri-mix with good wetting."
+          },
+          {
+            "gas": "98% Ar / 2% CO2",
+            "note": "Spray transfer on plate and overlay work."
+          }
+        ],
+        "flow": "15–20 CFH for TIG, 25–35 CFH for MIG; purge the root side of pipe joints"
+      },
+      "base_metals": [
+        "304/304L to carbon steel",
+        "316 to carbon steel (with the appropriate WPS)",
+        "Type 309 and 309S",
+        "Carbon steel requiring a stainless buffer layer"
+      ],
+      "applications": [
+        "Stainless-to-carbon-steel transition joints",
+        "Buffer layer on carbon steel before an ER308L or ER316L overlay",
+        "Cladding on pressure vessels and process equipment",
+        "Repair of unknown or difficult-to-weld steels",
+        "Joining stainless to low-alloy steel in piping systems"
+      ],
+      "characteristics": [
+        "The extra chromium and nickel are consumed by dilution from the carbon steel side, landing the deposit in a safe austenitic-ferritic range",
+        "Retains ferrite after dilution, which is what prevents solidification cracking",
+        "Widely used as a general repair filler on unknown steels for the same reason",
+        "Oxidation resistant to about 1900 °F (1040 °C)",
+        "Costs more than ER308L, so it is reserved for dissimilar and overlay work"
+      ],
+      "storage": {
+        "summary": "Clean, dry, isolated from carbon steel contamination.",
+        "details": [
+          "Sealed tubes for TIG rod; desiccant bag for MIG spools.",
+          "Do not lay stainless filler on carbon steel benches.",
+          "Wipe with acetone before use if the rods have been handled without gloves."
+        ]
+      },
+      "tips": [
+        "Keep heat input and dilution low — stringer beads, low amperage, and no weaving.",
+        "For overlay, one layer of ER309L then subsequent layers of ER308L or ER316L is the standard sequence.",
+        "On a dissimilar butt joint, center the arc and avoid excessive penetration into the carbon side.",
+        "Verify with a ferrite gauge on critical work; the deposit should retain measurable ferrite after dilution."
+      ],
+      "faqs": [
+        {
+          "q": "What is ER309L used for?",
+          "a": "Joining stainless steel to carbon steel, laying the buffer layer under a stainless overlay, welding 309 base metal, and repairing steels of unknown composition."
+        },
+        {
+          "q": "Why not use ER308L for stainless to carbon steel?",
+          "a": "Carbon steel melting into the puddle dilutes the chromium and nickel. ER308L diluted that way turns martensitic and cracks. ER309L starts over-alloyed, so the diluted deposit still contains crack-resisting ferrite."
+        },
+        {
+          "q": "What gas for ER309L MIG?",
+          "a": "A helium-rich tri-mix (90% He / 7.5% Ar / 2.5% CO2) for short circuit, or 98% argon / 2% CO2 for spray. Pure argon for TIG."
+        },
+        {
+          "q": "Can ER309L be used on 316 to carbon steel?",
+          "a": "Commonly yes, though some specifications call for ER309LMo to keep molybdenum in the transition weld. Follow the governing WPS."
+        },
+        {
+          "q": "What amperage for 3/32 in ER309L TIG rod?",
+          "a": "Roughly 70–130 A DCEN, with the lower end for sheet and the upper end for 1/4 in material."
+        }
+      ],
+      "related": [
+        "er308l",
+        "er316l",
+        "e309l"
+      ],
+      "related_symbols": [
+        "surfacing-weld",
+        "v-groove-weld"
+      ]
+    },
+    {
+      "id": "er316l",
+      "name": "ER316L",
+      "full_name": "ER316L Molybdenum Stainless Wire",
+      "spec": "AWS A5.9/A5.9M",
+      "process": "GMAW / GTAW",
+      "process_id": "tig-welding",
+      "process_name": "TIG (GTAW) / MIG (GMAW)",
+      "category": "stainless",
+      "category_name": "Stainless Steel",
+      "form": "Solid wire / rod",
+      "summary": "ER316L is the molybdenum-bearing bare filler for 316 and 316L stainless — the standard TIG rod and MIG wire for marine, chemical and sanitary service.",
+      "meta_description": "ER316L TIG rod and MIG wire for 316/316L stainless. Molybdenum for chloride resistance. Gas, amperage by diameter, purging and AWS A5.9 specs.",
+      "classification_breakdown": [
+        {
+          "part": "ER",
+          "meaning": "Electrode or rod — usable for MIG or TIG"
+        },
+        {
+          "part": "316",
+          "meaning": "Nominal 18–20% chromium, 11–14% nickel, 2–3% molybdenum"
+        },
+        {
+          "part": "L",
+          "meaning": "Low carbon, 0.03% maximum"
+        }
+      ],
+      "polarity": [
+        "DCEP (GMAW)",
+        "DCEN (GTAW)"
+      ],
+      "polarity_note": "MIG DCEP, TIG DCEN.",
+      "positions": [
+        "Flat",
+        "Horizontal",
+        "Vertical",
+        "Overhead"
+      ],
+      "positions_note": "All positions with TIG or short-circuit / pulsed MIG.",
+      "mechanical": {
+        "tensile_ksi": 70,
+        "tensile_mpa": 485,
+        "yield_ksi": 40,
+        "yield_mpa": 275,
+        "elongation_pct": 30,
+        "impact": "Not required; austenitic deposits remain tough at low temperature"
+      },
+      "coating": "None — bare wire or rod",
+      "penetration": "Medium",
+      "deposition": "Medium to high depending on process",
+      "slag": "None; light oxide film to be cleaned or pickled",
+      "arc": "Stable with a fluid puddle",
+      "amperage": [
+        {
+          "diameter": "0.030 in (0.8 mm) MIG",
+          "min": 50,
+          "max": 150
+        },
+        {
+          "diameter": "0.035 in (0.9 mm) MIG",
+          "min": 70,
+          "max": 180
+        },
+        {
+          "diameter": "0.045 in (1.2 mm) MIG",
+          "min": 100,
+          "max": 250
+        },
+        {
+          "diameter": "1/16 in (1.6 mm) TIG",
+          "min": 40,
+          "max": 90
+        },
+        {
+          "diameter": "3/32 in (2.4 mm) TIG",
+          "min": 70,
+          "max": 130
+        },
+        {
+          "diameter": "1/8 in (3.2 mm) TIG",
+          "min": 100,
+          "max": 180
+        }
+      ],
+      "shielding_gas": {
+        "primary": "100% argon for TIG; tri-mix or 98/2 for MIG",
+        "options": [
+          {
+            "gas": "100% argon",
+            "note": "Standard for TIG and pulsed MIG on stainless."
+          },
+          {
+            "gas": "90% He / 7.5% Ar / 2.5% CO2",
+            "note": "Tri-mix for short-circuit MIG."
+          },
+          {
+            "gas": "98% Ar / 2% CO2",
+            "note": "Spray transfer; keep CO2 low so weld carbon stays down."
+          },
+          {
+            "gas": "Ar / 2% O2",
+            "note": "Spray transfer with good arc stability and wetting."
+          }
+        ],
+        "flow": "15–20 CFH for TIG, 25–35 CFH for MIG; argon back purge on pipe roots"
+      },
+      "base_metals": [
+        "Type 316 and 316L",
+        "Type 317 where matching is not required",
+        "Molybdenum-bearing austenitic grades",
+        "Duplex-adjacent applications only where the WPS allows"
+      ],
+      "applications": [
+        "Marine and offshore piping and structures",
+        "Chemical, pulp-and-paper and pharmaceutical process equipment",
+        "Sanitary tubing where chloride cleaning agents are used",
+        "Heat exchangers and condensers in brackish service",
+        "Any 316 joint where flux-free welds are required"
+      ],
+      "characteristics": [
+        "2–3% molybdenum sharply improves pitting and crevice corrosion resistance in chlorides",
+        "Low carbon protects the heat-affected zone from sensitization",
+        "Typical ferrite in the FN 3–8 range, enough to resist hot cracking",
+        "Better elevated-temperature creep strength than the 308 chemistry",
+        "More expensive than ER308L — specify it when chlorides or the base metal demand it"
+      ],
+      "storage": {
+        "summary": "Clean, dry and isolated from iron contamination.",
+        "details": [
+          "Sealed tubes for TIG rod; desiccant-bagged spools for MIG.",
+          "Use clean gloves; wipe with acetone if handled bare-handed.",
+          "Never rest stainless filler on carbon steel surfaces or brush it with a carbon steel brush."
+        ]
+      },
+      "tips": [
+        "Back purge pipe roots with argon — sugaring destroys the corrosion resistance you are paying for.",
+        "Keep interpass temperature under 350 °F (175 °C) and run stringers.",
+        "Pickle and passivate after welding on critical corrosion service; brushing alone leaves a chromium-depleted surface.",
+        "Do not substitute ER308L on 316 base metal — the missing molybdenum shows up as pitting in service, not as a weld defect."
+      ],
+      "faqs": [
+        {
+          "q": "What is the difference between ER316L and ER308L?",
+          "a": "ER316L contains 2–3% molybdenum for chloride and pitting resistance; ER308L has none. Use ER316L on 316/316L and in marine or chemical service, ER308L on 304/304L."
+        },
+        {
+          "q": "What gas do you use with ER316L?",
+          "a": "100% argon for TIG. For MIG, a helium tri-mix for short circuit or 98% argon / 2% CO2 for spray. Keep CO2 low so the weld does not pick up carbon."
+        },
+        {
+          "q": "What amperage for 3/32 in ER316L TIG rod?",
+          "a": "Roughly 70–130 A DCEN, with about 70–90 A on 1/8 in material and up toward 130 A on 1/4 in."
+        },
+        {
+          "q": "Does ER316L need to be back purged?",
+          "a": "On pipe and tube roots, yes. Oxidation on the unshielded side forms sugaring, a rough gray scale that cannot be repaired without cutting the joint out."
+        },
+        {
+          "q": "Is ER316L suitable for saltwater?",
+          "a": "It resists chlorides far better than 304-grade fillers, which is why it is standard for marine work, but it is not immune. For severe seawater service, specifiers move to duplex, super-austenitic or nickel alloys."
+        }
+      ],
+      "related": [
+        "er308l",
+        "er309l",
+        "e316l"
+      ],
+      "related_symbols": [
+        "v-groove-weld",
+        "seam-weld",
+        "fillet-weld"
+      ]
+    },
+    {
+      "id": "er4043",
+      "name": "ER4043",
+      "full_name": "ER4043 Silicon Aluminum Filler",
+      "spec": "AWS A5.10/A5.10M",
+      "process": "GMAW / GTAW",
+      "process_id": "tig-welding",
+      "process_name": "TIG (GTAW) / MIG (GMAW)",
+      "category": "aluminum",
+      "category_name": "Aluminum",
+      "form": "Solid wire / rod",
+      "summary": "ER4043 is the 5% silicon aluminum filler — fluid, crack-resistant and the default choice for welding 6061 and aluminum castings.",
+      "meta_description": "ER4043 is 5% silicon aluminum TIG rod and MIG wire for 6061 and castings. Crack resistant, AC TIG settings, amperage chart and ER5356 comparison.",
+      "classification_breakdown": [
+        {
+          "part": "ER",
+          "meaning": "Electrode or rod — usable for MIG or TIG"
+        },
+        {
+          "part": "4043",
+          "meaning": "Aluminum Association alloy 4043, nominally 5% silicon, balance aluminum"
+        }
+      ],
+      "polarity": [
+        "AC (GTAW)",
+        "DCEP (GMAW)"
+      ],
+      "polarity_note": "TIG on aluminum uses AC so the reverse half-cycle strips the oxide layer. MIG uses DCEP, usually through a spool gun or push-pull torch because the soft wire birdnests in a standard liner.",
+      "positions": [
+        "Flat",
+        "Horizontal",
+        "Vertical",
+        "Overhead"
+      ],
+      "positions_note": "All positions with TIG or pulsed MIG. Aluminum's fluid puddle makes out-of-position work demanding; pulsed transfer helps considerably.",
+      "mechanical": {
+        "tensile_ksi": 27,
+        "tensile_mpa": 186,
+        "yield_ksi": 16,
+        "yield_mpa": 110,
+        "elongation_pct": 8,
+        "impact": "Not applicable"
+      },
+      "coating": "None — bare wire or rod",
+      "penetration": "Medium",
+      "deposition": "High on MIG, moderate on TIG",
+      "slag": "None; remove the oxide layer mechanically before welding",
+      "arc": "Fluid and fast, with a narrow window between cold and burn-through",
+      "amperage": [
+        {
+          "diameter": "0.030 in (0.8 mm) MIG",
+          "min": 60,
+          "max": 175
+        },
+        {
+          "diameter": "0.035 in (0.9 mm) MIG",
+          "min": 70,
+          "max": 200
+        },
+        {
+          "diameter": "3/64 in (1.2 mm) MIG",
+          "min": 100,
+          "max": 260
+        },
+        {
+          "diameter": "1/16 in (1.6 mm) TIG",
+          "min": 40,
+          "max": 90
+        },
+        {
+          "diameter": "3/32 in (2.4 mm) TIG",
+          "min": 80,
+          "max": 130
+        },
+        {
+          "diameter": "1/8 in (3.2 mm) TIG",
+          "min": 120,
+          "max": 190
+        }
+      ],
+      "shielding_gas": {
+        "primary": "100% argon",
+        "options": [
+          {
+            "gas": "100% argon",
+            "note": "Standard for both TIG and MIG on aluminum up to about 1/2 in."
+          },
+          {
+            "gas": "75% Ar / 25% He",
+            "note": "Adds heat for thicker sections and improves wetting."
+          },
+          {
+            "gas": "50% Ar / 50% He",
+            "note": "Heavy plate and castings where penetration is the limit."
+          }
+        ],
+        "flow": "20–30 CFH (9–14 L/min); aluminum needs more coverage than steel"
+      },
+      "base_metals": [
+        "6061 and the 6xxx series",
+        "Aluminum castings including 356 and A356",
+        "3003 and 3004",
+        "1xxx commercially pure aluminum"
+      ],
+      "applications": [
+        "Welding and repairing 6061 structures, frames and extrusions",
+        "Casting repair on engine blocks, housings and manifolds",
+        "General aluminum fabrication where strength is not the limiting factor",
+        "Heat exchangers and tubing in 3003",
+        "Anywhere crack sensitivity outweighs the need for joint strength"
+      ],
+      "characteristics": [
+        "5% silicon lowers the melting point and widens the freezing range, which is what makes it crack resistant",
+        "More fluid than ER5356 — easier to run, wets out flatter",
+        "Finishes dull gray and turns dark if the part is anodized, so it is the wrong choice for cosmetic anodized work",
+        "Lower shear and tensile strength than ER5356",
+        "Not recommended for 5xxx base metals containing more than about 3% magnesium, where Mg-Si compounds embrittle the weld"
+      ],
+      "storage": {
+        "summary": "Keep sealed and dry. Aluminum filler grows an oxide layer and picks up moisture that turns into weld porosity.",
+        "details": [
+          "Store TIG rod in a sealed tube; keep MIG spools bagged with desiccant when out of the machine.",
+          "Handle with clean gloves — hydrogen from skin oils and moisture is the main cause of aluminum weld porosity.",
+          "Wipe rods with acetone and use a dedicated stainless brush on the joint immediately before welding.",
+          "Do not use filler that has developed a visible white oxide bloom."
+        ]
+      },
+      "tips": [
+        "On AC TIG, set balance around 65–70% electrode negative for good penetration with enough cleaning action.",
+        "Preheat sections over 1/4 in to 250–300 °F (120–150 °C), but never exceed 400 °F on heat-treatable alloys.",
+        "Clean with a stainless brush dedicated to aluminum immediately before welding — the oxide reforms in minutes.",
+        "For MIG, use a spool gun or push-pull torch with a nylon or graphite liner; a steel liner shaves the soft wire.",
+        "Choose ER4043 when the part might crack and ER5356 when the joint needs strength or will be anodized."
+      ],
+      "faqs": [
+        {
+          "q": "What is the difference between ER4043 and ER5356?",
+          "a": "ER4043 is 5% silicon: more fluid, more crack resistant, easier to weld, but weaker and it anodizes dark gray. ER5356 is 5% magnesium: stronger, better color match when anodized, stiffer to feed, and more sensitive to cracking on some base metals."
+        },
+        {
+          "q": "Can ER4043 weld 6061?",
+          "a": "Yes — it is the standard filler for 6061. The silicon suppresses the hot cracking that a matching 6061 filler would suffer from."
+        },
+        {
+          "q": "What gas do you use with ER4043?",
+          "a": "100% argon for both TIG and MIG on material up to about 1/2 in. Argon-helium mixes add heat for thicker sections and castings."
+        },
+        {
+          "q": "Why does aluminum TIG use AC?",
+          "a": "Aluminum carries a tough oxide skin that melts far hotter than the metal beneath it. The electrode-positive half of the AC cycle blasts that oxide off, while the electrode-negative half puts heat into the joint."
+        },
+        {
+          "q": "Will ER4043 match the color after anodizing?",
+          "a": "No. A 4043 weld anodizes dark gray to black against the base metal. For cosmetic anodized work, ER5356 gives a much closer match."
+        }
+      ],
+      "related": [
+        "er5356",
+        "e4043"
+      ],
+      "related_symbols": [
+        "fillet-weld",
+        "v-groove-weld",
+        "surfacing-weld"
+      ]
+    },
+    {
+      "id": "er5356",
+      "name": "ER5356",
+      "full_name": "ER5356 Magnesium Aluminum Filler",
+      "spec": "AWS A5.10/A5.10M",
+      "process": "GMAW / GTAW",
+      "process_id": "tig-welding",
+      "process_name": "TIG (GTAW) / MIG (GMAW)",
+      "category": "aluminum",
+      "category_name": "Aluminum",
+      "form": "Solid wire / rod",
+      "summary": "ER5356 is the 5% magnesium aluminum filler — stronger than ER4043, stiffer to feed, and the choice when the joint must carry load or be anodized.",
+      "meta_description": "ER5356 is 5% magnesium aluminum wire and TIG rod: higher strength than 4043 and a color match when anodized. Amperage, gas and service temperature limits.",
+      "classification_breakdown": [
+        {
+          "part": "ER",
+          "meaning": "Electrode or rod — usable for MIG or TIG"
+        },
+        {
+          "part": "5356",
+          "meaning": "Aluminum Association alloy 5356, nominally 5% magnesium with small chromium and manganese additions"
+        }
+      ],
+      "polarity": [
+        "AC (GTAW)",
+        "DCEP (GMAW)"
+      ],
+      "polarity_note": "AC for TIG to provide oxide cleaning; DCEP for MIG. ER5356 is stiffer than ER4043 and feeds noticeably better through a long gun.",
+      "positions": [
+        "Flat",
+        "Horizontal",
+        "Vertical",
+        "Overhead"
+      ],
+      "positions_note": "All positions. The slightly less fluid puddle makes out-of-position work easier than with ER4043.",
+      "mechanical": {
+        "tensile_ksi": 38,
+        "tensile_mpa": 262,
+        "yield_ksi": 17,
+        "yield_mpa": 117,
+        "elongation_pct": 17,
+        "impact": "Not applicable"
+      },
+      "coating": "None — bare wire or rod",
+      "penetration": "Medium",
+      "deposition": "High on MIG, moderate on TIG",
+      "slag": "None; mechanical oxide removal required before welding",
+      "arc": "Slightly stiffer and less fluid than ER4043",
+      "amperage": [
+        {
+          "diameter": "0.030 in (0.8 mm) MIG",
+          "min": 60,
+          "max": 175
+        },
+        {
+          "diameter": "0.035 in (0.9 mm) MIG",
+          "min": 70,
+          "max": 200
+        },
+        {
+          "diameter": "3/64 in (1.2 mm) MIG",
+          "min": 100,
+          "max": 260
+        },
+        {
+          "diameter": "1/16 in (1.6 mm) TIG",
+          "min": 40,
+          "max": 90
+        },
+        {
+          "diameter": "3/32 in (2.4 mm) TIG",
+          "min": 80,
+          "max": 130
+        },
+        {
+          "diameter": "1/8 in (3.2 mm) TIG",
+          "min": 120,
+          "max": 190
+        }
+      ],
+      "shielding_gas": {
+        "primary": "100% argon",
+        "options": [
+          {
+            "gas": "100% argon",
+            "note": "Standard for TIG and MIG up to about 1/2 in."
+          },
+          {
+            "gas": "75% Ar / 25% He",
+            "note": "Extra heat for thick plate and better wetting."
+          },
+          {
+            "gas": "50% Ar / 50% He",
+            "note": "Heavy sections where argon alone runs out of penetration."
+          }
+        ],
+        "flow": "20–30 CFH (9–14 L/min)"
+      },
+      "base_metals": [
+        "5052, 5083, 5086 and the 5xxx series",
+        "6061 where joint strength governs",
+        "Marine aluminum structures",
+        "Aluminum that will be anodized"
+      ],
+      "applications": [
+        "Boat hulls, marine structures and 5083/5086 plate",
+        "Structural aluminum joints where shear strength governs the design",
+        "Trailers, truck bodies and tanks",
+        "Parts that will be anodized and need a color match",
+        "Aluminum bicycle and motorcycle frames"
+      ],
+      "characteristics": [
+        "Roughly 40% higher tensile strength than ER4043 and much better shear strength in fillet welds",
+        "Anodizes to a near match with common base alloys, where 4043 goes dark gray",
+        "Stiffer wire feeds better through long MIG guns and push-pull systems",
+        "More sensitive to hot cracking on high-silicon base metals and castings than ER4043",
+        "Not recommended for sustained service above about 150 °F (65 °C), where magnesium above 3% can sensitize and lead to stress corrosion cracking"
+      ],
+      "storage": {
+        "summary": "Sealed and dry. Magnesium-bearing aluminum oxidizes readily and moisture becomes weld porosity.",
+        "details": [
+          "TIG rod in a sealed tube, MIG spools bagged with desiccant.",
+          "Handle with clean gloves — skin oils are a hydrogen source.",
+          "Wipe with acetone before welding and brush the joint with a dedicated stainless brush.",
+          "Discard filler showing a white powdery oxide bloom."
+        ]
+      },
+      "tips": [
+        "Use it on 5xxx base metals and wherever a fillet weld's shear strength governs the design.",
+        "For anodized work, ER5356 is the only sensible choice of these two fillers.",
+        "Preheat over 1/4 in to 250–300 °F (120–150 °C); avoid prolonged heat on 5083/5086 in marine service.",
+        "Avoid it on high-silicon castings such as 356 — magnesium plus silicon in those proportions cracks; use ER4043 there.",
+        "Feed problems usually mean liner and drive-roll setup, not the wire: use U-groove rolls and a nylon or graphite liner."
+      ],
+      "faqs": [
+        {
+          "q": "Is ER5356 stronger than ER4043?",
+          "a": "Yes. ER5356 runs about 38 ksi tensile against roughly 27 ksi for ER4043, and its shear strength in fillet welds is substantially higher. That is why structural and marine work specifies 5356."
+        },
+        {
+          "q": "Which filler anodizes better, 4043 or 5356?",
+          "a": "ER5356. A 4043 weld anodizes dark gray to black and stands out sharply; 5356 comes much closer to the base metal color."
+        },
+        {
+          "q": "Can ER5356 weld 6061?",
+          "a": "Yes, and it is preferred when the joint's strength governs. ER4043 is the more crack-tolerant choice on restrained 6061 joints and castings, so the selection depends on whether strength or crack resistance matters more."
+        },
+        {
+          "q": "Why is ER5356 not used above 150 F?",
+          "a": "Aluminum alloys with more than about 3% magnesium can sensitize during long exposure to elevated temperature, precipitating a magnesium phase at grain boundaries that makes the metal vulnerable to stress corrosion cracking."
+        },
+        {
+          "q": "Why does ER5356 feed better than ER4043?",
+          "a": "It is a harder, stiffer alloy. Soft 4043 wire buckles and birdnests in the drive rolls on a long gun, while 5356 pushes through more reliably."
+        }
+      ],
+      "related": [
+        "er4043",
+        "e4043"
+      ],
+      "related_symbols": [
+        "fillet-weld",
+        "v-groove-weld"
+      ]
+    },
+    {
+      "id": "e71t-1",
+      "name": "E71T-1",
+      "full_name": "E71T-1 Gas-Shielded Flux-Cored Wire",
+      "spec": "AWS A5.20/A5.20M",
+      "process": "FCAW-G",
+      "process_id": "flux-core-welding",
+      "process_name": "Flux-Cored (FCAW)",
+      "category": "flux-cored",
+      "category_name": "Flux-Cored",
+      "form": "Tubular wire",
+      "summary": "E71T-1 is gas-shielded flux-cored wire — the high-deposition, all-position production workhorse for structural steel, combining FCAW speed with a smooth spray-like arc.",
+      "meta_description": "E71T-1 gas-shielded flux-cored wire: all-position 70 ksi deposits with high deposition rates. Gas, amperage by diameter, CTWD and AWS A5.20 specs.",
+      "classification_breakdown": [
+        {
+          "part": "E",
+          "meaning": "Electrode"
+        },
+        {
+          "part": "7",
+          "meaning": "70,000 psi minimum tensile strength"
+        },
+        {
+          "part": "1",
+          "meaning": "All welding positions"
+        },
+        {
+          "part": "T",
+          "meaning": "Tubular (flux-cored) wire"
+        },
+        {
+          "part": "-1",
+          "meaning": "Rutile slag system, gas shielded, DCEP, with 20 ft·lb impact toughness at 0 °F"
+        }
+      ],
+      "polarity": [
+        "DCEP"
+      ],
+      "polarity_note": "DCEP. This is the opposite of self-shielded T-11 wire, which runs DCEN — getting the polarity backwards is the most common setup mistake when switching between the two.",
+      "positions": [
+        "Flat",
+        "Horizontal",
+        "Vertical",
+        "Overhead"
+      ],
+      "positions_note": "All positions. Vertical-up is standard on structural work; some manufacturers qualify vertical-down procedures for specific wires.",
+      "mechanical": {
+        "tensile_ksi": 70,
+        "tensile_mpa": 480,
+        "yield_ksi": 58,
+        "yield_mpa": 400,
+        "elongation_pct": 22,
+        "impact": "20 ft·lb at 0 °F (27 J at -18 °C); -1J and -1M grades extend this to -20 °F"
+      },
+      "coating": "Rutile flux core inside a mild steel sheath",
+      "penetration": "Medium to deep",
+      "deposition": "Very high — roughly twice the rate of a comparable stick electrode",
+      "slag": "Fast-freezing rutile slag that supports the puddle out of position and peels readily",
+      "arc": "Smooth, spray-like, with a fine droplet transfer",
+      "amperage": [
+        {
+          "diameter": "0.035 in (0.9 mm)",
+          "min": 90,
+          "max": 250
+        },
+        {
+          "diameter": "0.045 in (1.2 mm)",
+          "min": 150,
+          "max": 350
+        },
+        {
+          "diameter": "0.052 in (1.4 mm)",
+          "min": 180,
+          "max": 400
+        },
+        {
+          "diameter": "1/16 in (1.6 mm)",
+          "min": 200,
+          "max": 450
+        }
+      ],
+      "shielding_gas": {
+        "primary": "100% CO2 or 75% argon / 25% CO2",
+        "options": [
+          {
+            "gas": "100% CO2",
+            "note": "Deeper penetration, lower gas cost, more spatter. The classic choice for structural work."
+          },
+          {
+            "gas": "75% Ar / 25% CO2",
+            "note": "Smoother arc, less spatter, slightly higher deposition efficiency and better out-of-position control. Higher tensile than the same wire on CO2."
+          }
+        ],
+        "flow": "35–45 CFH (16–21 L/min). FCAW-G needs more flow than solid-wire MIG, and it cannot be used outdoors without a windscreen."
+      },
+      "base_metals": [
+        "A36 and A572 structural steel",
+        "A516 pressure vessel plate",
+        "Heavy plate and structural shapes",
+        "Shipbuilding and offshore steels"
+      ],
+      "applications": [
+        "Structural steel fabrication and erection",
+        "Shipbuilding and barge construction",
+        "Heavy equipment and earthmoving machinery",
+        "Pressure vessel fill and cap passes",
+        "Any indoor production joint where deposition rate drives cost"
+      ],
+      "characteristics": [
+        "Deposition rates far above stick and above solid MIG wire at equal amperage",
+        "The slag system holds the puddle for genuine all-position welding at high current",
+        "Requires external shielding gas — wind over about 5 mph will cause porosity",
+        "Higher fume generation than solid wire; good local exhaust matters",
+        "Slag must be removed completely between passes or inclusions result"
+      ],
+      "storage": {
+        "summary": "Keep dry. The flux core absorbs moisture through the seam of the wire, and damp wire means porosity and hydrogen cracking.",
+        "details": [
+          "Store unopened spools in a dry area at normal shop temperature.",
+          "Once a spool is opened, either use it or return it to a sealed bag with desiccant, or hold it in a heated cabinet at 250–300 °F (120–150 °C).",
+          "A spool left on the machine over a humid weekend will often show porosity in the first several feet — run it off before starting critical work.",
+          "Surface rust on the sheath means the spool should be discarded."
+        ]
+      },
+      "tips": [
+        "Use a contact-tip-to-work distance around 3/4 to 1 in — considerably longer than solid-wire MIG.",
+        "Drag the gun with a 5–15 degree drag angle so the slag trails the puddle.",
+        "For 0.045 in wire on plate, about 26–28 V and 300–350 ipm is a solid starting point on CO2.",
+        "Knurled drive rolls with light tension — a tubular wire crushes if you clamp it like solid wire.",
+        "Do not use FCAW-G outdoors without a windscreen; if you need wind tolerance, switch to a self-shielded wire such as E71T-11 or E71T-8."
+      ],
+      "faqs": [
+        {
+          "q": "What gas do you use with E71T-1?",
+          "a": "100% CO2 or 75% argon / 25% CO2. CO2 penetrates deeper and costs less; the argon mix gives a smoother arc, less spatter and better out-of-position control."
+        },
+        {
+          "q": "Is E71T-1 DCEP or DCEN?",
+          "a": "DCEP, electrode positive. Self-shielded wires such as E71T-11 run DCEN, so the polarity must be changed when switching between the two types."
+        },
+        {
+          "q": "What is the difference between E71T-1 and E71T-11?",
+          "a": "E71T-1 is gas shielded, runs DCEP, and produces tougher, higher-quality welds suitable for code work. E71T-11 is self-shielded, runs DCEN, needs no gas bottle, and tolerates wind — but has lower toughness and is usually thickness limited."
+        },
+        {
+          "q": "What settings for 0.045 in E71T-1?",
+          "a": "Roughly 26–28 V with 300–350 ipm wire feed on CO2, which works out around 250–300 A. Use about 3/4 in contact tip to work distance."
+        },
+        {
+          "q": "Can E71T-1 be used outdoors?",
+          "a": "Not without shelter. It depends on external shielding gas, and wind above about 5 mph blows the gas away and causes porosity. Use a self-shielded flux-cored wire outdoors."
+        }
+      ],
+      "related": [
+        "e71t-11",
+        "er70s-6",
+        "e7018"
+      ],
+      "related_symbols": [
+        "fillet-weld",
+        "bevel-groove-weld",
+        "v-groove-weld"
+      ]
+    },
+    {
+      "id": "e71t-11",
+      "name": "E71T-11",
+      "full_name": "E71T-11 Self-Shielded Flux-Cored Wire",
+      "spec": "AWS A5.20/A5.20M",
+      "process": "FCAW-S",
+      "process_id": "flux-core-welding",
+      "process_name": "Flux-Cored (FCAW)",
+      "category": "flux-cored",
+      "category_name": "Flux-Cored",
+      "form": "Tubular wire",
+      "summary": "E71T-11 is self-shielded flux-cored wire — no gas bottle, runs DCEN, and works in wind, which makes it the standard gasless wire for small machines and outdoor repair.",
+      "meta_description": "E71T-11 self-shielded flux-cored wire needs no shielding gas and runs DCEN. Settings by diameter, thickness limits, and how it compares to E71T-1.",
+      "classification_breakdown": [
+        {
+          "part": "E",
+          "meaning": "Electrode"
+        },
+        {
+          "part": "7",
+          "meaning": "70,000 psi minimum tensile strength"
+        },
+        {
+          "part": "1",
+          "meaning": "All welding positions"
+        },
+        {
+          "part": "T",
+          "meaning": "Tubular (flux-cored) wire"
+        },
+        {
+          "part": "-11",
+          "meaning": "Self-shielded, DCEN, general purpose, no impact toughness requirement"
+        }
+      ],
+      "polarity": [
+        "DCEN"
+      ],
+      "polarity_note": "DCEN, electrode negative. Small MIG machines usually require swapping the gun and work leads at the terminals inside the case. Running it on DCEP produces a wandering arc and heavy spatter.",
+      "positions": [
+        "Flat",
+        "Horizontal",
+        "Vertical",
+        "Overhead"
+      ],
+      "positions_note": "All positions, and unusually it is often run vertical-down on thin material, which is where many hobby users work.",
+      "mechanical": {
+        "tensile_ksi": 70,
+        "tensile_mpa": 480,
+        "yield_ksi": 58,
+        "yield_mpa": 400,
+        "elongation_pct": 20,
+        "impact": "Not required by AWS A5.20 for the -11 classification"
+      },
+      "coating": "Self-shielding flux core inside a mild steel sheath",
+      "penetration": "Medium",
+      "deposition": "High",
+      "slag": "Heavy and fast-freezing; peels off but leaves more to clean than gas-shielded wire",
+      "arc": "Somewhat harsh with visible spatter, especially at low settings",
+      "amperage": [
+        {
+          "diameter": "0.030 in (0.8 mm)",
+          "min": 50,
+          "max": 150
+        },
+        {
+          "diameter": "0.035 in (0.9 mm)",
+          "min": 70,
+          "max": 200
+        },
+        {
+          "diameter": "0.045 in (1.2 mm)",
+          "min": 125,
+          "max": 260
+        }
+      ],
+      "shielding_gas": {
+        "primary": "None — self-shielded",
+        "options": [
+          {
+            "gas": "None",
+            "note": "The flux core generates its own shielding gas and slag. Adding gas is unnecessary and will not improve the weld."
+          }
+        ],
+        "flow": "Not applicable. Remove or bypass the gas solenoid connection when converting a MIG machine to gasless operation."
+      },
+      "base_metals": [
+        "A36 and mild steel plate",
+        "Galvanized steel with adequate ventilation",
+        "Farm and automotive repair steel",
+        "Light structural shapes"
+      ],
+      "applications": [
+        "Outdoor and windy-site repair welding",
+        "Farm, ranch and trailer repair",
+        "Hobby and home-shop welding on small 120 V machines",
+        "Field maintenance where carrying a gas bottle is impractical",
+        "Welding on rusty, painted or galvanized steel"
+      ],
+      "characteristics": [
+        "No shielding gas required — the main reason it is chosen",
+        "Wind tolerant, unlike solid MIG wire or gas-shielded flux core",
+        "More spatter and smoke than any gas-shielded process",
+        "No impact toughness requirement, and most manufacturers limit it to single or limited multi-pass work on material under about 1/2 in",
+        "Runs DCEN, which is the reverse of both solid MIG wire and E71T-1"
+      ],
+      "storage": {
+        "summary": "Keep dry and sealed. Self-shielded flux core is hygroscopic and damp wire is the usual cause of porosity on gasless machines.",
+        "details": [
+          "Bag opened spools with desiccant, or store them in a heated cabinet.",
+          "A spool left exposed in a humid garage will produce porosity within weeks.",
+          "Run several feet off before starting real work on a spool that has been sitting.",
+          "Discard wire with visible rust on the sheath."
+        ]
+      },
+      "tips": [
+        "Check the polarity first — more gasless welding problems trace to DCEP than to anything else.",
+        "Use a longer stickout than solid wire, roughly 1/2 to 3/4 in.",
+        "Drag the gun, never push — pushing rolls the slag ahead of the puddle and traps it.",
+        "Expect to chip slag; the appearance will never match gas-shielded MIG, and that is normal.",
+        "For thicker plate or any code work, move to E71T-1 with gas or to a low-hydrogen stick electrode."
+      ],
+      "faqs": [
+        {
+          "q": "Does E71T-11 need shielding gas?",
+          "a": "No. The flux inside the tubular wire generates its own shielding gas and slag cover, which is what makes it usable outdoors and on machines with no gas bottle."
+        },
+        {
+          "q": "Is E71T-11 DCEN or DCEP?",
+          "a": "DCEN, electrode negative. Most small MIG machines ship set up for DCEP solid wire, so the gun and work leads must be swapped. Wrong polarity gives an erratic, spattery arc."
+        },
+        {
+          "q": "How thick can you weld with E71T-11?",
+          "a": "Manufacturers commonly limit it to material under about 1/2 in, and many restrict it to single-pass or limited multi-pass welds. Check the specific product data sheet — the limits vary by brand and are a real restriction, not a suggestion."
+        },
+        {
+          "q": "Why does my gasless flux core weld look so bad?",
+          "a": "Usually one of four things: reversed polarity, too short a stickout, pushing instead of dragging the gun, or damp wire. Self-shielded wire also produces more spatter than gas-shielded processes even when everything is right."
+        },
+        {
+          "q": "Can E71T-11 be used on structural steel?",
+          "a": "It has no impact toughness requirement and is usually thickness limited, so it is generally not used for structural code work. E71T-1 with gas, or E7018, is the appropriate choice there."
+        }
+      ],
+      "related": [
+        "e71t-1",
+        "er70s-6",
+        "e6011"
+      ],
+      "related_symbols": [
+        "fillet-weld",
+        "plug-weld"
+      ]
+    }
+  ]
+}

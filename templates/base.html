@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="{{ site.language }}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ page_title }}</title>
+<meta name="description" content="{{ meta_description }}">
+<link rel="canonical" href="{{ site.base_url }}{{ url }}">
+{%- if robots %}
+<meta name="robots" content="{{ robots }}">
+{%- endif %}
+
+<meta property="og:type" content="{{ og_type|default('website') }}">
+<meta property="og:site_name" content="{{ site.name }}">
+<meta property="og:title" content="{{ og_title|default(page_title) }}">
+<meta property="og:description" content="{{ meta_description }}">
+<meta property="og:url" content="{{ site.base_url }}{{ url }}">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#0d1218">
+
+<link rel="stylesheet" href="/css/style.css">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="sitemap" type="application/xml" href="/sitemap.xml">
+
+{%- for block in schema %}
+<script type="application/ld+json">{{ block }}</script>
+{%- endfor %}
+
+<!-- Google AdSense -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ site.adsense_client }}" crossorigin="anonymous"></script>
+
+{%- if site.analytics_id %}
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ site.analytics_id }}"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', '{{ site.analytics_id }}');
+</script>
+{%- else %}
+<!-- Google Analytics: add the measurement ID to data/site.json ("analytics_id") to activate. -->
+{%- endif %}
+
+{%- if site.ahrefs_key %}
+<!-- Ahrefs Analytics -->
+<script src="https://analytics.ahrefs.com/analytics.js" data-key="{{ site.ahrefs_key }}" async></script>
+{%- else %}
+<!-- Ahrefs Analytics: add the site key to data/site.json ("ahrefs_key") to activate. -->
+{%- endif %}
+</head>
+
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="/">
+      <svg viewBox="0 0 32 32" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M9 12h19" stroke="currentColor"/>
+        <path d="M9 12L3 18" stroke="currentColor"/>
+        <polygon points="3,18 7.2,16.6 4.4,13.8" fill="currentColor" stroke="none"/>
+        <polygon points="15,12 15,20 23,12" fill="#ff8a3d" stroke="none"/>
+      </svg>
+      <span>Weld<span class="b2">Symbols</span></span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav class="nav" id="nav" aria-label="Main">
+      <a href="/electrodes/"{% if section == 'electrodes' %} aria-current="true"{% endif %}>Electrodes</a>
+      <a href="/symbols/"{% if section == 'symbols' %} aria-current="true"{% endif %}>Symbols</a>
+      <a href="/processes/"{% if section == 'processes' %} aria-current="true"{% endif %}>Processes</a>
+      <a href="/joints/"{% if section == 'joints' %} aria-current="true"{% endif %}>Joints</a>
+      <a href="/guides/"{% if section == 'guides' %} aria-current="true"{% endif %}>Guides</a>
+      <a href="/charts/amperage/"{% if section == 'charts' %} aria-current="true"{% endif %}>Amperage Chart</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <div class="wrap">
+    {%- if crumbs %}
+    <nav aria-label="Breadcrumb">
+      <ol class="crumbs">
+        {%- for c in crumbs %}
+        <li>{% if not loop.last %}<a href="{{ c.url }}">{{ c.name }}</a>{% else %}<span aria-current="page">{{ c.name }}</span>{% endif %}</li>
+        {%- endfor %}
+      </ol>
+    </nav>
+    {%- endif %}
+    {% block content %}{% endblock %}
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <h3>Electrodes</h3>
+        <ul>
+          <li><a href="/electrodes/">All electrodes</a></li>
+          {%- for c in site.categories %}
+          <li><a href="/electrodes/{{ c.id }}/">{{ c.name }}</a></li>
+          {%- endfor %}
+        </ul>
+      </div>
+      <div>
+        <h3>Reference</h3>
+        <ul>
+          <li><a href="/symbols/">Welding symbols</a></li>
+          <li><a href="/joints/">Joint types</a></li>
+          <li><a href="/processes/">Welding processes</a></li>
+          <li><a href="/charts/amperage/">Amperage chart</a></li>
+          <li><a href="/guides/">Guides</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Popular guides</h3>
+        <ul>
+          <li><a href="/guides/how-to-read-welding-symbols/">Reading welding symbols</a></li>
+          <li><a href="/guides/welding-electrode-numbers-explained/">Electrode numbers</a></li>
+          <li><a href="/guides/welding-polarity-dcep-dcen-ac/">DCEP vs DCEN vs AC</a></li>
+          <li><a href="/guides/welding-rod-storage/">Rod storage</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Site</h3>
+        <ul>
+          <li><a href="/about/">About</a></li>
+          <li><a href="/privacy/">Privacy policy</a></li>
+          <li><a href="/terms/">Terms of use</a></li>
+          <li><a href="mailto:{{ site.contact_email }}">{{ site.contact_email }}</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <p>&copy; {{ year }} {{ site.name }}. Reference data only &mdash; the governing code, standard and manufacturer data sheet take precedence.</p>
+      <p>Built as a static site. No tracking wall, no login.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="/js/search.js" defer></script>
+</body>
+</html>

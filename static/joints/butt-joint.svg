@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 180" role="img" aria-labelledby="butt-joint-t butt-joint-d">
+  <title id="butt-joint-t">Butt joint cross-section</title>
+  <desc id="butt-joint-d">Cross-section through a butt joint.</desc>
+  <style>
+  .ln   { fill: none; stroke: var(--svg-line, #c8d2e2); stroke-width: 2.4;
+          stroke-linecap: round; stroke-linejoin: round; }
+  .head { fill: var(--svg-line, #c8d2e2); stroke: none; }
+  .sym  { fill: none; stroke: var(--svg-accent, #ff8a3d); stroke-width: 3;
+          stroke-linecap: round; stroke-linejoin: round; }
+  .symf { fill: var(--svg-accent, #ff8a3d); stroke: none; }
+  .bar  { fill: none; stroke: var(--svg-accent, #ff8a3d); stroke-width: 5.5;
+          stroke-linecap: round; }
+  .part { fill: var(--svg-part, #3a4557); stroke: var(--svg-line, #c8d2e2);
+          stroke-width: 2; stroke-linejoin: round; }
+  .weld { fill: var(--svg-accent, #ff8a3d); stroke: var(--svg-accent, #ff8a3d);
+          stroke-width: 1.5; stroke-linejoin: round; fill-opacity: .85; }
+  .hair { fill: none; stroke: var(--svg-line, #c8d2e2); stroke-width: 1.2;
+          stroke-dasharray: 5 4; opacity: .6; }
+  .lbl  { fill: var(--svg-line, #c8d2e2); font: 500 12px ui-sans-serif, system-ui, sans-serif; }
+  </style>
+  <path class="part" d="M28,72 H120 L136,122 H28 Z"/>
+  <path class="part" d="M252,72 H160 L144,122 H252 Z"/>
+  <path class="weld" d="M120,72 Q140,60 160,72 L144,122 H136 Z"/>
+  <text class="lbl" x="28" y="34">Two members in the same plane, edge to edge</text>
+</svg>

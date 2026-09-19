@@ -1,0 +1,2 @@
+# weldsymbols.org has exactly one build dependency.
+Jinja2>=3.1

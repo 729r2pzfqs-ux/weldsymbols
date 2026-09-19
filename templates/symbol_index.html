@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+{% block content %}
+
+<header class="phead">
+  <p class="kicker">AWS A2.4</p>
+  <h1>Welding Symbols</h1>
+</header>
+
+<div class="answer"><p>{{ summary }}</p></div>
+
+{% with id='q-idx', extra_class='search-home' %}{% include "partials/search.html" %}{% endwith %}
+
+<h2 id="symbols">Weld symbols</h2>
+<div class="grid grid-3">
+  {%- for s in symbols %}
+  <a class="card card-sym" href="/symbols/{{ s.id }}/">
+    {{ s.svg_markup }}
+    <h3>{{ s.name }}</h3>
+    <p>{{ s.shape }}</p>
+  </a>
+  {%- endfor %}
+</div>
+
+{% with slot='header' %}{% include "partials/ad.html" %}{% endwith %}
+
+<h2 id="anatomy">Anatomy of a welding symbol</h2>
+<p>Everything on a welding symbol hangs off the reference line. The
+   <a href="/guides/how-to-read-welding-symbols/">guide to reading welding symbols</a> works through
+   a complete example.</p>
+<div class="tw">
+  <table class="specs">
+    <tbody>
+      {%- for p in anatomy %}
+      <tr><th scope="row">{{ p.part }}</th><td>{{ p.description }}</td></tr>
+      {%- endfor %}
+    </tbody>
+  </table>
+</div>
+
+<h2 id="supplementary">Supplementary symbols</h2>
+<p>These modify the instruction rather than naming the weld itself.</p>
+<div class="tw">
+  <table>
+    <thead><tr><th>Symbol</th><th>Shape</th><th>Meaning</th></tr></thead>
+    <tbody>
+      {%- for s in supplementary %}
+      <tr><td><strong>{{ s.name }}</strong></td><td>{{ s.shape }}</td><td>{{ s.meaning }}</td></tr>
+      {%- endfor %}
+    </tbody>
+  </table>
+</div>
+
+<p class="small muted">{{ notes }}</p>
+
+{% with slot='footer' %}{% include "partials/ad.html" %}{% endwith %}
+
+{% endblock %}

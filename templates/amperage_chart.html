@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+{% block content %}
+
+<header class="phead">
+  <p class="kicker">Reference chart</p>
+  <h1>Welding Electrode Amperage Chart</h1>
+</header>
+
+<div class="answer"><p>{{ summary }}</p></div>
+
+{% with id='q-idx', extra_class='search-home' %}{% include "partials/search.html" %}{% endwith %}
+
+<div class="note"><p><strong>Start in the middle of the range</strong> and adjust by arc sound and bead
+  profile. Drop 10&ndash;15% for vertical and overhead work, and raise it for flat fill passes on thick
+  plate. These are typical published ranges, not a substitute for the data sheet for the exact product
+  you are running.</p></div>
+
+{%- for group in groups %}
+<h2 id="{{ group.id }}">{{ group.name }}</h2>
+<div class="tw">
+  <table>
+    <thead>
+      <tr><th>Electrode</th><th>Diameter</th><th class="num">Amperage</th><th class="num">Typical</th><th>Polarity</th></tr>
+    </thead>
+    <tbody>
+      {%- for r in group.rows %}
+      <tr>
+        {%- if r.first %}
+        <td rowspan="{{ r.span }}"><a href="/electrodes/{{ r.id }}/"><strong>{{ r.name }}</strong></a><br>
+            <span class="small muted">{{ r.spec }}</span></td>
+        {%- endif %}
+        <td class="num">{{ r.diameter }}</td>
+        <td class="num">{{ r.min }}&ndash;{{ r.max }} A</td>
+        <td class="num">{{ r.mid }} A</td>
+        {%- if r.first %}<td rowspan="{{ r.span }}" class="num">{{ r.polarity }}</td>{%- endif %}
+      </tr>
+      {%- endfor %}
+    </tbody>
+  </table>
+</div>
+{%- if loop.first %}{% with slot='in_article' %}{% include "partials/ad.html" %}{% endwith %}{% endif %}
+{%- endfor %}
+
+<h2 id="rule-of-thumb">The one-amp-per-thousandth rule</h2>
+<p>For carbon steel stick electrodes, a rough starting point is one amp for each thousandth of an inch
+  of electrode diameter. A 1/8 in rod measures 0.125 in, so roughly 125 A. A 5/32 in rod measures
+  0.156 in, so roughly 155 A. The rule breaks down at both ends &mdash; it runs hot for stainless and
+  cold for high-deposition rods like E7024 &mdash; but it gets you close enough to start listening to
+  the arc.</p>
+
+<h2 id="adjust">How to tell you are close</h2>
+<ul>
+  <li><strong>Too cold:</strong> the arc pops and stutters, the bead piles up high and narrow, and the
+      toes do not wet into the plate. The electrode sticks on restarts.</li>
+  <li><strong>Too hot:</strong> excessive spatter, undercut along the toes, a wide flat bead, and on
+      stick the last few inches of the rod glow red and the coating breaks down.</li>
+  <li><strong>About right:</strong> a steady crackle or hiss, a bead roughly two to three times the
+      electrode diameter wide, and slag that lifts without a fight.</li>
+</ul>
+
+{% with faqs=faqs, faq_title='Amperage questions' %}{% include "partials/faq.html" %}{% endwith %}
+
+<h2 id="more">More reference</h2>
+<ul class="pill-list">
+  <li><a href="/guides/welding-polarity-dcep-dcen-ac/">Polarity: DCEP, DCEN and AC</a></li>
+  <li><a href="/guides/welding-positions/">Welding positions</a></li>
+  <li><a href="/guides/welding-electrode-numbers-explained/">Electrode numbers explained</a></li>
+  <li><a href="/electrodes/">All electrodes</a></li>
+</ul>
+
+{% with slot='footer' %}{% include "partials/ad.html" %}{% endwith %}
+
+{% endblock %}

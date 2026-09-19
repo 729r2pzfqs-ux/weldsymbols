@@ -1,0 +1,1145 @@
+{
+  "comparisons": [
+    {
+      "a": "e6010",
+      "b": "e6011",
+      "headline": "E6010 and E6011 deposit nearly identical weld metal. The difference is the machine: E6010 needs DCEP, E6011 runs on AC.",
+      "meta_description": "E6010 vs E6011: same 60 ksi deposit, different coating. E6010 is DCEP only with a crisper arc; E6011 runs on AC. Side-by-side specs and amperage.",
+      "verdict": "These two rods are close cousins. Both use a high-cellulose coating, both dig deep, both freeze fast enough for vertical and overhead work, and both meet the same 60 ksi mechanical requirements. The coating binder is the whole story: E6010 uses sodium and will only sustain an arc on DCEP, while E6011 uses potassium, which keeps the arc alive through the zero-crossing of alternating current. If you have a DC machine, E6010's arc is slightly crisper and its slag lifts a little cleaner. If you have an AC buzzbox, E6011 is your only option of the two.",
+      "choose_a": [
+        "You have a DC machine and want the crispest cellulosic arc",
+        "You are running open-root pipe passes, where E6010 is the industry standard",
+        "You want slightly easier slag removal"
+      ],
+      "choose_b": [
+        "Your welder is AC-only, which covers most inexpensive transformer machines",
+        "You want one rod that works on either AC or DC",
+        "You are doing general farm and maintenance repair"
+      ],
+      "faqs": [
+        {
+          "q": "Can I substitute E6011 for E6010?",
+          "a": "For general repair, yes — the deposited weld metal meets the same requirements. On pipeline work with a qualified procedure calling for E6010, no: the procedure specifies the classification and substituting it voids the qualification."
+        },
+        {
+          "q": "Which has deeper penetration, E6010 or E6011?",
+          "a": "E6010 is generally credited with slightly deeper penetration and a more forceful arc, though the difference is small. Both dig far deeper than E6013 or E7018."
+        },
+        {
+          "q": "Is E6011 easier to run than E6010?",
+          "a": "On an AC machine, E6011 is the only one that will run at all. On DC, most welders find E6010 slightly crisper and E6011 a little softer and more forgiving."
+        }
+      ],
+      "id": "e6010-vs-e6011"
+    },
+    {
+      "a": "e6010",
+      "b": "e7018",
+      "headline": "E6010 digs deep for root passes on dirty steel; E7018 is the low-hydrogen structural rod for fill, cap and code work. Most pipe joints use both.",
+      "meta_description": "E6010 vs E7018: deep-penetrating cellulosic root rod against the low-hydrogen 70 ksi structural electrode. Specs, amperage, storage and when to use each.",
+      "verdict": "These rods are not competitors so much as partners. E6010's cellulosic coating gives a digging arc that reaches through an open root and burns through rust and mill scale, but it deposits relatively high diffusible hydrogen and only 60 ksi weld metal. E7018's low-hydrogen coating gives 70 ksi tensile, 20 ft·lb toughness at -20 °F, and the crack resistance that thick or restrained joints require — but it will not tolerate a dirty joint and it demands rod oven storage. The classic pipe procedure runs an E6010 root and hot pass, then fills and caps with E7018.",
+      "choose_a": [
+        "Open-root passes where penetration through the gap matters",
+        "Rusty, painted or contaminated steel",
+        "Field repair where rod oven storage is impractical"
+      ],
+      "choose_b": [
+        "Structural steel, bridges and any code work requiring low hydrogen",
+        "Thick or highly restrained joints where cold cracking is a risk",
+        "Fill and cap passes that need 70 ksi and low-temperature toughness"
+      ],
+      "faqs": [
+        {
+          "q": "Can you weld E7018 over an E6010 root?",
+          "a": "Yes — that combination is standard practice on pipe and on many structural procedures. Clean the root thoroughly and remove all slag before the fill passes go in."
+        },
+        {
+          "q": "Is E7018 stronger than E6010?",
+          "a": "Yes. E7018 is rated at 70,000 psi minimum tensile against E6010's 60,000 psi, and it carries a low-temperature impact requirement that E6010 also meets at -20 °F but with much higher weld hydrogen."
+        },
+        {
+          "q": "Why not just use E7018 for everything?",
+          "a": "It has shallow-to-medium penetration and no tolerance for contamination. On an open root or on rusty steel it will leave lack of fusion and porosity where E6010 would have made a sound weld."
+        }
+      ],
+      "id": "e6010-vs-e7018"
+    },
+    {
+      "a": "e6011",
+      "b": "e6013",
+      "headline": "E6011 digs through rust and handles poor fit-up; E6013 runs softer and lays a prettier bead on thin, clean steel.",
+      "meta_description": "E6011 vs E6013: cellulosic digging arc against a soft rutile arc. Penetration, appearance, sheet metal suitability and amperage compared side by side.",
+      "verdict": "Both are 60 ksi all-position rods that run on AC, which is why they end up next to each other in every hardware store. They behave very differently. E6011's cellulose coating produces a forceful, spattery, deep-penetrating arc that burns through rust, paint and gaps. E6013's rutile coating produces a soft, quiet arc with shallow penetration, a heavy self-lifting slag and a noticeably smoother bead. On clean thin material E6013 wins easily; on rusty or badly fitted work E6011 is the one that will actually make a sound weld.",
+      "choose_a": [
+        "Rusty, painted or galvanized steel",
+        "Poor joint fit-up with gaps to bridge",
+        "Work needing deeper penetration on thicker sections"
+      ],
+      "choose_b": [
+        "Sheet metal and thin-wall tube where burn-through is the risk",
+        "Ornamental work where bead appearance matters",
+        "Learning to stick weld — it is the most forgiving rod to strike"
+      ],
+      "faqs": [
+        {
+          "q": "Which is better for a beginner, E6011 or E6013?",
+          "a": "E6013. It strikes easily, restarts reliably and runs with a soft, quiet arc. E6011 spatters, digs and demands more arc length control."
+        },
+        {
+          "q": "Can E6013 weld through rust?",
+          "a": "Not well. Its shallow rutile arc leaves porosity in contaminated metal. E6011 is the rod for dirty steel."
+        },
+        {
+          "q": "Which penetrates deeper, E6011 or E6013?",
+          "a": "E6011, by a wide margin. That is the fundamental difference between a cellulosic and a rutile coating."
+        }
+      ],
+      "id": "e6011-vs-e6013"
+    },
+    {
+      "a": "e6013",
+      "b": "e7018",
+      "headline": "E6013 is the easy rutile rod for thin, light work; E7018 is the low-hydrogen 70 ksi rod required on structural and code welding.",
+      "meta_description": "E6013 vs E7018: soft-arc beginner rod versus low-hydrogen structural electrode. Strength, penetration, storage and which one your job actually needs.",
+      "verdict": "This is the most common cross-class comparison, and the answer is usually decided by the job rather than by preference. E6013 deposits 60 ksi weld metal with shallow penetration, needs no special storage and is the easiest mild-steel rod to run. E7018 deposits 70 ksi low-hydrogen weld metal with 22% elongation and 20 ft·lb toughness at -20 °F, which is what structural codes call for on thick or restrained joints — but it demands a rod oven and a clean joint. Use E6013 for light fabrication and E7018 where strength, toughness and crack resistance matter.",
+      "choose_a": [
+        "Sheet metal and light plate under about 3/16 in",
+        "Gates, railings, furniture and ornamental work",
+        "Occasional shop repair where oven storage is not practical"
+      ],
+      "choose_b": [
+        "Structural steel and anything to a welding code",
+        "Thick plate or highly restrained joints",
+        "Work where low-temperature toughness is specified"
+      ],
+      "faqs": [
+        {
+          "q": "Can I use E6013 instead of E7018?",
+          "a": "Not on code work. E6013 is not a low-hydrogen electrode and deposits 60 ksi rather than 70 ksi weld metal. On light non-structural fabrication the substitution is usually harmless."
+        },
+        {
+          "q": "Is E7018 harder to run than E6013?",
+          "a": "It is harder to start — E7018 tips stick readily on a cold strike — but once running it has a smooth, fluid puddle that many welders prefer. E6013 is more forgiving of arc length."
+        },
+        {
+          "q": "Does E6013 need a rod oven?",
+          "a": "No. Rutile coatings are not low-hydrogen and only need to be kept dry. E7018 must be held at 250–300 °F after the container is opened."
+        }
+      ],
+      "id": "e6013-vs-e7018"
+    },
+    {
+      "a": "e6013",
+      "b": "e7014",
+      "headline": "E7014 is E6013 with iron powder added: same easy arc, but faster deposition, medium penetration and a 70 ksi deposit instead of 60 ksi.",
+      "meta_description": "E6013 vs E7014: the iron-powder upgrade. Deposition rate, penetration depth, tensile strength and amperage ranges compared side by side.",
+      "verdict": "E7014 is essentially the production version of E6013. Both use a rutile coating and both run on AC or either DC polarity with a soft, easy arc. Adding roughly 30% iron powder to E7014's coating raises the deposition rate, deepens penetration from shallow to medium, and lifts the deposit from 60 to 70 ksi. The trade is that E7014 is best dragged rather than manipulated, and the heavier slag is slightly less pleasant vertical-up. On thin sheet E6013 still has the edge because its shallow penetration is the point.",
+      "choose_a": [
+        "Sheet metal and material under about 1/8 in",
+        "Maximum control over a small puddle",
+        "Cosmetic beads on light fabrication"
+      ],
+      "choose_b": [
+        "Production fillet welds where fill rate matters",
+        "Joints needing 70 ksi weld metal",
+        "Plate from 1/8 in upward with good fit-up"
+      ],
+      "faqs": [
+        {
+          "q": "Is E7014 just a stronger E6013?",
+          "a": "Largely, yes — 70 ksi instead of 60 ksi, with iron powder for higher deposition and medium rather than shallow penetration. They run similarly enough that most welders switch between them without adjusting technique much."
+        },
+        {
+          "q": "Can E7014 be used on sheet metal?",
+          "a": "On the heavier end of sheet, yes, but its deeper penetration and higher deposition make burn-through more likely. E6013 in a small diameter is the better choice on thin material."
+        },
+        {
+          "q": "Is E7014 low hydrogen?",
+          "a": "No. Both E6013 and E7014 are rutile electrodes. For low-hydrogen requirements you need E7018, E7016 or E7028."
+        }
+      ],
+      "id": "e6013-vs-e7014"
+    },
+    {
+      "a": "e7014",
+      "b": "e7018",
+      "headline": "Both deposit 70 ksi weld metal, but only E7018 is low hydrogen — which is what structural codes actually require.",
+      "meta_description": "E7014 vs E7018: same 70 ksi tensile, different coatings. Low-hydrogen requirements, toughness, storage and which passes code work.",
+      "verdict": "On a tensile test these two look the same: 70 ksi minimum, 58 ksi yield. The difference shows up in everything else. E7018's low-hydrogen coating produces weld metal with low diffusible hydrogen and 20 ft·lb toughness at -20 °F, which is what resists cold cracking in thick or restrained joints. E7014's rutile iron-powder coating carries no such requirement, but it runs easier, needs no rod oven and deposits at a comparable rate. For general fabrication E7014 is more convenient; for code work E7018 is usually mandatory.",
+      "choose_a": [
+        "General fabrication with no code requirement",
+        "Situations where rod oven storage is impractical",
+        "Welders who want an easy drag technique"
+      ],
+      "choose_b": [
+        "Structural steel, pressure work and any coded joint",
+        "Thick sections or restrained joints at risk of cold cracking",
+        "Service requiring low-temperature notch toughness"
+      ],
+      "faqs": [
+        {
+          "q": "Can E7014 substitute for E7018?",
+          "a": "Only where the procedure does not require a low-hydrogen electrode. The tensile strength matches, but E7014 carries no low-hydrogen or impact requirement, so most structural codes will not accept the substitution."
+        },
+        {
+          "q": "Which is easier to run, E7014 or E7018?",
+          "a": "E7014. It drags easily, starts without sticking and tolerates a sloppier arc length. E7018 rewards good technique but punishes a cold start."
+        },
+        {
+          "q": "Do both need a rod oven?",
+          "a": "Only E7018. E7014's rutile coating just needs to stay dry; E7018 must be held at 250–300 °F once opened, with a limited exposure time on code work."
+        }
+      ],
+      "id": "e7014-vs-e7018"
+    },
+    {
+      "a": "e7018",
+      "b": "e7024",
+      "headline": "E7024 deposits far faster but only flat and horizontal; E7018 works all positions and is the low-hydrogen rod codes require.",
+      "meta_description": "E7018 vs E7024: low-hydrogen all-position versus high-deposition flat-only. Position limits, deposition rates and code acceptance compared.",
+      "verdict": "Both are 70 ksi electrodes, and both use iron powder — but E7024 carries roughly 50% iron powder against E7018's smaller addition, which makes it the fastest-depositing common stick rod. The price is position: the 2 in E7024 restricts it to the flat position and horizontal fillets, and its shallow penetration means it cannot be used for a root pass. E7018 covers all positions, is low hydrogen, and carries a toughness requirement. On a positioned production fillet E7024 will fill the joint in far less time; anywhere else E7018 is the rod.",
+      "choose_a": [
+        "Any out-of-position work — vertical or overhead",
+        "Code work requiring low hydrogen",
+        "Root passes and joints with variable fit-up"
+      ],
+      "choose_b": [
+        "Long flat or horizontal fillets on heavy plate",
+        "Production work where deposition rate drives cost",
+        "Filling large flat groove welds quickly"
+      ],
+      "faqs": [
+        {
+          "q": "Can E7024 be used vertical?",
+          "a": "No. The 2 in the classification limits it to the flat position and horizontal fillets. The large fluid puddle sags out of position."
+        },
+        {
+          "q": "Is E7024 low hydrogen?",
+          "a": "No. It is a rutile iron-powder electrode. E7028 is the high-deposition rod that is also low hydrogen, and it is rated for flat and horizontal fillets."
+        },
+        {
+          "q": "How much faster is E7024?",
+          "a": "Substantially — the heavy iron-powder coating puts far more metal per inch of rod into the joint, and it is dragged at high travel speed. On long horizontal fillets that difference dominates the cost of the weld."
+        }
+      ],
+      "id": "e7018-vs-e7024"
+    },
+    {
+      "a": "e6010",
+      "b": "e6013",
+      "headline": "E6010 digs deep on DC for roots and dirty steel; E6013 runs soft on anything and lays a clean bead on thin material.",
+      "meta_description": "E6010 vs E6013: deep-penetrating DC cellulosic rod against the soft all-purpose rutile rod. Polarity, penetration and applications compared.",
+      "verdict": "These two sit at opposite ends of the 60-series. E6010 needs DCEP, produces a forceful digging arc, and is built for open roots and contaminated steel. E6013 runs on AC or either DC polarity with a soft, quiet arc, shallow penetration and a heavy self-lifting slag that leaves a smooth bead. If your machine is AC-only, E6010 is not even an option. If it is DC and the joint is thin and clean, E6013 will still give the better-looking result.",
+      "choose_a": [
+        "Open-root passes and deep penetration requirements",
+        "Rust, paint and mill scale",
+        "DC machines and pipe work"
+      ],
+      "choose_b": [
+        "Thin material where burn-through is the concern",
+        "AC machines",
+        "Clean joints where appearance matters"
+      ],
+      "faqs": [
+        {
+          "q": "Can E6010 run on an AC welder?",
+          "a": "No. Its sodium-based cellulosic coating will not sustain an arc on alternating current. Use E6011, which is the AC-capable equivalent."
+        },
+        {
+          "q": "Which rod is better for thin sheet metal?",
+          "a": "E6013, in a small diameter such as 1/16 or 5/64 in. E6010's deep penetration will blow holes in thin material."
+        },
+        {
+          "q": "Do E6010 and E6013 have the same strength?",
+          "a": "Both are 60 ksi minimum tensile. E6010 has a higher minimum elongation requirement, so its deposit is more ductile."
+        }
+      ],
+      "id": "e6010-vs-e6013"
+    },
+    {
+      "a": "e6011",
+      "b": "e7018",
+      "headline": "E6011 runs on any machine and welds dirty steel; E7018 needs a clean joint and a rod oven but delivers low-hydrogen 70 ksi weld metal.",
+      "meta_description": "E6011 vs E7018: AC-friendly cellulosic repair rod against the low-hydrogen structural electrode. Strength, cleanliness, storage and code use compared.",
+      "verdict": "E6011 is the repair rod: it runs on the cheapest AC machine, burns through rust and paint, freezes fast enough for any position and needs no special storage. E7018 is the structural rod: 70 ksi instead of 60, low diffusible hydrogen, 20 ft·lb toughness at -20 °F, and mandatory on most coded joints — but it needs a clean joint, a rod oven and better technique. Many jobs use E6011 to establish a root on poor fit-up and E7018 to fill.",
+      "choose_a": [
+        "AC-only machines and field repair",
+        "Rusty, painted or galvanized steel",
+        "Poor fit-up and gaps to bridge"
+      ],
+      "choose_b": [
+        "Structural and code work",
+        "Thick or restrained joints",
+        "Any joint requiring low hydrogen or notch toughness"
+      ],
+      "faqs": [
+        {
+          "q": "Can E7018 run on AC like E6011?",
+          "a": "Yes. The 8 in E7018 covers AC and DCEP. DCEP gives a more stable arc and easier starts, but AC is common on transformer machines and can help with arc blow."
+        },
+        {
+          "q": "Is E6011 acceptable on structural steel?",
+          "a": "Generally not on code work, because it is not low hydrogen. It is widely used for tacking, temporary attachments and repair welding outside code scope."
+        },
+        {
+          "q": "Which is easier for a beginner?",
+          "a": "Neither is easy. E6011 forgives a dirty joint but spatters and demands arc control; E7018 sticks on a cold start but runs smoothly once going. E6013 is the gentler starting point for either."
+        }
+      ],
+      "id": "e6011-vs-e7018"
+    },
+    {
+      "a": "e7014",
+      "b": "e7024",
+      "headline": "Both are iron-powder rutile rods at 70 ksi. E7024 carries far more iron powder and fills faster, but E7014 is the only one that works out of position.",
+      "meta_description": "E7014 vs E7024: iron-powder rutile rods compared. Deposition rate, position limits, penetration and amperage ranges side by side.",
+      "verdict": "These two are the same family separated by how much iron powder is in the coating. E7014 holds roughly 30% and stays all-position; E7024 holds around 50%, deposits substantially faster, and is restricted to the flat position and horizontal fillets. Penetration also differs: E7014 is medium, E7024 is shallow and depends entirely on good fit-up. If the work can be positioned flat, E7024 will fill it faster. If it cannot, E7014 is the rod.",
+      "choose_a": [
+        "Vertical, overhead or mixed-position work",
+        "Joints with variable fit-up needing some penetration",
+        "General fabrication on a single rod"
+      ],
+      "choose_b": [
+        "Long flat and horizontal fillets",
+        "Production work on positioned parts",
+        "Maximum fill rate per rod"
+      ],
+      "faqs": [
+        {
+          "q": "Which deposits faster, E7014 or E7024?",
+          "a": "E7024, by a clear margin — it carries roughly 50% iron powder against E7014's 30%, and it is run at higher amperage with a drag technique."
+        },
+        {
+          "q": "Can E7024 replace E7014 on all my work?",
+          "a": "Only if every joint can be positioned flat or as a horizontal fillet. E7024's classification does not permit vertical or overhead welding."
+        },
+        {
+          "q": "Do both need to be dragged?",
+          "a": "Both are drag rods by design, with the coating resting on the work. E7024's deep crucible makes this more pronounced."
+        }
+      ],
+      "id": "e7014-vs-e7024"
+    },
+    {
+      "a": "e6010",
+      "b": "e7014",
+      "headline": "E6010 digs through poor roots and dirty steel on DC; E7014 fills faster and smoother at 70 ksi on any polarity, but needs clean, fitted joints.",
+      "meta_description": "E6010 vs E7014: digging cellulosic root rod against the iron-powder fill rod. Penetration, deposition, polarity and applications compared.",
+      "verdict": "E6010 is a penetration rod and E7014 is a fill rod. E6010 requires DCEP, produces a forceful arc that reaches through an open root, and tolerates rust and scale, but deposits slowly at 60 ksi. E7014 runs on AC or DC, deposits considerably faster thanks to its iron-powder coating, and gives a 70 ksi deposit with a smooth appearance — but its medium penetration and rutile chemistry need a joint that is clean and properly fitted.",
+      "choose_a": [
+        "Open roots and joints with gaps",
+        "Contaminated or weathered steel",
+        "Pipe work on DC machines"
+      ],
+      "choose_b": [
+        "Fill and cover passes on prepared joints",
+        "Production fillets needing speed and 70 ksi",
+        "AC machines"
+      ],
+      "faqs": [
+        {
+          "q": "Can you cap an E6010 root with E7014?",
+          "a": "On non-code work, yes — it is a common combination. Clean the root and remove all slag first. On coded joints the procedure dictates the filler, and E7018 is the usual choice."
+        },
+        {
+          "q": "Which is stronger?",
+          "a": "E7014 at 70 ksi minimum tensile, against 60 ksi for E6010. E6010 has the higher minimum elongation, so it is more ductile."
+        },
+        {
+          "q": "Does E7014 penetrate as deeply as E6010?",
+          "a": "No. E7014 is medium penetration; E6010 is the deepest-penetrating common stick electrode."
+        }
+      ],
+      "id": "e6010-vs-e7014"
+    },
+    {
+      "a": "e6013",
+      "b": "e7024",
+      "headline": "E6013 is the light-duty all-position rutile rod; E7024 is the same family loaded with iron powder for flat-position production speed.",
+      "meta_description": "E6013 vs E7024: rutile rods at opposite ends of the deposition scale. Position limits, tensile strength, penetration and amperage compared.",
+      "verdict": "Both are rutile electrodes with easy arcs and heavy, self-lifting slag, but they are built for different jobs. E6013 is a 60 ksi all-position rod with shallow penetration, aimed at thin material and light fabrication. E7024 is a 70 ksi rod with roughly 50% iron powder, restricted to flat and horizontal fillets, aimed at laying a lot of metal quickly on heavy plate. They rarely compete for the same joint.",
+      "choose_a": [
+        "Thin sheet, tube and light fabrication",
+        "Any out-of-position work",
+        "Small machines with limited amperage"
+      ],
+      "choose_b": [
+        "Heavy plate fillets in the flat position",
+        "Production welding on positioned parts",
+        "Joints needing 70 ksi and fast fill"
+      ],
+      "faqs": [
+        {
+          "q": "Can E7024 be used on thin metal?",
+          "a": "Poorly. Its smallest common diameter still runs at high amperage, and it is a flat-position rod. E6013 in a small diameter is the right choice for thin material."
+        },
+        {
+          "q": "Is E7024 harder to run than E6013?",
+          "a": "No — if anything it is easier, because the deep crucible holds arc length for you. The restriction is position, not difficulty."
+        },
+        {
+          "q": "Do they use the same slag system?",
+          "a": "Both are titania-based. E7024's slag is considerably heavier because of the iron powder loading, and it usually peels off in one strip."
+        }
+      ],
+      "id": "e6013-vs-e7024"
+    },
+    {
+      "a": "e308l",
+      "b": "e309l",
+      "headline": "E308L matches 304 base metal; E309L is over-alloyed so it survives dilution when welding stainless to carbon steel.",
+      "meta_description": "E308L vs E309L: matching filler for 304 against the over-alloyed dissimilar-metal electrode. Dilution, ferrite, cost and when each is required.",
+      "verdict": "Chemistry decides this one. E308L is a nominal 19Cr-10Ni deposit that matches Type 304 base metal. E309L runs richer at 23Cr-12Ni, deliberately over-alloyed so that when carbon steel melts into the puddle and dilutes the deposit, enough chromium and nickel remain to hold a crack-resistant austenitic-ferritic structure. Use E308L on stainless-to-stainless joints and E309L whenever carbon steel is on one side or you are laying the first layer of an overlay.",
+      "choose_a": [
+        "Welding 304 or 304L to itself",
+        "Sanitary and food-grade stainless fabrication",
+        "Cost-sensitive stainless work where dilution is not an issue"
+      ],
+      "choose_b": [
+        "Stainless to carbon or low-alloy steel",
+        "Buffer layers under a stainless overlay",
+        "Repairing steels of unknown composition"
+      ],
+      "faqs": [
+        {
+          "q": "What happens if you use E308L on a stainless-to-carbon-steel joint?",
+          "a": "Dilution from the carbon steel side drops the chromium and nickel content of the deposit into a martensitic range. The weld becomes hard and brittle and commonly cracks."
+        },
+        {
+          "q": "Can E309L be used on a 304-to-304 joint?",
+          "a": "Yes, and it will make a sound corrosion-resistant weld. It simply costs more than E308L with no benefit on a matching joint."
+        },
+        {
+          "q": "Do both have the same amperage range?",
+          "a": "Practically, yes. Both run 65–110 A on a 1/8 in rod, DCEP, and both need roughly 10–15% less current than a carbon steel rod of the same diameter."
+        }
+      ],
+      "id": "e308l-vs-e309l"
+    },
+    {
+      "a": "e308l",
+      "b": "e316l",
+      "headline": "E316L adds 2–3% molybdenum for chloride and pitting resistance. Without chlorides in the service environment, E308L does the same job for less money.",
+      "meta_description": "E308L vs E316L: the molybdenum question. Chloride and pitting resistance, base metal matching, cost and service environment compared.",
+      "verdict": "The only meaningful difference is molybdenum. E316L carries 2 to 3% of it, which substantially improves resistance to pitting and crevice corrosion in chloride environments — seawater, de-icing salt, bleaching chemicals, many food processing washes. E308L has none. Match the filler to the base metal: E308L on 304/304L, E316L on 316/316L. Using E316L on 304 works but costs more; using E308L on 316 gives up exactly the corrosion resistance the base metal was specified for.",
+      "choose_a": [
+        "Type 304 and 304L base metal",
+        "Indoor, non-chloride service",
+        "Architectural and general stainless fabrication"
+      ],
+      "choose_b": [
+        "Type 316 and 316L base metal",
+        "Marine, coastal and offshore exposure",
+        "Chemical, pharmaceutical and pulp-and-paper process equipment"
+      ],
+      "faqs": [
+        {
+          "q": "Can I use E308L on 316 stainless?",
+          "a": "Mechanically yes, but the weld will lack the molybdenum that gives 316 its chloride resistance. In a corrosive environment the weld becomes the first thing to pit."
+        },
+        {
+          "q": "Is E316L stronger than E308L?",
+          "a": "No — E316L's minimum tensile is slightly lower at 70 ksi against 75 ksi. Its advantage is corrosion resistance and elevated-temperature creep strength, not room-temperature strength."
+        },
+        {
+          "q": "Is E316L worth the extra cost on 304?",
+          "a": "Usually not. If chlorides are not present, E308L performs identically in service. Pay for molybdenum when the environment calls for it."
+        }
+      ],
+      "id": "e308l-vs-e316l"
+    },
+    {
+      "a": "e309l",
+      "b": "e316l",
+      "headline": "E309L is for dissimilar joints and overlays; E316L is for matching 316 base metal in chloride service. They solve unrelated problems.",
+      "meta_description": "E309L vs E316L: over-alloyed dissimilar filler against molybdenum-bearing matching filler. Dilution tolerance, corrosion resistance and use cases.",
+      "verdict": "These two are rarely alternatives for the same joint. E309L's job is to survive dilution: its 23Cr-12Ni chemistry is deliberately rich so that mixing with carbon steel still leaves a sound austenitic-ferritic deposit. E316L's job is corrosion resistance: its 2 to 3% molybdenum fights pitting in chlorides. If you are joining 316 to carbon steel, you need dilution tolerance first, so E309L (or E309LMo where the specification calls for it) is the usual answer, not E316L.",
+      "choose_a": [
+        "Stainless to carbon steel joints",
+        "First layer of a clad overlay",
+        "Unknown or hard-to-weld base metals"
+      ],
+      "choose_b": [
+        "Matching 316 or 316L base metal",
+        "Chloride and marine service",
+        "Chemical and pharmaceutical process work"
+      ],
+      "faqs": [
+        {
+          "q": "What do you use to weld 316 stainless to carbon steel?",
+          "a": "E309L is the common answer, with E309LMo specified where molybdenum must be carried through the transition weld. E316L alone would dilute into a crack-sensitive composition."
+        },
+        {
+          "q": "Does E309L resist chlorides like E316L?",
+          "a": "Not in the same way. E309L has higher chromium but no molybdenum, so it does not match E316L's pitting resistance in chloride service."
+        },
+        {
+          "q": "Can E309L be used as a general stainless filler?",
+          "a": "It will weld most austenitic grades soundly, which is why it is a popular repair rod for unknown steels. For matching work it costs more than the correct filler without adding anything."
+        }
+      ],
+      "id": "e309l-vs-e316l"
+    },
+    {
+      "a": "e308l",
+      "b": "e347",
+      "headline": "Both weld 304-type stainless. E308L simply keeps carbon low; E347 locks carbon up with niobium, which holds up better in long high-temperature service.",
+      "meta_description": "E308L vs E347: low-carbon versus niobium-stabilized stainless electrodes. Sensitization, elevated-temperature service and 321 base metal explained.",
+      "verdict": "Both fight the same enemy — chromium carbide precipitation that strips corrosion resistance from the grain boundaries. E308L does it by keeping carbon below 0.04% so there is little to precipitate. E347 does it by adding niobium, which forms carbides preferentially and leaves chromium in solution permanently. For ambient-temperature corrosion service the L grade is cheaper and entirely adequate. For long exposure in the 800–1500 °F sensitization range, stabilization holds up better. E347 is also the correct filler for Type 321 base metal.",
+      "choose_a": [
+        "Type 304 and 304L at ambient temperature",
+        "General stainless fabrication",
+        "Cost-sensitive work"
+      ],
+      "choose_b": [
+        "Type 321 and 347 base metal",
+        "Sustained elevated-temperature service",
+        "Refinery, exhaust and high-temperature piping"
+      ],
+      "faqs": [
+        {
+          "q": "Why can't you weld 321 stainless with a 321 electrode?",
+          "a": "Type 321 is stabilized with titanium, and titanium oxidizes and does not transfer reliably across a welding arc. Niobium does, so 347 filler delivers the same stabilizing effect in the weld metal."
+        },
+        {
+          "q": "Is E347 more crack sensitive than E308L?",
+          "a": "Slightly. Stabilized chemistries are a little more prone to hot cracking, so keep heat input modest, run stringer beads and control interpass temperature."
+        },
+        {
+          "q": "Does E308L sensitize eventually?",
+          "a": "At sustained high temperature, yes — low carbon slows carbide formation but does not prevent it indefinitely. That is exactly the case where a stabilized grade like E347 is specified."
+        }
+      ],
+      "id": "e308l-vs-e347"
+    },
+    {
+      "a": "e316l",
+      "b": "e347",
+      "headline": "E316L fights chlorides with molybdenum; E347 fights sensitization at high temperature with niobium. The service environment picks the winner.",
+      "meta_description": "E316L vs E347: molybdenum for chloride resistance versus niobium stabilization for high-temperature service. Which stainless electrode fits your job.",
+      "verdict": "These electrodes solve different corrosion problems. E316L's molybdenum resists pitting and crevice attack in chlorides at ordinary temperatures — seawater, salt spray, process chemicals. E347's niobium prevents intergranular attack after long exposure in the 800–1500 °F range, which is a high-temperature problem. If the part runs hot, E347. If the part sits in salt, E316L. Where both apply, the specification will name a grade such as 316Ti or a stabilized molybdenum-bearing filler rather than asking you to choose.",
+      "choose_a": [
+        "Marine and chloride exposure",
+        "Type 316 and 316L base metal",
+        "Chemical and pharmaceutical process equipment"
+      ],
+      "choose_b": [
+        "Type 321 and 347 base metal",
+        "Exhaust, refinery and high-temperature piping",
+        "Parts that will see long service between 800 and 1500 °F"
+      ],
+      "faqs": [
+        {
+          "q": "Which has better corrosion resistance overall?",
+          "a": "Neither — they resist different attacks. E316L is better against chlorides and pitting; E347 is better against intergranular attack after prolonged high-temperature exposure."
+        },
+        {
+          "q": "Can E347 be used in seawater?",
+          "a": "It has no molybdenum, so it pits in chlorides much as a 304-grade filler does. For seawater, E316L or a higher alloy is the appropriate choice."
+        },
+        {
+          "q": "Do both resist sensitization?",
+          "a": "E347 does so permanently through niobium stabilization. E316L relies on low carbon, which slows sensitization but does not eliminate it over long high-temperature exposure."
+        }
+      ],
+      "id": "e316l-vs-e347"
+    },
+    {
+      "a": "e309l",
+      "b": "e410",
+      "headline": "E309L deposits tough austenitic weld metal with no heat treatment; E410 deposits air-hardening martensitic metal that requires preheat and post-weld tempering.",
+      "meta_description": "E309L vs E410: austenitic dissimilar filler against martensitic 12% chromium electrode. Preheat, PWHT, hardness and magnetism compared.",
+      "verdict": "The practical question here is usually how to weld 410 base metal or build a wear overlay. E410 matches 410 chemistry and gives a hard, wear-resistant, magnetic deposit — but it air-hardens to martensite, so it needs 350–450 °F preheat, maintained interpass temperature and post-weld tempering, or it cracks. E309L gives a ductile austenitic deposit that needs none of that, which is why it is frequently used to weld 410 when heat treatment is impossible. The trade is that the joint no longer matches the base metal's properties.",
+      "choose_a": [
+        "Joints that cannot be preheated or heat treated",
+        "Dissimilar and repair welding",
+        "Where weld ductility matters more than hardness"
+      ],
+      "choose_b": [
+        "Matching 410 base metal with full heat treatment available",
+        "Hardfacing valve seats, shafts and wear surfaces",
+        "Applications needing a hard, magnetic deposit"
+      ],
+      "faqs": [
+        {
+          "q": "Can you weld 410 stainless with E309L?",
+          "a": "Yes, and it is common practice when preheat and post-weld heat treatment are not possible. The weld will be austenitic and ductile rather than matching the base metal, so check that the design accepts that."
+        },
+        {
+          "q": "Does E309L need preheat?",
+          "a": "Not for its own sake — austenitic deposits do not air-harden. Preheat may still be required by the base metal, as when welding to 410 or to thick carbon steel."
+        },
+        {
+          "q": "Which deposit is magnetic?",
+          "a": "E410 is strongly magnetic. E309L is austenitic and only weakly magnetic from its delta ferrite content."
+        }
+      ],
+      "id": "e309l-vs-e410"
+    },
+    {
+      "a": "e308l",
+      "b": "e410",
+      "headline": "E308L is an austenitic 304-matching filler that needs no heat treatment; E410 is a hardening martensitic filler for 410 base metal and wear surfaces.",
+      "meta_description": "E308L vs E410: austenitic 19-10 stainless against 12% chromium martensitic. Hardness, heat treatment, magnetism and corrosion behaviour compared.",
+      "verdict": "These are different classes of stainless entirely. E308L deposits an austenitic 19Cr-10Ni weld: ductile, tough, non-hardening, easy to weld and corrosion resistant in general service. E410 deposits a 12% chromium martensitic weld that hardens in still air, needs preheat and post-weld tempering, and can exceed 40 HRC as welded. E410 exists for matching 410 base metal and for wear overlays; it is not an alternative filler for 304 work.",
+      "choose_a": [
+        "Type 304 and 304L fabrication",
+        "Anywhere post-weld heat treatment is impractical",
+        "Corrosion service without wear requirements"
+      ],
+      "choose_b": [
+        "Type 410 and 12% chromium base metals",
+        "Wear-resistant surfacing",
+        "Applications where a hard deposit is the objective"
+      ],
+      "faqs": [
+        {
+          "q": "Can E410 weld 304 stainless?",
+          "a": "It is the wrong choice. The martensitic deposit has lower corrosion resistance than 304 and requires heat treatment the 304 assembly probably will not receive."
+        },
+        {
+          "q": "Why does E410 need preheat when E308L does not?",
+          "a": "E410's deposit transforms to hard, brittle martensite as it cools through the transformation range. Preheat and controlled cooling slow that transformation enough to avoid cracking. Austenitic E308L does not transform at all."
+        },
+        {
+          "q": "Which is more corrosion resistant?",
+          "a": "E308L, in most environments. Its higher chromium and nickel give far better general corrosion resistance than a 12% chromium martensitic deposit."
+        }
+      ],
+      "id": "e308l-vs-e410"
+    },
+    {
+      "a": "e316l",
+      "b": "e410",
+      "headline": "E316L is the molybdenum-bearing austenitic filler for chloride service; E410 is a hardening martensitic filler for wear and 410 base metal.",
+      "meta_description": "E316L vs E410: austenitic molybdenum stainless against martensitic 12% chromium. Corrosion resistance, hardness and heat treatment requirements.",
+      "verdict": "E316L is chosen for corrosion resistance in chlorides and deposits a ductile austenitic weld that needs no heat treatment. E410 is chosen for hardness and for matching 410 base metal, and it deposits a martensitic weld that air-hardens and must be preheated and tempered. They overlap only in the sense that both are called stainless; in practice the choice is decided by whether the part needs corrosion resistance or wear resistance.",
+      "choose_a": [
+        "Marine, chemical and chloride exposure",
+        "Type 316 and 316L base metal",
+        "Joints that cannot be heat treated"
+      ],
+      "choose_b": [
+        "Type 410 base metal with heat treatment available",
+        "Hardfacing pump sleeves, valve seats and shafts",
+        "Mildly corrosive service where wear dominates"
+      ],
+      "faqs": [
+        {
+          "q": "Is E410 more corrosion resistant than E316L?",
+          "a": "No. At 12% chromium and no molybdenum, E410 offers far less corrosion resistance than E316L, particularly in chlorides."
+        },
+        {
+          "q": "Can E316L be used as a hardfacing overlay?",
+          "a": "It is not a hardfacing alloy — its deposit is soft and ductile. It is used for corrosion-resistant cladding, which is a different job from wear surfacing."
+        },
+        {
+          "q": "Does E316L require post-weld heat treatment?",
+          "a": "Normally no. Austenitic deposits do not harden on cooling. Solution annealing is occasionally specified for severe corrosion service, but it is not routine."
+        }
+      ],
+      "id": "e316l-vs-e410"
+    },
+    {
+      "a": "er308l",
+      "b": "er309l",
+      "headline": "ER308L matches 304 base metal; ER309L is over-alloyed so it survives dilution when TIG or MIG welding stainless to carbon steel.",
+      "meta_description": "ER308L vs ER309L: matching 304 filler against the over-alloyed dissimilar wire. Dilution, gas selection and amperage compared for TIG and MIG.",
+      "verdict": "Same logic as the covered electrode versions, applied to bare wire. ER308L is a 19Cr-10Ni filler that matches Type 304 and is the standard rod for sanitary and process piping. ER309L runs richer at 23Cr-12Ni so that dilution from a carbon steel member still leaves a sound, ferrite-bearing austenitic deposit. On a stainless-to-stainless joint ER308L is correct and cheaper; on anything involving carbon steel, ER309L is the one that will not crack.",
+      "choose_a": [
+        "Welding 304 or 304L to itself",
+        "Sanitary tube, food and pharma piping",
+        "Standard stainless TIG and MIG fabrication"
+      ],
+      "choose_b": [
+        "Stainless to carbon steel transition joints",
+        "First layer of a stainless overlay",
+        "Unknown base metals in repair work"
+      ],
+      "faqs": [
+        {
+          "q": "Which filler for welding 304 to mild steel?",
+          "a": "ER309L. ER308L diluted by carbon steel turns martensitic and cracks; ER309L starts over-alloyed so the diluted deposit stays austenitic with enough ferrite to resist hot cracking."
+        },
+        {
+          "q": "Do they use the same shielding gas?",
+          "a": "Yes — pure argon for TIG, and a helium tri-mix or a low-CO2 argon mix for MIG. The gas choice follows the process, not the alloy."
+        },
+        {
+          "q": "Is ER309L a good general-purpose stainless rod?",
+          "a": "It welds most austenitic grades soundly and is a popular repair filler, but it costs more than the matching rod and offers no advantage on a matching joint."
+        }
+      ],
+      "id": "er308l-vs-er309l"
+    },
+    {
+      "a": "er308l",
+      "b": "er316l",
+      "headline": "ER316L carries 2–3% molybdenum for chloride resistance; ER308L does not. Match the filler to the base metal and the environment.",
+      "meta_description": "ER308L vs ER316L: the molybdenum difference in stainless TIG rod and MIG wire. Chloride resistance, base metal matching, cost and gas selection.",
+      "verdict": "Molybdenum is the whole difference. ER316L's 2 to 3% molybdenum resists pitting and crevice corrosion in chlorides, which is why it is standard for marine, chemical and pharmaceutical work. ER308L has none and is the correct, cheaper filler for 304 and 304L. Both handle identically at the torch, take the same shielding gas and run at the same amperage — so the decision is purely about the base metal and the service environment.",
+      "choose_a": [
+        "Type 304 and 304L base metal",
+        "Indoor or non-chloride service",
+        "General stainless fabrication and architectural work"
+      ],
+      "choose_b": [
+        "Type 316 and 316L base metal",
+        "Marine, coastal and offshore exposure",
+        "Chemical, pulp-and-paper and pharmaceutical equipment"
+      ],
+      "faqs": [
+        {
+          "q": "Can I use ER308L on 316 tubing?",
+          "a": "It will weld soundly, but the joint loses the chloride resistance that 316 was specified for and becomes the first place to pit. Use ER316L."
+        },
+        {
+          "q": "Do they weld the same way?",
+          "a": "Essentially yes. Same argon shielding, same amperage ranges, same back-purging requirement on pipe roots, same need for stainless-dedicated brushes."
+        },
+        {
+          "q": "Is ER316L stronger?",
+          "a": "Slightly lower minimum tensile, at 70 ksi against 75 ksi. Its benefit is corrosion resistance and elevated-temperature strength rather than room-temperature strength."
+        }
+      ],
+      "id": "er308l-vs-er316l"
+    },
+    {
+      "a": "er309l",
+      "b": "er316l",
+      "headline": "ER309L handles dilution on dissimilar joints; ER316L handles chlorides on matching 316 work. Different problems, different wires.",
+      "meta_description": "ER309L vs ER316L: over-alloyed dissimilar filler against molybdenum-bearing matching filler. When each is required, with gas and amperage data.",
+      "verdict": "ER309L exists to tolerate dilution: welding stainless to carbon steel, or laying the first layer of an overlay, where a matching filler would be diluted into a crack-sensitive composition. ER316L exists to resist chlorides on 316 base metal. When you are joining 316 to carbon steel, dilution is the immediate problem, so ER309L or ER309LMo is specified rather than ER316L. On a 316-to-316 joint, ER316L is correct and ER309L would simply be the wrong chemistry.",
+      "choose_a": [
+        "Stainless to carbon steel joints",
+        "Overlay buffer layers",
+        "Repair welding on unknown steels"
+      ],
+      "choose_b": [
+        "Matching 316 or 316L base metal",
+        "Chloride and seawater exposure",
+        "Sanitary and chemical process piping"
+      ],
+      "faqs": [
+        {
+          "q": "Which wire for 316 stainless to mild steel?",
+          "a": "ER309L is the standard choice; ER309LMo is specified where molybdenum must be carried into the transition weld. Follow the governing WPS."
+        },
+        {
+          "q": "Does ER309L resist pitting like ER316L?",
+          "a": "No. It has more chromium but no molybdenum, so it does not match ER316L in chloride environments."
+        },
+        {
+          "q": "Can ER316L be used for a dissimilar joint?",
+          "a": "Not safely on stainless to carbon steel. Dilution drops its alloy content into a martensitic range and the weld is liable to crack."
+        }
+      ],
+      "id": "er309l-vs-er316l"
+    },
+    {
+      "a": "er4043",
+      "b": "er5356",
+      "headline": "ER4043 is more crack resistant and easier to run; ER5356 is stronger, feeds better and is the only one of the two that anodizes to a colour match.",
+      "meta_description": "ER4043 vs ER5356: the aluminium filler decision. Strength, crack resistance, anodizing colour, feedability and service temperature compared.",
+      "verdict": "This is the most common aluminium filler question and it has a clear framework. ER4043's 5% silicon lowers the melting point and widens the freezing range, making it fluid, forgiving and resistant to hot cracking — the right choice for castings, restrained 6061 joints and anyone learning aluminium. ER5356's 5% magnesium gives roughly 40% higher tensile strength and much better fillet shear strength, feeds more reliably through a long MIG gun because the wire is stiffer, and anodizes to a near match instead of going dark grey. The catch is that 5356 should not be used in sustained service above about 150 °F, and it is a poor choice on high-silicon castings.",
+      "choose_a": [
+        "Aluminium castings, especially 356 and A356",
+        "Restrained 6061 joints where cracking is the risk",
+        "Service temperatures above about 150 °F",
+        "Learning aluminium — the more forgiving puddle"
+      ],
+      "choose_b": [
+        "5xxx base metals such as 5052, 5083 and 5086",
+        "Structural joints where fillet shear strength governs",
+        "Parts that will be anodized",
+        "Long MIG guns and push-pull systems where feedability matters"
+      ],
+      "faqs": [
+        {
+          "q": "Which filler is stronger, 4043 or 5356?",
+          "a": "ER5356, at roughly 38 ksi tensile against 27 ksi for ER4043, with a substantially higher shear strength in fillet welds. That is why structural and marine work specifies 5356."
+        },
+        {
+          "q": "Which aluminium filler should I use on 6061?",
+          "a": "Either works. ER4043 if the joint is restrained or crack-sensitive, or if the part will run hot. ER5356 if the joint's strength governs the design or the part will be anodized."
+        },
+        {
+          "q": "Why does 4043 look dark after anodizing?",
+          "a": "Silicon in the weld metal reacts differently in the anodizing bath and turns the bead dark grey to black against the base metal. ER5356 has no silicon addition and comes out far closer in colour."
+        },
+        {
+          "q": "Why is ER5356 easier to feed?",
+          "a": "It is a harder, stiffer alloy. Soft 4043 wire buckles and birdnests in the drive rolls on a long gun, while 5356 pushes through more reliably."
+        }
+      ],
+      "id": "er4043-vs-er5356"
+    },
+    {
+      "a": "e4043",
+      "b": "er4043",
+      "headline": "Same 5% silicon aluminium chemistry, completely different process. E4043 is a flux-covered stick electrode; ER4043 is bare wire for TIG and MIG.",
+      "meta_description": "E4043 vs ER4043: aluminium stick electrode against bare TIG and MIG filler. Weld quality, positions, flux removal and why ER4043 replaced E4043.",
+      "verdict": "The alloy is the same; the process is not. E4043 is a covered electrode under AWS A5.3 for stick welding aluminium — a field-repair method that is limited to the flat position, carries a corrosive salt flux that must be washed off, absorbs moisture within hours and produces porous welds far more often than not. ER4043 is bare wire or rod under AWS A5.10 for TIG and MIG, and it produces clean, controllable, far stronger welds. If a TIG or spool-gun MIG setup exists at all, use it.",
+      "choose_a": [
+        "Field repair with no TIG or MIG available",
+        "Legacy procedures that specify covered aluminium electrodes",
+        "Emergency work on heavy aluminium castings"
+      ],
+      "choose_b": [
+        "Essentially all modern aluminium welding",
+        "Any work where weld quality matters",
+        "Out-of-position work, thin material and cosmetic welds"
+      ],
+      "faqs": [
+        {
+          "q": "Can you stick weld aluminium?",
+          "a": "Yes, with covered electrodes such as E4043, but the results are markedly worse than TIG or MIG: flat position only, corrosive flux residue, and frequent porosity. It is a field-repair method, not a production one."
+        },
+        {
+          "q": "Is the weld metal the same strength?",
+          "a": "No. AWS A5.3 sets a 14 ksi minimum for E4043 covered electrodes, while ER4043 deposited by TIG or MIG typically reaches around 27 ksi under cleaner conditions."
+        },
+        {
+          "q": "Does the flux have to be removed?",
+          "a": "From E4043, yes — completely, with hot water and a dedicated stainless brush. The salt-based residue is corrosive and will attack the aluminium. ER4043 has no flux at all."
+        }
+      ],
+      "id": "e4043-vs-er4043"
+    },
+    {
+      "a": "er70s-6",
+      "b": "e71t-1",
+      "headline": "ER70S-6 is solid wire with no slag and a cleaner finish; E71T-1 is flux-cored, deposits considerably faster and penetrates deeper on thick plate.",
+      "meta_description": "ER70S-6 vs E71T-1: solid MIG wire against gas-shielded flux core. Deposition rate, penetration, slag, cost and out-of-position performance.",
+      "verdict": "Both run on the same machine with the same gas, both deposit 70 ksi weld metal, and both need shelter from wind. The difference is what the wire is made of. Solid ER70S-6 leaves no slag, gives a tidy bead and costs less per pound — ideal for sheet, light plate and anything where cleanup time matters. Tubular E71T-1 carries flux inside, so it deposits at a considerably higher rate, penetrates deeper at the same current, and its fast-freezing slag supports the puddle for genuine all-position welding at high amperage. On plate over about 1/4 in, flux core usually wins on throughput.",
+      "choose_a": [
+        "Sheet metal and thin plate",
+        "Work where no slag cleanup is a real advantage",
+        "Lower wire cost on high-volume light fabrication",
+        "Automotive and cosmetic welds"
+      ],
+      "choose_b": [
+        "Plate over about 1/4 in",
+        "Structural fabrication and heavy equipment",
+        "All-position welding at high deposition rates",
+        "Joints needing deeper penetration"
+      ],
+      "faqs": [
+        {
+          "q": "Is flux core stronger than solid MIG wire?",
+          "a": "Both deposit 70 ksi class weld metal on carbon steel. Flux core penetrates deeper and fills faster, which suits thick plate, but neither is inherently stronger on a properly designed joint."
+        },
+        {
+          "q": "Can I run both on the same machine?",
+          "a": "Yes, on DCEP with the same CO2 or 75/25 gas. Change to knurled drive rolls for the tubular wire and lengthen the contact tip to work distance."
+        },
+        {
+          "q": "Which produces more fume?",
+          "a": "E71T-1, by a clear margin. Flux-cored processes generate noticeably more fume than solid wire, so ventilation matters more."
+        }
+      ],
+      "id": "er70s-6-vs-e71t-1"
+    },
+    {
+      "a": "er70s-6",
+      "b": "e71t-11",
+      "headline": "ER70S-6 needs a gas bottle and shelter but welds clean; E71T-11 needs neither and works outdoors, at the cost of spatter, smoke and slag.",
+      "meta_description": "ER70S-6 vs E71T-11: gas-shielded solid wire against gasless self-shielded flux core. Wind tolerance, polarity, appearance and thickness limits.",
+      "verdict": "This is the decision every small MIG machine owner faces. ER70S-6 with 75/25 gas gives a clean, tidy, low-spatter weld with no slag — provided you are indoors and the steel is reasonably clean. E71T-11 needs no gas at all, runs DCEN instead of DCEP, tolerates wind, and handles rust and paint better, but it spatters, smokes, leaves slag to chip, has no impact toughness requirement and is usually limited by the manufacturer to material under about 1/2 in. Indoors on clean steel, solid wire. Outdoors or on dirty steel, gasless.",
+      "choose_a": [
+        "Indoor shop work on clean steel",
+        "Sheet metal and thin material",
+        "Welds where appearance matters",
+        "Lower consumable cost over time"
+      ],
+      "choose_b": [
+        "Outdoor and windy conditions",
+        "No gas bottle available or practical",
+        "Rusty, painted or weathered steel",
+        "Field and farm repair"
+      ],
+      "faqs": [
+        {
+          "q": "Do I need to change polarity between them?",
+          "a": "Yes, and this is the mistake that catches most people. Solid ER70S-6 runs DCEP; self-shielded E71T-11 runs DCEN. On most small machines that means swapping the gun and work leads at the terminals inside the case."
+        },
+        {
+          "q": "Why does my gasless weld look so much worse?",
+          "a": "Some of that is inherent — self-shielded wire spatters more and leaves slag. The rest is usually reversed polarity, too short a stickout, pushing instead of dragging the gun, or damp wire."
+        },
+        {
+          "q": "Which is better for thick steel?",
+          "a": "Neither is ideal. E71T-11 is usually limited to under about 1/2 in by the manufacturer, and solid wire in short-circuit transfer risks cold lap. For real plate work, use gas-shielded E71T-1 or stick with E7018."
+        }
+      ],
+      "id": "er70s-6-vs-e71t-11"
+    },
+    {
+      "a": "e71t-1",
+      "b": "e71t-11",
+      "headline": "E71T-1 is gas-shielded, runs DCEP and passes code work; E71T-11 is self-shielded, runs DCEN and works outdoors with lower toughness.",
+      "meta_description": "E71T-1 vs E71T-11: gas-shielded versus self-shielded flux-cored wire. Polarity, toughness requirements, thickness limits and wind tolerance compared.",
+      "verdict": "Both are tubular 70 ksi all-position wires, and that is where the similarity ends. E71T-1 uses external shielding gas on top of its flux, runs DCEP, carries a 20 ft·lb at 0 °F impact requirement and produces welds suitable for structural code work — but it cannot be used in wind. E71T-11 shields itself entirely from the flux, runs DCEN, works outdoors, and needs no bottle, but carries no impact requirement and is generally limited by manufacturers to lighter material and restricted pass counts. Reversing the polarity between them is the single most common setup error.",
+      "choose_a": [
+        "Structural steel and code work",
+        "Indoor production fabrication",
+        "Heavy plate and multi-pass welds",
+        "Applications requiring notch toughness"
+      ],
+      "choose_b": [
+        "Outdoor and field welding",
+        "Small machines with no gas capability",
+        "Farm, trailer and general repair",
+        "Light plate under about 1/2 in"
+      ],
+      "faqs": [
+        {
+          "q": "Is E71T-1 DCEP or DCEN?",
+          "a": "DCEP. E71T-11 runs DCEN. Switching between the two wires requires changing polarity at the machine, and running either on the wrong setting gives an erratic, spattery arc."
+        },
+        {
+          "q": "Can E71T-11 be used on structural steel?",
+          "a": "Generally not for code work. It has no impact toughness requirement and is typically thickness limited by the manufacturer. E71T-1 with gas, or E7018, is the appropriate choice."
+        },
+        {
+          "q": "Does adding gas improve E71T-11?",
+          "a": "No. It is formulated to shield itself, and adding external gas does nothing useful. If you want gas-shielded quality, buy a gas-shielded wire."
+        }
+      ],
+      "id": "e71t-1-vs-e71t-11"
+    },
+    {
+      "a": "er70s-6",
+      "b": "e7018",
+      "headline": "ER70S-6 fills faster with no slag and is easier to learn; E7018 needs no gas, tolerates wind and dirt, and is the low-hydrogen rod codes call for.",
+      "meta_description": "ER70S-6 MIG wire vs E7018 stick: process comparison on speed, cleanliness, portability, wind tolerance and structural code acceptance.",
+      "verdict": "Both deposit 70 ksi weld metal, so this is really a process comparison. MIG with ER70S-6 is faster, leaves no slag, has a much shorter learning curve and suits production work on clean steel indoors. Stick with E7018 needs no gas bottle, works in wind and rain, tolerates surface contamination and rough fit-up far better, and its low-hydrogen deposit with -20 °F toughness is what most structural procedures specify. The choice usually comes down to where the work is and what the code says.",
+      "choose_a": [
+        "Indoor shop fabrication on clean steel",
+        "High-volume production welding",
+        "Sheet and light plate",
+        "Welders new to the trade"
+      ],
+      "choose_b": [
+        "Field welding, wind and weather",
+        "Structural and coded joints requiring low hydrogen",
+        "Rusty, painted or poorly fitted steel",
+        "Maximum portability"
+      ],
+      "faqs": [
+        {
+          "q": "Is MIG or stick stronger?",
+          "a": "Both deposit 70 ksi class weld metal. On a correctly designed and executed joint neither is stronger — but short-circuit MIG can produce cold lap on thick material, which is why codes often restrict it."
+        },
+        {
+          "q": "Which is better for a beginner?",
+          "a": "MIG. The gun maintains arc length automatically, so a usable bead comes much sooner. Stick demands manual arc length control from the first minute."
+        },
+        {
+          "q": "Can I MIG weld structural steel?",
+          "a": "Yes, under a qualified procedure — usually in spray or pulsed transfer rather than short circuit. Many structural codes restrict short-circuit GMAW because of the cold lap risk."
+        }
+      ],
+      "id": "er70s-6-vs-e7018"
+    },
+    {
+      "a": "e71t-11",
+      "b": "e6011",
+      "headline": "Both work outdoors on dirty steel with no gas. E71T-11 fills faster on a wire feeder; E6011 needs only a stick machine and handles thicker plate.",
+      "meta_description": "E71T-11 vs E6011: gasless flux-cored wire against the AC cellulosic stick rod. Deposition, portability, penetration and thickness limits compared.",
+      "verdict": "These two compete directly for outdoor repair work. Self-shielded E71T-11 feeds continuously, deposits considerably faster and is easier for a beginner to control, but it needs a wire feeder, a spool that has been kept dry, and it is usually limited to material under about 1/2 in. E6011 needs only a stick machine and a box of rods, digs deeper through rust and paint, handles any thickness, and stores indefinitely at room temperature. For a lot of light outdoor repair the wire wins on speed; for heavy or remote work the stick rod wins on simplicity.",
+      "choose_a": [
+        "Faster fill on light and medium plate",
+        "Beginners who find arc length hard to control",
+        "Repetitive repair work with a feeder available"
+      ],
+      "choose_b": [
+        "Heavy plate and thick sections",
+        "Remote work where a feeder is impractical",
+        "Very dirty, painted or galvanized steel",
+        "Long-term rod storage with no humidity concerns"
+      ],
+      "faqs": [
+        {
+          "q": "Which penetrates deeper?",
+          "a": "E6011 has the more digging arc and handles poor fit-up better. E71T-11 gives medium penetration, adequate for the light and medium plate it is rated for."
+        },
+        {
+          "q": "Which is cheaper to run?",
+          "a": "Stick rod is cheaper per pound of deposited metal and needs no feeder, but flux-cored wire has a far higher duty cycle because you never stop to change electrodes."
+        },
+        {
+          "q": "Can either be used on structural steel?",
+          "a": "Neither is typically accepted for structural code work — E6011 is not low hydrogen and E71T-11 has no impact requirement. E7018 or gas-shielded E71T-1 is the appropriate choice."
+        }
+      ],
+      "id": "e71t-11-vs-e6011"
+    },
+    {
+      "a": "e308l",
+      "b": "er308l",
+      "headline": "Same 19Cr-10Ni low-carbon chemistry. E308L is a flux-covered stick electrode; ER308L is bare wire or rod for MIG and TIG.",
+      "meta_description": "E308L vs ER308L: stainless stick electrode against bare TIG rod and MIG wire. Weld cleanliness, slag, purging and process selection compared.",
+      "verdict": "The alloy is effectively the same — both are low-carbon 19Cr-10Ni fillers for Type 304 and 304L, with ER308L held to a slightly tighter 0.03% carbon maximum against E308L's 0.04%. The difference is entirely process. E308L is a covered electrode: portable, works in wind, leaves slag that must be chipped between every pass. ER308L is bare: no slag, cleaner welds, far better control, and the only sensible choice for sanitary tube, thin material and anything where the weld will be inspected or polished.",
+      "choose_a": [
+        "Field repair on stainless with no gas available",
+        "Thick sections and heavy fabrication",
+        "Windy conditions"
+      ],
+      "choose_b": [
+        "Sanitary tube, food and pharmaceutical piping",
+        "Thin sheet and tube",
+        "Welds that will be polished, inspected or left visible",
+        "Root passes where a back purge is used"
+      ],
+      "faqs": [
+        {
+          "q": "Is the weld metal the same?",
+          "a": "Essentially, though ER308L is held to a slightly lower carbon maximum. In service both give the same corrosion resistance on 304 base metal."
+        },
+        {
+          "q": "Which produces a cleaner weld?",
+          "a": "ER308L. With no flux there is no slag to trap between passes and no slag residue to remove, which matters a great deal on sanitary and inspected work."
+        },
+        {
+          "q": "Do both need a back purge?",
+          "a": "On pipe roots, yes. Sugaring is caused by oxygen reaching the hot unshielded root, and that happens regardless of which process laid the pass."
+        }
+      ],
+      "id": "e308l-vs-er308l"
+    },
+    {
+      "a": "e316l",
+      "b": "er316l",
+      "headline": "Same molybdenum-bearing chemistry for 316 base metal. E316L is the covered stick electrode; ER316L is bare wire and TIG rod.",
+      "meta_description": "E316L vs ER316L: stainless stick electrode against bare MIG wire and TIG rod. Slag, weld cleanliness, purging and process selection compared.",
+      "verdict": "Both deposit the same low-carbon 18Cr-12Ni-2.5Mo weld metal for Type 316 and 316L base metal, so the corrosion performance is equivalent. The choice is a process choice. E316L is a covered electrode — portable, wind tolerant, and slag-producing. ER316L is bare filler for TIG and MIG — no slag, much finer heat control, and the standard for sanitary tube, thin-wall pipe and any weld that will be polished, passivated or inspected.",
+      "choose_a": [
+        "Field repair and heavy fabrication",
+        "Windy or outdoor conditions",
+        "Situations where no gas supply is available"
+      ],
+      "choose_b": [
+        "Sanitary and pharmaceutical tubing",
+        "Thin-wall pipe and sheet",
+        "Welds requiring pickling and passivation",
+        "Precise heat control on heat-sensitive assemblies"
+      ],
+      "faqs": [
+        {
+          "q": "Do both resist chlorides equally?",
+          "a": "Yes. Both carry 2 to 3% molybdenum, so the corrosion performance of a sound weld is equivalent."
+        },
+        {
+          "q": "Which is better for pipe welding?",
+          "a": "Commonly both, in sequence: an ER316L TIG root with an argon back purge, then E316L stick or ER316L wire for fill and cap. The TIG root gives the clean inside surface that matters most."
+        },
+        {
+          "q": "Does the stick version need a rod oven?",
+          "a": "E316L should be held at 250–300 °F after opening to keep the coating dry. ER316L has no coating, so its concern is contamination rather than moisture."
+        }
+      ],
+      "id": "e316l-vs-er316l"
+    },
+    {
+      "a": "e309l",
+      "b": "er309l",
+      "headline": "Same over-alloyed 23Cr-12Ni chemistry for dissimilar joints. E309L is the covered electrode; ER309L is bare wire and TIG rod.",
+      "meta_description": "E309L vs ER309L: dissimilar-metal stainless stick electrode against bare TIG and MIG filler. Dilution control, overlay work and process selection.",
+      "verdict": "Both are deliberately over-alloyed fillers that survive dilution from carbon steel, so either will make a sound stainless-to-carbon-steel joint or overlay buffer layer. The process is what differs. E309L, as a covered electrode, is portable and wind tolerant but leaves slag. ER309L, as bare filler, gives no slag and much finer control of heat input — which matters on overlay work, where keeping dilution low is the whole objective.",
+      "choose_a": [
+        "Field repair and heavy dissimilar joints",
+        "Outdoor and windy conditions",
+        "Thick-section transition welds"
+      ],
+      "choose_b": [
+        "Overlay and cladding where dilution control is critical",
+        "Thin material and precise root passes",
+        "Welds that will be inspected or ferrite tested"
+      ],
+      "faqs": [
+        {
+          "q": "Which gives lower dilution on an overlay?",
+          "a": "ER309L with TIG or pulsed MIG, because heat input and filler addition are controlled independently. That is why cladding procedures usually specify a bare-wire process for the buffer layer."
+        },
+        {
+          "q": "Is the deposited chemistry the same?",
+          "a": "Effectively yes — both are nominal 23Cr-12Ni with 0.03–0.04% maximum carbon. Both retain ferrite after dilution, which is what prevents hot cracking."
+        },
+        {
+          "q": "Can I stick weld the buffer layer and MIG the rest?",
+          "a": "Yes, that combination is common. The important thing is that the first layer on carbon steel is a 309-type filler, regardless of which process lays it."
+        }
+      ],
+      "id": "e309l-vs-er309l"
+    },
+    {
+      "a": "e7018",
+      "b": "e71t-1",
+      "headline": "Both give low-hydrogen-class 70 ksi welds for structural work. E7018 is portable and wind-tolerant; E71T-1 deposits several times faster indoors.",
+      "meta_description": "E7018 vs E71T-1: low-hydrogen stick against gas-shielded flux core for structural steel. Deposition rate, portability, toughness and code use.",
+      "verdict": "On structural steel these are the two serious options, and the choice is usually about where the work happens. E7018 needs no gas, works in wind and rain, and carries the low-hydrogen credentials that codes are built around — but you stop every 14 inches to change rods. E71T-1 feeds continuously and deposits at several times the rate, with a slag system good enough for all-position welding at high current and a 20 ft·lb at 0 °F impact requirement — but it depends on shielding gas and cannot be used outdoors without shelter.",
+      "choose_a": [
+        "Field erection and outdoor work",
+        "Short welds, tacking and varied joints",
+        "Maximum portability",
+        "Situations where gas logistics are impractical"
+      ],
+      "choose_b": [
+        "Shop fabrication with long welds",
+        "Heavy plate and multi-pass joints",
+        "Production work where deposition rate drives cost",
+        "Indoor structural fabrication"
+      ],
+      "faqs": [
+        {
+          "q": "Is E71T-1 considered low hydrogen?",
+          "a": "Gas-shielded flux-cored wires are available in low-hydrogen designations such as H4 and H8, and E71T-1 wires commonly carry one. Check the specific product's designation rather than assuming — the classification alone does not guarantee it."
+        },
+        {
+          "q": "Which has better toughness?",
+          "a": "E7018 requires 20 ft·lb at -20 °F; standard E71T-1 requires 20 ft·lb at 0 °F, with -1J and -1M variants extending to -20 °F. For low-temperature service, check the exact classification."
+        },
+        {
+          "q": "How much faster is flux core?",
+          "a": "Several times, once duty cycle is counted. Continuous feed eliminates rod changes and stub loss, and the wire runs at higher current than a stick rod of comparable size."
+        }
+      ],
+      "id": "e7018-vs-e71t-1"
+    },
+    {
+      "a": "e6010",
+      "b": "er70s-6",
+      "headline": "E6010 digs through open roots and dirty steel anywhere; ER70S-6 is faster and cleaner but needs shelter, clean metal and a gas bottle.",
+      "meta_description": "E6010 vs ER70S-6: cellulosic root rod against solid MIG wire. Root pass capability, wind tolerance, contamination and deposition compared.",
+      "verdict": "These rarely compete except on one question: what lays the root pass. E6010's digging cellulosic arc reaches through an open root and fuses the land even when the joint is rusty or poorly fitted, works in wind, and needs nothing but a stick machine. ER70S-6 is faster, cleaner and easier to learn, but short-circuit transfer on an open root risks lack of fusion, it needs clean metal, and any breeze ruins the shielding. For shop fabrication on prepared joints MIG is the better tool; for field roots E6010 still holds.",
+      "choose_a": [
+        "Open-root pipe and plate passes",
+        "Field work, wind and weather",
+        "Rusty, painted or contaminated steel",
+        "Poor joint fit-up"
+      ],
+      "choose_b": [
+        "Indoor shop fabrication on clean steel",
+        "High deposition and duty cycle",
+        "Sheet and light plate",
+        "Welds where no slag cleanup is wanted"
+      ],
+      "faqs": [
+        {
+          "q": "Can you MIG an open root?",
+          "a": "It is done, but short-circuit transfer is prone to lack of fusion on a root pass, which is why many procedures call for a TIG or E6010 root followed by MIG or flux-core fill."
+        },
+        {
+          "q": "Which is stronger?",
+          "a": "ER70S-6 is a 70 ksi filler against E6010's 60 ksi. On most joints the root is not the strength-limiting pass, which is why the combination of an E6010 root and a 70 ksi fill is common."
+        },
+        {
+          "q": "Which handles rust better?",
+          "a": "E6010, clearly. ER70S-6's high silicon and manganese help with mill scale and light surface rust, but heavy contamination still causes porosity."
+        }
+      ],
+      "id": "e6010-vs-er70s-6"
+    }
+  ]
+}

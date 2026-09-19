@@ -1,0 +1,145 @@
+{% extends "base.html" %}
+{% set p = process %}
+{% block content %}
+
+<div class="layout">
+<article>
+
+  <header class="phead">
+    <p class="kicker">{{ p.abbr }} &middot; {{ p.full_name }}</p>
+    <h1>{{ p.name }}</h1>
+  </header>
+
+  <div class="answer"><p>{{ p.summary }}</p></div>
+
+  <ul class="chips">
+    <li class="chip chip-accent"><strong>{{ p.abbr }}</strong></li>
+    <li class="chip">{{ p.polarity }}</li>
+    <li class="chip">{{ p.typical_amperage }}</li>
+    <li class="chip">{{ p.shielding }}</li>
+  </ul>
+
+  <h2 id="how-it-works">How {{ p.name|lower }} works</h2>
+  <p>{{ p.how_it_works }}</p>
+
+  <h2 id="specs">At a glance</h2>
+  <div class="tw">
+    <table class="specs">
+      <tbody>
+        <tr><th scope="row">AWS designation</th><td>{{ p.abbr }} &mdash; {{ p.full_name }}</td></tr>
+        <tr><th scope="row">Also called</th><td>{{ p.aka|join(', ') }}</td></tr>
+        <tr><th scope="row">Polarity</th><td>{{ p.polarity }}</td></tr>
+        <tr><th scope="row">Typical amperage</th><td>{{ p.typical_amperage }}</td></tr>
+        {%- if p.typical_voltage %}<tr><th scope="row">Typical voltage</th><td>{{ p.typical_voltage }}</td></tr>{%- endif %}
+        <tr><th scope="row">Positions</th><td>{{ p.positions }}</td></tr>
+        <tr><th scope="row">Deposition rate</th><td>{{ p.deposition }}</td></tr>
+        <tr><th scope="row">Shielding</th><td>{{ p.shielding }}</td></tr>
+        <tr><th scope="row">Skill level</th><td>{{ p.skill_level }}</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  {%- if p.transfer_modes %}
+  <h2 id="modes">{{ mode_heading }}</h2>
+  <div class="tw">
+    <table>
+      <thead><tr><th>Mode</th><th>Description</th><th>Typical use</th></tr></thead>
+      <tbody>
+        {%- for m in p.transfer_modes %}
+        <tr><td><strong>{{ m.name }}</strong></td><td>{{ m.description }}</td><td>{{ m.use }}</td></tr>
+        {%- endfor %}
+      </tbody>
+    </table>
+  </div>
+  {%- endif %}
+
+  {%- if p.gases %}
+  <h2 id="gas">Shielding gas selection</h2>
+  <div class="tw">
+    <table>
+      <thead><tr><th>Gas</th><th>Used for</th><th>Notes</th></tr></thead>
+      <tbody>
+        {%- for g in p.gases %}
+        <tr><td class="num">{{ g.gas }}</td><td>{{ g.for }}</td><td>{{ g.note }}</td></tr>
+        {%- endfor %}
+      </tbody>
+    </table>
+  </div>
+  {%- endif %}
+
+  {% with slot='in_article' %}{% include "partials/ad.html" %}{% endwith %}
+
+  <h2 id="settings">Starting settings</h2>
+  <p>Starting points only &mdash; every machine, joint and position shifts them. Adjust by arc sound and bead profile.</p>
+  <div class="tw">
+    <table>
+      <thead><tr>{% for h in settings_head %}<th class="num">{{ h }}</th>{% endfor %}</tr></thead>
+      <tbody>
+        {%- for row in settings_rows %}
+        <tr>{% for cell in row %}<td class="num">{{ cell }}</td>{% endfor %}</tr>
+        {%- endfor %}
+      </tbody>
+    </table>
+  </div>
+
+  <h2 id="advantages">Advantages</h2>
+  <ul>{% for a in p.advantages %}<li>{{ a }}</li>{% endfor %}</ul>
+
+  <h2 id="limitations">Limitations</h2>
+  <ul>{% for l in p.limitations %}<li>{{ l }}</li>{% endfor %}</ul>
+
+  <h2 id="applications">Where it is used</h2>
+  <ul>{% for a in p.applications %}<li>{{ a }}</li>{% endfor %}</ul>
+
+  {%- if consumables %}
+  <h2 id="consumables">Filler metals for {{ p.name|lower }}</h2>
+  <div class="grid grid-2">
+    {%- for c in consumables %}
+    <a class="card" href="/electrodes/{{ c.id }}/">
+      <h3>{{ c.name }}</h3>
+      <p class="tag">{{ c.spec }} &middot; {{ c.category_name }}</p>
+      <p>{{ c.short }}</p>
+    </a>
+    {%- endfor %}
+  </div>
+  {%- endif %}
+
+  {% with faqs=p.faqs, faq_title=p.name ~ ' — common questions' %}{% include "partials/faq.html" %}{% endwith %}
+
+  {%- if related_processes %}
+  <h2 id="related">Other processes</h2>
+  <div class="grid grid-2">
+    {%- for r in related_processes %}
+    <a class="card" href="/processes/{{ r.id }}/">
+      <h3>{{ r.name }} <span class="tag">({{ r.abbr }})</span></h3>
+      <p>{{ r.one_liner }}</p>
+    </a>
+    {%- endfor %}
+  </div>
+  {%- endif %}
+
+  {% with slot='footer' %}{% include "partials/ad.html" %}{% endwith %}
+
+</article>
+
+<aside class="side">
+  {% with id='q-side' %}{% include "partials/search.html" %}{% endwith %}
+  <nav class="panel toc" aria-label="On this page">
+    <h2>On this page</h2>
+    <ul>
+      <li><a href="#how-it-works">How it works</a></li>
+      <li><a href="#specs">At a glance</a></li>
+      {%- if p.transfer_modes %}<li><a href="#modes">{{ mode_heading }}</a></li>{%- endif %}
+      {%- if p.gases %}<li><a href="#gas">Shielding gas</a></li>{%- endif %}
+      <li><a href="#settings">Starting settings</a></li>
+      <li><a href="#advantages">Advantages</a></li>
+      <li><a href="#limitations">Limitations</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+  </nav>
+  {% with items=affiliate_items %}{% include "partials/affiliate.html" %}{% endwith %}
+  {% with slot='sidebar', format='vertical' %}{% include "partials/ad.html" %}{% endwith %}
+</aside>
+</div>
+
+{% endblock %}

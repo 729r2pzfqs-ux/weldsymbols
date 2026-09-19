@@ -1,0 +1,104 @@
+{% extends "base.html" %}
+{% set c = comparison %}
+{% block content %}
+
+<div class="layout">
+<article>
+
+  <header class="phead">
+    <p class="kicker">Electrode comparison</p>
+    <h1>{{ a.name }} vs {{ b.name }}</h1>
+  </header>
+
+  <div class="answer"><p>{{ c.headline }}</p></div>
+
+  <h2 id="side-by-side">{{ a.name }} vs {{ b.name }} at a glance</h2>
+  <div class="tw">
+    <table class="cmp">
+      <thead>
+        <tr><th></th><th class="col-a">{{ a.name }}</th><th class="col-b">{{ b.name }}</th></tr>
+      </thead>
+      <tbody>
+        {%- for row in rows %}
+        <tr>
+          <th scope="row">{{ row.label }}</th>
+          <td class="col-a{% if row.num %} num{% endif %}">{{ row.a }}</td>
+          <td class="col-b{% if row.num %} num{% endif %}">{{ row.b }}</td>
+        </tr>
+        {%- endfor %}
+      </tbody>
+    </table>
+  </div>
+
+  <h2 id="verdict">Which should you use?</h2>
+  <p>{{ c.verdict }}</p>
+
+  <h3>Choose {{ a.name }} when</h3>
+  <ul>{% for i in c.choose_a %}<li>{{ i }}</li>{% endfor %}</ul>
+
+  <h3>Choose {{ b.name }} when</h3>
+  <ul>{% for i in c.choose_b %}<li>{{ i }}</li>{% endfor %}</ul>
+
+  {% with slot='in_article' %}{% include "partials/ad.html" %}{% endwith %}
+
+  <h2 id="amperage">Amperage compared</h2>
+  <div class="tw">
+    <table>
+      <thead><tr><th>Diameter</th><th class="num">{{ a.name }}</th><th class="num">{{ b.name }}</th></tr></thead>
+      <tbody>
+        {%- for row in amp_rows %}
+        <tr><td class="num">{{ row.diameter }}</td><td class="num">{{ row.a }}</td><td class="num">{{ row.b }}</td></tr>
+        {%- endfor %}
+      </tbody>
+    </table>
+  </div>
+  <p class="small muted">Ranges are typical starting points. Diameters listed for only one electrode are
+     shown as &mdash; for the other.</p>
+
+  {% with faqs=c.faqs, faq_title=a.name ~ ' vs ' ~ b.name ~ ' — common questions' %}{% include "partials/faq.html" %}{% endwith %}
+
+  <h2 id="full-specs">Full specifications</h2>
+  <div class="grid grid-2">
+    <a class="card" href="/electrodes/{{ a.id }}/">
+      <h3>{{ a.name }}</h3>
+      <p class="tag">{{ a.spec }}</p>
+      <p>{{ a.summary }}</p>
+    </a>
+    <a class="card" href="/electrodes/{{ b.id }}/">
+      <h3>{{ b.name }}</h3>
+      <p class="tag">{{ b.spec }}</p>
+      <p>{{ b.summary }}</p>
+    </a>
+  </div>
+
+  {%- if other_comparisons %}
+  <h2 id="more">Other comparisons</h2>
+  <ul class="pill-list">
+    {%- for o in other_comparisons %}
+    <li><a href="/electrodes/{{ o.id }}/">{{ o.a_name }} vs {{ o.b_name }}</a></li>
+    {%- endfor %}
+  </ul>
+  {%- endif %}
+
+  {% with slot='footer' %}{% include "partials/ad.html" %}{% endwith %}
+
+</article>
+
+<aside class="side">
+  {% with id='q-side' %}{% include "partials/search.html" %}{% endwith %}
+  <nav class="panel toc" aria-label="On this page">
+    <h2>On this page</h2>
+    <ul>
+      <li><a href="#side-by-side">At a glance</a></li>
+      <li><a href="#verdict">Which to use</a></li>
+      <li><a href="#amperage">Amperage compared</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#full-specs">Full specifications</a></li>
+    </ul>
+  </nav>
+  {% with items=affiliate_items %}{% include "partials/affiliate.html" %}{% endwith %}
+  {% with slot='sidebar', format='vertical' %}{% include "partials/ad.html" %}{% endwith %}
+</aside>
+</div>
+
+{% endblock %}

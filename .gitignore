@@ -1,0 +1,17 @@
+# Build output — regenerate with: python3 generate_site.py
+dist/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Editors / OS
+.DS_Store
+*.swp
+.idea/
+.vscode/
+
+# Local preview config for the Claude Code browser pane
+.claude/

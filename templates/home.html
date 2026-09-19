@@ -1,0 +1,88 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="hero">
+  <h1>Welding electrode specs, symbols and settings</h1>
+  <p class="lede">{{ site.description }} Every page answers its question in the first paragraph.</p>
+  {% with extra_class='search-home', id='q-home' %}{% include "partials/search.html" %}{% endwith %}
+  <ul class="stats">
+    <li><span class="n">{{ counts.electrodes }}</span><span class="l">Electrodes &amp; wires</span></li>
+    <li><span class="n">{{ counts.comparisons }}</span><span class="l">Side-by-side comparisons</span></li>
+    <li><span class="n">{{ counts.symbols }}</span><span class="l">Weld symbols</span></li>
+    <li><span class="n">{{ counts.processes }}</span><span class="l">Processes</span></li>
+  </ul>
+</div>
+
+<div class="sec-head"><h2>Most-searched electrodes</h2><a href="/electrodes/">All {{ counts.electrodes }} &rarr;</a></div>
+<div class="grid grid-3">
+  {%- for e in featured_electrodes %}
+  <a class="card" href="/electrodes/{{ e.id }}/">
+    <h3>{{ e.name }}</h3>
+    <p class="tag">{{ e.spec }} &middot; {{ e.process }}</p>
+    <p>{{ e.short }}</p>
+  </a>
+  {%- endfor %}
+</div>
+
+{% with slot='header' %}{% include "partials/ad.html" %}{% endwith %}
+
+<div class="sec-head"><h2>Browse by material</h2></div>
+<div class="grid grid-2">
+  {%- for c in site.categories %}
+  <a class="card" href="/electrodes/{{ c.id }}/">
+    <h3>{{ c.name }}</h3>
+    <p>{{ c.description }}</p>
+  </a>
+  {%- endfor %}
+</div>
+
+<div class="sec-head"><h2>Welding symbols</h2><a href="/symbols/">All {{ counts.symbols }} &rarr;</a></div>
+<div class="grid grid-3">
+  {%- for s in featured_symbols %}
+  <a class="card card-sym" href="/symbols/{{ s.id }}/">
+    {{ s.svg_markup }}
+    <h3>{{ s.name }}</h3>
+  </a>
+  {%- endfor %}
+</div>
+
+<div class="sec-head"><h2>Head-to-head comparisons</h2><a href="/electrodes/#comparisons">All {{ counts.comparisons }} &rarr;</a></div>
+<ul class="pill-list">
+  {%- for c in featured_comparisons %}
+  <li><a href="/electrodes/{{ c.id }}/">{{ c.a_name }} vs {{ c.b_name }}</a></li>
+  {%- endfor %}
+</ul>
+
+<div class="sec-head"><h2>Welding processes</h2><a href="/processes/">All {{ counts.processes }} &rarr;</a></div>
+<div class="grid grid-2">
+  {%- for p in processes %}
+  <a class="card" href="/processes/{{ p.id }}/">
+    <h3>{{ p.name }} <span class="tag">({{ p.abbr }})</span></h3>
+    <p>{{ p.one_liner }}</p>
+  </a>
+  {%- endfor %}
+</div>
+
+<div class="sec-head"><h2>Joint types</h2><a href="/joints/">All {{ counts.joints }} &rarr;</a></div>
+<div class="grid grid-3">
+  {%- for j in joints %}
+  <a class="card card-sym" href="/joints/{{ j.id }}/">
+    {{ j.svg_markup }}
+    <h3>{{ j.name }}</h3>
+  </a>
+  {%- endfor %}
+</div>
+
+<div class="sec-head"><h2>Reference guides</h2><a href="/guides/">All guides &rarr;</a></div>
+<div class="grid grid-2">
+  {%- for g in guides %}
+  <a class="card" href="/guides/{{ g.id }}/">
+    <h3>{{ g.title }}</h3>
+    <p>{{ g.summary }}</p>
+  </a>
+  {%- endfor %}
+</div>
+
+{% with slot='footer' %}{% include "partials/ad.html" %}{% endwith %}
+
+{% endblock %}

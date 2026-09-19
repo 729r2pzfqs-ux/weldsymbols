@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 180" role="img" aria-labelledby="tee-joint-t tee-joint-d">
+  <title id="tee-joint-t">T-joint cross-section</title>
+  <desc id="tee-joint-d">Cross-section through a t-joint.</desc>
+  <style>
+  .ln   { fill: none; stroke: var(--svg-line, #c8d2e2); stroke-width: 2.4;
+          stroke-linecap: round; stroke-linejoin: round; }
+  .head { fill: var(--svg-line, #c8d2e2); stroke: none; }
+  .sym  { fill: none; stroke: var(--svg-accent, #ff8a3d); stroke-width: 3;
+          stroke-linecap: round; stroke-linejoin: round; }
+  .symf { fill: var(--svg-accent, #ff8a3d); stroke: none; }
+  .bar  { fill: none; stroke: var(--svg-accent, #ff8a3d); stroke-width: 5.5;
+          stroke-linecap: round; }
+  .part { fill: var(--svg-part, #3a4557); stroke: var(--svg-line, #c8d2e2);
+          stroke-width: 2; stroke-linejoin: round; }
+  .weld { fill: var(--svg-accent, #ff8a3d); stroke: var(--svg-accent, #ff8a3d);
+          stroke-width: 1.5; stroke-linejoin: round; fill-opacity: .85; }
+  .hair { fill: none; stroke: var(--svg-line, #c8d2e2); stroke-width: 1.2;
+          stroke-dasharray: 5 4; opacity: .6; }
+  .lbl  { fill: var(--svg-line, #c8d2e2); font: 500 12px ui-sans-serif, system-ui, sans-serif; }
+  </style>
+  <rect class="part" x="28" y="112" width="224" height="34"/>
+  <rect class="part" x="126" y="40" width="30" height="72"/>
+  <path class="weld" d="M126,112 L126,74 L88,112 Z"/>
+  <path class="weld" d="M156,112 L156,74 L194,112 Z"/>
+  <text class="lbl" x="28" y="30">One member perpendicular to the other</text>
+</svg>

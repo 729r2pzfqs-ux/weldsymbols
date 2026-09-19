@@ -1,0 +1,69 @@
+{% extends "base.html" %}
+{% block content %}
+
+<header class="phead">
+  <p class="kicker">{{ kicker }}</p>
+  <h1>{{ heading }}</h1>
+</header>
+
+<div class="answer"><p>{{ summary }}</p></div>
+
+{% with id='q-idx', extra_class='search-home' %}{% include "partials/search.html" %}{% endwith %}
+
+{%- for group in groups %}
+<h2 id="{{ group.id }}">{{ group.name }}</h2>
+{%- if group.description %}<p class="muted">{{ group.description }}</p>{%- endif %}
+<div class="grid grid-2">
+  {%- for e in group.electrodes %}
+  <a class="card" href="/electrodes/{{ e.id }}/">
+    <h3>{{ e.name }}</h3>
+    <p class="tag">{{ e.spec }} &middot; {{ e.process }} &middot; {{ e.mechanical.tensile_ksi }} ksi</p>
+    <p>{{ e.short }}</p>
+  </a>
+  {%- endfor %}
+</div>
+{%- if loop.first %}{% with slot='header' %}{% include "partials/ad.html" %}{% endwith %}{% endif %}
+{%- endfor %}
+
+<h2 id="amperage">Amperage quick reference</h2>
+<p>Typical ranges for the most-used diameters. The <a href="/charts/amperage/">full amperage chart</a>
+   lists every diameter for every electrode.</p>
+<div class="tw">
+  <table>
+    <thead><tr><th>Electrode</th><th class="num">3/32 in</th><th class="num">1/8 in</th><th class="num">5/32 in</th><th>Polarity</th></tr></thead>
+    <tbody>
+      {%- for r in amp_quick %}
+      <tr>
+        <td><a href="/electrodes/{{ r.id }}/">{{ r.name }}</a></td>
+        <td class="num">{{ r.d332 }}</td>
+        <td class="num">{{ r.d18 }}</td>
+        <td class="num">{{ r.d532 }}</td>
+        <td class="num">{{ r.polarity }}</td>
+      </tr>
+      {%- endfor %}
+    </tbody>
+  </table>
+</div>
+
+{%- if comparisons %}
+<h2 id="comparisons">Electrode comparisons</h2>
+<p>Side-by-side breakdowns of the pairings people actually have to choose between.</p>
+<ul class="pill-list">
+  {%- for c in comparisons %}
+  <li><a href="/electrodes/{{ c.id }}/">{{ c.a_name }} vs {{ c.b_name }}</a></li>
+  {%- endfor %}
+</ul>
+{%- endif %}
+
+{%- if other_categories %}
+<h2 id="categories">Other materials</h2>
+<div class="grid grid-2">
+  {%- for c in other_categories %}
+  <a class="card" href="/electrodes/{{ c.id }}/"><h3>{{ c.name }}</h3><p>{{ c.description }}</p></a>
+  {%- endfor %}
+</div>
+{%- endif %}
+
+{% with slot='footer' %}{% include "partials/ad.html" %}{% endwith %}
+
+{% endblock %}

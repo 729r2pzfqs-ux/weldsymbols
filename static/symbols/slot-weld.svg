@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 180" role="img" aria-labelledby="slot-weld-t slot-weld-d">
+  <title id="slot-weld-t">Slot weld symbol</title>
+  <desc id="slot-weld-d">AWS A2.4 slot weld symbol: reference line, leader, arrowhead and weld symbol.</desc>
+  <style>
+  .ln   { fill: none; stroke: var(--svg-line, #c8d2e2); stroke-width: 2.4;
+          stroke-linecap: round; stroke-linejoin: round; }
+  .head { fill: var(--svg-line, #c8d2e2); stroke: none; }
+  .sym  { fill: none; stroke: var(--svg-accent, #ff8a3d); stroke-width: 3;
+          stroke-linecap: round; stroke-linejoin: round; }
+  .symf { fill: var(--svg-accent, #ff8a3d); stroke: none; }
+  .bar  { fill: none; stroke: var(--svg-accent, #ff8a3d); stroke-width: 5.5;
+          stroke-linecap: round; }
+  .part { fill: var(--svg-part, #3a4557); stroke: var(--svg-line, #c8d2e2);
+          stroke-width: 2; stroke-linejoin: round; }
+  .weld { fill: var(--svg-accent, #ff8a3d); stroke: var(--svg-accent, #ff8a3d);
+          stroke-width: 1.5; stroke-linejoin: round; fill-opacity: .85; }
+  .hair { fill: none; stroke: var(--svg-line, #c8d2e2); stroke-width: 1.2;
+          stroke-dasharray: 5 4; opacity: .6; }
+  .lbl  { fill: var(--svg-line, #c8d2e2); font: 500 12px ui-sans-serif, system-ui, sans-serif; }
+  </style>
+  <line class="ln" x1="80.0" y1="90.0" x2="250.0" y2="90.0"/>
+  <line class="ln" x1="80.0" y1="90.0" x2="34.0" y2="138.0"/>
+  <polygon class="head" points="34.0,138.0 40.6,123.6 48.1,130.8"/>
+  <rect class="sym" x="128" y="90" width="54" height="28"/>
+</svg>

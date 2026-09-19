@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 180" role="img" aria-labelledby="v-groove-weld-j-t v-groove-weld-j-d">
+  <title id="v-groove-weld-j-t">V-groove weld joint section</title>
+  <desc id="v-groove-weld-j-d">Cross-section through the finished joint.</desc>
+  <style>
+  .ln   { fill: none; stroke: var(--svg-line, #c8d2e2); stroke-width: 2.4;
+          stroke-linecap: round; stroke-linejoin: round; }
+  .head { fill: var(--svg-line, #c8d2e2); stroke: none; }
+  .sym  { fill: none; stroke: var(--svg-accent, #ff8a3d); stroke-width: 3;
+          stroke-linecap: round; stroke-linejoin: round; }
+  .symf { fill: var(--svg-accent, #ff8a3d); stroke: none; }
+  .bar  { fill: none; stroke: var(--svg-accent, #ff8a3d); stroke-width: 5.5;
+          stroke-linecap: round; }
+  .part { fill: var(--svg-part, #3a4557); stroke: var(--svg-line, #c8d2e2);
+          stroke-width: 2; stroke-linejoin: round; }
+  .weld { fill: var(--svg-accent, #ff8a3d); stroke: var(--svg-accent, #ff8a3d);
+          stroke-width: 1.5; stroke-linejoin: round; fill-opacity: .85; }
+  .hair { fill: none; stroke: var(--svg-line, #c8d2e2); stroke-width: 1.2;
+          stroke-dasharray: 5 4; opacity: .6; }
+  .lbl  { fill: var(--svg-line, #c8d2e2); font: 500 12px ui-sans-serif, system-ui, sans-serif; }
+  </style>
+  <path class="part" d="M34,74 H116 L134,124 H34 Z"/>
+  <path class="part" d="M246,74 H164 L146,124 H246 Z"/>
+  <path class="weld" d="M116,74 Q140,64 164,74 L146,124 H134 Z"/>
+  <text class="lbl" x="34" y="30">Both members bevelled, single-V groove</text>
+</svg>

@@ -1,0 +1,86 @@
+{% extends "base.html" %}
+{% set j = joint %}
+{% block content %}
+
+<div class="layout">
+<article>
+
+  <header class="phead">
+    <p class="kicker">Weld joint type</p>
+    <h1>{{ j.name }}</h1>
+  </header>
+
+  <div class="answer"><p>{{ j.summary }}</p></div>
+
+  <figure>
+    {{ j.svg_markup }}
+    <figcaption>Cross-section through a {{ j.name|lower }}.</figcaption>
+  </figure>
+
+  <h2 id="geometry">Geometry and preparation</h2>
+  <div class="tw">
+    <table class="specs">
+      <tbody>
+        <tr><th scope="row">Configuration</th><td>{{ j.geometry }}</td></tr>
+        <tr><th scope="row">Edge preparation</th><td>{{ j.prep }}</td></tr>
+        <tr><th scope="row">Strength</th><td>{{ j.strength }}</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2 id="characteristics">Characteristics</h2>
+  <ul>{% for c in j.characteristics %}<li>{{ c }}</li>{% endfor %}</ul>
+
+  {% with slot='in_article' %}{% include "partials/ad.html" %}{% endwith %}
+
+  <h2 id="welds">Weld types used on a {{ j.name|lower }}</h2>
+  <div class="grid grid-3">
+    {%- for s in welds %}
+    <a class="card card-sym" href="/symbols/{{ s.id }}/">
+      {{ s.svg_markup }}
+      <h3>{{ s.name }}</h3>
+    </a>
+    {%- endfor %}
+  </div>
+
+  <h2 id="applications">Where it is used</h2>
+  <ul>{% for a in j.applications %}<li>{{ a }}</li>{% endfor %}</ul>
+
+  {% with faqs=j.faqs, faq_title=j.name ~ ' — common questions' %}{% include "partials/faq.html" %}{% endwith %}
+
+  <h2 id="other">Other joint types</h2>
+  <div class="grid grid-2">
+    {%- for o in other_joints %}
+    <a class="card" href="/joints/{{ o.id }}/"><h3>{{ o.name }}</h3><p>{{ o.short }}</p></a>
+    {%- endfor %}
+  </div>
+
+  {% with slot='footer' %}{% include "partials/ad.html" %}{% endwith %}
+
+</article>
+
+<aside class="side">
+  {% with id='q-side' %}{% include "partials/search.html" %}{% endwith %}
+  <nav class="panel toc" aria-label="On this page">
+    <h2>On this page</h2>
+    <ul>
+      <li><a href="#geometry">Geometry and prep</a></li>
+      <li><a href="#characteristics">Characteristics</a></li>
+      <li><a href="#welds">Weld types</a></li>
+      <li><a href="#applications">Applications</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+  </nav>
+  <div class="panel">
+    <h2>Reference</h2>
+    <ul>
+      <li><a href="/guides/how-to-read-welding-symbols/">Reading welding symbols</a></li>
+      <li><a href="/symbols/">All weld symbols</a></li>
+      <li><a href="/guides/welding-positions/">Welding positions</a></li>
+    </ul>
+  </div>
+  {% with slot='sidebar', format='vertical' %}{% include "partials/ad.html" %}{% endwith %}
+</aside>
+</div>
+
+{% endblock %}

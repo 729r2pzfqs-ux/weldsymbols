@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="layout">
+<article>
+
+  <header class="phead">
+    {%- if kicker %}<p class="kicker">{{ kicker }}</p>{%- endif %}
+    <h1>{{ heading }}</h1>
+  </header>
+
+  {%- if summary %}
+  <div class="answer"><p>{{ summary }}</p></div>
+  {%- endif %}
+
+  {%- for b in blocks %}
+    {%- if b.type == 'h2' %}<h2 id="{{ b.id }}">{{ b.text }}</h2>
+    {%- elif b.type == 'h3' %}<h3 id="{{ b.id }}">{{ b.text }}</h3>
+    {%- elif b.type == 'p' %}<p>{{ b.text }}</p>
+    {%- elif b.type == 'note' %}<div class="note"><p>{{ b.text }}</p></div>
+    {%- elif b.type == 'ul' %}<ul>{% for i in b['items'] %}<li>{{ i }}</li>{% endfor %}</ul>
+    {%- elif b.type == 'ol' %}<ol>{% for i in b['items'] %}<li>{{ i }}</li>{% endfor %}</ol>
+    {%- elif b.type == 'table' %}
+    <div class="tw"><table>
+      <thead><tr>{% for h in b.head %}<th>{{ h }}</th>{% endfor %}</tr></thead>
+      <tbody>{% for r in b.rows %}<tr>{% for c in r %}<td>{{ c }}</td>{% endfor %}</tr>{% endfor %}</tbody>
+    </table></div>
+    {%- elif b.type == 'ad' %}{% with slot=b.slot %}{% include "partials/ad.html" %}{% endwith %}
+    {%- endif %}
+  {%- endfor %}
+
+  {% with faqs=faqs %}{% include "partials/faq.html" %}{% endwith %}
+
+  {%- if related_links %}
+  <h2 id="related">{{ related_title|default('Related reference') }}</h2>
+  <ul class="pill-list">
+    {%- for r in related_links %}<li><a href="{{ r.url }}">{{ r.name }}</a></li>{%- endfor %}
+  </ul>
+  {%- endif %}
+
+  {% with slot='footer' %}{% include "partials/ad.html" %}{% endwith %}
+
+</article>
+
+<aside class="side">
+  {% with id='q-side' %}{% include "partials/search.html" %}{% endwith %}
+  {%- if toc %}
+  <nav class="panel toc" aria-label="On this page">
+    <h2>On this page</h2>
+    <ul>{% for t in toc %}<li><a href="#{{ t.id }}">{{ t.text }}</a></li>{% endfor %}</ul>
+  </nav>
+  {%- endif %}
+  {%- if not hide_sidebar_ad %}
+  {% with slot='sidebar', format='vertical' %}{% include "partials/ad.html" %}{% endwith %}
+  {%- endif %}
+</aside>
+</div>
+
+{% endblock %}

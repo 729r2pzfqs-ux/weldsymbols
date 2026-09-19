@@ -1,0 +1,88 @@
+{
+  "comparisons": [
+    {
+      "a": "mig-welding", "b": "tig-welding",
+      "headline": "MIG is faster and far easier to learn; TIG is slower but gives complete control over heat and filler, which is what thin material and exotic alloys need.",
+      "meta_description": "MIG vs TIG welding: speed, control, learning curve, cost, thickness range and which process suits aluminium, stainless and thin sheet.",
+      "verdict": "MIG feeds filler automatically while the gun holds arc length for you, so a beginner produces a usable weld in an afternoon and a shop produces a lot of metal per hour. TIG separates heat from filler entirely — the pedal controls one hand, the rod controls the other — which gives precision no other process matches, at perhaps a quarter of the travel speed. The practical rule: if the joint is thick, repetitive, or on a production schedule, MIG. If it is thin, visible, exotic, or a root pass that must be perfect, TIG.",
+      "choose_a": ["Production fabrication where throughput matters", "Material over about 1/8 in", "Beginners and shops with mixed skill levels", "Long welds on clean carbon steel"],
+      "choose_b": ["Thin sheet and tubing where burn-through is the risk", "Stainless, aluminium, titanium and nickel alloys", "Welds that will be visible or inspected", "Root passes on pipe and sanitary tube"],
+      "faqs": [
+        {"q": "Is TIG stronger than MIG?", "a": "A sound weld by either process develops full joint strength. TIG's advantage is control, heat input and cleanliness — not strength. A properly executed MIG weld is not weaker."},
+        {"q": "Which is harder to learn, MIG or TIG?", "a": "TIG, by a wide margin. It requires coordinated use of both hands and a foot pedal. MIG requires only gun angle and travel speed, because the machine holds arc length for you."},
+        {"q": "Can MIG weld aluminium?", "a": "Yes, with a spool gun or push-pull torch and 100% argon. The soft wire birdnests in a standard liner on a long gun, which is why the dedicated feeder matters."},
+        {"q": "Which is cheaper to set up?", "a": "MIG. A capable MIG machine costs less than an equivalent AC/DC TIG machine, and TIG also needs a foot pedal, tungsten, cups and usually a water cooler for sustained high-amperage work."}
+      ]
+    },
+    {
+      "a": "mig-welding", "b": "stick-welding",
+      "headline": "MIG is faster, cleaner and easier indoors on prepared steel; stick works in wind and rain, tolerates rust and poor fit-up, and needs no gas bottle.",
+      "meta_description": "MIG vs stick welding: portability, wind tolerance, speed, cleanliness, thickness range and which process structural codes expect.",
+      "verdict": "This comes down to where the work is. MIG's continuous wire and automatic arc length make it the faster, cleaner, easier process — in a shop, on clean steel, out of the wind. Stick carries its shielding in the electrode coating, so a breeze does not matter, the joint can be rusty and badly fitted, and the whole setup is a machine, two leads and a box of rods. Most structural field work is still stick or flux core for exactly that reason.",
+      "choose_a": ["Indoor shop fabrication", "Clean, prepared steel", "High-volume and repetitive welding", "Sheet metal and thin plate"],
+      "choose_b": ["Outdoor and field work in any weather", "Rusty, painted or contaminated steel", "Maximum portability", "Structural code work requiring low-hydrogen electrodes"],
+      "faqs": [
+        {"q": "Is MIG or stick better for a beginner?", "a": "MIG. The gun maintains arc length automatically, so a usable bead comes much sooner. Stick requires manual arc length control from the very first weld."},
+        {"q": "Can you MIG weld outdoors?", "a": "Not without shelter. Wind above roughly 5 mph strips the shielding gas away and the weld goes porous. Self-shielded flux-cored wire or stick welding are the outdoor options."},
+        {"q": "Is stick welding stronger than MIG?", "a": "Both deposit 70 ksi class weld metal on carbon steel. Neither is inherently stronger, though short-circuit MIG can produce cold lap on thick material, which is why some codes restrict it."},
+        {"q": "Which handles thick plate better?", "a": "Both can, in multiple passes. Stick with E7018 is the traditional structural answer; MIG in spray transfer fills faster but needs the work positioned flat or horizontal."}
+      ]
+    },
+    {
+      "a": "tig-welding", "b": "stick-welding",
+      "headline": "TIG gives the cleanest, most controlled weld of any process; stick gives portability, wind tolerance and speed on heavy, dirty steel.",
+      "meta_description": "TIG vs stick welding compared: weld quality, speed, portability, material range, cost and the pipe procedure that uses both.",
+      "verdict": "These sit at opposite ends of the arc welding spectrum. TIG produces the cleanest welds available — no spatter, no slag, precise heat control, and the ability to weld almost any metal — but it is slow, demands a clean joint, and cannot be used in wind. Stick is fast on heavy sections, portable, wind-proof and forgiving of contamination, but leaves slag to chip and gives far less control. Many pipe procedures use both: a TIG root for a perfect inside surface, then stick for fill and cap.",
+      "choose_a": ["Thin material and precise work", "Stainless, aluminium and exotic alloys", "Root passes that must be flawless", "Welds that will be visible or inspected"],
+      "choose_b": ["Heavy plate and structural sections", "Outdoor and field conditions", "Rusty or contaminated steel", "Work where speed matters more than appearance"],
+      "faqs": [
+        {"q": "Can you TIG weld outdoors?", "a": "Only with shelter. TIG depends entirely on its argon shield, and even a light breeze pulls it away, causing porosity and contaminating the tungsten."},
+        {"q": "Why do pipe welders use a TIG root and stick fill?", "a": "The TIG root gives a smooth, sound inside surface that stick cannot match on an open root. Once the root is in, stick fills and caps far faster than TIG would."},
+        {"q": "Which is more portable?", "a": "Stick, clearly. It needs a machine, leads, a hood and rods. TIG adds a gas bottle, regulator, torch, pedal, tungsten and cups, and often a cooler."},
+        {"q": "Which produces better welds?", "a": "TIG, in terms of cleanliness, control and appearance. That does not mean stick welds are inadequate — most of the world's structural and pipeline welding is stick or flux core and performs exactly as designed."}
+      ]
+    },
+    {
+      "a": "mig-welding", "b": "flux-core-welding",
+      "headline": "Solid-wire MIG leaves no slag and gives a tidier bead; flux core deposits considerably faster, penetrates deeper, and the self-shielded version works outdoors.",
+      "meta_description": "MIG vs flux core welding: deposition rate, penetration, slag, wind tolerance, fume and which one suits thin sheet versus heavy plate.",
+      "verdict": "Both run on the same machine and both feed wire continuously, so the comparison is about what the wire is made of. Solid MIG wire leaves no slag, produces a cleaner bead and costs less per pound — ideal for sheet, light plate and anything cosmetic. Flux-cored wire carries flux inside the tube, which raises the deposition rate, deepens penetration and lets the fast-freezing slag hold the puddle for all-position welding at high current. Above about 1/4 in plate, flux core usually wins on throughput; self-shielded flux core also works outdoors, which MIG never does.",
+      "choose_a": ["Sheet metal and thin plate", "Welds where no slag cleanup matters", "Cosmetic and automotive work", "Lower consumable cost on light fabrication"],
+      "choose_b": ["Plate over about 1/4 in", "Structural fabrication and heavy equipment", "Outdoor work with self-shielded wire", "Maximum deposition rate"],
+      "faqs": [
+        {"q": "Is flux core stronger than MIG?", "a": "Both deposit 70 ksi class weld metal on carbon steel. Flux core penetrates deeper and fills faster, which suits thick plate, but on a properly designed joint neither is stronger."},
+        {"q": "Can I run both on the same machine?", "a": "Usually yes. Gas-shielded flux core runs DCEP like solid wire and uses the same gas. Self-shielded flux core runs DCEN, so the gun and work leads have to be swapped."},
+        {"q": "Why does flux core spatter more?", "a": "The flux burns to make shielding gas and slag, and that reaction is inherently more violent than an inert gas stream over a solid wire. Self-shielded wire spatters most of all."},
+        {"q": "Which produces more fume?", "a": "Flux core, by a clear margin. The flux is the source, and self-shielded wire produces the most. Ventilation and fume extraction matter more with flux core than with solid wire."}
+      ]
+    },
+    {
+      "a": "stick-welding", "b": "flux-core-welding",
+      "headline": "Flux core deposits several times faster because the wire never stops feeding; stick is more portable, handles any thickness and stores indefinitely.",
+      "meta_description": "Stick vs flux core welding: deposition rate, duty cycle, portability, thickness limits, storage and which suits field versus shop work.",
+      "verdict": "Both are self-shielding options that work where MIG cannot, and both leave slag to chip. Flux core wins decisively on throughput — continuous feed means no stub loss and no stopping every fourteen inches, and it runs at higher current than a comparable stick rod. Stick wins on simplicity and reach: a machine, leads and rods, with nothing to feed, no spool to keep dry, and no restriction on thickness. In a shop with long welds, flux core. In the field with varied short welds, stick.",
+      "choose_a": ["Field work and varied short welds", "Remote locations with no feeder", "Thick sections and any position", "Long-term consumable storage"],
+      "choose_b": ["Shop fabrication with long welds", "Maximum deposition rate", "Heavy plate in multiple passes", "Production structural fabrication"],
+      "faqs": [
+        {"q": "How much faster is flux core than stick?", "a": "Several times, once duty cycle is counted. Continuous feed removes rod changes and stub loss, and the wire runs at higher current than a comparable stick electrode."},
+        {"q": "Does flux core still need slag removal?", "a": "Yes, and it must be removed completely between passes. That is one of the two things flux core shares with stick, the other being that it shields itself when self-shielded."},
+        {"q": "Which is better outdoors?", "a": "Both work outdoors if the flux-cored wire is self-shielded. Stick is more practical in genuinely remote or awkward positions because there is no feeder to carry and position."},
+        {"q": "Can flux core weld as thick as stick?", "a": "Gas-shielded flux core can, in multiple passes. Self-shielded wire is usually limited by the manufacturer to material under about 1/2 in, which stick is not."}
+      ]
+    },
+    {
+      "a": "flux-core-welding", "b": "submerged-arc-welding",
+      "headline": "Flux core is a hand-held all-position process; submerged arc is mechanised, flat-position only, and deposits several times more metal per hour.",
+      "meta_description": "Flux core vs submerged arc welding: deposition rates, position limits, automation, arc visibility and where each process is economical.",
+      "verdict": "Both hide the arc behind a flux, but they operate at different scales. Flux-cored welding is hand-held, works in every position and suits varied joints. Submerged arc buries the arc under a granular flux blanket, which lets it run at current densities no open-arc process can reach — 15 to 30 pounds per hour on a single wire, over 100 on multi-wire systems — but only in the flat position, only on long regular seams, and only with mechanised equipment. SAW wins whenever the work can be positioned and the seams are long enough to justify setup.",
+      "choose_a": ["Varied joints and out-of-position work", "Hand-held flexibility", "Short welds and field erection", "Smaller shops without positioning equipment"],
+      "choose_b": ["Long, regular seams on heavy plate", "Pressure vessel and pipe mill production", "Work that can be positioned flat or rotated", "Corrosion-resistant cladding over large areas"],
+      "faqs": [
+        {"q": "Why can submerged arc only weld flat?", "a": "The granular flux blanket is held in place by gravity alone. Out of position it simply falls off the joint, leaving the arc unshielded."},
+        {"q": "How much faster is submerged arc?", "a": "A single SAW wire typically deposits 15 to 30 pounds per hour, and multi-wire installations exceed 100. That is several times what a welder achieves with hand-held flux-cored wire."},
+        {"q": "Is submerged arc safer?", "a": "In some respects, yes. There is no arc flash and very little fume or spatter at the operator's position because the flux covers the arc. It brings its own hazards: hot slag, heavy equipment and flux dust."},
+        {"q": "Can a small shop use submerged arc?", "a": "It is rarely economical. SAW needs mechanised travel, flux handling and recovery, and long regular seams to amortise setup. For varied work, flux core is the practical choice."}
+      ]
+    }
+  ]
+}

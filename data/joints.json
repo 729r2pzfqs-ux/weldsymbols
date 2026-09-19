@@ -1,0 +1,149 @@
+{
+  "joints": [
+    {
+      "id": "butt-joint",
+      "name": "Butt Joint",
+      "summary": "A butt joint places two members edge to edge in the same plane — the simplest joint to draw and the one that most often needs edge preparation to reach full penetration.",
+      "meta_description": "Butt joint welding explained: edge preparation, groove angles, root opening, when a square edge works and when you need a V, U or J groove.",
+      "geometry": "Two members lying in the same plane, joined along their abutting edges.",
+      "prep": "Square edge up to roughly 3/16 in; single-V above that; double-V, U or J on thick plate to cut filler volume and balance distortion.",
+      "strength": "A full-penetration butt joint develops the full strength of the base metal, which is why it is specified on pressure and structural work.",
+      "characteristics": [
+        "The only common joint that can be made with no weld metal above the surface of the members.",
+        "Needs edge preparation above about 3/16 in to reach the root with the arc.",
+        "Root opening and land thickness control how much penetration the root pass achieves.",
+        "Distortion is angular: the joint pulls closed as the weld cools, so tack sequence and a slight preset matter.",
+        "Backing bars, backing welds or back gouging are the usual routes to full penetration when only one side is accessible."
+      ],
+      "common_welds": ["v-groove-weld", "bevel-groove-weld", "u-groove-weld", "j-groove-weld", "back-weld"],
+      "applications": [
+        "Pressure vessel and pipe seams",
+        "Structural plate splices",
+        "Tank and vessel shells",
+        "Sheet metal panels joined edge to edge"
+      ],
+      "faqs": [
+        {"q": "Do butt joints need edge preparation?", "a": "Below about 3/16 in a square-edge butt joint welds through without preparation. Above that the arc cannot reach the root, so the edges are bevelled into a V, U or J groove."},
+        {"q": "What is the strongest welding joint?", "a": "A full-penetration butt joint develops the full strength of the base metal, which makes it the strongest joint configuration. The trade-off is that it demands the most preparation and the most careful fit-up."},
+        {"q": "What is a root opening in a butt joint?", "a": "The gap between the two members at the bottom of the groove before welding. It gives the arc access to the root; too little causes lack of penetration, too much causes burn-through."},
+        {"q": "Why do butt joints distort?", "a": "Weld metal shrinks as it cools. On a single-V joint most of the weld sits near the top surface, so the joint pulls angularly closed. Presetting the members open, alternating passes, or using a double-V balances it."}
+      ]
+    },
+    {
+      "id": "lap-joint",
+      "name": "Lap Joint",
+      "summary": "A lap joint overlaps two members and welds along the exposed edges — no edge preparation, forgiving fit-up, and the cheapest joint to fabricate.",
+      "meta_description": "Lap joint welding explained: fillet weld sizing, overlap distance, single vs double fillet, plug and spot weld alternatives, and fatigue limitations.",
+      "geometry": "Two members overlapping face to face, with fillet welds along one or both exposed edges.",
+      "prep": "None required beyond cleaning. Overlap is typically three to five times the thinner member's thickness.",
+      "strength": "Loaded in shear rather than tension. A double-fillet lap joint carries substantially more load than a single fillet and avoids the bending that a single weld introduces.",
+      "characteristics": [
+        "Requires no edge preparation, which makes it the fastest joint to fabricate.",
+        "Very tolerant of poor fit-up and cutting inaccuracy.",
+        "A single-fillet lap joint loads the weld eccentrically and tends to peel; two fillets are preferred where load matters.",
+        "Creates a crevice between the members that traps moisture — a corrosion concern in wet or marine service.",
+        "Poor fatigue performance relative to a butt joint because of the sharp stress concentration at the weld toe."
+      ],
+      "common_welds": ["fillet-weld", "plug-weld", "slot-weld", "spot-weld", "seam-weld"],
+      "applications": [
+        "Sheet metal fabrication and ductwork",
+        "Automotive body panels, usually spot welded",
+        "Structural gussets and doubler plates",
+        "General repair where fit-up is rough"
+      ],
+      "faqs": [
+        {"q": "How much overlap does a lap joint need?", "a": "A common rule is three to five times the thickness of the thinner member. Less than that and the fillet welds interact; more adds weight without adding strength."},
+        {"q": "Should a lap joint be welded on both sides?", "a": "For anything carrying load, yes. A single fillet loads the joint eccentrically, which bends it and encourages peeling. Two fillets balance the load path."},
+        {"q": "Are lap joints as strong as butt joints?", "a": "No. A full-penetration butt joint develops the full base metal strength; a lap joint's capacity is limited by the shear area of its fillet welds and it performs poorly in fatigue."},
+        {"q": "Can you use plug welds instead of fillets on a lap joint?", "a": "Yes. Plug or slot welds through the top member are used where the edges are not accessible or where a flush outer surface is wanted, and they are common in automotive work."}
+      ]
+    },
+    {
+      "id": "tee-joint",
+      "name": "T-Joint",
+      "summary": "A T-joint sets one member perpendicular to the face of another, and it is normally filleted on both sides — the most common joint in structural fabrication.",
+      "meta_description": "T-joint welding explained: fillet leg size and throat, single vs double fillet, when full penetration needs a bevel or J groove, and lamellar tearing.",
+      "geometry": "One member meeting the face of another at approximately 90 degrees, away from its edge.",
+      "prep": "None for fillet welds. Full-penetration T-joints require a single or double bevel or J groove on the upright member.",
+      "strength": "Fillet capacity is governed by the throat, which for an equal-leg fillet is the leg size multiplied by 0.707. Doubling the leg size does not double the strength economically — two smaller fillets usually beat one large one.",
+      "characteristics": [
+        "The workhorse joint of structural steel: beams to columns, stiffeners to webs, brackets to plates.",
+        "Double fillets are standard because a single fillet bends the joint under load.",
+        "Full penetration requires bevelling the upright member, usually shown as a bevel-groove or J-groove symbol combined with a fillet.",
+        "Puts through-thickness stress on the horizontal member, which raises the risk of lamellar tearing on thick plate.",
+        "Fillet size is often overspecified: a 5/16 in fillet contains more than twice the metal of a 3/16 in fillet."
+      ],
+      "common_welds": ["fillet-weld", "bevel-groove-weld", "j-groove-weld", "plug-weld"],
+      "applications": [
+        "Structural steel connections and stiffeners",
+        "Machine bases and frames",
+        "Tank and vessel nozzles and supports",
+        "Handrails, brackets and general fabrication"
+      ],
+      "faqs": [
+        {"q": "What size fillet weld does a T-joint need?", "a": "It depends on the load and the governing code, but a common practical minimum is a fillet leg roughly equal to the thickness of the thinner member, up to the code's maximum. Oversizing wastes filler and adds distortion without proportional strength."},
+        {"q": "What is the throat of a fillet weld?", "a": "The shortest distance from the root to the face of the weld — for an equal-leg fillet, the leg size multiplied by 0.707. The throat, not the leg, is what carries the load."},
+        {"q": "When does a T-joint need a groove weld?", "a": "When the design calls for complete joint penetration. The upright member is bevelled into a single or double bevel or J groove, and the symbol usually combines the groove with a fillet to give the finished weld its contour."},
+        {"q": "What is lamellar tearing?", "a": "A crack that runs parallel to the surface of the base plate, caused by weld shrinkage pulling on the plate through its thickness. It is a risk on thick T-joints with large welds, and is addressed with lower-strength filler, buttering layers and plate specified for through-thickness properties."}
+      ]
+    },
+    {
+      "id": "corner-joint",
+      "name": "Corner Joint",
+      "summary": "A corner joint brings two members together at their edges to form an L, and unlike a T-joint the upright lands on the end of the other member rather than in the middle of it.",
+      "meta_description": "Corner joint welding explained: open vs closed corner, single and double fillets, groove preparation for full penetration, and burn-through control.",
+      "geometry": "Two members meeting at approximately 90 degrees at their edges, forming an L in section.",
+      "prep": "None for a filleted corner. Open corners with a groove preparation are used where full penetration or a flush outside corner is required.",
+      "strength": "Depends heavily on configuration. A closed corner with a single inside fillet is weak in the opening direction; welding both inside and outside, or using a groove weld, transforms it.",
+      "characteristics": [
+        "Easy to confuse with a T-joint on a drawing — the difference is that the upright sits at the END of the other member.",
+        "The outside corner is prone to burn-through because there is little metal to absorb the heat.",
+        "Welding only the inside corner leaves the joint able to open under load; outside welds or a groove preparation fix that.",
+        "Very common on box sections, frames and enclosures where two faces meet.",
+        "Distortion pulls the included angle closed, so tacking and sequence matter more than on a T-joint."
+      ],
+      "common_welds": ["fillet-weld", "v-groove-weld", "bevel-groove-weld", "back-weld"],
+      "applications": [
+        "Box sections, frames and enclosures",
+        "Tank and hopper corners",
+        "Machine guarding and cabinets",
+        "Structural corner connections"
+      ],
+      "faqs": [
+        {"q": "What is the difference between a corner joint and a T-joint?", "a": "Where the upright lands. In a T-joint it meets the face of the other member somewhere in the middle; in a corner joint it meets the end, so the two members form an L."},
+        {"q": "Should you weld the inside or outside of a corner joint?", "a": "Both where the joint carries load. An inside fillet alone lets the corner open under load. The outside weld, or a groove preparation welded from outside, is what closes the load path."},
+        {"q": "Why does my corner joint keep burning through?", "a": "There is little base metal at an outside corner to conduct heat away. Drop the amperage, speed up travel, or use a smaller electrode. On thin material, backstepping and skip welding also help."},
+        {"q": "How do you get full penetration on a corner joint?", "a": "Bevel one or both members into an open corner preparation, which lets the root pass reach the joint root, and back weld or back gouge if both sides are accessible."}
+      ]
+    },
+    {
+      "id": "edge-joint",
+      "name": "Edge Joint",
+      "summary": "An edge joint lays two members face to face and welds along their common edge — a light-duty joint used to join flanges and sheet edges, not to carry load.",
+      "meta_description": "Edge joint welding explained: where it fits, why it is not a load-bearing joint, autogenous welding on sheet, and the alternatives for structural work.",
+      "geometry": "Two parallel or nearly parallel members with their edges aligned, welded along that common edge.",
+      "prep": "Usually none. Thicker members may be bevelled into a V or J groove along the edge.",
+      "strength": "Low. The weld is not in the load path in any useful direction, so edge joints are used for sealing, alignment and light assembly rather than for transferring structural load.",
+      "characteristics": [
+        "Among the easiest joints to weld: the two edges sit right at the top of the puddle.",
+        "Frequently welded autogenously — fusing the edges together with no filler metal at all.",
+        "Not a load-bearing configuration; the weld carries very little in tension or shear.",
+        "Used to seal seams, join flanges and hold light assemblies in alignment.",
+        "On thin sheet, it is one of the few joints where a TIG torch alone with no filler gives a clean, finished result."
+      ],
+      "common_welds": ["v-groove-weld", "u-groove-weld", "seam-weld", "spot-weld"],
+      "applications": [
+        "Sheet metal flanges and seams",
+        "Light enclosures and covers",
+        "Tanks and ducting where the joint seals rather than carries load",
+        "Assembly tacking and alignment"
+      ],
+      "faqs": [
+        {"q": "Is an edge joint strong?", "a": "No. It is a light-duty configuration used for sealing, alignment and assembly. Where load has to be transferred, a butt, lap or T-joint is used instead."},
+        {"q": "Can you weld an edge joint without filler metal?", "a": "Yes — on thin sheet, the two edges can be fused autogenously with a TIG torch. It is one of the few joints where that works cleanly."},
+        {"q": "When would you use an edge joint?", "a": "Joining flanges, sealing sheet metal seams, and light assembly work where the weld holds parts in position rather than carrying structural load."},
+        {"q": "Does an edge joint need preparation?", "a": "Usually none. On thicker members the edge may be bevelled into a V or J groove so the weld reaches the full thickness rather than just fusing the top."}
+      ]
+    }
+  ]
+}

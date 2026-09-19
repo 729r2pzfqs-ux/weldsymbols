@@ -1,0 +1,63 @@
+{
+  "name": "WeldSymbols",
+  "domain": "weldsymbols.org",
+  "base_url": "https://weldsymbols.org",
+  "tagline": "Welding reference database",
+  "description": "A free reference database of welding electrodes, AWS A2.4 welding symbols and arc welding processes — specifications, amperage settings and side-by-side comparisons.",
+  "contact_email": "info@weldsymbols.org",
+  "adsense_client": "ca-pub-5861928596436289",
+  "adsense_slots": {
+    "header": "0000000001",
+    "in_article": "0000000002",
+    "sidebar": "0000000003",
+    "footer": "0000000004"
+  },
+  "analytics_id": "",
+  "ahrefs_key": "",
+  "amazon_tag": "",
+  "language": "en",
+  "categories": [
+    {
+      "id": "mild-steel",
+      "name": "Carbon & Mild Steel",
+      "description": "Electrodes and wires for carbon and mild steel — the 60 and 70 series stick rods, solid MIG wire and flux-cored wire that cover most structural and fabrication work.",
+      "meta_description": "Carbon and mild steel welding electrodes compared: E6010, E6011, E6013, E7014, E7018, E7024, ER70S-6 and flux-cored wire, with amperage by diameter."
+    },
+    {
+      "id": "stainless",
+      "name": "Stainless Steel",
+      "description": "Austenitic and martensitic stainless fillers — 308L, 309L, 316L, 347 and 410, in both covered electrode and bare wire form.",
+      "meta_description": "Stainless welding electrodes and wires: 308L, 309L, 316L, 347 and 410 in both covered and bare form, with amperage, polarity and corrosion notes."
+    },
+    {
+      "id": "aluminum",
+      "name": "Aluminum",
+      "description": "Aluminium fillers — the 4043 silicon and 5356 magnesium alloys that cover almost all aluminium welding, plus the legacy covered electrode.",
+      "meta_description": "Aluminium welding fillers compared: ER4043 silicon and ER5356 magnesium wire and TIG rod, plus the E4043 covered electrode. Settings and selection."
+    },
+    {
+      "id": "flux-cored",
+      "name": "Flux-Cored",
+      "description": "Tubular flux-cored wires, both gas-shielded and self-shielded, for high-deposition structural and outdoor welding.",
+      "meta_description": "Flux-cored welding wires: gas-shielded E71T-1 and self-shielded E71T-11 compared on polarity, toughness, wind tolerance and settings by diameter."
+    }
+  ],
+  "sources": [
+    {
+      "name": "US Army TC 9-237, Operator's Circular: Welding Theory and Application",
+      "note": "A public-domain US military technical manual covering welding processes, electrode selection and joint design."
+    },
+    {
+      "name": "AWS filler metal specifications",
+      "note": "Classification systems and minimum requirements from AWS A5.1 (carbon steel covered electrodes), A5.3 (aluminium covered electrodes), A5.4 (stainless covered electrodes), A5.9 (bare stainless), A5.10 (bare aluminium), A5.18 (carbon steel GMAW) and A5.20 (flux-cored). The classification numbers and minimum property requirements are factual data; AWS publishes the standards themselves."
+    },
+    {
+      "name": "AWS A2.4, Standard Symbols for Welding, Brazing and Nondestructive Examination",
+      "note": "The governing standard for the welding symbol conventions described on this site."
+    },
+    {
+      "name": "Manufacturer published data",
+      "note": "Recommended operating ranges published by Lincoln Electric, Miller Electric and ESAB. Figures are presented as typical ranges; always confirm against the data sheet for the specific product you are using."
+    }
+  ]
+}

@@ -1,0 +1,329 @@
+{
+  "processes": [
+    {
+      "id": "mig-welding",
+      "name": "MIG Welding",
+      "abbr": "GMAW",
+      "full_name": "Gas Metal Arc Welding",
+      "aka": ["MIG", "GMAW", "Wire welding", "MAG welding"],
+      "summary": "MIG welding feeds a solid wire electrode continuously through a gun while shielding gas protects the puddle — the fastest process to learn and the standard for production fabrication on clean steel.",
+      "meta_description": "MIG welding (GMAW) explained: transfer modes, shielding gas choices, voltage and wire speed settings by thickness, and when to use it over TIG or stick.",
+      "one_liner": "Continuously fed solid wire plus shielding gas.",
+      "how_it_works": "A drive motor pushes solid wire through the gun at a set speed. The wire carries the welding current, arcs to the work and melts into the puddle, so the electrode is both the heat source and the filler. Shielding gas flows from the nozzle to keep the atmosphere off the molten metal. Because the wire feeds continuously, there are no stops to change electrodes and the duty cycle is high.",
+      "polarity": "DCEP for all solid-wire GMAW",
+      "typical_amperage": "50–350 A depending on wire size and transfer mode",
+      "typical_voltage": "16–24 V short circuit, 24–30 V spray",
+      "positions": "All positions in short-circuit and pulsed transfer; flat and horizontal only in axial spray",
+      "deposition": "High — continuous feed with no stub loss",
+      "skill_level": "Easiest of the arc processes to reach a usable weld with",
+      "shielding": "External shielding gas, so it cannot be used in wind without shelter",
+      "transfer_modes": [
+        {"name": "Short circuit", "description": "The wire touches the puddle and shorts roughly 100 times a second. Low heat input, all positions, and the go-to mode for sheet and thin plate. Gives the characteristic crackling bacon sound.", "gas": "75% Ar / 25% CO2 or 100% CO2", "use": "Under 1/4 in, all positions"},
+        {"name": "Globular", "description": "Droplets larger than the wire diameter fall across the arc under gravity. Spattery and hard to control — usually a mode to avoid rather than to select.", "gas": "100% CO2", "use": "Generally avoided"},
+        {"name": "Axial spray", "description": "Fine droplets stream across the arc. High deposition, deep penetration and almost no spatter, but the puddle is too fluid for out-of-position work.", "gas": "At least 80% argon", "use": "Over 1/4 in, flat and horizontal"},
+        {"name": "Pulsed spray", "description": "The machine pulses between a high peak current that detaches a droplet and a low background current that lets the puddle freeze. Gives spray-quality welds in all positions.", "gas": "At least 80% argon", "use": "All positions, all thicknesses, on machines that support it"}
+      ],
+      "gases": [
+        {"gas": "75% Ar / 25% CO2", "for": "Carbon steel, short circuit and spray", "note": "The shop default: smooth arc, low spatter, good appearance."},
+        {"gas": "100% CO2", "for": "Carbon steel, short circuit", "note": "Cheapest, deepest penetration, most spatter. Cannot support spray transfer."},
+        {"gas": "90% Ar / 10% CO2", "for": "Carbon steel, spray and pulsed", "note": "Used on heavier plate where spray transfer is wanted."},
+        {"gas": "90% He / 7.5% Ar / 2.5% CO2", "for": "Stainless short circuit", "note": "The classic stainless tri-mix — good wetting with minimal carbon pickup."},
+        {"gas": "98% Ar / 2% CO2", "for": "Stainless spray", "note": "Keeps weld carbon low while supporting spray transfer."},
+        {"gas": "100% argon", "for": "Aluminium", "note": "Standard for aluminium up to about 1/2 in; add helium for thicker sections."}
+      ],
+      "settings_table": [
+        {"thickness": "24 gauge (0.6 mm)", "wire": "0.023 in", "amps": "30–40", "volts": "15–16", "wfs": "70–100 ipm"},
+        {"thickness": "18 gauge (1.2 mm)", "wire": "0.023–0.030 in", "amps": "50–70", "volts": "16–17", "wfs": "120–160 ipm"},
+        {"thickness": "1/8 in (3.2 mm)", "wire": "0.030–0.035 in", "amps": "120–160", "volts": "18–20", "wfs": "230–280 ipm"},
+        {"thickness": "3/16 in (4.8 mm)", "wire": "0.035 in", "amps": "170–200", "volts": "20–22", "wfs": "300–350 ipm"},
+        {"thickness": "1/4 in (6.4 mm)", "wire": "0.035–0.045 in", "amps": "200–250", "volts": "22–24", "wfs": "350–420 ipm"},
+        {"thickness": "3/8 in (9.5 mm)", "wire": "0.045 in", "amps": "250–300", "volts": "24–28", "wfs": "300–400 ipm (spray)"}
+      ],
+      "advantages": [
+        "Fastest of the common processes to learn to a usable standard",
+        "High deposition rate and high operator duty cycle",
+        "No slag to chip between passes",
+        "Works on material from 24 gauge sheet up to heavy plate",
+        "Readily automated for robotic production"
+      ],
+      "limitations": [
+        "Shielding gas blows away in wind above about 5 mph",
+        "Requires clean base metal — rust, paint and mill scale cause porosity",
+        "Equipment is less portable than a stick machine",
+        "Short-circuit transfer can produce cold lap on thick material if settings are wrong",
+        "Aluminium needs a spool gun or push-pull torch"
+      ],
+      "applications": [
+        "Automotive body and chassis fabrication",
+        "General shop fabrication and manufacturing",
+        "Robotic production welding",
+        "Sheet metal work and light structural",
+        "Aluminium fabrication with a spool gun"
+      ],
+      "consumables": ["er70s-6", "er308l", "er316l", "er4043", "er5356", "er309l"],
+      "faqs": [
+        {"q": "What does MIG stand for?", "a": "Metal Inert Gas. The formal AWS name is Gas Metal Arc Welding, or GMAW, which is more accurate since most steel mixes contain CO2 and are therefore not strictly inert."},
+        {"q": "What gas is used for MIG welding steel?", "a": "75% argon / 25% CO2 is the shop standard. Straight CO2 costs less and penetrates deeper but spatters more and cannot support spray transfer."},
+        {"q": "Is MIG or stick welding better for beginners?", "a": "MIG. The gun holds a constant arc length automatically, so a beginner gets a usable bead far sooner. Stick demands manual arc length control from the first minute."},
+        {"q": "Can you MIG weld outside?", "a": "Not without shelter. Wind above roughly 5 mph strips the shielding gas away and the weld goes porous. Use self-shielded flux-cored wire or a stick machine outdoors."},
+        {"q": "What thickness can MIG weld?", "a": "From 24 gauge sheet up to heavy plate. The practical limit on any given machine is its amperage and duty cycle; multi-pass welding extends it further."}
+      ],
+      "related_processes": ["flux-core-welding", "tig-welding", "stick-welding"]
+    },
+    {
+      "id": "tig-welding",
+      "name": "TIG Welding",
+      "abbr": "GTAW",
+      "full_name": "Gas Tungsten Arc Welding",
+      "aka": ["TIG", "GTAW", "Heliarc"],
+      "summary": "TIG welding strikes an arc from a non-consumable tungsten electrode under argon shielding, with filler added by hand — the slowest process and the one that produces the highest quality welds.",
+      "meta_description": "TIG welding (GTAW) explained: AC vs DC, tungsten selection and grinding, amperage by thickness, filler choice and when TIG beats MIG or stick.",
+      "one_liner": "Non-consumable tungsten arc, filler added by hand.",
+      "how_it_works": "A tungsten electrode in a gas-cooled or water-cooled torch carries the arc but is not consumed. Argon flows around the electrode to shield both the tungsten and the puddle. The welder controls heat with a foot pedal or torch control and feeds filler rod into the leading edge of the puddle with the other hand. Because heat input and filler addition are independent, TIG gives more control than any other arc process.",
+      "polarity": "DCEN for steel and stainless; AC for aluminium and magnesium",
+      "typical_amperage": "5–300 A depending on thickness and material",
+      "typical_voltage": "10–20 V",
+      "positions": "All positions",
+      "deposition": "Low — the slowest of the common processes",
+      "skill_level": "The most demanding; requires coordinated use of both hands and a foot pedal",
+      "shielding": "Argon or argon-helium, external gas only",
+      "transfer_modes": [
+        {"name": "DCEN (straight polarity)", "description": "About 70% of the heat goes into the work. The standard setting for steel, stainless, titanium and nickel alloys. Allows a sharpened tungsten and a narrow, deep arc.", "gas": "Argon", "use": "Steel, stainless, titanium, copper"},
+        {"name": "AC", "description": "Alternates between electrode negative for penetration and electrode positive for oxide cleaning. Required for aluminium and magnesium, whose oxide layer melts far hotter than the metal beneath it.", "gas": "Argon", "use": "Aluminium and magnesium"},
+        {"name": "Pulsed DC", "description": "Pulses between peak and background current, reducing heat input and helping control the puddle on thin material and on open root passes.", "gas": "Argon", "use": "Thin sheet, root passes, heat-sensitive alloys"}
+      ],
+      "gases": [
+        {"gas": "100% argon", "for": "Almost all TIG welding", "note": "The default for steel, stainless and aluminium alike."},
+        {"gas": "75% Ar / 25% He", "for": "Thick aluminium and copper", "note": "Helium raises arc voltage and heat input for better penetration."},
+        {"gas": "Ar with 2–5% H2", "for": "Austenitic stainless only", "note": "Improves travel speed and bead wetting. Never on carbon steel, ferritic stainless, or any hydrogen-sensitive material."},
+        {"gas": "Argon back purge", "for": "Stainless and titanium roots", "note": "Prevents sugaring on the unshielded side of a root pass."}
+      ],
+      "settings_table": [
+        {"thickness": "0.030 in (22 ga)", "tungsten": "1/16 in", "amps": "20–40", "filler": "1/16 in", "gas_flow": "15 CFH"},
+        {"thickness": "1/16 in (1.6 mm)", "tungsten": "1/16 in", "amps": "50–75", "filler": "1/16 in", "gas_flow": "15 CFH"},
+        {"thickness": "1/8 in (3.2 mm)", "tungsten": "3/32 in", "amps": "90–130", "filler": "3/32 in", "gas_flow": "15–20 CFH"},
+        {"thickness": "3/16 in (4.8 mm)", "tungsten": "3/32–1/8 in", "amps": "130–175", "filler": "3/32–1/8 in", "gas_flow": "20 CFH"},
+        {"thickness": "1/4 in (6.4 mm)", "tungsten": "1/8 in", "amps": "175–225", "filler": "1/8 in", "gas_flow": "20–25 CFH"}
+      ],
+      "advantages": [
+        "The highest weld quality and the best control of any arc process",
+        "No spatter and no slag",
+        "Welds almost any metal, including aluminium, titanium, magnesium and nickel alloys",
+        "Filler metal is optional — thin edges can be fused autogenously",
+        "Precise heat control down to a few amps for very thin material"
+      ],
+      "limitations": [
+        "Slowest deposition rate of the common processes",
+        "Steepest learning curve",
+        "Base metal must be genuinely clean",
+        "Cannot be used in wind without shelter",
+        "Equipment costs more than a comparable MIG or stick machine"
+      ],
+      "applications": [
+        "Stainless and sanitary tube and pipe welding",
+        "Aerospace and motorsport fabrication",
+        "Aluminium fabrication where appearance matters",
+        "Root passes on pipe, later filled with stick or flux-core",
+        "Thin-wall tubing, exhaust systems and bicycle frames"
+      ],
+      "consumables": ["er308l", "er316l", "er309l", "er4043", "er5356", "er70s-6"],
+      "faqs": [
+        {"q": "What does TIG stand for?", "a": "Tungsten Inert Gas. The formal AWS name is Gas Tungsten Arc Welding, or GTAW. It is also called Heliarc, after the original trade name from when helium was the shielding gas."},
+        {"q": "Why does aluminium TIG need AC?", "a": "Aluminium carries a tough oxide skin that melts at roughly 3700 °F while the metal beneath melts at about 1200 °F. The electrode-positive half of the AC cycle blasts that oxide off; the electrode-negative half puts heat into the joint."},
+        {"q": "What tungsten should I use?", "a": "2% lanthanated or 2% ceriated works on both AC and DC and has replaced thoriated for most shops. Thoriated tungsten is mildly radioactive and its grinding dust is a health concern. Pure tungsten is a legacy choice for AC only."},
+        {"q": "How do you grind a TIG tungsten?", "a": "Lengthwise, with the grinding marks running along the electrode rather than around it, on a wheel dedicated to tungsten. Grinding across the electrode makes the arc wander. A point roughly 2 to 2.5 times the electrode diameter suits DC work."},
+        {"q": "Is TIG stronger than MIG?", "a": "A correctly made weld by either process develops full joint strength. TIG gives better control, lower heat input and cleaner results, which matters on thin material and exotic alloys — but a sound MIG weld is not weaker."}
+      ],
+      "related_processes": ["mig-welding", "stick-welding", "flux-core-welding"]
+    },
+    {
+      "id": "stick-welding",
+      "name": "Stick Welding",
+      "abbr": "SMAW",
+      "full_name": "Shielded Metal Arc Welding",
+      "aka": ["Stick", "SMAW", "Arc welding", "Manual metal arc", "MMA"],
+      "summary": "Stick welding burns a flux-coated electrode that supplies both filler metal and shielding — the most portable, most wind-tolerant and most forgiving process on dirty or rusty steel.",
+      "meta_description": "Stick welding (SMAW) explained: electrode selection, polarity, amperage by rod diameter, running technique and why it still beats MIG outdoors.",
+      "one_liner": "Flux-coated consumable electrode, no gas bottle.",
+      "how_it_works": "A flux-coated electrode is clamped in a holder and struck against the work to start an arc. The metal core melts and transfers across the arc as filler while the flux coating burns, producing a shielding gas and a molten slag that covers and protects the cooling weld. The slag is chipped off afterwards. Because everything needed is in the electrode, no gas bottle is required and wind does not matter.",
+      "polarity": "DCEP, DCEN or AC depending on the electrode classification",
+      "typical_amperage": "20–350 A depending on rod diameter",
+      "typical_voltage": "20–35 V",
+      "positions": "All positions with most electrodes; E7024 and other 2-series rods are flat and horizontal only",
+      "deposition": "Moderate, reduced by stub loss and by stopping to change rods",
+      "skill_level": "Demanding at first — arc length is controlled entirely by hand",
+      "shielding": "Self-shielding from the flux coating; no external gas",
+      "transfer_modes": [
+        {"name": "DCEP (reverse polarity)", "description": "Electrode positive. Deeper penetration and the standard setting for E6010, E7018 and most stainless electrodes.", "gas": "None", "use": "Most electrodes, most work"},
+        {"name": "DCEN (straight polarity)", "description": "Electrode negative. Shallower penetration and a higher deposition rate; used on sheet metal with E6013 and on some iron-powder rods.", "gas": "None", "use": "Thin material, some rutile rods"},
+        {"name": "AC", "description": "Alternating current. Required by E6011, permitted by E6013, E7014, E7018 and E7024. Reduces arc blow at high amperage on heavy plate.", "gas": "None", "use": "Transformer machines, arc blow situations"}
+      ],
+      "gases": [],
+      "settings_table": [
+        {"thickness": "1/16 in (1.6 mm)", "rod": "1/16 in", "amps": "20–40", "electrode": "E6013"},
+        {"thickness": "1/8 in (3.2 mm)", "rod": "3/32 in", "amps": "60–90", "electrode": "E6013, E6011, E7018"},
+        {"thickness": "3/16 in (4.8 mm)", "rod": "1/8 in", "amps": "90–130", "electrode": "E6011, E7018, E7014"},
+        {"thickness": "1/4 in (6.4 mm)", "rod": "1/8 in", "amps": "110–150", "electrode": "E7018, E6010, E7014"},
+        {"thickness": "3/8 in (9.5 mm)", "rod": "5/32 in", "amps": "150–220", "electrode": "E7018, E7024"},
+        {"thickness": "1/2 in and up", "rod": "5/32–3/16 in", "amps": "200–300", "electrode": "E7018, E7024"}
+      ],
+      "advantages": [
+        "Works outdoors in wind and rain where gas-shielded processes fail",
+        "Most portable equipment — a machine, leads and a box of rods",
+        "Tolerates rust, mill scale, paint and poor fit-up better than MIG or TIG",
+        "Electrode range covers carbon steel, stainless, cast iron, nickel and hardfacing",
+        "Lowest equipment cost to get welding"
+      ],
+      "limitations": [
+        "Slag must be chipped between every pass",
+        "Deposition rate is limited by stopping to change electrodes",
+        "Arc length is controlled entirely by hand, which takes practice",
+        "Not practical below about 18 gauge sheet",
+        "Low-hydrogen electrodes require rod oven discipline"
+      ],
+      "applications": [
+        "Structural steel erection and field welding",
+        "Pipeline and pressure piping",
+        "Farm, ranch and heavy equipment repair",
+        "Shipyard and offshore work",
+        "Maintenance welding on dirty or weathered steel"
+      ],
+      "consumables": ["e6010", "e6011", "e6013", "e7014", "e7018", "e7024", "e308l", "e309l", "e316l", "e347", "e410"],
+      "faqs": [
+        {"q": "What does SMAW stand for?", "a": "Shielded Metal Arc Welding. It is the formal AWS name for what most people call stick welding, arc welding, or manual metal arc (MMA) welding."},
+        {"q": "What amperage should I set for stick welding?", "a": "A rough starting rule is one amp per thousandth of an inch of electrode diameter — about 125 A for a 1/8 in rod. Then adjust by sound and bead profile, and drop 10–15% for vertical and overhead."},
+        {"q": "What is the difference between DCEP and DCEN?", "a": "DCEP puts the electrode positive, which places about two-thirds of the heat in the work and gives deeper penetration. DCEN puts the electrode negative for shallower penetration and higher deposition. Each electrode classification specifies which it needs."},
+        {"q": "Which stick electrode should a beginner start with?", "a": "E6013 on 1/8 in plate. It strikes easily, runs on almost any machine and is forgiving of arc length. E7018 is the rod to learn next, because most structural work requires it."},
+        {"q": "Why does my stick electrode keep sticking?", "a": "Usually the amperage is too low, or the arc was struck straight down instead of scratched like a match. E7018 in particular needs a scratch start slightly ahead of the joint, then a drag back into the puddle."}
+      ],
+      "related_processes": ["flux-core-welding", "mig-welding", "tig-welding"]
+    },
+    {
+      "id": "flux-core-welding",
+      "name": "Flux-Cored Welding",
+      "abbr": "FCAW",
+      "full_name": "Flux-Cored Arc Welding",
+      "aka": ["Flux core", "FCAW", "Dual shield", "Gasless MIG", "Innershield"],
+      "summary": "Flux-cored welding feeds a tubular wire with flux inside, combining MIG's continuous feed with stick's slag shielding — available gas-shielded for quality or self-shielded for wind.",
+      "meta_description": "Flux-cored welding (FCAW) explained: gas-shielded vs self-shielded, DCEP vs DCEN polarity, settings by wire size, and when it beats solid-wire MIG.",
+      "one_liner": "Tubular wire with flux inside, with or without gas.",
+      "how_it_works": "The electrode is a tube of mild steel filled with flux. As it melts, the flux does what a stick electrode's coating does: it generates shielding gas, deoxidises the puddle and forms a slag that covers the cooling weld. Gas-shielded wire adds an external gas for extra protection and toughness. Self-shielded wire relies on the flux alone, which is what lets it work outdoors.",
+      "polarity": "DCEP for gas-shielded wires; DCEN for most self-shielded wires",
+      "typical_amperage": "70–450 A depending on wire size",
+      "typical_voltage": "22–30 V",
+      "positions": "All positions with 71T wires; 70T flat-and-horizontal wires exist for high deposition",
+      "deposition": "The highest of the manual arc processes",
+      "skill_level": "Similar to MIG, with slag removal added",
+      "shielding": "Flux only (self-shielded) or flux plus external gas (gas-shielded)",
+      "transfer_modes": [
+        {"name": "FCAW-G (gas-shielded)", "description": "Uses CO2 or an argon/CO2 mix in addition to the flux. Smoother arc, better toughness, higher quality — and the choice for structural code work. Runs DCEP.", "gas": "100% CO2 or 75% Ar / 25% CO2", "use": "Indoor structural and production welding"},
+        {"name": "FCAW-S (self-shielded)", "description": "No gas bottle at all. The flux generates everything the weld needs, so it works in wind. Runs DCEN, more spatter and smoke, generally lower toughness.", "gas": "None", "use": "Outdoor, field and hobby welding"}
+      ],
+      "gases": [
+        {"gas": "100% CO2", "for": "Gas-shielded flux core", "note": "Deeper penetration, lower cost, more spatter. The traditional structural choice."},
+        {"gas": "75% Ar / 25% CO2", "for": "Gas-shielded flux core", "note": "Smoother arc, less spatter, better out-of-position control, slightly higher tensile."},
+        {"gas": "None", "for": "Self-shielded flux core", "note": "The flux provides all shielding. Adding gas does nothing useful."}
+      ],
+      "settings_table": [
+        {"wire": "0.030 in self-shielded", "thickness": "up to 1/8 in", "amps": "60–120", "volts": "15–18", "wfs": "80–180 ipm"},
+        {"wire": "0.035 in self-shielded", "thickness": "1/8–1/4 in", "amps": "90–160", "volts": "17–20", "wfs": "120–250 ipm"},
+        {"wire": "0.045 in gas-shielded", "thickness": "1/4–1/2 in", "amps": "180–280", "volts": "24–28", "wfs": "250–400 ipm"},
+        {"wire": "0.052 in gas-shielded", "thickness": "3/8 in and up", "amps": "220–340", "volts": "25–29", "wfs": "250–380 ipm"},
+        {"wire": "1/16 in gas-shielded", "thickness": "1/2 in and up", "amps": "280–450", "volts": "26–32", "wfs": "200–350 ipm"}
+      ],
+      "advantages": [
+        "Highest deposition rate of the manual arc processes",
+        "Self-shielded wire works outdoors where MIG cannot",
+        "Deeper penetration than solid MIG wire at the same current",
+        "Handles thicker plate in fewer passes",
+        "All-position capability at high current thanks to the fast-freezing slag"
+      ],
+      "limitations": [
+        "Slag must be chipped between passes",
+        "Produces noticeably more fume than solid wire, so ventilation matters",
+        "Self-shielded wire has lower toughness and is usually thickness limited",
+        "Gas-shielded wire still cannot be used in wind",
+        "Wire is more expensive per pound than solid wire"
+      ],
+      "applications": [
+        "Structural steel fabrication and erection",
+        "Shipbuilding and barge construction",
+        "Heavy equipment manufacture and repair",
+        "Outdoor field welding with self-shielded wire",
+        "Hobby and farm welding on small gasless machines"
+      ],
+      "consumables": ["e71t-1", "e71t-11"],
+      "faqs": [
+        {"q": "What is the difference between gas-shielded and self-shielded flux core?", "a": "Gas-shielded wire (FCAW-G, such as E71T-1) uses external shielding gas on top of the flux, runs DCEP, and produces tougher, higher-quality welds suited to code work. Self-shielded wire (FCAW-S, such as E71T-11) needs no gas, runs DCEN, and works outdoors, but has lower toughness and is usually thickness limited."},
+        {"q": "Is flux core DCEP or DCEN?", "a": "It depends on the wire. Gas-shielded wires such as E71T-1 run DCEP. Most self-shielded wires including E71T-11 run DCEN. Getting this backwards is the most common flux-core setup mistake."},
+        {"q": "Is flux core stronger than MIG?", "a": "Both deposit 70 ksi class weld metal on carbon steel. Flux core penetrates deeper at a given current and fills faster, which makes it better suited to thick plate — but on a properly designed joint neither is inherently stronger."},
+        {"q": "Why does my flux core weld look so rough?", "a": "Check polarity first, then stickout, then gun angle. Self-shielded wire needs DCEN, a long stickout of 1/2 to 3/4 in, and a drag angle. Pushing the gun rolls slag ahead of the puddle and traps it."},
+        {"q": "Can you use flux core wire without gas?", "a": "Only if it is self-shielded wire such as E71T-11. Gas-shielded wire like E71T-1 will go porous without its gas. The wire's classification, not the machine, decides."}
+      ],
+      "related_processes": ["mig-welding", "stick-welding", "submerged-arc-welding"]
+    },
+    {
+      "id": "submerged-arc-welding",
+      "name": "Submerged Arc Welding",
+      "abbr": "SAW",
+      "full_name": "Submerged Arc Welding",
+      "aka": ["SAW", "Sub arc"],
+      "summary": "Submerged arc welding buries the arc under a blanket of granular flux, giving enormous deposition rates with no visible arc, no spatter and no arc flash — the process for heavy plate and long seams.",
+      "meta_description": "Submerged arc welding (SAW) explained: how the flux blanket works, deposition rates, flux and wire selection, and the flat-position limitation.",
+      "one_liner": "Arc buried under granular flux, mechanised.",
+      "how_it_works": "A continuously fed bare wire runs into a joint that has been covered ahead of it with granular flux. The arc strikes beneath that blanket, so it is never visible. Part of the flux melts to form a protective slag over the weld; the rest is vacuumed up and recycled. Because the flux blanket contains the heat and the arc, current densities far beyond any open-arc process become practical.",
+      "polarity": "DCEP most commonly; DCEN for higher deposition; AC on multi-wire systems to control arc blow",
+      "typical_amperage": "300–1500 A, and higher on multi-wire installations",
+      "typical_voltage": "25–45 V",
+      "positions": "Flat and horizontal fillet only — the flux will not stay in place otherwise",
+      "deposition": "The highest of any common arc process, up to 100 lb/hr on multi-wire systems",
+      "skill_level": "Mechanised or automatic; the skill is in setup and procedure rather than torch handling",
+      "shielding": "Granular flux blanket, no gas",
+      "transfer_modes": [
+        {"name": "Single wire DCEP", "description": "The standard configuration. Deep penetration and good bead shape for most plate work.", "gas": "Granular flux", "use": "General heavy plate and vessel seams"},
+        {"name": "Single wire DCEN", "description": "Higher deposition rate with shallower penetration — used for cladding and build-up.", "gas": "Granular flux", "use": "Surfacing and overlay"},
+        {"name": "Tandem and multi-wire", "description": "Two or more wires in line, often with the lead wire on DC and the trail wires on AC to manage arc blow. Used for pipe mills and heavy vessel seams.", "gas": "Granular flux", "use": "Very high production seam welding"}
+      ],
+      "gases": [
+        {"gas": "None — granular flux", "for": "All SAW", "note": "Fluxes are classified as fused, bonded or agglomerated. Bonded fluxes can carry alloying elements; fused fluxes cannot but resist moisture better."}
+      ],
+      "settings_table": [
+        {"wire": "5/64 in (2.0 mm)", "amps": "300–500", "volts": "26–32", "travel": "14–24 ipm", "use": "Thin plate, fillets"},
+        {"wire": "3/32 in (2.4 mm)", "amps": "350–600", "volts": "27–34", "travel": "12–22 ipm", "use": "General plate"},
+        {"wire": "1/8 in (3.2 mm)", "amps": "450–800", "volts": "28–36", "travel": "10–20 ipm", "use": "Heavy plate"},
+        {"wire": "5/32 in (4.0 mm)", "amps": "600–1000", "volts": "30–38", "travel": "8–18 ipm", "use": "Very heavy sections"},
+        {"wire": "3/16 in (4.8 mm)", "amps": "700–1200", "volts": "32–40", "travel": "8–16 ipm", "use": "Vessel and pipe mill seams"}
+      ],
+      "advantages": [
+        "Deposition rates far beyond any open-arc process",
+        "No arc flash, no spatter and very little fume at the operator's position",
+        "Deep penetration, so thick joints need less preparation",
+        "Highly repeatable weld quality on long seams",
+        "Unused flux is recovered and reused"
+      ],
+      "limitations": [
+        "Flat and horizontal fillet positions only",
+        "The arc cannot be seen, so the operator relies on instruments and procedure",
+        "Equipment is large and not portable",
+        "Only practical on long, regular seams — not for short or intricate welds",
+        "Flux must be kept dry, and damp flux causes porosity and hydrogen cracking"
+      ],
+      "applications": [
+        "Pressure vessel longitudinal and circumferential seams",
+        "Pipe mill seam welding",
+        "Shipbuilding panel lines",
+        "Structural beam and girder fabrication",
+        "Corrosion-resistant cladding on heavy plate"
+      ],
+      "consumables": [],
+      "faqs": [
+        {"q": "Why is it called submerged arc welding?", "a": "The arc burns beneath a blanket of granular flux and is never visible. The flux submerges the arc, which is what eliminates arc flash, spatter and most of the fume."},
+        {"q": "Can submerged arc weld out of position?", "a": "No. The granular flux is held in place only by gravity, so the process is limited to the flat position and horizontal fillets. Parts are positioned or rotated to suit."},
+        {"q": "How fast is submerged arc welding?", "a": "A single wire typically deposits 15 to 30 pounds per hour, and multi-wire installations reach 100 pounds per hour or more. That is several times what a skilled welder achieves with flux-cored wire."},
+        {"q": "Does SAW flux need to be dried?", "a": "Yes. Flux absorbs moisture, and moisture in the flux means hydrogen in the weld. Fluxes are held in heated hoppers and rebaked per the manufacturer's instructions when exposed."},
+        {"q": "What is the difference between fused and bonded SAW flux?", "a": "Fused flux is melted and crushed, is chemically homogeneous and resists moisture well, but cannot carry alloying additions because they would oxidise. Bonded flux is agglomerated at lower temperature, so it can carry deoxidisers and alloys, but it picks up moisture more readily."}
+      ],
+      "related_processes": ["flux-core-welding", "mig-welding", "stick-welding"]
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+<div class="search {{ extra_class|default('') }}" data-search data-base="/">
+  <label class="skip" for="{{ id|default('q') }}">Search the database</label>
+  <input type="search" id="{{ id|default('q') }}" autocomplete="off" spellcheck="false"
+         placeholder="{{ placeholder|default('Search electrodes, symbols and processes…') }}"
+         aria-describedby="{{ id|default('q') }}-hint">
+  <div class="results" data-results hidden role="listbox" aria-label="Search results"></div>
+  <p class="skip" id="{{ id|default('q') }}-hint">Type at least two characters. Press slash to focus this field.</p>
+</div>

@@ -1,0 +1,121 @@
+{% extends "base.html" %}
+{% set s = symbol %}
+{% block content %}
+
+<div class="layout">
+<article>
+
+  <header class="phead">
+    <p class="kicker">AWS A2.4 weld symbol</p>
+    <h1>{{ s.name }} Symbol</h1>
+  </header>
+
+  <div class="answer"><p>{{ s.summary }}</p></div>
+
+  <div class="figs">
+    <figure>
+      {{ s.svg_markup }}
+      <figcaption>The {{ s.name|lower }} symbol: {{ s.shape|lower }}, shown on the arrow side.</figcaption>
+    </figure>
+    <figure>
+      {{ s.joint_svg_markup }}
+      <figcaption>Cross-section of the joint this symbol calls for.</figcaption>
+    </figure>
+  </div>
+
+  <h2 id="how-to-read">How to read the {{ s.name|lower }} symbol</h2>
+  <ul>
+    {%- for h in s.how_to_read %}<li>{{ h }}</li>{%- endfor %}
+  </ul>
+
+  <h2 id="dimensions">Where the dimensions go</h2>
+  <div class="tw">
+    <table>
+      <thead><tr><th>Position</th><th>What it specifies</th></tr></thead>
+      <tbody>
+        {%- for d in s.dimensions %}
+        <tr><td>{{ d.position }}</td><td>{{ d.meaning }}</td></tr>
+        {%- endfor %}
+      </tbody>
+    </table>
+  </div>
+
+  <h2 id="joints">Joint types</h2>
+  <ul class="chips">
+    {%- for j in s.joint_types %}<li class="chip">{{ j }}</li>{%- endfor %}
+  </ul>
+
+  {% with slot='in_article' %}{% include "partials/ad.html" %}{% endwith %}
+
+  <h2 id="notes">Practical notes</h2>
+  <ul>
+    {%- for n in s.notes %}<li>{{ n }}</li>{%- endfor %}
+  </ul>
+
+  {% with faqs=s.faqs, faq_title=s.name ~ ' symbol — common questions' %}{% include "partials/faq.html" %}{% endwith %}
+
+  <h2 id="anatomy">Welding symbol anatomy</h2>
+  <p>Every weld symbol attaches to the same framework. If any part of the diagram above is unfamiliar,
+     the <a href="/guides/how-to-read-welding-symbols/">full guide to reading welding symbols</a>
+     walks through the whole system.</p>
+  <div class="tw">
+    <table class="specs">
+      <tbody>
+        {%- for p in anatomy %}
+        <tr><th scope="row">{{ p.part }}</th><td>{{ p.description }}</td></tr>
+        {%- endfor %}
+      </tbody>
+    </table>
+  </div>
+
+  {%- if related_symbols %}
+  <h2 id="related">Related symbols</h2>
+  <div class="grid grid-3">
+    {%- for r in related_symbols %}
+    <a class="card card-sym" href="/symbols/{{ r.id }}/">
+      {{ r.svg_markup }}
+      <h3>{{ r.name }}</h3>
+    </a>
+    {%- endfor %}
+  </div>
+  {%- endif %}
+
+  {%- if related_electrodes %}
+  <h2 id="filler">Filler metals used on this joint</h2>
+  <ul class="pill-list">
+    {%- for r in related_electrodes %}
+    <li><a href="/electrodes/{{ r.id }}/">{{ r.name }}</a></li>
+    {%- endfor %}
+  </ul>
+  {%- endif %}
+
+  {% with slot='footer' %}{% include "partials/ad.html" %}{% endwith %}
+
+</article>
+
+<aside class="side">
+  {% with id='q-side' %}{% include "partials/search.html" %}{% endwith %}
+  <nav class="panel toc" aria-label="On this page">
+    <h2>On this page</h2>
+    <ul>
+      <li><a href="#how-to-read">How to read it</a></li>
+      <li><a href="#dimensions">Dimensions</a></li>
+      <li><a href="#joints">Joint types</a></li>
+      <li><a href="#notes">Practical notes</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#anatomy">Symbol anatomy</a></li>
+    </ul>
+  </nav>
+  <div class="panel">
+    <h2>All weld symbols</h2>
+    <ul>
+      {%- for o in all_symbols %}
+      <li><a href="/symbols/{{ o.id }}/">{{ o.name }}</a></li>
+      {%- endfor %}
+    </ul>
+  </div>
+  {% with slot='sidebar', format='vertical' %}{% include "partials/ad.html" %}{% endwith %}
+</aside>
+</div>
+
+{% endblock %}

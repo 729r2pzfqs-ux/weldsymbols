@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block content %}
+<header class="phead" style="margin-top:3rem">
+  <p class="kicker">404</p>
+  <h1>That page is not here</h1>
+</header>
+<p class="lede">The page you asked for does not exist, or it moved. Search the database or start from
+  one of the sections below.</p>
+{% with id='q-404', extra_class='search-home' %}{% include "partials/search.html" %}{% endwith %}
+<h2>Start here</h2>
+<div class="grid grid-2">
+  <a class="card" href="/electrodes/"><h3>Electrodes</h3><p>Specs, amperage and comparisons for {{ counts.electrodes }} electrodes and filler wires.</p></a>
+  <a class="card" href="/symbols/"><h3>Welding symbols</h3><p>All {{ counts.symbols }} AWS A2.4 weld symbols with drawings.</p></a>
+  <a class="card" href="/processes/"><h3>Processes</h3><p>Stick, MIG, TIG, flux-cored and submerged arc.</p></a>
+  <a class="card" href="/charts/amperage/"><h3>Amperage chart</h3><p>Every electrode, every diameter, in one table.</p></a>
+</div>
+{% endblock %}
