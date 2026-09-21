@@ -108,9 +108,14 @@ def build():
 
     ico_16 = render(16, radius_frac=0.12)
     ico_32 = render(32, radius_frac=0.14)
+    # Google Search requires a favicon whose side is a multiple of 48 px; with only
+    # 16 and 32 available it upscales the small one and the result looks tiny.
+    ico_48 = render(48, radius_frac=0.16)
 
     save(ico_16, "favicon-16x16.png")
     save(ico_32, "favicon-32x32.png")
+    save(ico_48, "favicon-48x48.png")
+    save(render(96, radius_frac=0.18), "favicon-96x96.png")
     # Full bleed: iOS and Windows apply their own mask, so transparent
     # corners would show through as artefacts.
     save(render(180, full_bleed=True), "apple-touch-icon.png")
@@ -119,7 +124,7 @@ def build():
     save(render(512, radius_frac=0.22), "android-chrome-512x512.png")
 
     ico_path = os.path.join(OUT, "favicon.ico")
-    write_ico(ico_path, [ico_16, ico_32])
+    write_ico(ico_path, [ico_16, ico_32, ico_48])
     written.append(("favicon.ico", os.path.getsize(ico_path)))
 
     svg_path = os.path.join(OUT, "favicon.svg")
